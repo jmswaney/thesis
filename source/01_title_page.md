@@ -1,25 +1,14 @@
-<!-- 
-This is the Latex-heavy title page. 
-People outside UCL may want to remove the header logo 
-and add the centred logo
--->
-
 \begin{titlepage}
     \begin{center}
-
-    % Delete the following line
-    % to remove the UCL header logo
-    \ThisULCornerWallPaper{1.0}{style/univ_logo.eps}
-        
         \vspace*{2.5cm}
         
         \huge
-        This is the title of the thesis
+        Scaling Up 3D Imaging, Analysis, and Culture of Complex Brain Models
         
         \vspace{1.5cm}
         
         \Large
-        Firstname Surname
+        Justin M. Swaney
 
         \vspace{1.5cm}
 
@@ -31,8 +20,8 @@ and add the centred logo
         
         \normalsize
         Supervised by:\\
-        Professor Louis Fage\\
-        Captain J. Y. Cousteau
+        Professor Kwanghun Chung\\
+        Department of Chemical Engineering
 
         \vspace{0.8cm}
 
@@ -41,10 +30,11 @@ and add the centred logo
         % \includegraphics[width=0.4\textwidth]{style/univ_logo.eps}
         
         \normalsize
-        University College London, UK\\
-        January 2015
+        Massachusetts Institute of Technology\\
+        Cambridge, MA\\
+        December, 2019
 
-        % Except where otherwise noted, content in this thesis is licensed under a Creative Commons Attribution 4.0 License (http://creativecommons.org/licenses/by/4.0), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited. Copyright 2015,Tom Pollard.
+        % Except where otherwise noted, content in this thesis is licensed under a Creative Commons Attribution 4.0 License (http://creativecommons.org/licenses/by/4.0), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited. Copyright 2019,Justin Swaney.
 
     \end{center}
 \end{titlepage}

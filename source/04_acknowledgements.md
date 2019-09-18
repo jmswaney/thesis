@@ -1,12 +1,12 @@
 # Acknowledgements {.unnumbered}
 
-<!-- This is for acknowledging all of the people who helped out -->
+I would like to acknowledge all of my colleagues at MIT for their continued support throughout various research projects. We accomplished a great deal and learned even more together. I have no doubt that those individuals that I have had the privilege to work with at MIT will continue to impact the world in positive ways.
 
-Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam congue fermentum ante, semper porta nisl consectetur ut. Duis ornare sit amet dui ac faucibus. Phasellus ullamcorper leo vitae arcu ultricies cursus. Duis tristique lacus eget metus bibendum, at dapibus ante malesuada. In dictum nulla nec porta varius. Fusce et elit eget sapien fringilla maximus in sit amet dui.
+I am grateful for my fiancé, Kassi, who has been with me side-by-side as an MIT PhD student since the beginning. We made it through grad school together, and I'm excited to share our hardships and victories in the future.
 
-Mauris eget blandit nisi, faucibus imperdiet odio. Suspendisse blandit dolor sed tellus venenatis, venenatis fringilla turpis pretium. Donec pharetra arcu vitae euismod tincidunt. Morbi ut turpis volutpat, ultrices felis non, finibus justo. Proin convallis accumsan sem ac vulputate. Sed rhoncus ipsum eu urna placerat, sed rhoncus erat facilisis. Praesent vitae vestibulum dui. Proin interdum tellus ac velit varius, sed finibus turpis placerat.
+Of course, this work never would have been possible without my family. My brother, Jason, and his wife, Shanon, always gave me a place to stay whenever I went home to Wisconsin during my PhD. My sister, Amy, and neice, Lexi, also welcomed me home when I visited. My dad, Rich, has supported me throughout my entire life and academic career. 
 
-<!-- Use the \newpage command to force a new page -->
+Lastly, I'd like to dedicate this thesis to my mother, Margaret Swaney, to whom I owe everything. She has been and will always be my guiding light.
 
 \newpage
 
