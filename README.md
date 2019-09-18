@@ -1,5 +1,9 @@
 # PhD Thesis for Justin Swaney
 
+> *"Pascal meditated upon outer space, but we need only turn our thoughts inward to feel his dread. Inside every one of our skulls lies an organ so vast in its complexity that it might as well be infinite."*  
+
+― Sebastian Seung, Connectome: How the Brain's Wiring Makes Us Who We Are 
+
 ## Scaling Up 3D Imaging, Analysis, and Culture of Complex Brain Models
 
 Justin Swaney, PhD Candidate  
