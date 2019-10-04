@@ -16,10 +16,6 @@ This is the first part of the methodology. Duis tempor sapien sed tellus ultrice
 
 This is the second part of the methodology. Sed ut ipsum ultrices, interdum ipsum vel, lobortis diam. Curabitur sit amet massa quis tortor molestie dapibus a at libero. Mauris mollis magna quis ante vulputate consequat. Integer leo turpis, suscipit ac venenatis pellentesque, efficitur non sem. Pellentesque eget vulputate turpis. Etiam id nibh at elit fermentum interdum.
 
-<!-- 
-Comments can be added like this.
---> 
-
 ## Results
 
 These are the results. In vitae odio at libero elementum fermentum vel iaculis enim. Nullam finibus sapien in congue condimentum. Curabitur et ligula et ipsum mollis fringilla.
@@ -36,7 +32,7 @@ For details on setting attributes like width and height, see:
 http://pandoc.org/MANUAL.html#extension-link_attributes
 --> 
 
-![RV Calypso is a former British Royal Navy minesweeper converted into a research vessel for the oceanographic researcher Jacques-Yves Cousteau. It was equipped with a mobile laboratory for underwater field research. \label{ref_a_figure}](source/figures/example_figure.pdf){ width=100% }
+<!-- ![RV Calypso is a former British Royal Navy minesweeper converted into a research vessel for the oceanographic researcher Jacques-Yves Cousteau. It was equipped with a mobile laboratory for underwater field research. \label{ref_a_figure}](source/figures/example_figure.pdf){ width=100% } -->
 
 ## Conclusion
 
