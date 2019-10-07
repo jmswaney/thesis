@@ -334,7 +334,7 @@ We discovered that a subset of lipids preserved in SWITCH-processed tissues
 lipid-rich membranes (Schlessinger et al., 1977). In particular, we found that
 long-chain dialkylcarbocyanines robustly stain myelinated axons (Figure 5A).
 However, when we attempted to label an intact tissue using conventional methods,
-we could not achieve dye penetration deeper than 100mm because dye molecules
+we could not achieve dye penetration deeper than 100 mm because dye molecules
 were depleted as they rapidly associated with abundant targets in the outer
 layer (Figure 5C).
 

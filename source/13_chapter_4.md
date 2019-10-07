@@ -93,16 +93,16 @@ light-sheet microscope.
 
 Stripe artifacts are commonplace in images acquired with LSFM due to
 irregularities in the refractive index (RI) of the sample 3,11. This RI mismatch
-can be  compensated for using an immersion medium that has a similar RI to that
+can be compensated for using an immersion medium that has a similar RI to that
 of the sample 12. However, the material properties of biological tissues,
 including the RI, are generally not uniform throughout, making some degree of RI
 mismatch inevitable. RI mismatch usually results in uneven illumination patterns
-due  to optical aberrations that disrupt the incident light.
+due to optical aberrations that disrupt the incident light.
 
 Current strategies for image destriping are either based on optical filtering or
 digital filtering 11,13–15. Optical filtering strategies attempt to compensate
 for RI mismatch during imaging, effectively removing the stripe artifacts from
-the source. However, these methods may disrupt the axial resolution  of the LSFM
+the source. However, these methods may disrupt the axial resolution of the LSFM
 system in the process and may not be applicable to large biological samples. In
 contrast, digital filtering strategies attempt to remove the stripe artifacts
 after acquisition by exploiting the noise characteristics induced by the optical

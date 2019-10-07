@@ -5,7 +5,7 @@
 Brain = Complex system with components over multiple length scales.
 This complexity is intrinsic as opposed to incidental...
 
-## Trends in biological models used in neuroscience research
+## Trends in biological models used in neuroscience
 
 Trend towards more larger, more complex brain models in neuroscience--presumably
 to model more complex phenotypes
