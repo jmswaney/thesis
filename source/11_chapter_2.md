@@ -26,38 +26,39 @@ System-wide analysis of cell types is essential for understanding how complex
 cellular interactions give rise to various functions. Extensive efforts have
 been made towards characterizing cells, particularly in the brain, through
 various lenses (e.g., genomics, transcriptomics, proteomics, connectomics) and
-have established invaluable databases with new insights [@Sharma2015] (1–7). Among these
-approaches, proteomic imaging has distinct advantages. Mapping spatial
-distribution of proteins, the major functional substrate with distinct
+have established invaluable databases with new insights [@Sharma2015;
+@Hawrylycz2012; @Miller2014; @Wang2018; @Chen2015; @Habib2016].
+Among these approaches, proteomic imaging has distinct advantages. Mapping
+spatial distribution of proteins, the major functional substrate with distinct
 subcellular localization at single molecule precision, can provide rich
 molecular, functional, as well as morphological details of cells. Furthermore,
 visualizing endogenous proteins with highly specific antibodies does not require
 genetic manipulation or invasive in vivo surgery, and thus it is applicable to
 any species or tissue type including non-human primates and human clinical
-samples (8).
+samples [@Belle2017].
 
 When combined with intact organ transformation and clearing techniques,
 proteomic phenotyping can provide multiscale information, ranging from
 brain-wide cell distribution patterns to molecular and morphological details of
 individual cells without information loss caused by subsampling or 2D analysis
-(9–11). However, scaling immunolabeling to large-scale tissues and higher
-species remains a major challenge in biology. Passive transport of large
-macromolecules such as antibodies into intact tissues can take weeks to months
-(9,12). Antibody penetration can be further delayed or even blocked by target
-proteins with high expression levels, causing probe depletion and incomplete
-staining. Using excessive amounts of antibodies can improve probe penetration,
-but it becomes prohibitively expensive and thus unscalable. In conventional
-passive labeling approaches, experimental parameters for labeling (e.g.,
-incubation time, probe amount) are highly dependent on sample properties (e.g.,
-tissue type, size, shape) and target protein properties (e.g., expression level,
-distribution patterns), which are widely different between applications.
-Therefore, each experiment requires laborious, costly, and time-consuming
-optimization. The outcome of passive labeling is in many cases highly uneven
-with saturated labeling of outer regions and weak or no labeling of the core.
-Such non-uniform and incomplete labeling can prohibit automated analysis and
-cause systematic error. These challenges together have limited the power of 3D
-proteomic phenotyping to small tissues or a small number of established
-applications.
+[@Chung2013; @Renier2014; @Luo2018]. However, scaling immunolabeling to
+large-scale tissues and higher species remains a major challenge in biology.
+Passive transport of large macromolecules such as antibodies into intact tissues
+can take weeks to months [@Chung2013a]. Antibody penetration can be
+further delayed or even blocked by target proteins with high expression levels,
+causing probe depletion and incomplete staining. Using excessive amounts of
+antibodies can improve probe penetration, but it becomes prohibitively expensive
+and thus unscalable. In conventional passive labeling approaches, experimental
+parameters for labeling (e.g., incubation time, probe amount) are highly
+dependent on sample properties (e.g., tissue type, size, shape) and target
+protein properties (e.g., expression level, distribution patterns), which are
+widely different between applications. Therefore, each experiment requires
+laborious, costly, and time-consuming optimization. The outcome of passive
+labeling is in many cases highly uneven with saturated labeling of outer regions
+and weak or no labeling of the core. Such non-uniform and incomplete labeling
+can prohibit automated analysis and cause systematic error. These challenges
+together have limited the power of 3D proteomic phenotyping to small tissues or
+a small number of established applications.
 
 Here we present an integrated pipeline for holistic, rapid, scalable proteomic
 phenotyping of intact organs. To establish the pipeline, we developed an
@@ -82,9 +83,9 @@ components: (1) intact tissue preservation via SHIELD, (2) volumetric labeling
 with eFLASH, (3) light-sheet imaging, and (4) automated 3D image analysis (Fig.
 1a). The pipeline begins with robust preservation of biological tissue with
 SHIELD, which is a polyepoxide-based tissue fixation method that protects
-biomolecules and tissue architecture (13). After rapid delipidation of the
-SHIELD-preserved tissues using stochastic electrotransport (SE) (12), we
-immunolabel the intact tissues using eFLASH within just one day. The labeled
+biomolecules and tissue architecture [@Park2019]. After rapid delipidation of
+the SHIELD-preserved tissues using stochastic electrotransport (SE) [@Kim2015],
+we immunolabel the intact tissues using eFLASH within just one day. The labeled
 samples are rapidly imaged at high-resolution using an axially swept light-sheet
 microscope. Finally, we analyze the resulting volumetric datasets via a suite of
 automated 3D image analysis algorithms to map various cell types within the
@@ -105,10 +106,10 @@ concentration (high to low).
 
 To achieve a gradual pH sweep in an automated manner, we took advantage of
 electrochemical reactions that naturally occur under SE. Electrocatalytic
-oxidation of D-sorbitol produces acidic byproducts such as formic acid (14). By
-adding D-sorbitol to a pH 9.5 buffer and letting it decompose by
-electro-oxidation under SE, we were able to gradually sweep pH from 9.5 to 7.5
-over the course of one day (Fig. 1b, Supplementary Fig. 2).
+oxidation of D-sorbitol produces acidic byproducts such as formic acid
+[@Proenca1997]. By adding D-sorbitol to a pH 9.5 buffer and letting it decompose
+by electro-oxidation under SE, we were able to gradually sweep pH from 9.5 to
+7.5 over the course of one day (Fig. 1b, Supplementary Fig. 2).
 
 Concentration of NaDC within the labeling solution was also swept in an
 automated manner using the concentration gradient established across a
@@ -176,84 +177,87 @@ region-specific cell counts. In addition, the multiplexed labeling capability of
 eFLASH allows analysis of cells co-expressing multiple proteins of interest with
 relative ease and flexibility compared to genetic labeling approaches.
 Currently, labeling up to four distinct targets is possible through transgenic
-labeling approaches (15); however, developing transgenic mouse lines for each new
-combination of targets can be time consuming (16).
+labeling approaches [@Gaire2018]; however, developing transgenic mouse lines for
+each new combination of targets can be time consuming [@Liu2013].
 
 To demonstrate the value of holistic labeling with eFLASH, we established an
 image analysis pipeline for atlas alignment, brain region segmentation, and cell
 detection for generating a quantitative map of various proteins. Volumetric
-images were automatically aligned to an atlas (4) by linear and non-linear
-transformations based on Elastix (17) then manually refined (18). Each aligned 3D
-image volume was indexed to approximately 580 brain regions with 7 hierarchies.
-Brain-wide quantification of immunolabeled cells was accomplished using machine
-learning algorithms that were trained to identify features of individual
-cell-types (Supplementary Fig. 3). Specifically, Random Forest (19) was applied
-after blob detection and principal component analysis (PCA). Detection
-performance was validated against manual ground-truth annotations of relevant
-brain regions that are known to express each cell type. Our cell detection
-pipeline achieved an f-score of higher than 90% for cortical regions and over
-80% for subcortical brain regions for all tested cell-type markers. Using this
-pipeline, we were able to construct quantitative mouse brain atlases for
-multiple cell type defining makers, including CR, NPY, SST, TH, TPH2, and PV
-(Fig. 3a-c, Supplementary video 6).
+images were automatically aligned to an atlas [@Oh2014] by linear and non-linear
+transformations based on Elastix [@Klein2010] then manually refined
+[@Swaney2019]. Each aligned 3D image volume was indexed to approximately 580
+brain regions with 7 hierarchies. Brain-wide quantification of immunolabeled
+cells was accomplished using machine learning algorithms that were trained to
+identify features of individual cell-types (Supplementary Fig. 3). Specifically,
+Random Forest [@Breiman2001] was applied after blob detection and principal
+component analysis (PCA). Detection performance was validated against manual
+ground-truth annotations of relevant brain regions that are known to express
+each cell type. Our cell detection pipeline achieved an f-score of higher than
+90% for cortical regions and over 80% for subcortical brain regions for all
+tested cell-type markers. Using this pipeline, we were able to construct
+quantitative mouse brain atlases for multiple cell type defining makers,
+including CR, NPY, SST, TH, TPH2, and PV (Fig. 3a-c, Supplementary video 6).
 
 The probe-insensitive nature of eFLASH enables co-labeling of multiple
-cell-types with any combinations. We performed simultaneous labeling of
+cell-types with any combinations. We performOh2014ed simultaneous labeling of
 neuropeptide Y and somatostatin which are known to be co-expressed in a subset
-of GABAergic interneurons (20–22) and of Tyrosine Hydroxylase and Tryptophan
-Hydroxylase 2 which are cell-type-specific markers for dopaminergic and
-serotonergic neurons, respectively, that are not generally known to overlap. In
-the case of NPY and SST, we mapped NPY+/SST-, NPY-/SST+, and NPY+/SST+ cells
-(Fig. 3 d-f). We found the highest density of NPY+ cells at layer 2 or 3 of the
-cerebral cortices (Fig. 3c), whereas SST+ cells showed the highest density at
-layer 4 or 5 in majority of the cortices (23) (Fig. 3c) Interestingly, the highest
-density of cells that were co-positive for NPY and SST was seen in layer 5 or 6
-(Fig. 3f). In a brain-wide average, 16 ± 4% of NPY and 7 ± 5% of SST-expressing
-cortical cells were identified NPY+ / SST+ co-positive. In the case of TH and
-TPH2, we checked every TH+ and TPH2+ cells detected throughout the brain
-hemisphere and found that no cells were positive for both markers.
+of GABAergic interneurons [@Fu2007; @Figueredo-Cardenas1996; @Hendry1984] and of
+Tyrosine Hydroxylase and Tryptophan Hydroxylase 2 which are cell-type-specific
+markers for dopaminergic and serotonergic neurons, respectively, that are not
+generally known to overlap. In the case of NPY and SST, we mapped NPY+/SST-,
+NPY-/SST+, and NPY+/SST+ cells (Fig. 3 d-f). We found the highest density of
+NPY+ cells at layer 2 or 3 of the cerebral cortices (Fig. 3c), whereas SST+
+cells showed the highest density at layer 4 or 5 in majority of the cortices
+[@Rudy2011] (Fig. 3c) Interestingly, the highest density of cells that were
+co-positive for NPY and SST was seen in layer 5 or 6 (Fig. 3f). In a brain-wide
+average, 16 ± 4% of NPY and 7 ± 5% of SST-expressing cortical cells were
+identified NPY+ / SST+ co-positive. In the case of TH and TPH2, we checked every
+TH+ and TPH2+ cells detected throughout the brain hemisphere and found that no
+cells were positive for both markers.
 
 Finally, in addition to labeling cell-type defining proteins, brain-wide
 labeling of Immediate Early Genes (IEGs) such as c-Fos has been demonstrated as
-a powerful proxy for measuring neuronal activation (24,25). We stained the brain
-of a mouse that experienced contextual fear conditioning 90 minutes before
-sacrifice with anti-cFos antibody and mapped its distribution (Fig. 3g-i).
-Examination of the dataset showed robust anti-c-Fos signal in hippocampus and
-amygdala areas, which are known to show increased activity upon contextual fear
-conditioning (26). Combined, these results suggest that eFLASH-mediated
-immunolabeling can facilitate brain-wide quantification of protein expression at
-a cellular level in a high throughput and flexible manner.
+a powerful proxy for measuring neuronal activation [@Renier2016; @Kim2015a]. We
+stained the brain of a mouse that experienced contextual fear conditioning 90
+minutes before sacrifice with anti-cFos antibody and mapped its distribution
+(Fig. 3g-i). Examination of the dataset showed robust anti-c-Fos signal in
+hippocampus and amygdala areas, which are known to show increased activity upon
+contextual fear conditioning [@Cho2017]. Combined, these results suggest that
+eFLASH-mediated immunolabeling can facilitate brain-wide quantification of
+protein expression at a cellular level in a high throughput and flexible manner.
 
 ### Brain-wide comparison of genetic and protein-based cell type labeling
 
 Expression of genetically encoded fluorescent proteins have revolutionized
-biological labeling and imaging (27), and ongoing developments in transgenic
-methodology offer powerful ways to study organ-wide gene expression (28–30).
-However, the level of fluorescent protein expression is linked to transcription
-activity rather than the level of expression of mRNA or proteins, requiring
-careful and nuanced interpretation of data (31,32). Additionally, several studies
-have reported on the importance of post-transcriptional processes that can often
-cause the quantities of mRNA and proteins to correlate poorly (32), emphasizing
-the need for protein expression analysis.
+biological labeling and imaging [@Giepmans2006], and ongoing developments in
+transgenic methodology offer powerful ways to study organ-wide gene expression
+[@Gong2003; @Kim2017; @Zhang2017] (28–30). However, the level of fluorescent
+protein expression is linked to transcription activity rather than the level of
+expression of mRNA or proteins, requiring careful and nuanced interpretation of
+data [@Huang2014]. Additionally, several studies have reported on the importance
+of post-transcriptional processes that can often cause the quantities of mRNA
+and proteins to correlate poorly [@Vogel2012], emphasizing the need for protein
+expression analysis.
 
 Discrepancy between transgenic labeling and immunohistochemical labeling is
-widely recognized (28), and there is a constant concerted effort to improve upon
-existing transgenic mouse lines for common targets (33–35). To compare genetic
-labeling and eFLASH-mediated cell-type phenotyping approaches, we utilized
-transgenic mouse lines with two widely used transgene approaches: Cre-LoxP and
-BAC transgene (28,36–38). First, we eFLASH-stained a hemisphere of a
-PV-Cre::DIO-tdTomato double transgenic mouse with anti-PV antibody (Fig. 4a). We
-performed the brain-wide quantitative analysis on tdTomato and anti-PV signals,
-and revealed substantial discrepancies between two labeling approaches, where
-the level of mismatch was highly heterogeneous among brain regions (Fig. 4b-c,
-Supplementary video 7). For example, in contrast to faithful tdTomato labeling
-of PV+ neurons in primary motor and primary somatosensory cortices (88% and 85%
-of tdTomato+ cells were also PV+), a substantial portion of tdTomato cells
-showed undetectable amounts of PV protein in some of cortical (e.g., 56% and 75%
-in the case of piriform and lateral entorhinal cortex) and subcortical (45% in
-caudate putamen; 62% in nucleus accumbens) areas. Furthermore, we found PV+
-populations were not covered by the genetic labeling. For example, 66% and 77%
-of PV+ cells do not express tdTomato in CPu and NAc, respectively (Fig. 4b-c).
+widely recognized, and there is a constant concerted effort to improve upon
+existing transgenic mouse lines for common targets [@Tallini2006; @Li2017;
+@Madisen2010]. To compare genetic labeling and eFLASH-mediated cell-type
+phenotyping approaches, we utilized transgenic mouse lines with two widely used
+transgene approaches: Cre-LoxP and BAC transgene [@Muzumdar2006]; @Livet2007;
+@Valjent2009]. First, we eFLASH-stained a hemisphere of a PV-Cre::DIO-tdTomato
+double transgenic mouse with anti-PV antibody (Fig. 4a). We performed the
+brain-wide quantitative analysis on tdTomato and anti-PV signals, and revealed
+substantial discrepancies between two labeling approaches, where the level of
+mismatch was highly heterogeneous among brain regions (Fig. 4b-c, Supplementary
+video 7). For example, in contrast to faithful tdTomato labeling of PV+ neurons
+in primary motor and primary somatosensory cortices (88% and 85% of tdTomato+
+cells were also PV+), a substantial portion of tdTomato cells showed
+undetectable amounts of PV protein in some of cortical (e.g., 56% and 75% in the
+case of piriform and lateral entorhinal cortex) and subcortical (45% in caudate
+putamen; 62% in nucleus accumbens) areas. Furthermore, we found PV+ populations
+were not covered by the genetic labeling. For example, 66% and 77% of PV+ cells
+do not express tdTomato in CPu and NAc, respectively (Fig. 4b-c).
 
 Next, we compared genetic and protein-based labeling of choline
 acetyltransferase (ChAT). eGFP expression via BAC transgene was highly divergent
@@ -276,20 +280,20 @@ signal within the same sample.
 ### Multidimensional single-cell analysis of marmoset visual cortex
 
 Common marmoset (Callithrix jacchus), a small New World primate, has emerged as
-a powerful model for neuroscience research (39). Their rapid reproduction cycles
-and compatibility with existing genetic engineering tools renders them a
-promising model for studying various brain disorders. Holistic cell-level
-phenotyping of the marmoset brain, however, remains challenging owing to the
-limited quality and availability of transgenic lines, significantly higher cost
-and larger brain size compared to rodent models.
+a powerful model for neuroscience research [@Miller2016]. Their rapid
+reproduction cycles and compatibility with existing genetic engineering tools
+renders them a promising model for studying various brain disorders. Holistic
+cell-level phenotyping of the marmoset brain, however, remains challenging owing
+to the limited quality and availability of transgenic lines, significantly
+higher cost and larger brain size compared to rodent models.
 
 Protein-based cellular phenotyping using eFLASH and SHIELD can be advantageous
 for higher model systems, including primates, where genetic manipulation remains
-challenging (40,41). Moreover, the multiplexing capability of this approach
-allows simultaneous mapping of various molecular and cell-type markers within
-the same brain tissue, which not only increases the dimensionality of integrated
-phenotypic analysis, but also decreases the number of animals required for a
-study and consequently the cost.
+challenging [@He2018; @IzpisuaBelmonte2015]. Moreover, the multiplexing
+capability of this approach allows simultaneous mapping of various molecular and
+cell-type markers within the same brain tissue, which not only increases the
+dimensionality of integrated phenotypic analysis, but also decreases the number
+of animals required for a study and consequently the cost.
 
 To test this idea, we applied eFLASH and SHIELD to characterize cells in an
 intact marmoset brain block of visual cortex (5 mm x 5 mm x 8 mm). First, we
@@ -320,16 +324,16 @@ volume, we quantified the soma volume and mean immunointensity of 494 cells, and
 dendrite polarity of 119 cells (Fig. 5g-i). Analysis of dendritic morphology of
 individual NPY+ cells led us to classify the cells into separate categories
 based on previously established descriptions of GABAergic interneurons:
-bitufted, bipolar or multipolar (42) (Fig 5h, Supplementary Fig 4.) Compared to
-NPY+ cells in white matter, NPY+ cells in gray matter have soma with larger
-volume and higher mean fluorescent signal intensity (Fig. 5k-l), suggesting
-higher intracellular concentration of NPY protein (43,44). We also found that
-most gray matter NPY+ cells are multipolar cells, whereas most NPY+ cells in
-white matter were bitufted or bipolar cells (Fig. 5h,j,m; Supplementary video
-10). Together, these results demonstrate that complete and uniform
-immunolabeling of large-scale intact tissues with eFLASH enables
-high-dimensional phenotyping of individual cells even on model animals with
-limited access to genetic tools.
+bitufted, bipolar or multipolar [@Ascoli2008] (Fig 5h, Supplementary Fig 4.)
+Compared to NPY+ cells in white matter, NPY+ cells in gray matter have soma with
+larger volume and higher mean fluorescent signal intensity (Fig. 5k-l),
+suggesting higher intracellular concentration of NPY protein [@Chung2011;
+@Watanabe1996]. We also found that most gray matter NPY+ cells are
+multipolar cells, whereas most NPY+ cells in white matter were bitufted or
+bipolar cells (Fig. 5h,j,m; Supplementary video 10). Together, these results
+demonstrate that complete and uniform immunolabeling of large-scale intact
+tissues with eFLASH enables high-dimensional phenotyping of individual cells
+even on model animals with limited access to genetic tools.
 
 ## Discussion
 
@@ -345,7 +349,7 @@ molecular markers in large intact tissues with single-cell-resolution.
 eFLASH is rationally designed to address the main challenge in scaling molecular
 labeling to organ-scale samples: the drastic mismatch between probe diffusion
 time scale and probe- target reaction time scale. Probe-target binding reaction
-is orders of magnitude faster than probe diffusion (12). The diffusion timescale
+is orders of magnitude faster than probe diffusion. The diffusion timescale
 increases quadratically with the thickness of the sample, whereas probes rapidly
 bind to targets as soon as they encounter. If the density of the target molecule
 is high, which is the case for many of protein targets, probes cannot penetrate
@@ -355,20 +359,20 @@ without using a large amount of probes, reducing the tissue size, or reducing
 the density of antigens.
 
 Transport of electromobile molecules such as antibodies can be expedited using
-stochastic electrotransport (12). However, the probe transport time scale in SE
-is still much longer than the reaction time scale. Applying a higher electric
-field can further increase transport speed, but Joule heating can cause tissue
-damage. Therefore, it is imperative to modulate both the rate of reaction and
-transport simultaneously. Switching off the binding reaction allows transport of
-antibodies into the core of the tissue without depletion (45). Once probes reach
-the core of the sample, the binding reaction can be switched back on by changing
-the surrounding chemical environment (pH, detergent concentration). Discrete
-modulation of kinetics by such step-wise change, however, inevitably forms
-concentration gradients of chemicals (e.g., pH and NaDC) and probes inside the
-tissue, which causes uneven labeling. We addressed this challenge in eFLASH by
-slowly and gradually changing the concentration of the chemicals to ensure that
-the reaction condition is uniform tissue-wide throughout the day-long labeling
-period.
+stochastic electrotransport. However, the probe transport time scale in SE is
+still much longer than the reaction time scale. Applying a higher electric field
+can further increase transport speed, but Joule heating can cause tissue damage.
+Therefore, it is imperative to modulate both the rate of reaction and transport
+simultaneously. Switching off the binding reaction allows transport of
+antibodies into the core of the tissue without depletion [@Murray2015]. Once
+probes reach the core of the sample, the binding reaction can be switched back
+on by changing the surrounding chemical environment (pH, detergent
+concentration). Discrete modulation of kinetics by such step-wise change,
+however, inevitably forms concentration gradients of chemicals (e.g., pH and
+NaDC) and probes inside the tissue, which causes uneven labeling. We addressed
+this challenge in eFLASH by slowly and gradually changing the concentration of
+the chemicals to ensure that the reaction condition is uniform tissue-wide
+throughout the day-long labeling period.
 
 eFLASH is a robust process that offers considerable experimental flexibility.
 Repeated staining of the same tissue is possible with eFLASH, allowing multiple
@@ -383,46 +387,47 @@ genetically labeled cells in intact tissues.
 
 Recently, tissue-clearing techniques and volume imaging methods have been
 applied to whole organ samples to demonstrate the potential of 3D phenotyping
-with single-cell resolution (24,46,47). Many of these studies utilized genetic
-labeling which provides both uniform and high signal-to-noise ratio suitable for
-computational analysis (29). However, genetic labeling is relatively inflexible
-when it comes to target selection, as new transgenic mouse or protocol is
-required for each target or each combination of targets (16,36). With eFLASH,
-the choice of targets and the combinations of targets is based simply on the
-availability of compatible molecular probes. Additionally, eFLASH performs
+with single-cell resolution [@Murakami2018; @Yang2014]. Many of these studies
+utilized genetic labeling which provides both uniform and high signal-to-noise
+ratio suitable for computational analysis (29). However, genetic labeling is
+relatively inflexible when it comes to target selection, as new transgenic mouse
+or protocol is required for each target or each combination of targets. With
+eFLASH, the choice of targets and the combinations of targets is based simply on
+the availability of compatible molecular probes. Additionally, eFLASH performs
 direct immunohistological labeling of target proteins present in the tissue,
 allowing for simplified interpretation of resulting data. As powerful as it is,
 Cre-LoxP transgenesis is known to suffer from false-positive (e.g.,
 transgene-independent CRE expression, CRE-independent recombination) and
-false-negative labeling (e.g., CRE mosaicism) (48). We observed that there was a
-discrepancy between fluorescent protein signal and antibody labeling signal in
-PV-Cre:DIO-tdTomato double-transgenic mouse brain labeled with anti-PV antibody
-(Fig. 4), Reversible tissue and temporal specific control systems, (such as a
-tetracycline response system), and BAC transgenesis resolved some of these
-issues, but not all. For example, discrepancies between genetic and
+false-negative labeling (e.g., CRE mosaicism) [@Heffner2012]. We observed that
+there was a discrepancy between fluorescent protein signal and antibody labeling
+signal in PV-Cre:DIO-tdTomato double-transgenic mouse brain labeled with anti-PV
+antibody (Fig. 4), Reversible tissue and temporal specific control systems,
+(such as a tetracycline response system), and BAC transgenesis resolved some of
+these issues, but not all. For example, discrepancies between genetic and
 protein-based labeling in BAC transgenic mouse lines were observed in both
-previous (28,34,49) and present studies (Fig. 4), and it has been suggested that
-expression of BAC transgene can be affected by the presence of other
-transcription factors, microRNAs, or control regions of gene fragments (16,50).
-We anticipate that protein-based mapping enabled by eFLASH can complement the
-cutting-edge genetic labeling approaches (e.g., viral labeling) for anatomical,
-molecular, and functional mapping of neural circuits.
+previous [@VonEngelhardt2007] and present studies (Fig. 4), and it has been
+suggested that expression of BAC transgene can be affected by the presence of
+other transcription factors, microRNAs, or control regions of gene fragments
+[@Matthaei2007]. We anticipate that protein-based mapping enabled by eFLASH can
+complement the cutting-edge genetic labeling approaches (e.g., viral labeling)
+for anatomical, molecular, and functional mapping of neural circuits.
 
 Furthermore, eFLASH can facilitate studies of animal models with limited access
 to genetic labeling methodologies. The Common Marmoset is an emerging primate
-model for social behaviors with many experimental advantages (51,52), and thus
-much effort has been undertaken to construct marmoset brain atlases in diverse
-modalities (53–55). Unfortunately, numerous hurdles remain in translating
-existing genetic labeling approaches for rodents to marmosets. For example,
-germline genetic manipulation for generating transgenic primates is still
-difficult and expensive (40,56), and long gestation and maturation period of
-primates as well as ethical concerns make each primate sample highly precious.
-Viral labeling approaches have shown the most promise; however, clear
-limitations exist since most enhancer elements are not defined and viral vectors
-have limited capacity to include large gene elements (40). Moreover, achieving
-systemic coverage of the entire brain with viral labeling also remains
-challenging (57). We anticipate that the scalability and flexibility of eFLASH
-will aid organ-wide phenotyping efforts on such model animals.
+model for social behaviors with many experimental advantages [@Okano2015;
+@Kaiser2015], and thus much effort has been undertaken to construct marmoset
+brain atlases in diverse modalities [@Lin2019; @Woodward2018; @Liu2018].
+Unfortunately, numerous hurdles remain in translating existing genetic labeling
+approaches for rodents to marmosets. For example, germline genetic manipulation
+for generating transgenic primates is still difficult and expensive
+[@Jennings2016], and long gestation and maturation period of primates as well as
+ethical concerns make each primate sample highly precious. Viral labeling
+approaches have shown the most promise; however, clear limitations exist since
+most enhancer elements are not defined and viral vectors have limited capacity
+to include large gene elements. Moreover, achieving systemic coverage of the
+entire brain with viral labeling also remains challenging [@Matsuzaki2018]. We
+anticipate that the scalability and flexibility of eFLASH will aid organ-wide
+phenotyping efforts on such model animals. 
 
 We envision that the versatility and high throughput capabilities of eFLASH will
 benefit numerous studies requiring system-wide yet highly detailed views of
@@ -430,9 +435,9 @@ biological tissues, especially for exploratory studies comparing healthy and
 diseased animals or of model animals with limited access to genetic labeling
 strategies. Application of eFLASH will synergize greatly with advancements in
 biological imaging, molecular binder technologies, and computational frameworks
-for big data analysis (58). Holistic, rapid, and unbiased approaches enabled by
-such synergistic technological advances will ultimately aid in providing a
-broader perspective in the study of complex biological systems.
+for big data analysis [@Furth2018]. Holistic, rapid, and unbiased approaches
+enabled by such synergistic technological advances will ultimately aid in
+providing a broader perspective in the study of complex biological systems.
 
 ## Acknowledgements
 
@@ -473,199 +478,6 @@ K.C. and D.H.Y. are co-inventors on a patent application owned by MIT covering
 the eFLASH technology. K.C. and J.H.C. are co-inventors on patents owned by MIT
 covering the SWITCH and SE technology.
 
-
-<!-- 1.Sharma, K. et al.Cell type-and brain region-resolved mouse brain proteome.
-Nat. Neurosci. 18, 1819–1831 (2015).
-
-2.Hawrylycz, M. J. et al.An anatomically comprehensive atlas of the adult human
-brain transcriptome. Nature 489, 391–399 (2012).
-
-3.Miller, J. A. et al.Transcriptional landscape of the prenatal human brain.
-Nature 508, 199–206 (2014).
-
-4.Oh, S. W. et al.A mesoscale connectome of the mouse brain. Nature 508, 207–214
-(2014).
-
-5.Wang, X. et al.Three-dimensional intact-tissue sequencing of single-cell
-transcriptional states. Science 361, eaat5691 (2018).
-
-6.Chen, K. H., Boettiger, A. N., Moffitt, J. R., Wang, S. & Zhuang, X. Spatially
-resolved, highly multiplexed RNA profiling in single cells. Science (80-. ).348,
-1360–1363 (2015).
-
-7.Habib, N.et al.Div-Seq: Single-nucleus RNA-Seq reveals dynamics of rare adult
-newborn neurons. Science 353, 925–8 (2016).
-
-8.Belle, M. et al.Tridimensional Visualization and Analysis of Early Human
-Development. Cell 169, 161-173.e12 (2017).
-
-9.Chung, K. & Deisseroth, K. CLARITY for mapping the nervous system. Nat.
-Methods 10, 508–513 (2013).
-
-10.Renier, N. et al.IDISCO: A simple, rapid method to immunolabel large tissue
-samples for volume imaging. Cell 159, 896–910 (2014).
-
-11.Luo, L., Callaway, E. M. & Svoboda, K. Genetic Dissection of Neural Circuits:
-A Decade of Progress. Neuron 98, 256–281 (2018).
-
-12.Kim, S.-Y. et al.Stochastic electrotransport selectively enhances the
-transport of highly electromobile molecules. Proc. Natl. Acad. Sci. 112,
-E6274–E6283 (2015).
-
-13.Park, Y.-G. G. et al.Protection of tissue physicochemical properties using
-polyfunctional crosslinkers. Nat. Biotechnol. 37, 73 (2019).
-
-14.Proença, L. et al.Electrocatalytic oxidation of D-sorbitol on platinum in
-acid medium: Analysis of the reaction products. J. Electroanal. Chem. 432,
-237–242 (1997).
-
-15.Gaire, J. et al.PrismPlus: a mouse line expressing distinct fluorophores in
-four different brain cell types. Sci. Rep. 8, 7182 (2018).
-
-16.Liu, C. Strategies for designing transgenic DNA constructs. Methods Mol.
-Biol. 1027, 183–201 (2013).
-
-17.Klein, S., Staring, M., Murphy, K., Viergever, M. A. & Pluim, J. P. W.
-elastix: A Toolbox for Intensity-Based Medical Image Registration. Med. Imaging,
-IEEE Trans. 29, 196–205 (2010).
-
-18.Swaney, J. et al.Scalable image processing techniques for quantitative
-analysis of volumetric biological images from light-sheet microscopy.
-bioRxiv576595 (2019). doi:10.1101/576595
-
-19.Breiman, L. Random Forests. Mach. Learn. 45, 5–32 (2001).
-
-20.Fu, L.-Y. & van den Pol, A. N. GABA excitation in mouse hilar neuropeptide Y
-neurons. J. Physiol. 579, 445–64 (2007).
-
-21.Figueredo-CardenaS, G., Morello, M., Sancesario, G., Bernardi, G. & Reiner,
-A. Colocalization of somatostatin, neuropeptide Y, neuronal nitric oxide
-synthase and NADPH-diaphorase in striatal interneurons in rats. Brain Res. 735,
-317–324 (1996).
-
-22.Hendry, S. H., Jones, E. G. & Emson, P. C. Morphology, distribution, and
-synaptic relations of somatostatin-and neuropeptide Y-immunoreactive neurons in
-rat and monkey neocortex. J. Neurosci. 4, 2497–517 (1984).
-
-23.Rudy, B., Fishell, G., Lee, S. & Hjerling-Leffler, J. Three groups of
-interneurons account for nearly 100% of neocortical GABAergic neurons. Dev.
-Neurobiol. 71, 45–61 (2011).
-
-24.Renier, N. et al.Mapping of Brain Activity by Automated Volume Analysis of
-Immediate Early Genes. Cell165, 1789–1802 (2016).
-
-25.Kim, Y. et al.Mapping social behavior-induced brain activation at cellular
-resolution in the mouse. Cell Rep. 10, 292–305 (2015).
-
-26.Cho, J.-H., Rendall, S. D. & Gray, J. M. Brain-wide maps of Fos expression
-during fear learning and recall. Learn. Mem. 24, 169–181 (2017).
-
-27.Giepmans, B. N. G., Adams, S. R., Ellisman, M. H. & Tsien, R. Y. The
-fluorescent toolbox for assessing protein location and function. Science 312,
-217–24 (2006).
-
-28.Gong, S. et al.A gene expression atlas of the central nervous system based on
-bacterial artificial chromosomes. Nature 425, 917–925 (2003).
-
-29.Kim, Y. et al. Brain-wide Maps Reveal Stereotyped Cell-Type-Based Cortical
-Architecture and Subcortical Sexual Dimorphism. Cell 171, 456-469.e22 (2017).
-
-30.Zhang, C. et al.A platform for stereological quantitative analysis of the
-brain-wide distribution of type-specific neurons. Sci. Rep. 7, 14334 (2017).
-
-31.Huang, Z. J., Taniguchi, H., He, M. & Kuhlman, S. Genetic labeling of neurons
-in mouse brain. Cold Spring Harb. Protoc. 2014, 150–60 (2014).
-
-32.Vogel, C. & Marcotte, E. M. Insights into the regulation of protein abundance
-from proteomic and transcriptomic analyses. Nat. Rev. Genet. (2012).
-doi:10.1038/nrg3185
-
-33.Tallini, Y. N. et al.BAC transgenic mice express enhanced green fluorescent
-protein in central and peripheral cholinergic neurons. Physiol. Genomics 27,
-391–397 (2006).
-
-34.Li, X. et al.Generation of a whole-brain atlas for the cholinergic system and
-mesoscopic projectome analysis of basal forebrain cholinergic neurons. Proc.
-Natl. Acad. Sci. U.S.A. 115, 415–420 (2018).
-
-35.Madisen, L. et al.A robust and high-throughput Cre reporting and
-characterization system for the whole mouse brain. Nat. Neurosci. 13, 133–140
-(2010).
-
-36.Muzumdar, M. D., Tasic, B., Miyamichi, K., Li, L. & Luo, L. A global
-double-fluorescent Cre reporter mouse. genesis 45, 593–605 (2007).
-
-37.Livet, J. et al.Transgenic strategies for combinatorial expression of
-fluorescent proteins in the nervous system. Nature 450, 56–62 (2007).
-
-38.Valjent, E., Bertran-Gonzalez, J., Hervé, D., Fisone, G. & Girault, J.-A.
-Looking BAC at striatal signaling: cell-specific analysis in new transgenic
-mice. Trends Neurosci. 32, 538–547 (2009).
-
-39.Miller, C. T. et al.Marmosets: A Neuroscientific Model of Human Social
-Behavior. Neuron 90, 219–33 (2016).
-
-40.He, M. & Huang, Z. J. Genetic approaches to access cell types in mammalian
-nervous systems. Curr. Opin. Neurobiol. 50, 109–118 (2018).
-
-41.Belmonte, J. C. I. et al.Brains, Genes, and Primates. Neuron 87, 671 (2015).
-
-42.(PING), T. P. I. N. G. et al.Petilla terminology: nomenclature of features of
-GABAergic interneurons of the cerebral cortex. Nat. Rev. Neurosci. 9, 557–568
-(2008).
-
-43.Chung, K. et al.A microfluidic array for large-scale ordering and orientation
-of embryos. Nat. Methods 8, 171–176 (2011).
-
-44.Watanabe, J., Asaka, Y. & Kanamura, S. Relationship between immunostaining
-intensity and antigen content in sections. J. Histochem. Cytochem. 44, 1451–8
-(1996).
-
-45.Murray, E. et al.Simple, Scalable Proteomic Imaging for High-Dimensional
-Profiling of 16Intact Systems. Cell 163, 1500–1514 (2015).
-
-46.Murakami, T. C. et al.A three-dimensional single-cell-resolution whole-brain
-atlas using CUBIC-X expansion microscopy and tissue clearing. Nat. Neurosci. 21,
-625–637 (2018).
-
-47.Yang, B. et al.Single-cell phenotyping within transparent intact tissue
-through whole-body clearing. Cell 158, 945–958 (2014).
-
-48.Heffner, C. S. et al.Supporting conditional mouse mutagenesis with a
-comprehensive cre characterization resource. Nat. Commun. 3, 1218 (2012).
-
-49.von Engelhardt, J., Eliava, M., Meyer, A. H., Rozov, A. & Monyer, H.
-Functional Characterization of Intrinsic Cholinergic Interneurons in the Cortex.
-J. Neurosci. 27, 5633–5642 (2007).
-
-50.Matthaei, K. I. Genetically manipulated mice: a powerful tool with
-unsuspected caveats. J. Physiol. 582, 481–8 (2007).
-
-51.Mitra, P. Brain-mapping projects using the common marmoset. Neurosci. Res.
-93, 3–7 (2015).
-
-52.Kaiser, T. & Feng, G. Modeling psychiatric disorders for developing effective
-treatments. Nat. Med. 21, 979–988 (2015).
-
-53.Lin, M. K. et al.A high-throughput neurohistological pipeline for brain-wide
-mesoscale connectivity mapping of the common marmoset. Elife 8, 1–36 (2019).
-
-54.Woodward, A. et al.The Brain/MINDS 3D digital marmoset brain atlas. Sci.
-Data 5, 180009 (2018).
-
-55.Liu, C. et al.A digital 3D atlas of the marmoset brain based on multi-modal
-MRI. Neuroimage 169, 106–116 (2018).
-
-56.Jennings, C. G. et al.Opportunities and challenges in modeling human brain
-disorders in transgenic primates. Nat. Neurosci. 19, 1123–1130 (2016).
-
-57.Matsuzaki, Y. et al.Intravenous administration of the adeno-associated
-virus-PHP.B capsid fails to upregulate transduction efficiency in the marmoset
-brain. Neurosci. Lett. 665, 182–188 (2018).
-
-58.Fürth, D. et al.An interactive framework for whole-brain maps at cellular
-resolution. Nat. Neurosci. 21, 139–149 (2018). -->
-
 ## Methods
 
 ### Mice
@@ -701,13 +513,13 @@ skulls and SHIELD-processed.
 
 ### Organoids
 
-Organoids were grown according to the protocol by Lancaster et al. (59), with
-the addition of dual SMAD inhibition between d6 and d9 to increase neural
-differentiation as previously described (60). Organoids were grown from iPSC
-cells (System Biosciences, #SC101A-1). After Matrigel droplet embedding,
-organoids were transferred to 60 mm suspension culture dishes (Corning, #430589)
-and placed on shaker at 75 rpm on day 16. The organoids were SHIELD-processed at
-day 35 (see the section “SHIELD processing”).
+Organoids were grown according to the protocol by Lancaster et al.
+[-@Lancaster2014], with the addition of dual SMAD inhibition between d6 and d9
+to increase neural differentiation as previously described [@Mellios2018]. Organoids
+were grown from iPSC cells (System Biosciences, #SC101A-1). After Matrigel
+droplet embedding, organoids were transferred to 60 mm suspension culture dishes
+(Corning, #430589) and placed on shaker at 75 rpm on day 16. The organoids were
+SHIELD-processed at day 35 (see the section “SHIELD processing”).
 
 ### Contextual fear conditioning
 
@@ -721,16 +533,16 @@ were sacrificed 60 minutes after the behavioral test was ended.
 Concentration of surfactants can be measured by the degree of solubilization of
 hydrophobic organic dyes. Above the critical micelle concentration, the amount
 of solubilized dye increases linearly with the increase in surfactant
-concentration (61). Degree of solubilization was measured based on light
-absorption using a microplate reader at 505 nm. Sufficient Orange OT dye (Sigma,
-344664, powder) was added to fully saturate 200-proof ethanol at RT. 200 µl of
-saturated solution was added to each of the wells in 96-well plate and allowed
-to fully evaporate to deposit Orange OT dye to the well surface. 100 µl of
-eFLASH buffer collected at various time points were added to the prepared wells
-and left on an orbital shaker overnight. The well plate was centrifuged at 2000g
-for 10 minutes (Multifuge X1R, Thermofisher). 50 µl from each well was collected
-and added to a black 96-well plate with glass bottom for measurement using a
-microplate reader (EnSpire Multimode Plate Reader, Perkinelmer). NaDC
+concentration [@Tehrani-Bagha2013]. Degree of solubilization was measured based
+on light absorption using a microplate reader at 505 nm. Sufficient Orange OT
+dye (Sigma, 344664, powder) was added to fully saturate 200-proof ethanol at RT.
+200 µl of saturated solution was added to each of the wells in 96-well plate and
+allowed to fully evaporate to deposit Orange OT dye to the well surface. 100 µl
+of eFLASH buffer collected at various time points were added to the prepared
+wells and left on an orbital shaker overnight. The well plate was centrifuged at
+2000g for 10 minutes (Multifuge X1R, Thermofisher). 50 µl from each well was
+collected and added to a black 96-well plate with glass bottom for measurement
+using a microplate reader (EnSpire Multimode Plate Reader, Perkinelmer). NaDC
 concentration was calculated based on a standard curve generated using the
 method described above from solutions with known concentrations of NaDC
 (Supplementary Figure 2).
@@ -738,7 +550,7 @@ method described above from solutions with known concentrations of NaDC
 ### SHIELD Processing
 
 Preservation of mouse brain hemispheres were carried out according to the
-previously published SHIELD protocol (3). Mice were transcardially perfused with
+previously published SHIELD protocol. Mice were transcardially perfused with
 ice-cold PBS and then with the SHIELD perfusion solution. Dissected brains or
 organs were incubated in the same perfusion solution at 4 °C for 48 h. Tissues
 were then transferred to the SHIELD-OFF solution (1X PBS containing 10% (w/v)
@@ -803,13 +615,14 @@ staining device after 24 h, pH 7.4).
 ### eFLASH Protocol
 
 Volumetric immunolabeling with eFLASH was carried out with a device described in
-Kim et al. (12) Experiments were carried out with two buffers. The main buffer
-(240 mM Tris, 160 mM CAPS, 20% (w/v) D-sorbitol, 0.2% (w/v) NaDC) is a circulation
-solution that allows conduction of electricity. The sample buffer (240 mM Tris,
-160 mM CAPS, 20% (w/v) D-sorbitol, 0.9% (w/v) NaDC) is used to fill the the
-sample cup along with the tissue and antibodies. 300 mL of a booster buffer (20%
-w/v D-sorbitol, 60 mM Boric Acid) was added to the main buffer at 20 h after the
-start of the experiment to achieve the desired pH in the sample cup at 24 h.
+Kim et al. (2015) Experiments were carried out with two buffers. The main buffer
+(240 mM Tris, 160 mM CAPS, 20% (w/v) D-sorbitol, 0.2% (w/v) NaDC) is a
+circulation solution that allows conduction of electricity. The sample buffer
+(240 mM Tris, 160 mM CAPS, 20% (w/v) D-sorbitol, 0.9% (w/v) NaDC) is used to
+fill the the sample cup along with the tissue and antibodies. 300 mL of a
+booster buffer (20% w/v D-sorbitol, 60 mM Boric Acid) was added to the main
+buffer at 20 h after the start of the experiment to achieve the desired pH in
+the sample cup at 24 h.
 
 300-500 mL of the main buffer was loaded into the staining device and 2-5 mL of
 the sample buffer was loaded into the sample cup. The tissue sample was placed
@@ -826,19 +639,19 @@ speed was set to 0.01 rpm.
 
 For the far-red channel, secondary antibodies conjugated with SeTau647 were used
 for most labeling experiments as they provide superior photo-stability when
-compared to commercially available dyes (62). SeTau-647-NHS was purchased from
-SETA BioMedicals and 10 µl 10 mM aliquots were prepared using DMSO (anhydrous,
-ZerO2®, ≥99.9%, Sigma). SeTau-647-NHS were reacted with non-conjugated Fc-
-specific Fab fragments at 10:1 ratio (Jackson Immunoresearch) for 1 h at RT.
-Afterwards, the solution was purified using Zeba Spin Desalting Columns (7k
-MWCO, ThermoFisher Scientific) 2 to 3 times until the desalting column ran
-clean. The concentration of the resulting solution was measured using DC TM
-Protein Assay (Bio-Rad) before use.
+compared to commercially available dyes [@Podgorski2012]. SeTau-647-NHS was
+purchased from SETA BioMedicals and 10 µl 10 mM aliquots were prepared using
+DMSO (anhydrous, ZerO2®, ≥99.9%, Sigma). SeTau-647-NHS were reacted with
+non-conjugated Fc- specific Fab fragments at 10:1 ratio (Jackson Immunoresearch)
+for 1 h at RT. Afterwards, the solution was purified using Zeba Spin Desalting
+Columns (7k MWCO, ThermoFisher Scientific) 2 to 3 times until the desalting
+column ran clean. The concentration of the resulting solution was measured using
+DC TM Protein Assay (Bio-Rad) before use.
 
 ### Refractive Index Matching
 
 Optical clearing of delipidated samples was achieved using Protos-based
-immersion medium (13). For samples thicker than 1 mm, optical clearing was done
+immersion medium. For samples thicker than 1 mm, optical clearing was done
 in a step-wise manner. Labeled samples were first incubated in half-step
 solution (50/50 mix of 2X PBS and Protos-based immersion medium) at 37 °C
 overnight. Afterwards, the samples were moved to the pure immersion medium and
@@ -892,9 +705,9 @@ detection or negative artifact detection.
 ### Atlas Alignment
 
 Atlas alignments of mouse brain hemispheres labeled with eFLASH to the Allen
-brain reference atlas, CCF V3 (63), were carried out using the hybrid automated
-atlas alignment method described in Swaney et al (18), which combines Elastix
-(17) and manual refinement tools to improve alignment accuracy.
+brain reference atlas, CCF V3 [@Dong2008], were carried out using the hybrid
+automated atlas alignment method described in Swaney et al (18), which combines
+Elastix (17) and manual refinement tools to improve alignment accuracy.
 
 ### Brain Region Segmenation
 
@@ -903,16 +716,16 @@ the reference coordinate after atlas alignment. The alignment was used to
 construct a three-dimensional radial basis function using thin-plate spines to
 map points in the original coordinate space to the reference coordinate space.
 The point locations in the reference space were then matched against the Allen
-Brain Mouse Atlas reference (64) segmentation to yield counts per brain region.
-These counts were then used to color the regions in the Allen Brain Mouse Atlas
-coronal SVG image files. Calculations and visualizations were done using the
-Nuggt python package (18).
+Brain Mouse Atlas reference [@Lein2007] segmentation to yield counts per brain
+region. These counts were then used to color the regions in the Allen Brain
+Mouse Atlas coronal SVG image files. Calculations and visualizations were done
+using the Nuggt python package (Swaney et al. 2019).
 
 ### Manual Image Analysis
 
 Imaris (Bitplane, Switzerland) was used for soma segmentation, analysis, and
 neurite tracing in Figure 5g-m. Dendrite polarity of NPY+ cells were assessed
-manually (65). Fluorescence quantification was done using ImageJ.
+manually [@Puskas2005]. Fluorescence quantification was done using ImageJ.
 
 ### Code Availability
 
@@ -927,28 +740,3 @@ corresponding author upon reasonable request.
 \newpage
 
 ## References
-
-
-<!-- 59.Lancaster, M. A. & Knoblich, J. A. Generation of cerebral organoids from
-human pluripotent stem cells. Nat. Protoc. 9, 2329–2340 (2014).
-
-60.Mellios, N. et al.MeCP2-regulated miRNAs control early human neurogenesis
-through differential effects on ERK and AKT signaling. Mol. Psychiatry 2017
-23423, 1051 (2017).
-
-61.Tehrani-Bagha, A. R. & Holmberg, K. Solubilization of Hydrophobic Dyes in
-Surfactant Solutions. Materials (Basel). 6, 580 (2013).
-
-62.Podgorski, K., Terpetschnig, E., Klochko, O. P., Obukhova, O. M. & Haas, K.
-Ultra-Bright and -Stable Red and Near-Infrared Squaraine Fluorophores for In
-Vivo Two-Photon Imaging. PLoS One7, e51980 (2012).
-
-63.Dong, H. The Allen reference atlas: A digital color brain atlas of the
-C57Bl/6J male mouse. (2008).
-
-64.Lein, E. S. et al.Genome-wide atlas of gene expression in the adult mouse
-brain. Nature 445, 168–176 (2007).
-
-65.Nela, P. & Vera, T. LOCALISATION AND MORPHOLOGY OF COCAINE-AND
-AMPHETAMINE-REGULATED TRANSCRIPT (CART) PEPTIDE IMMUNOREACTIVE NEURONS IN RAT
-AMYGDALA. Acta Veterinaria (Beograd) 55, (2005). -->

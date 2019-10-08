@@ -27,21 +27,19 @@ fields of biology and often requires high-dimensional information across many
 scales. Although it is desirable to obtain such information from the same tissue
 due to large individual variations, combined measurement of many molecular
 andanatomical traits remains an unmet goal in biology despite the remarkable
-success of current pioneering methods, such as array tomoagraphy [@Micheva2010;
-@Rah2013].
+success of current pioneering methods, such as array tomoagraphy [@Rah2013].
 
 Rapidly evolving tissue-clearing techniques may enable multiplexed labeling and
-imaging of intact samples using light microscopy [@Chung2013a; @Chung2013b;
-@Renier2014; @Richardson2015; @Susaki2014]. For instance, the CLARITY
-technique has demonstrated three rounds of immunostaining of mouse brain tissue
-[@Chung2013]. However, we have noticed that the polyacrylamide-based
-framework loses structural integrity upon repeated exposure to the elution
-condition. Recent reports also suggest that preservation of antigenicity in the
-CLARITY method may not be optimal [@Renier2014]. Furthermore, the
-necessary tissue-gel hybridization step requires delivery of charged thermal
-initiators with limited diffusivity and stability. This necessity imposes a
-limit on the tissue size that can be processed withoutthe use of transcardial
-perfusion.
+imaging of intact samples using light microscopy [@Chung2013a;
+@Richardson2015; @Susaki2014]. For instance, the CLARITY technique has
+demonstrated three rounds of immunostaining of mouse brain tissue [@Chung2013].
+However, we have noticed that the polyacrylamide-based framework loses
+structural integrity upon repeated exposure to the elution condition. Recent
+reports also suggest that preservation of antigenicity in the CLARITY method may
+not be optimal [@Renier2014]. Furthermore, the necessary tissue-gel
+hybridization step requires delivery of charged thermal initiators with limited
+diffusivity and stability. This necessity imposes a limit on the tissue size
+that can be processed withoutthe use of transcardial perfusion.
 
 We set our goal to develop a simple, scalable, and generalizable
 tissue-processing method for proteomic imaging of intactbiological systems. To
@@ -78,7 +76,7 @@ mechanically and chemically stable form for multiplexed imaging. We hypothesized
 that small, non-ionic, multifunctional crosslinkers might satisfy two key
 requirements for such a transformation: (1) rapid penetration without the use of
 perfusion and (2) a high degree of molecular crosslinking to improve sample
-durability [@Hopwood1967; @Sung1996]. Among many options, we chose to
+durability [@Sung1996]. Among many options, we chose to
 evaluate the following owing to their small size and high water solubility
 (Figure 1A): ethyleneglycol diglycidyl ether (EGDGE), dipropylene glycol
 diglycidyl ether (GE23), 1,4-butanediol diglycidyl ether (GE21),
@@ -243,7 +241,7 @@ and CB+/PV+ cells, but no CR+/PV+ or CB+/CR+/PV+, cells (Figures 3F, 3H, and
 3I), in agreement with a previous report regarding mouse visual cortex (Gonchar
 et al., 2007). Interestingly, we observed that a significant portion of the CB,
 CR, and PV-positive neurons do not express detectable levels of NeuN, a widely
-used pan-neuronal marker (Figures 3J and 3K) [@Mullen1992]. In particular, a
+used pan-neuronal marker (Figures 3J and 3K). In particular, a
 majority of CR+ cells showed very weak (Figure 3K, arrowhead) or no NeuN
 immunoreactivity (29.1%), whereas all SMI-32+ cells (Figures 3J and 3K) were
 NeuN positive. These results suggest that NeuN expression may be
@@ -317,14 +315,14 @@ all tissues.
 We also sought to apply SWITCH to characterizing myelinated fiber pathways in
 the brain. Visualizing and analyzing neural fibers with high-resolution light
 microscopy can provide valuable insights into many studies [@Thomas2014;
-@Wedeen2012; @Zuccaro2013], such as validating diffusion tensor imaging (DTI)
-and understanding the organizing principles of brain connectivity. Furthermore,
+@Zuccaro2013], such as validating diffusion tensor imaging (DTI) and
+understanding the organizing principles of brain connectivity. Furthermore,
 quantitative analysis of myelinated fibers in 3D may benefit clinical studies
 and development of novel treatments for many demyelinating diseases
 [@Steinman1999], such as multiple sclerosis and transverse myelitis. However,
 current methods for myelinated fiber visualization require either genetic
 labeling or a large amount of costly antibodies, limiting their utility to
-animal tissues or small clinical samples [@Wedeen2012].
+animal tissues or small clinical samples.
 
 We discovered that a subset of lipids preserved in SWITCH-processed tissues
 [@Hopwood1972; @Roozemond1969] allows lipophilic dyes to selectively visualize
@@ -456,7 +454,7 @@ environment. For instance, in the GA-tissue-gelling step, we were able to
 decrease the rate of GA-biomolecule crosslinking by two orders of magnitude by
 using pH 3 buffer, because primary amine groups in endogenous biomolecules are
 protonated at low pH and the resulting charged amine cannot react with GA
-[@Hopwood1968]. This pH-dependent reactivity means that after uniformly
+[@Hopwood1967]. This pH-dependent reactivity means that after uniformly
 dispersing GA in a tissue at low pH, we can "switch-on" inactivated amine groups
 by changing the amine’s surrounding environment to a neutral-pH buffer. At
 neutral pH, charged amine groups are rapidly deprotonated and become reactive.
@@ -518,7 +516,7 @@ on their distinct protein expression patterns. Our quantitative analysis shows
 that CR+/PV+ cells do not exist within the examined volume of the human V2
 cortex. The same finding was reported in mouse visual cortex [@Gonchar2008], but
 such co-expression patterns among calcium-binding proteins may differ among
-brain regions and between individuals and species [@Anelli2006; @Defelipe1999],
+brain regions and between individuals and species [@Anelli2006],
 which, therefore, calls for more comprehensive large-scale investigation.
 
 We observed many NeuN-negative interneurons. NeuN, a neuron-specific RNA-binding
