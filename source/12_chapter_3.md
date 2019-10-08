@@ -21,39 +21,42 @@ connections and fine synaptic architectures in the mouse brain.
 
 ## Introduction
 
-Biological systems such as the mammalian brain consist of thousands of
-distinct cell types forming highly interconnected functional networks (1–5).
-Understanding how these diverse cells interact to generate system-level
-responses is essential for many fields of biology. Deciphering these complex
-interactions requires tools that can simultaneously characterize the molecular
-identity and fine sub-cellular architectures of individual cells as well as
-their system-level connectivity, because these properties together determine
-many cell functions. To date, technologies provide only a subset of the required
-multilevel information.
+Biological systems such as the mammalian brain consist of thousands of distinct
+cell types forming highly interconnected functional networks [@White1986;
+@DeFelipe2010; @Helmstaedter2013; @Craddock2013; @Oh2014]. Understanding how
+these diverse cells interact to generate system-level responses is essential for
+many fields of biology. Deciphering these complex interactions requires tools
+that can simultaneously characterize the molecular identity and fine
+sub-cellular architectures of individual cells as well as their system-level
+connectivity, because these properties together determine many cell functions.
+To date, technologies provide only a subset of the required multilevel
+information.
 
 Proteomic imaging techniques can potentially provide multilevel information in
-both animals and human samples (6–10). The proteome is an ideal substrate for
-the integrated analysis of functional components owing to proteins’ unmatched
+both animals and human samples [@Phizicky2003; @Hanash2004; @Agato2004;
+@Berglund2008; @Uhlen2010]. The proteome is an ideal substrate for the
+integrated analysis of functional components owing to proteins’ unmatched
 diversity, functional roles, and distinct subcellular localization at
 single-molecule precision. The existing large antibody libraries (close to
 100,000 antibodies), once rigorously validated, could enable the detection of
 more than 70% of the human proteome and corresponding cellular architectures
-(10).
+(Uhlen, M et al 2010).
 
 For example, multiplexed proteomic imaging techniques (e.g., array tomography
 and SWITCH) can provide molecular details for individual cells and may allow
-reconstruction of their surrounding tissue environment (11–13). Emerging intact
-tissue clearing approaches preserve proteins and the continuity of neural
-fibers, which may enable reconstruction of immunolabeled neural architectures
-(14,15). Super-resolution imaging of immunolabeled thin tissue sections has been
+reconstruction of their surrounding tissue environment [@Micheva2007; @Kay2013;
+@Murray2015]. Emerging intact tissue clearing approaches preserve proteins and
+the continuity of neural fibers, which may enable reconstruction of
+immunolabeled neural architectures [@Dodt2007; @Richardson2015].
+Super-resolution imaging of immunolabeled thin tissue sections has been
 successfully used to characterize minute subcellular structures (e.g., synapses)
-(16–19). In addition to conventional super-resolution approaches, Chen et al.
-(20) have recently demonstrated that protease digestion of a hydrogel-tissue
-hybrid homogenizes its mechanical characteristics and allows approximately
-fourfold linear expansion of the hybrid. Using this approach, termed expansion
-microscopy (ExM), they demonstrated super-resolution imaging of thin tissue
-sections with custom-made antibody probes and diffraction-limited microscopes
-(20).
+[@Rust2006; @Betzig2006; @Hess2006; @Maglione2013]. In addition to conventional
+super-resolution approaches, Chen et al. [-@Chen2015] have recently demonstrated that
+protease digestion of a hydrogel-tissue hybrid homogenizes its mechanical
+characteristics and allows approximately fourfold linear expansion of the
+hybrid. Using this approach, termed expansion microscopy (ExM), they
+demonstrated super-resolution imaging of thin tissue sections with custom-made
+antibody probes and diffraction-limited microscopes (Chen et al. 2015).
 
 Despite the success of these new technologies, integrated reconstruction of
 the fine subcellular architectures, molecular details, and intercellular
@@ -80,21 +83,22 @@ to four- to fivefold for multiresolution imaging.
 ### Organ-scale tissue expansion without loss of proteins
 
 The key to MAP is to prevent intra- and interprotein crosslinking during the
-hydrogel-tissue hybridization step (21), and then to dissociate and denature
-proteins to allow natural expansion of the hybrid (Fig. 1a). We hypothesized
-that a high concentration of acrylamide monomers might effectively prevent
-protein crosslinking by quenching reactive methylols formed by the
+hydrogel-tissue hybridization step [@Chung2013], and then to dissociate and
+denature proteins to allow natural expansion of the hybrid (Fig. 1a). We
+hypothesized that a high concentration of acrylamide monomers might effectively
+prevent protein crosslinking by quenching reactive methylols formed by the
 protein-formaldehyde reaction. If the acrylamide monomer concentration is low,
 the reactive methylols would react with amide groups within the same protein or
-adjacent proteins to form methylene bridges (Fig. 1a, left column) (22). Such
-intra- and interprotein crosslinking would prevent dissociation of protein
-complexes and limit subsequent tissue expansion (23). With increased acrylamide
-concentration (Fig. 1a, right column), methylols might preferentially react with
-excess acrylamide monomers, effectively reducing interprotein crosslinking while
-maximally tethering individual proteins to an expandable hydrogel mesh.
-Dissociation and denaturation of protein complexes with heat and anionic
-surfactant then facilitates natural expansion of the hydrogel-tissue hybrid
-while preserving overall spatial organization of the proteome.
+adjacent proteins to form methylene bridges (Fig. 1a, left column)
+[@Puchtler1985]. Such intra- and interprotein crosslinking would prevent
+dissociation of protein complexes and limit subsequent tissue expansion
+[@Sung1996]. With increased acrylamide concentration (Fig. 1a, right column),
+methylols might preferentially react with excess acrylamide monomers,
+effectively reducing interprotein crosslinking while maximally tethering
+individual proteins to an expandable hydrogel mesh. Dissociation and
+denaturation of protein complexes with heat and anionic surfactant then
+facilitates natural expansion of the hydrogel-tissue hybrid while preserving
+overall spatial organization of the proteome.
 
 To test our hypothesis, we first measured the effect of acrylamide concentration
 on tissue expansion. We prepared albumin-containing tissue phantoms and
@@ -174,18 +178,18 @@ cytoskeletal networks of various cell types (Fig. 3c–e and Supplementary Video
 1–4). No apparent filament fragmentations were observed in the magnified
 tissues. Labeling of glial fibrillary acidic protein (GFAP) enabled
 visualization the fine foot-process structures surrounding blood vessels (Fig.
-3e and Supplementary Video 3) (24,25). Neurofilament medium subunit (NF-M)
-enabled visualization of both processes and synapses (26), a subset of which
-co-localized with the postsynaptic marker, GABA B R1 (the C-terminal domain of
-the GABA B receptor subunit-1) (Fig. 3f and Supplementary Video 4). Labeling of
-calcium-binding proteins (parvalbumin, calbindin, and calbindin) robustly
-enabled visualization of morphological details of positive cells (Fig. 3b). A
-small subset of calbindin-positive fibers showed expression of calbindin in
-their dendritic spines (Fig. 3g). Many synaptic protein markers were compatible
-with MAP (Fig. 3f,h,j,l,m and Supplementary Table 1). Staining of synaptic
-proteins clearly visualized distinct and well-separated elliptical disk-shaped
-clusters of pre- and post-synaptic proteins (Fig. 3h,l,m and Supplementary Video
-5), enabling their quantitative analysis (Fig. 3k).
+3e and Supplementary Video 3) [@Kosaka1986; @Khakh2015]. Neurofilament medium
+subunit (NF-M) enabled visualization of both processes and synapses [@Yuan2015],
+a subset of which co-localized with the postsynaptic marker, GABA B R1 (the
+C-terminal domain of the GABA B receptor subunit-1) (Fig. 3f and Supplementary
+Video 4). Labeling of calcium-binding proteins (parvalbumin, calbindin, and
+calbindin) robustly enabled visualization of morphological details of positive
+cells (Fig. 3b). A small subset of calbindin-positive fibers showed expression
+of calbindin in their dendritic spines (Fig. 3g). Many synaptic protein markers
+were compatible with MAP (Fig. 3f,h,j,l,m and Supplementary Table 1). Staining
+of synaptic proteins clearly visualized distinct and well-separated elliptical
+disk-shaped clusters of pre- and post-synaptic proteins (Fig. 3h,l,m and
+Supplementary Video 5), enabling their quantitative analysis (Fig. 3k).
 
 ### Highly multiplexed immunolabeling
 
@@ -220,7 +224,7 @@ and fine morphological details in a single tissue.
 To explore this possibility, we first asked if the continuity of neural
 processes is preserved within a magnified sample. We expanded a 0.5-mm-thick
 Thy1-eGFP mouse brain coronal block and then imaged GFP-labeled neurons and
-their projections (27). MAP preserved the continuity of the GFP-expressing
+their projections [@Feng2000]. MAP preserved the continuity of the GFP-expressing
 projections spanning a large tissue volume (Fig. 5a–f) as well as their fine
 morphological details (e.g., dendritic spines) (Fig. 5g). Immunolabeling of
 various cytoplasmic proteins including neurofilament proteins (e.g., NF-H and
@@ -254,11 +258,11 @@ dendritic spines of GFP-expressing neurons throughout the entire volume (Fig.
 6e). Imaging of the sample did not require depth-dependent modulation of the
 laser power, indicating that staining was uniform and that signal attenuation by
 light scattering was negligible (Fig. 6c,d). MAP is also compatible with
-stochastic electrotransport (28), a method that enables rapid tissue labeling.
-Using stochastic electrotransport, we were able to label an 8-mm-thick expanded
-tissue uniformly within only 2 d (Fig. 6f–j). The sample was highly transparent.
-We were able to image the 8-mm-thick sample successfully with the same laser
-power up to the working distance of the objective (Fig. 6h).
+stochastic electrotransport [@Kim2015], a method that enables rapid tissue
+labeling. Using stochastic electrotransport, we were able to label an 8-mm-thick
+expanded tissue uniformly within only 2 d (Fig. 6f–j). The sample was highly
+transparent. We were able to image the 8-mm-thick sample successfully with the
+same laser power up to the working distance of the objective (Fig. 6h).
 
 ## Discussion
 
@@ -275,9 +279,9 @@ multiscale properties can be directly imaged by using off-the-shelf antibodies
 to label the structures’ constituent proteins. The high success rate that we
 achieved with commercial antibodies might be because synthetic peptides or
 denatured protein fragments are commonly used for conventional antibody
-production (29). An existing large antibody library, once validated, can be used
-without any modification. This technique is easy to implement, and it does not
-require any special equipment or chemicals.
+production [@Uhlen2005]. An existing large antibody library, once validated, can
+be used without any modification. This technique is easy to implement, and it
+does not require any special equipment or chemicals.
 
 MAP enables repeated interrogation of the same expanded specimen. This is
 possible because the preserved epitopes, which have already reached complete
@@ -307,15 +311,16 @@ compatibility of signal amplification techniques with MAP.
 The reversible modulation of physical sample size that is attained with MAP
 enables multiscale proteomic imaging of a single tissue to capture both
 system-scale properties and fine local details in a practical way. For example,
-following sample shrinkage, global projection patterns of labeled neurons may
-be imaged using high-speed microscopy techniques and long WD objectives (e.g.,
-25×, 1.0 NA, 8-mm WD objective, currently available) (30). After imaging, the
+following sample shrinkage, global projection patterns of labeled neurons may be
+imaged using high-speed microscopy techniques and long WD objectives (e.g., 25×,
+1.0 NA, 8-mm WD objective, currently available) [@Tomer2014]. After imaging, the
 same tissue can be expanded for super-resolution imaging of regions of interest.
 The expanded tissue may need to be sliced before imaging to meet the objective’s
 WD limit. A microscope with a built-in vibrating-blade microtome could also be
-used for whole-mount imaging to avoid loss of connectivity information (31–33).
-This approach may allow us to drastically reduce the imaging time and costs
-associated with data storage and handling of expanded samples.
+used for whole-mount imaging to avoid loss of connectivity information
+[@Ragan2012; @Economo2016; @Albanese2016]. This approach may allow us to
+drastically reduce the imaging time and costs associated with data storage and
+handling of expanded samples.
 
 The advantages of MAP (Supplementary Table 2) may allow combined extraction of
 rich molecular details, minute subcellular architectures, and cellular
@@ -358,114 +363,6 @@ work.
 
 The authors declare competing financial interests: details are available in the
 online version of the paper.
-
-## References
-
-1.White, J.G., Southgate, E., Thomson, J.N. & Brenner, S. The structure of the
-nervous system  of  the  nematode Caenorhabditis  elegans. Philos.  Trans.  R.
-Soc.  Lond.,  B314, 1–340 (1986).
-
-2.DeFelipe,  J.  From  the  connectome  to  the  synaptome:  an  epic  love
-story. Science 330, 1198–1201 (2010).
-
-3.Helmstaedter,  M.  Cellular-resolution  connectomics:  challenges  of  dense
-neural circuit reconstruction. Nat. Methods 10, 501–507 (2013).
-
-4.Craddock, R.C. et al. Imaging human connectomes at the macroscale. Nat.
-Methods 10, 524–539 (2013).
-
-5.Oh, S.W. et al. A mesoscale connectome of the mouse brain. Nature 508, 207–214
-(2014).
-
-6.Phizicky,  E.,  Bastiaens,  P.I.,  Zhu,  H.,  Snyder,  M.  &  Fields,  S.
-Protein  analysis  on a proteomic scale. Nature 422, 208–215 (2003).
-
-7.Hanash, S. HUPO initiatives relevant to clinical proteomics. Mol. Cell.
-Proteomics 3, 298–301 (2004).
-
-8.Agaton, C., Uhlén, M. & Hober, S. Genome-based proteomics. Electrophoresis 25,
-1280–1288 (2004).
-
-9.Berglund, L. et al. A genecentric Human Protein Atlas for expression profiles
-based on antibodies. Mol. Cell. Proteomics 7, 2019–2027 (2008).
-
-10.Uhlen, M. et al. Towards a knowledge-based human protein atlas. Nat.
-Biotechnol. 28, 1248–1250 (2010).
-
-11.Micheva, K.D. & Smith, S.J. Array tomography: a new tool for imaging the
-molecular architecture and ultrastructure of neural circuits. Neuron 55, 25–36
-(2007).
-
-12.Kay,  K.R. et  al.  Studying  synapses  in  human  brain  with  array
-tomography  and electron microscopy. Nat. Protoc. 8, 1366–1380 (2013).
-
-13.Murray, E. et al. Simple, scalable proteomic imaging for high-dimensional
-profiling of intact systems. Cell 163, 1500–1514 (2015).
-
-14.Dodt,  H.-U. et  al.  Ultramicroscopy:  three-dimensional  visualization  of
-neuronal networks in the whole mouse brain. Nat. Methods 4, 331–336 (2007).
-
-15.Richardson,  D.S.  &  Lichtman,  J.W.  Clarifying  tissue  clearing. Cell 162,
-246–257 (2015).
-
-16.Rust, M.J., Bates, M. & Zhuang, X. Sub-diffraction-limit imaging by
-stochastic optical reconstruction microscopy (STORM). Nat. Methods 3, 793–795
-(2006).
-
-17.Betzig, E. et al. Imaging intracellular fluorescent proteins at nanometer
-resolution. Science 313, 1642–1645 (2006).
-
-18.Hess, S.T., Girirajan, T.P. & Mason, M.D. Ultra-high resolution imaging by
-fluorescence photoactivation localization microscopy. Biophys. J. 91, 4258–4272
-(2006).
-
-19.Maglione, M. & Sigrist, S.J. Seeing the forest tree by tree: super-resolution
-light microscopy meets the neurosciences. Nat. Neurosci. 16, 790–797 (2013).
-
-20.Chen, F., Tillberg, P.W. & Boyden, E.S. Optical imaging. Expansion
-microscopy. Science347, 543–548 (2015).
-
-21.Chung, K. & Deisseroth, K. CLARITY for mapping the nervous system. Nat.
-Methods 10, 508–513 (2013).
-
-22.Puchtler, H. & Meloan, S.N. On the chemistry of formaldehyde fixation and its
-effects on immunohistochemical reactions. Histochemistry 82, 201–204 (1985).
-
-23.Sung, H.-W., Hsu, H.-L., Shih, C.-C. & Lin, D.-S. Cross-linking
-characteristics of biological tissues fixed with monofunctional or
-multifunctional epoxy compounds. Biomaterials 17, 1405–1410 (1996).
-
-24.Kosaka, T. & Hama, K. Three-dimensional structure of astrocytes in the rat
-dentate gyrus. J. Comp. Neurol. 249, 242–260 (1986).
-
-25.Khakh, B.S. & Sofroniew, M.V. Diversity of astrocyte functions and phenotypes
-in neural circuits. Nat. Neurosci. 18, 942–952 (2015).
-
-26.Yuan, A. et al. Neurofilament subunits are integral components of synapses
-and modulate neurotransmission and behavior in vivo. Mol. Psychiatry 20, 986–994
-(2015).
-
-27.Feng, G. et al. Imaging neuronal subsets in transgenic mice expressing
-multiple spectral variants of GFP. Neuron 28, 41–51 (2000).
-
-28.Kim, S.Y. et  al. Stochastic electrotransport selectively enhances the
-transport of highly electromobile molecules. Proc. Natl. Acad. Sci. USA 112,
-E6274–E6283 (2015).
-
-29.Uhlen, M. & Ponten, F. Antibody-based proteomics for human tissue profiling.
-Mol. Cell. Proteomics 4, 384–393 (2005).
-
-30.Tomer, R., Ye, L., Hsueh, B. &  Deisseroth, K. Advanced CLARITY for rapid and
-high-resolution imaging of intact tissues. Nat. Protoc. 9, 1682–1697 (2014).
-
-31.Ragan, T. et al. Serial two-photon tomography for automated ex vivo mouse
-brain imaging. Nat. Methods 9, 255–258 (2012).
-
-32.Economo, M.N. et  al. A platform for brain-wide imaging and reconstruction of
-individual neurons. eLife 5, e10566 (2016).
-
-33.Albanese, A. & Chung, K. Whole-brain imaging reaches new heights (and
-lengths). eLife 5, e13367 (2016).
 
 ## Methods
 
@@ -529,25 +426,27 @@ hydrogel-tissue hybridization the samples were incubated in denaturation
 solution at 70 °C for 5 h and 95 °C for 1 h with gentle shaking. Denatured
 tissues were incubated in 40 mL DI water at RT for 12 h with gentle shaking.
 During DI water incubation, the solution was changed every 3–5 h. Fiji (National
-Institutes of Health) was used to measure the size of the expanded samples (34).
+Institutes of Health) was used to measure the size of the expanded samples
+[@Schindelin2012].
 
 ### Shrinkage and RI matching
 
 A customized RI matching solution was made by dissolving 50 g diatrizoic acid,
-40 g N-methyl-d-glucamine, and 55 g iodixanol per 100 mL PBS (28). The RI was
-targeted to 1.47. This solution was used for both shrinkage and imaging.
-Depending on sample size, samples were incubated in 1–10 mL solution at RT for
-2–24 h with gentle shaking. The solution was changed every 1–12 h. For imaging
-tissues before MAP processing, samples were incubated in 1–10 mL of this
-solution without PBS at RT with gentle shaking for 2–5 h before imaging.
+40 g N-methyl-d-glucamine, and 55 g iodixanol per 100 mL PBS (Kim, S.-Y. et al.
+2015). The RI was targeted to 1.47. This solution was used for both shrinkage
+and imaging. Depending on sample size, samples were incubated in 1–10 mL
+solution at RT for 2–24 h with gentle shaking. The solution was changed every
+1–12 h. For imaging tissues before MAP processing, samples were incubated in
+1–10 mL of this solution without PBS at RT with gentle shaking for 2–5 h before
+imaging.
 
 ### MAP processing of cerebral organoid
 
 Cerebral organoids were made from stem cells following a previously described
-protocol (35). Organoids were initially fixed in 4% PFA for 15 min, incubated
-in a mixture of 4% PFA, 30% AA, 0.1% BA, 10% SA, 0.1% V-50, and PBS for 24 h at
-4 °C, followed by 24 h, at RT. Hydrogel embedding, tissue denaturation, and
-expansion were processed similarly to “General MAP protocol.”
+protocol [@Lancaster2014]. Organoids were initially fixed in 4% PFA for 15 min,
+incubated in a mixture of 4% PFA, 30% AA, 0.1% BA, 10% SA, 0.1% V-50, and PBS
+for 24 h at 4 °C, followed by 24 h, at RT. Hydrogel embedding, tissue
+denaturation, and expansion were processed similarly to “General MAP protocol.”
 
 ### Cultured cell experiment
 
@@ -674,13 +573,14 @@ to measure mounting errors. After MAP processing, six samples were stained,
 expanded in DI water, and imaged. Keypoints of the vasculature in volumetric
 images were detected and matched between two image sets with a MATLAB code
 implementing the 3D Harris Corner Detector and 3D SIFT algorithm as described
-previously (13). Using custom-built graphical user interface software developed
-with Delphi XE4 (Embarcadero Technologies), redundant keypoints closely located
-to each other and keypoints at tissue margins were removed. Tissue sizes were
-estimated by the area defined by a convex hull encompassing all key-points, and
-the expansion ratio was calculated as the ratio between two squared roots of the
-areas. The correspondence information was used to generate a regularly spaced
-deformation mesh using a 3D thin plate spline code written by Yang
+previously (Murray et al. 2015). Using custom-built graphical user interface
+software developed with Delphi XE4 (Embarcadero Technologies), redundant
+keypoints closely located to each other and keypoints at tissue margins were
+removed. Tissue sizes were estimated by the area defined by a convex hull
+encompassing all key-points, and the expansion ratio was calculated as the ratio
+between two squared roots of the areas. The correspondence information was used
+to generate a regularly spaced deformation mesh using a 3D thin plate spline
+code written by Yang
 (http://www.mathworks.com/matlabcentral/fileexchange/37576-3d-thin-plate-spline-warping-function).
 Lengths between each pair of grid points were calculated in both pre-MAP and
 post-MAP images, considering the expansion ratio. The difference between the two
@@ -727,8 +627,6 @@ synaptic structures for each channel were counted using the “Analyze Particles
 function in Fiji. The synaptic densities were calculated based on the frame
 area, and the s.d. was calculated from the three replicates.
 
-34.Schindelin, J. et al. Fiji: an open-source platform for biological-image
-analysis. Nat. Methods 9, 676–682 (2012).
+\newpage
 
-35.Lancaster,  M.A.  &  Knoblich,  J.A.  Generation  of  cerebral  organoids
-from  human pluripotent stem cells. Nat. Protoc. 9, 2329–2340 (2014)
+## References

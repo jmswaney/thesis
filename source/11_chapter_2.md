@@ -231,7 +231,7 @@ protein expression at a cellular level in a high throughput and flexible manner.
 Expression of genetically encoded fluorescent proteins have revolutionized
 biological labeling and imaging [@Giepmans2006], and ongoing developments in
 transgenic methodology offer powerful ways to study organ-wide gene expression
-[@Gong2003; @Kim2017; @Zhang2017] (28–30). However, the level of fluorescent
+[@Gong2003; @Kim2017; @Zhang2017]. However, the level of fluorescent
 protein expression is linked to transcription activity rather than the level of
 expression of mRNA or proteins, requiring careful and nuanced interpretation of
 data [@Huang2014]. Additionally, several studies have reported on the importance
@@ -389,7 +389,7 @@ Recently, tissue-clearing techniques and volume imaging methods have been
 applied to whole organ samples to demonstrate the potential of 3D phenotyping
 with single-cell resolution [@Murakami2018; @Yang2014]. Many of these studies
 utilized genetic labeling which provides both uniform and high signal-to-noise
-ratio suitable for computational analysis (29). However, genetic labeling is
+ratio suitable for computational analysis. However, genetic labeling is
 relatively inflexible when it comes to target selection, as new transgenic mouse
 or protocol is required for each target or each combination of targets. With
 eFLASH, the choice of targets and the combinations of targets is based simply on
@@ -680,7 +680,7 @@ light-sheet imaging was done with either of the following objective lenses: 3.6x
 objective (custom Lifecanvas design, 0.2 NA 12 mm WD lateral resolution 1.8 µm in
 XY), 10x objective (Olympus XLPLN10XSVMP, 0.6 NA, 8 mm WD, lateral resolution
 0.66 µm in XY). Acquired data was post-processed with algorithms described in
-Swaney et al. (18). A complete table of imaging modalities and conditions for
+Swaney et al. (2019). A complete table of imaging modalities and conditions for
 every data included in this paper can be found in Supplementary table 2.
 
 ### Cell Detection
@@ -706,8 +706,9 @@ detection or negative artifact detection.
 
 Atlas alignments of mouse brain hemispheres labeled with eFLASH to the Allen
 brain reference atlas, CCF V3 [@Dong2008], were carried out using the hybrid
-automated atlas alignment method described in Swaney et al (18), which combines
-Elastix (17) and manual refinement tools to improve alignment accuracy.
+automated atlas alignment method described in Swaney et al. (2019), which
+combines Elastix (Klein et al. 2010) and manual refinement tools to improve
+alignment accuracy.
 
 ### Brain Region Segmenation
 
