@@ -26,7 +26,7 @@ System-wide analysis of cell types is essential for understanding how complex
 cellular interactions give rise to various functions. Extensive efforts have
 been made towards characterizing cells, particularly in the brain, through
 various lenses (e.g., genomics, transcriptomics, proteomics, connectomics) and
-have established invaluable databases with new insights (1–7). Among these
+have established invaluable databases with new insights [@Sharma2015] (1–7). Among these
 approaches, proteomic imaging has distinct advantages. Mapping spatial
 distribution of proteins, the major functional substrate with distinct
 subcellular localization at single molecule precision, can provide rich
@@ -473,9 +473,8 @@ K.C. and D.H.Y. are co-inventors on a patent application owned by MIT covering
 the eFLASH technology. K.C. and J.H.C. are co-inventors on patents owned by MIT
 covering the SWITCH and SE technology.
 
-## References
 
-1.Sharma, K. et al.Cell type-and brain region-resolved mouse brain proteome.
+<!-- 1.Sharma, K. et al.Cell type-and brain region-resolved mouse brain proteome.
 Nat. Neurosci. 18, 1819–1831 (2015).
 
 2.Hawrylycz, M. J. et al.An anatomically comprehensive atlas of the adult human
@@ -665,7 +664,7 @@ virus-PHP.B capsid fails to upregulate transduction efficiency in the marmoset
 brain. Neurosci. Lett. 665, 182–188 (2018).
 
 58.Fürth, D. et al.An interactive framework for whole-brain maps at cellular
-resolution. Nat. Neurosci. 21, 139–149 (2018).
+resolution. Nat. Neurosci. 21, 139–149 (2018). -->
 
 ## Methods
 
@@ -925,8 +924,12 @@ upon reasonable request.
 The data supporting the findings of this study are available from the
 corresponding author upon reasonable request.
 
+\newpage
 
-59.Lancaster, M. A. & Knoblich, J. A. Generation of cerebral organoids from
+## References
+
+
+<!-- 59.Lancaster, M. A. & Knoblich, J. A. Generation of cerebral organoids from
 human pluripotent stem cells. Nat. Protoc. 9, 2329–2340 (2014).
 
 60.Mellios, N. et al.MeCP2-regulated miRNAs control early human neurogenesis
@@ -948,4 +951,4 @@ brain. Nature 445, 168–176 (2007).
 
 65.Nela, P. & Vera, T. LOCALISATION AND MORPHOLOGY OF COCAINE-AND
 AMPHETAMINE-REGULATED TRANSCRIPT (CART) PEPTIDE IMMUNOREACTIVE NEURONS IN RAT
-AMYGDALA. Acta Veterinaria (Beograd) 55, (2005).
+AMYGDALA. Acta Veterinaria (Beograd) 55, (2005). -->

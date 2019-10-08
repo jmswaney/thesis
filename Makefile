@@ -7,7 +7,8 @@ OUTPUTDIR=$(BASEDIR)/output
 TEMPLATEDIR=$(INPUTDIR)/templates
 STYLEDIR=$(BASEDIR)/style
 
-BIBFILE=$(INPUTDIR)/references.bib
+BIBFILE1=$(INPUTDIR)/references_chapter_1.bib
+BIBFILE2=$(INPUTDIR)/references_chapter_2.bib
 
 help:
 	@echo ' 																	  '
@@ -29,12 +30,15 @@ pdf:
 	-o "$(OUTPUTDIR)/thesis.pdf" \
 	-H "$(STYLEDIR)/preamble.tex" \
 	--template="$(STYLEDIR)/template.tex" \
-	--bibliography="$(BIBFILE)" 2>pandoc.log \
+	--bibliography="$(BIBFILE1)" 2>pandoc.log \
+	--bibliography="$(BIBFILE2)" 2>pandoc.log \
 	--csl="$(STYLEDIR)/ref_format.csl" \
 	--highlight-style pygments \
 	-V fontsize=12pt \
 	-V papersize=a4paper \
 	-V documentclass=report \
+	-F pandoc-citeproc \
+	--lua-filter section-refs.lua \
 	-N \
 	--pdf-engine=xelatex \
 	--verbose
@@ -43,7 +47,7 @@ tex:
 	pandoc "$(INPUTDIR)"/*.md \
 	-o "$(OUTPUTDIR)/thesis.tex" \
 	-H "$(STYLEDIR)/preamble.tex" \
-	--bibliography="$(BIBFILE)" \
+	--bibliography="$(BIBFILE1)" \
 	-V fontsize=12pt \
 	-V papersize=a4paper \
 	-V documentclass=report \
@@ -54,7 +58,7 @@ tex:
 docx:
 	pandoc "$(INPUTDIR)"/*.md \
 	-o "$(OUTPUTDIR)/thesis.docx" \
-	--bibliography="$(BIBFILE)" \
+	--bibliography="$(BIBFILE1)" \
 	--csl="$(STYLEDIR)/ref_format.csl" \
 	--toc
 
@@ -63,7 +67,7 @@ html:
 	-o "$(OUTPUTDIR)/thesis.html" \
 	--standalone \
 	--template="$(STYLEDIR)/template.html" \
-	--bibliography="$(BIBFILE)" \
+	--bibliography="$(BIBFILE1)" \
 	--csl="$(STYLEDIR)/ref_format.csl" \
 	--include-in-header="$(STYLEDIR)/style.css" \
 	--toc \
