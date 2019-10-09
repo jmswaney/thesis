@@ -1,52 +1,71 @@
 \begin{titlepage}
     \begin{center}
-        \vspace*{2.0cm}
+
+        \LARGE
+        Scaling Up 3D Imaging, Analysis, and Culture\\ 
+        of Complex Brain Models
+
+        \vspace{0.2cm}
+
+        \normalsize
+        by
         
-        \huge
-        Scaling Up 3D Imaging, Analysis, and Culture of Complex Brain Models
-        
-        \vspace{1.0cm}
-        
-        \Large
         Justin M. Swaney
 
-        \vspace{1.0cm}
+        B.S. Chemical Engineering\\ 
+        University of Wisconsin-Madison, 2014
+        \vspace{0.6cm}
 
-        \normalsize
-        A thesis presented for the degree of\\
-        Doctor of Philosophy
+        \footnotesize
+        \MakeUppercase{
+            Submitted to the Department of Chemical Engineering in \protect\\ 
+            partial fulfillment of the requirements for the degree of\protect\\ 
+            \endgraf
+            \vspace{0.4cm}
+            Doctor of Philosophy in Chemical Engineering\protect\\ 
+            \endgraf
+            at the\protect\\ 
+            \endgraf
+            Massachusetts Institute of Technology
+            \endgraf
+            \vspace{0.2cm}
+            December 2019
+        }
+        \vspace{0.5cm}
+
+        \small
+        © 2019 Massachusetts Institute of Technology. All rights reserved.
+        % © 2019 Justin M. Swaney. All rights reserved.
+
+        % The author hereby grants MIT permission to reproduce\\
+        % and distribute publicly paper and electronic copies\\
+        % of this thesis document in whole or in part in\\
+        % any medium now known or hereafter created.
         
         \vfill
-        
-        \normalsize
-        Thesis Advisor:\\
-        \vspace{0.2cm}
-        Professor Kwanghun Chung\\
-        Department of Chemical Engineering\\
-        \vspace{0.4cm}
-        Thesis Committee:\\
-        \vspace{0.2cm}
-        Professor Patrick Doyle\\
-        Department of Chemical Engineering\\
-        \vspace{0.2cm}
-        Professor Martin Bazant\\
-        Department of Chemical Engineering\\
-        \vspace{0.2cm}
-        Professor Mriganka Sur\\
-        Department of Brain and Cognitive Sciences
-
-        \vspace{0.4cm}
-
-        % Uncomment the following line
-        % to add a centered university logo
-        % \includegraphics[width=0.4\textwidth]{style/univ_logo.eps}
-        
-        \normalsize
-        Massachusetts Institute of Technology\\
-        Cambridge, MA\\
-        December, 2019
-
-        % Except where otherwise noted, content in this thesis is licensed under a Creative Commons Attribution 4.0 License (http://creativecommons.org/licenses/by/4.0), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited. Copyright 2019,Justin Swaney.
 
     \end{center}
+        
+    \normalsize
+    Signature of Author\Dotfill\\ 
+    \hspace*{\fill} Deparment of Chemical Engineering\\ 
+    \hspace*{\fill} December 11, 2019
+
+    Certified by\Dotfill\\ 
+    \hspace*{\fill} Kwanghun Chung\\ 
+    \hspace*{\fill} Professor of Chemical Engineering\\ 
+    \hspace*{\fill} Thesis Supervisor
+
+    Accepted by\Dotfill\\ 
+    \hspace*{\fill} Richard D. Braatz\\ 
+    \hspace*{\fill} Edward R. Gilliland Professor of Chemical Engineering\\ 
+    \hspace*{\fill} Chairman, Committee for Graduate Students
+
+    \vspace{0.4cm}
+    
+    % \normalsize
+    % Massachusetts Institute of Technology\\
+    % Cambridge, MA\\
+    % December, 2019
+    
 \end{titlepage}

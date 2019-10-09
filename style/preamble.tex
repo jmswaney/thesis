@@ -132,3 +132,8 @@
 
 % For being to able to add external PDF pages to document
 \usepackage{pdfpages}
+
+% For dense dotfill command
+\makeatletter
+\newcommand \Dotfill {\leavevmode \cleaders \hb@xt@ .33em{\hss .\hss }\hfill \kern \z@}
+\makeatother
