@@ -1,16 +1,16 @@
 \begin{titlepage}
     \begin{center}
-        \vspace*{2.5cm}
+        \vspace*{2.0cm}
         
         \huge
         Scaling Up 3D Imaging, Analysis, and Culture of Complex Brain Models
         
-        \vspace{1.5cm}
+        \vspace{1.0cm}
         
         \Large
         Justin M. Swaney
 
-        \vspace{1.5cm}
+        \vspace{1.0cm}
 
         \normalsize
         A thesis presented for the degree of\\
@@ -19,11 +19,23 @@
         \vfill
         
         \normalsize
-        Supervised by:\\
+        Thesis Advisor:\\
+        \vspace{0.2cm}
         Professor Kwanghun Chung\\
-        Department of Chemical Engineering
+        Department of Chemical Engineering\\
+        \vspace{0.4cm}
+        Thesis Committee:\\
+        \vspace{0.2cm}
+        Professor Patrick Doyle\\
+        Department of Chemical Engineering\\
+        \vspace{0.2cm}
+        Professor Martin Bazant\\
+        Department of Chemical Engineering\\
+        \vspace{0.2cm}
+        Professor Mriganka Sur\\
+        Department of Brain and Cognitive Sciences
 
-        \vspace{0.8cm}
+        \vspace{0.4cm}
 
         % Uncomment the following line
         % to add a centered university logo

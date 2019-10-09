@@ -1,5 +1,16 @@
 # Ultrafast immunostaining of organ-scale tissues for scalable proteomic phenotyping
 
+\footnotesize
+
+Dae Hee Yun\*, Young-Gyun Park\*, Jae Hun Cho\*, Lee Kamentsky, Nicholas B.
+Evans, Alex Albanese, Katherine Xie, *Justin Swaney*, Chang Ho Sohn, Yuxuan
+Tian, Qiangge Zhang, Gabi Drummond, Webster Guan, Nicholas DiNapoli, Heejin
+Choi, Hae-Yoon Jung, Luzdary Ruelas, Guoping Feng, Kwanghun Chung [^1]
+
+[^1]: \* indicates co-first authorship.
+
+\normalsize
+
 ## Abstract
 
 Studying the function and dysfunction of complex biological systems necessitates

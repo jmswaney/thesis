@@ -1,5 +1,15 @@
 # Multiplexed and scalable super-resolution imaging of three-dimensional protein localization in size-adjustable tissues
 
+\footnotesize
+
+Taeyun Ku\*, *Justin Swaney*\*, Jeong-Yoon Park\*, Alexander Albanese, Evan
+Murray, Jae Hun Cho, Young-Gyun Park, Vamsi Mangena, Jiapei Chen, and Kwanghun
+Chung [^1]
+
+[^1]: \* indicates co-first authorship.
+
+\normalsize
+
 ## Summary
 
 The biology of multicellular organisms is coordinated across multiple size
@@ -343,9 +353,9 @@ discussions. K.C. was supported by Burroughs Wellcome Fund Career Awards at the
 Scientific Interface, the Searle Scholars Program, Packard award in Science and
 Engineering, JPB Foundation (PIIF and PNDRF) and NIH (1-U01-NS090473-01).
 Resources that may help enable general users to establish the methodology are
-freely available online (http://www.chunglabresources.org). K.C. is a co-founder
-of LifeCanvas Technologies, a startup that aims to help the research community
-adopt technologies developed by the Chung Laboratory.
+freely available online (<http://www.chunglabresources.org>). K.C. is a
+co-founder of LifeCanvas Technologies, a startup that aims to help the research
+community adopt technologies developed by the Chung Laboratory.
 
 ## Author Contributions
 
@@ -581,7 +591,7 @@ encompassing all key-points, and the expansion ratio was calculated as the ratio
 between two squared roots of the areas. The correspondence information was used
 to generate a regularly spaced deformation mesh using a 3D thin plate spline
 code written by Yang
-(http://www.mathworks.com/matlabcentral/fileexchange/37576-3d-thin-plate-spline-warping-function).
+(<http://www.mathworks.com/matlabcentral/fileexchange/37576-3d-thin-plate-spline-warping-function>).
 Lengths between each pair of grid points were calculated in both pre-MAP and
 post-MAP images, considering the expansion ratio. The difference between the two
 lengths was measured as a distortion error. After averaging the squared errors

@@ -1,5 +1,16 @@
 # Simple, scalable proteomic imaging for high-dimensional profiling of intact systems
 
+\footnotesize
+
+Evan Murray\*, Jae Hun Cho\*, Daniel Goodwin\*, Taeyun Ku\*, *Justin Swaney*\*,
+Sung-Yon Kim, Heejin Choi, Young-Gyun Park, Jeong-Yoon Park, Austin Hubbert,
+Margaret McCue, Sara Vassallo, Naveed Bakh, Matthew P. Frosch, Van J. Wedeeng,
+H. Sebastian Seung, and Kwanghun Chung [^1]
+
+[^1]: \* indicates co-first authorship.
+
+\normalsize
+
 ## Summary
 
 Combined measurement of diverse molecular and anatomical traits that span
@@ -625,7 +636,7 @@ incubated at 37C with gentle shaking.
 
 Supplemental Information includes Supplemental Experimental Procedures, six
 figures, two tables, and six movies and can be found with this article online at
-http://dx.doi.org/10.1016/j.cell.2015.11.025.
+<http://dx.doi.org/10.1016/j.cell.2015.11.025> as well as in the appendix.
 
 ## Author Contributions
 

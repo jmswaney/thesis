@@ -1,5 +1,14 @@
 # Scalable image processing techniques for quantitative analysis of volumetric biological images from light-sheet microscopy
 
+\footnotesize
+
+*Justin Swaney*\*, Lee Kamentsky\*, Nicholas Evans, Katherine Xie, Young-Gyun
+Park, Gabrielle Drummond, Dae Hee Yun, Kwanghun Chung [^1]
+
+[^1]: \* indicates co-first authorship.
+
+\normalsize
+
 ## Abstract
 
 Here we describe an image processing pipeline for quantitative analysis of
@@ -306,16 +315,16 @@ each brain region can be calculated (Fig. 4c).
 
 All software modules are available from Github at
 
-http://www.github.com/chunglabmit/shield-2018
+<http://www.github.com/chunglabmit/shield-2018>
 
 as well as from Docker hub at
 
-https://hub.docker.com/r/chunglabmit/shield-2018. 
+<https://hub.docker.com/r/chunglabmit/shield-2018>
 
 We also provide example LSFM images of a SHIELD-processed mouse hemisphere
 dataset, which is available from
 
-http://leviathan-chunglab.mit.edu/nature-protocols-2019. 
+<http://leviathan-chunglab.mit.edu/nature-protocols-2019>
 
 In order to adapt our image processing pipeline to other experimental
 situations, users should first complete our protocol using theprovided example
@@ -357,7 +366,7 @@ maximum display range.
 
 Some minimal computer skills are needed to install Docker and navigate using the
 command line. If you are unfamiliar with Docker, important introductory
-information about Docker can be found at https://docs.docker.com/get-started/.
+information about Docker can be found at <https://docs.docker.com/get-started/>.
 Our protocol relies on several Docker features for volume sharing and network
 access, so a basic understanding of Docker is a prerequisite. Since Docker and
 most of our software is used from the command line, a basic understanding of how
@@ -401,7 +410,7 @@ meet the minimum system requirements.
 #### Example Data
 
 All Example data is available from our laboratory servers
-(http://leviathan-chunglab.mit.edu/nature-protocols-2019), including:
+(<http://leviathan-chunglab.mit.edu/nature-protocols-2019>), including:
 
 - Raw data, comprising the raw LSFM images and a flat reference image from the
   provided mouse brain dataset.
@@ -443,17 +452,17 @@ All Example data is available from our laboratory servers
     must be installed locally. Docker offers a free version of their software
     called Docker Community Edition.
   - We recommend using FIJI for inspecting images throughout our pipeline. FIJI
-    can be obtained from https://fiji.sc/
+    can be obtained from <https://fiji.sc/>
 
 ### Equipment Setup
 
 #### Docker setup
 
 1. Create a Docker ID to gain access to Docker software and Docker Hub using
-   your preferred email address at https://hub.docker.com/. You may need to
+   your preferred email address at <https://hub.docker.com/>. You may need to
    verify  your email address.
 2. Download Docker Community Edition for your particular operating system at
-   https://www.docker.com/products/docker-engine. 
+   <https://www.docker.com/products/docker-engine>. 
 3. Follow the installation instructions and the provided commands to verify that
    Docker has been installed correctly.
 4. With the Docker deamon running, open a terminal and run the following command
@@ -508,8 +517,8 @@ section if your computer does not have this much available space.
 
 #### Downloading downsampled example data
 
-1. Navigate to http://leviathan-chunglab.mit.edu/nature-protocols-2019/ in your
-   browser. 
+1. Navigate to <http://leviathan-chunglab.mit.edu/nature-protocols-2019/> in
+   your browser. 
 2. Click the `downsampled_data.zip` link and choose to save the file instead of
    opening it. 
 3. Unzip the `downsampled_data.zip` file to a new folder called “data” and make

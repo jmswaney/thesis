@@ -1,13 +1,13 @@
 # Conclusion
 
-<!-- 
-A chapter that concludes the thesis by summarising the learning points
-and outlining future areas for research
--->
-
 ## Thesis summary
 
-In summary, pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc eleifend, ex a luctus porttitor, felis ex suscipit tellus, ut sollicitudin sapien purus in libero. Nulla blandit eget urna vel tempus. Praesent fringilla dui sapien, sit amet egestas leo sollicitudin at.
+This work has addressed several major challenges associated with scaling up
+experimental techniques used in neuroscience research. These advances enable
+neuroscientists to answer long-standing biological questions in new ways by
+lowering the barrier for staining and imaging, providing scalable image
+processing tools for analysis, and engineering new culture systems for the study
+of large-scale brain models.
 
 ## Future work
 
