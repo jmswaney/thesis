@@ -1,26 +1,13 @@
-FROM haskell:8.0
+FROM ubuntu:bionic
 
-# install latex packages
-RUN apt-get update -y \
-  && apt-get install -y -o Acquire::Retries=10 --no-install-recommends \
-    texlive-latex-base \
-    texlive-xetex latex-xcolor \
-    texlive-math-extra \
-    texlive-latex-extra \
-    texlive-fonts-extra \
-    texlive-bibtex-extra \
-    fontconfig \
-    lmodern
+RUN ln -snf /usr/share/zoneinfo/Etc/UTC /etc/localtime \
+    && echo "Etc/UTC" > /etc/timezone \
+    && apt-get update \
+    && apt-get upgrade -y \
+    && apt-get install texlive-full texlive-latex-extra texlive-fonts-recommended xzdec -y \
+    && apt-get install -y wget \
+    && wget --no-check-certificate https://github.com/jgm/pandoc/releases/download/2.7.3/pandoc-2.7.3-1-amd64.deb \
+    && dpkg -i pandoc-2.7.3-1-amd64.deb \
+    && rm -rf /var/lib/apt/lists/*
 
-# will ease up the update process
-# updating this env variable will trigger the automatic build of the Docker image
-ENV PANDOC_VERSION "2.2.1"
-
-# install pandoc
-RUN cabal update && cabal install pandoc-${PANDOC_VERSION}
-
-WORKDIR /source
-
-ENTRYPOINT ["/root/.cabal/bin/pandoc"]
-
-CMD ["--help"]
+WORKDIR /data

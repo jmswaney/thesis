@@ -45,6 +45,27 @@ pdf:
 	--pdf-engine=xelatex \
 	--verbose
 
+docker:
+	docker run -it -v "$(BASEDIR):/data" pandoc \
+	pandoc source/*.md \
+	-o "output/thesis.pdf" \
+	-H "style/preamble.tex" \
+	--template="style/template.tex" \
+	--bibliography="source/references_chapter_1.bib" 2>pandoc.log \
+	--bibliography="source/references_chapter_2.bib" 2>pandoc.log \
+	--bibliography="source/references_chapter_3.bib" 2>pandoc.log \
+	--csl="style/ref_format.csl" \
+	--highlight-style pygments \
+	-V fontsize=12pt \
+	-V papersize=a4paper \
+	-V documentclass=report \
+	-F pandoc-citeproc \
+	--lua-filter section-refs.lua \
+	-N \
+	--pdf-engine=xelatex \
+	--verbose
+
+
 tex:
 	pandoc "$(INPUTDIR)"/*.md \
 	-o "$(OUTPUTDIR)/thesis.tex" \
