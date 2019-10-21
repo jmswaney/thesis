@@ -1,14 +1,14 @@
 # 3D organoid phenotyping paper
 
-\footnotesize
+\slshape
 
-Alexandre Albanese\*, *Justin Swaney*\*, Dae Hee Yun, Nick Evans, Jenna
+Alexandre Albanese\*, **Justin Swaney**\*, Dae Hee Yun, Nick Evans, Jenna
 Antonucci-Johnson, Vincent Pham, Chloe Delepine, Mriganka Sur, Lee Gehrke,
 Kwanghun Chung [^1]
 
 [^1]: \* indicates co-first authorship.
 
-\normalsize
+\upshape
 
 ## Introduction
 

@@ -57,8 +57,8 @@
     \hspace*{\fill} Thesis Supervisor
 
     Accepted by\Dotfill\\ 
-    \hspace*{\fill} Richard D. Braatz\\ 
-    \hspace*{\fill} Edward R. Gilliland Professor of Chemical Engineering\\ 
+    \hspace*{\fill} Patrick Doyle\\ 
+    \hspace*{\fill} Professor of Chemical Engineering\\ 
     \hspace*{\fill} Chairman, Committee for Graduate Students
 
     \vspace{0.4cm}

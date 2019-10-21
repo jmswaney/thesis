@@ -46,14 +46,14 @@ pdf:
 	--verbose
 
 docker:
-	docker run -it -v "$(BASEDIR):/data" pandoc \
-	pandoc source/*.md \
+	docker run -it -v "C:/Users/Justin/thesis:/data" pandoc \
+	sh -c 'pandoc source/*.md \
 	-o "output/thesis.pdf" \
 	-H "style/preamble.tex" \
 	--template="style/template.tex" \
-	--bibliography="source/references_chapter_1.bib" 2>pandoc.log \
-	--bibliography="source/references_chapter_2.bib" 2>pandoc.log \
-	--bibliography="source/references_chapter_3.bib" 2>pandoc.log \
+	--bibliography="source/references_chapter_1.bib" \
+	--bibliography="source/references_chapter_2.bib" \
+	--bibliography="source/references_chapter_3.bib" \
 	--csl="style/ref_format.csl" \
 	--highlight-style pygments \
 	-V fontsize=12pt \
@@ -63,8 +63,7 @@ docker:
 	--lua-filter section-refs.lua \
 	-N \
 	--pdf-engine=xelatex \
-	--verbose
-
+	--verbose'
 
 tex:
 	pandoc "$(INPUTDIR)"/*.md \

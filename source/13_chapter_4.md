@@ -1,13 +1,13 @@
 # Scalable image processing techniques for quantitative analysis of volumetric biological images from light-sheet microscopy
 
-\footnotesize
+\slshape
 
-*Justin Swaney*\*, Lee Kamentsky\*, Nicholas Evans, Katherine Xie, Young-Gyun
+**Justin Swaney**\*, Lee Kamentsky\*, Nicholas Evans, Katherine Xie, Young-Gyun
 Park, Gabrielle Drummond, Dae Hee Yun, Kwanghun Chung [^1]
 
 [^1]: \* indicates co-first authorship.
 
-\normalsize
+\upshape
 
 ## Abstract
 
@@ -97,6 +97,8 @@ and third, semi-automatic atlas alignment for segmenting brain regions and
 quantifying fluorescence (Fig. 1). Our protocols have been tested on images of
 SHIELD-processed mouse brain hemispheres acquired with an axially-swept
 light-sheet microscope.
+
+![Overall image processing pipeline for whole brain analysis. Raw images from LSFM of a SHIELD-processed mouse hemisphere are destriped and corrected for uneven illumination. Destriped images are then stitched into a multichannel volumetric image, which is resampled to match a reference atlas. Point correspondences from an automatic alignment procedure are manually refined to obtain a region segmentation for the full-resolution, stitched image. The region segmentation is then used to quantify mean fluorescence in each brain region. \label{fig4-1}](source/figures/Protocol/figure1.jpg){ width=100% }
 
 #### Development of the destriping module
 
@@ -250,6 +252,8 @@ Many standard solutions exist for similar tasks addressed in our image
 processing pipeline. In this section, we compare the methods used in our
 protocol to existing methods in the context of whole brain LSFM image analysis.
 
+![Destriping of light-sheet microscopy images using pystripe. (a) Comparison of destriping results from MDSR and pystripe on LSFM images of a SHIELD-processed mouse hemisphere stained for Neuropeptide Y (NPY). Scale bars, 1 mm (white) and 200 μm (black). (b) Average single-core destriping speed for MDSR and pystripe on 2048 x 2048 images (n = 10, error bars indicate standard deviation). (c) Scaling of destriping speed using pystripe with parallel processing on 2048 x 2048 images. \label{fig4-2}](source/figures/Protocol/figure2.jpg){ width=80% }
+
 #### Destriping
 
 The previously reported digital destriping algorithm MDSR has achieved state of
@@ -292,6 +296,8 @@ and tiling artifacts before stitching (Fig. 3b, Supplementary Video 2). When
 comparing the  stitching speed of TSV using multiple cores, the stitching frame
 rate increases linearly, reaching 2.6 frames per second with 48 cores (Fig. 3c).
 
+![Stitching and illumination correction of light-sheet microscopy images using TSV. (a) Comparison of stitching results with and without destriping and illumination correction (IC) performed with pystripe on LSFM images of a SHIELD-processed mouse hemisphere. Scale bar, 2 mm. (b) Comparison of a region of interest with and without IC. Without IC, both uneven illumination (cyan arrow) and stripe artifacts (white arrow) corrupt the images. (c) Scaling of stitching speed using TSV with parallel processing on 2048 x 2048 images. \label{fig4-3}](source/figures/Protocol/figure3.jpg){ width=90% }
+
 #### Atlas Alignment
 
 Our hybrid automated atlas alignment method with manual refinement differs from
@@ -302,6 +308,8 @@ not used in combination with Elastix because integrating the transformations
 across multiple registration tools can be challenging. To the best of our
 knowledge, there are no web-based tools for interactive atlas alignment
 currently available.
+
+![Atlas alignment and region-based fluorescence quantification using nuggt. (a) Comparison of atlas alignment of a syto 16 LSFM image to the reference image in the ABA before alignment, after automatic alignment, and after manual refinement. Scale bar, 2 mm. (b) Overlay of NPY and SST in the whole hemisphere example dataset (c) Mean fluorescence for the top 10 regions for both NPY and SST calculated after manual refinement. All other regions from the ABA are omitted for clarity. \label{fig4-4}](source/figures/Protocol/figure4.jpg){ width=100% }
 
 After aligning a source autofluorescence or nuclear stain image to the reference
 image, other channels can be aligned to the atlas using the same calculated

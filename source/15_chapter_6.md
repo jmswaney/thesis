@@ -1,5 +1,14 @@
 # Vascularization of cerebral organoids using two-photon stereolithography
 
+\slshape
+
+**Justin Swaney**\*, Srinu Pujari\*, Alexandre Albanese\*, Nicholas Evans, Dae
+Hee Yun, Kwanghun Chung [^1]
+
+[^1]: \* indicates co-first authorship.
+
+\upshape
+
 ## Introduction
 
 This is the introduction. Nunc lorem odio, laoreet eu turpis at, condimentum sagittis diam. Phasellus metus ligula, auctor ac nunc vel, molestie mattis libero. Praesent id posuere ex, vel efficitur nibh. Quisque vestibulum accumsan lacus vitae mattis.
