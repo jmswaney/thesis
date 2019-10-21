@@ -1,4 +1,4 @@
-# Appendix 2: Supplemental Information {.unnumbered}
+# Appendix 3: Supplemental Information {.unnumbered}
 
 \newpage
 

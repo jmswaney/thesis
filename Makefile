@@ -10,6 +10,7 @@ STYLEDIR=$(BASEDIR)/style
 BIBFILE1=$(INPUTDIR)/references_chapter_1.bib
 BIBFILE2=$(INPUTDIR)/references_chapter_2.bib
 BIBFILE3=$(INPUTDIR)/references_chapter_3.bib
+BIBFILE4=$(INPUTDIR)/references_chapter_4.bib
 
 help:
 	@echo ' 																	  '
@@ -54,6 +55,7 @@ docker:
 	--bibliography="source/references_chapter_1.bib" \
 	--bibliography="source/references_chapter_2.bib" \
 	--bibliography="source/references_chapter_3.bib" \
+	--bibliography="source/references_chapter_4.bib" \
 	--csl="style/ref_format.csl" \
 	--highlight-style pygments \
 	-V fontsize=12pt \

@@ -425,27 +425,7 @@ speed of SWITCH-processed samples without noticeable tissue damage (Figure
 \ref{fig1-4}A). We achieved passive clearing of a whole adult mouse brain within
 4 days at 80C (versus 4 weeks at 37C) (Figure \ref{fig1-4}C).
 
-![SWITCH Enables Simple, Rapid, and Scalable Tissue Clearing. \label{fig1-4}](source/figures/SWITCH/figure4.jpg){ width=100% }
-
-\newpage
-
-\begin{figure*}
-\caption*{
-(A) Images of 1-mm coronal blocks of an adult mouse brain hemisphere before and
-after clearing at 37C for 24 hr or 80C for 12 hr. The lipid-extracted tissues
-were refractive index (RI)-matched (see SI for details). Scale bars, 3 mm. (B)
-Images of mouse brain hemispheres lipid-extracted at 80C for 10 days with 200 mM
-SDS containing 0–50 mM sodium sulfite (SS) as an anti-browning agent. Note that
-the tissues were not RI-matched. Scale bars, 6 mm. (C) Images of intact adult
-mouse brains cleared at 37C (top) and 60C (middle) and 80C (bottom) with and
-without 1-thioglycerol (TG). Browning in hightemperature clearing was
-effectively prevented by TG. Scale bars, 3 mm. (D) High-temperature (80C)
-clearing of whole rat brain with and without TG. Scale bars, 6 mm. (E) Clearing
-of human and marmoset samples at 80C. Scale bars, 6 mm. (F) Rapid clearing of
-various organs at 80C with and without 50 mM SS. Cleared rat spinal cord is not
-RI-matched. Scale bars, 3 mm.
-}
-\end{figure*}
+![SWITCH Enables Simple, Rapid, and Scalable Tissue Clearing. (A) Images of 1-mm coronal blocks of an adult mouse brain hemisphere before and after clearing at 37C for 24 hr or 80C for 12 hr. The lipid-extracted tissues were refractive index (RI)-matched (see SI for details). Scale bars, 3 mm. (B) Images of mouse brain hemispheres lipid-extracted at 80C for 10 days with 200 mM SDS containing 0–50 mM sodium sulfite (SS) as an anti-browning agent. Note that the tissues were not RI-matched. Scale bars, 6 mm. (C) Images of intact adult mouse brains cleared at 37C (top) and 60C (middle) and 80C (bottom) with and without 1-thioglycerol (TG). Browning in hightemperature clearing was effectively prevented by TG. Scale bars, 3 mm. (D) High-temperature (80C) clearing of whole rat brain with and without TG. Scale bars, 6 mm. (E) Clearing of human and marmoset samples at 80C. Scale bars, 6 mm. (F) Rapid clearing of various organs at 80C with and without 50 mM SS. Cleared rat spinal cord is not RI-matched. Scale bars, 3 mm.\label{fig1-4}](source/figures/SWITCH/figure4.jpg){ width=100% }
 
 Upon prolonged exposure to high temperatures, however, samples developed a
 brownish hue [@Friedman1996], which may interfere with imaging at certain

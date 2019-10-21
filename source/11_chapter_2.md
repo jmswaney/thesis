@@ -94,57 +94,23 @@ to four- to fivefold for multiresolution imaging.
 
 The key to MAP is to prevent intra- and interprotein crosslinking during the
 hydrogel-tissue hybridization step [@Chung2013], and then to dissociate and
-denature proteins to allow natural expansion of the hybrid (Fig. 1a). We
-hypothesized that a high concentration of acrylamide monomers might effectively
-prevent protein crosslinking by quenching reactive methylols formed by the
-protein-formaldehyde reaction. If the acrylamide monomer concentration is low,
-the reactive methylols would react with amide groups within the same protein or
-adjacent proteins to form methylene bridges (Fig. 1a, left column)
-[@Puchtler1985]. Such intra- and interprotein crosslinking would prevent
+denature proteins to allow natural expansion of the hybrid (Fig. \ref{fig2-1}a).
+We hypothesized that a high concentration of acrylamide monomers might
+effectively prevent protein crosslinking by quenching reactive methylols formed
+by the protein-formaldehyde reaction. If the acrylamide monomer concentration is
+low, the reactive methylols would react with amide groups within the same
+protein or adjacent proteins to form methylene bridges (Fig. \ref{fig2-1}a, left
+column) [@Puchtler1985]. Such intra- and interprotein crosslinking would prevent
 dissociation of protein complexes and limit subsequent tissue expansion
-[@Sung1996]. With increased acrylamide concentration (Fig. 1a, right column),
-methylols might preferentially react with excess acrylamide monomers,
+[@Sung1996]. With increased acrylamide concentration (Fig. \ref{fig2-1}a, right
+column), methylols might preferentially react with excess acrylamide monomers,
 effectively reducing interprotein crosslinking while maximally tethering
 individual proteins to an expandable hydrogel mesh. Dissociation and
 denaturation of protein complexes with heat and anionic surfactant then
 facilitates natural expansion of the hydrogel-tissue hybrid while preserving
 overall spatial organization of the proteome.
 
-![Magnified and accessible 3D proteome library of whole intact organs. \label{fig2-1}](source/figures/MAP/figure1.jpg){ width=100% }
-
-\begin{figure*}
-\caption*{
-(a) Comparison of hydrogel-tissue hybridization chemistry, subsequent protein
-denaturation, and hybrid expansion between low (left column) and high (right
-column) concentrations of acrylamide (AA; blue) infusion. High-concentration AA
-prevents intra- and interprotein crosslinking during the hydrogel-tissue
-hybridization step by quenching reactive methylols formed from amine residues
-(green) reacting with formaldehyde (red). Dissociation and denaturation of
-non-crosslinked protein complexes allows natural expansion of the hybrid. In
-low-concentration AA (left column), the reactive methylols react with available
-amine or amide groups within the same protein or adjacent proteins and form
-methylene bridges (red line). Such intra- and interprotein crosslinking prevents
-complete denaturation and dissociation of the proteins, and thereby limits
-subsequent tissue expansion. (b) Expansion after denaturation of BSA tissue
-phantom post-fixed in several AA concentrations. Representative images of tissue
-phantoms before and after expansion are shown. One-way ANOVA was performed (***P
-< 0.001). Error bars show s.d. (n = 3). Scale bars, 5 mm. (c) Expansion of
-1-mm-thick coronal mouse brain slices perfused with several AA concentrations.
-One-way ANOVA was performed (P < 0.001). V0, volume before expansion; V, volume
-after expansion. Error bars show mean ± s.d. (n = 6). (d) Average diameter of
-1-mm-thick slices relative to the initial diameter after expansion and
-subsequent shrinkage. Slices were allowed 24 h for both expansion and shrinkage
-(n = 6). L0, mean length of original brain; L, mean length after expansion and
-shrinkage. (e) Representative photos showing expansion and shrinkage of a
-1-mm-thick coronal block. Starting from the top left, the original brain
-section, the expanded state, and the shrunken state are shown. (f,g) MAP applied
-to a whole mouse brain and other organs. The entire process from perfusion to
-full expansion took 7 d. Compared with the original organ size (pictures at
-right bottom corner), the final expansion of the brain showed a more than
-fourfold increase in length. (h) MAP applied to cerebral organoid. Top,
-darkfield images; bottom, brightfield image. Scale bars (e–h), 10 mm.
-}
-\end{figure*}
+![Magnified and accessible 3D proteome library of whole intact organs. (a) Comparison of hydrogel-tissue hybridization chemistry, subsequent protein denaturation, and hybrid expansion between low (left column) and high (right column) concentrations of acrylamide (AA; blue) infusion. High-concentration AA prevents intra- and interprotein crosslinking during the hydrogel-tissue hybridization step by quenching reactive methylols formed from amine residues (green) reacting with formaldehyde (red). Dissociation and denaturation of non-crosslinked protein complexes allows natural expansion of the hybrid. In low-concentration AA (left column), the reactive methylols react with available amine or amide groups within the same protein or adjacent proteins and form methylene bridges (red line). Such intra- and interprotein crosslinking prevents complete denaturation and dissociation of the proteins, and thereby limits subsequent tissue expansion. (b) Expansion after denaturation of BSA tissue phantom post-fixed in several AA concentrations. Representative images of tissue phantoms before and after expansion are shown. One-way ANOVA was performed (***P < 0.001). Error bars show s.d. (n = 3). Scale bars, 5 mm. (c) Expansion of 1-mm-thick coronal mouse brain slices perfused with several AA concentrations. One-way ANOVA was performed (P < 0.001). V0, volume before expansion; V, volume after expansion. Error bars show mean ± s.d. (n = 6). (d) Average diameter of 1-mm-thick slices relative to the initial diameter after expansion and subsequent shrinkage. Slices were allowed 24 h for both expansion and shrinkage (n = 6). L0, mean length of original brain; L, mean length after expansion and shrinkage. (e) Representative photos showing expansion and shrinkage of a 1-mm-thick coronal block. Starting from the top left, the original brain section, the expanded state, and the shrunken state are shown. (f,g) MAP applied to a whole mouse brain and other organs. The entire process from perfusion to full expansion took 7 d. Compared with the original organ size (pictures at right bottom corner), the final expansion of the brain showed a more than fourfold increase in length. (h) MAP applied to cerebral organoid. Top, darkfield images; bottom, brightfield image. Scale bars (e–h), 10 mm. \label{fig2-1}](source/figures/MAP/figure1.jpg){ width=100% }
 
 To test our hypothesis, we first measured the effect of acrylamide concentration
 on tissue expansion. We prepared albumin-containing tissue phantoms and
@@ -152,33 +118,35 @@ post-fixed them in 4% paraformaldehyde (PFA) with different concentrations
 (0–20%) of acrylamide. We incubated the tissue phantoms in detergent solution at
 95 °C for 1 h to denature and disrupt protein aggregates. As expected, phantoms
 fixed in higher concentrations of acrylamide showed higher degrees of expansion
-in water (Fig. 1b). We observed a similar trend in mouse brain tissues that
-were perfused with different concentrations of acrylamide, polymerized,
-denatured, and expanded (Fig. 1c). Thus, we used high concentrations of
-acrylamide in order to maximize expansion during MAP in all subsequent
-experiments.
+in water (Fig. \ref{fig2-1}b). We observed a similar trend in mouse brain
+tissues that were perfused with different concentrations of acrylamide,
+polymerized, denatured, and expanded (Fig. \ref{fig2-1}c). Thus, we used high
+concentrations of acrylamide in order to maximize expansion during MAP in all
+subsequent experiments.
 
 Using this approach, we achieved a fourfold linear expansion of a whole mouse
-brain within 7 d without protease treatment (Fig. 1f). Tissue expansion was
-reversible and tunable using buffers with different salt concentrations and
-osmolarities (Fig. 1d,e). This method is applicable to other organs including
-heart, lung, spinal cord, liver, intestine, and kidney, and also cerebral
-organoids (Fig. 1g,h and Supplementary Fig. 1).
+brain within 7 d without protease treatment (Fig. \ref{fig2-1}f). Tissue
+expansion was reversible and tunable using buffers with different salt
+concentrations and osmolarities (Fig. \ref{fig2-1}d,e). This method is
+applicable to other organs including heart, lung, spinal cord, liver, intestine,
+and kidney, and also cerebral organoids (Fig. \ref{fig2-1}g,h and Supplementary
+Fig. 1).
 
 ### Preservation of multiscale architectures
 
 We next asked whether MAP retains multiscale structural information and enables
 super-resolution imaging with diffraction-limited microscopes. To estimate the
 amount of distortion incurred from expansion, we imaged gel-embedded cultured
-cells before and after MAP processing (Fig. 2a). At the subcellular scale, MAP
-expansion improved visualization of microtubules and allowed imaging of single
-tubular structures (Fig. 2b,c). The estimated distortion error (root-mean-square
-error, RMSE) was less than 3% of measured length at both the subcellular scale
-(Fig. 2d) and the multicellular scale (Fig. 2g). The degree of gel expansion was
-not a function of cell density, as indicated by the consistent local expansion
-within differently populated cell clusters (Fig. 2e,f).
+cells before and after MAP processing (Fig. \ref{fig2-2}a). At the subcellular
+scale, MAP expansion improved visualization of microtubules and allowed imaging
+of single tubular structures (Fig. \ref{fig2-2}b,c). The estimated distortion
+error (root-mean-square error, RMSE) was less than 3% of measured length at both
+the subcellular scale (Fig. \ref{fig2-2}d) and the multicellular scale (Fig.
+\ref{fig2-2}g). The degree of gel expansion was not a function of cell density,
+as indicated by the consistent local expansion within differently populated cell
+clusters (Fig. \ref{fig2-2}e,f).
 
-![Comparison of multiscale architectures before and after MAP processing. \label{fig2-2}](source/figures/MAP/figure2.jpg){ width=100% }
+![Comparison of multiscale architectures before and after MAP processing. \label{fig2-2}](source/figures/MAP/figure2.jpg){ width=80% }
 
 \begin{figure*}
 \caption*{
@@ -217,18 +185,19 @@ sampling limit with either 1p excitation by 488 and 594 nm or 2p excitation by
 
 To test whether MAP preserves multiscale tissue architectures, we imaged a
 100-μm-thick mouse brain block labeled with lectin before and after MAP (Fig.
-2h). The distortion analysis showed less than 4% error (Fig. 2i), which was at
-most a twofold increase, compared to the inevitable distortion from sample
-mounting for imaging (Fig. 2i, remounting). Both the intra-vascular space with
-low protein concentration and the extra-vascular space with high protein
-concentration showed similar degrees of expansion (Fig. 2h, insets), suggesting
-that the effect of protein concentration and cell density on gel expansion is
-minimal. Diffraction-limited microscopy revealed fine 3D details of
-immunolabeled cells such as cytoskeletal filament structures (Fig. 2j,k,m) and
-better-resolved axonal fibers (Fig. 2l) after the MAP process. These results
-together indicate that MAP preserved multiscale structural information of
-biological samples and enabled super-resolution imaging with diffraction-limited
-microscopes, achieving ~60-nm lateral resolution.
+\ref{fig2-2}h). The distortion analysis showed less than 4% error (Fig.
+\ref{fig2-2}i), which was at most a twofold increase, compared to the inevitable
+distortion from sample mounting for imaging (Fig. \ref{fig2-2}i, remounting).
+Both the intra-vascular space with low protein concentration and the
+extra-vascular space with high protein concentration showed similar degrees of
+expansion (Fig. \ref{fig2-2}h, insets), suggesting that the effect of protein
+concentration and cell density on gel expansion is minimal. Diffraction-limited
+microscopy revealed fine 3D details of immunolabeled cells such as cytoskeletal
+filament structures (Fig. \ref{fig2-2}j,k,m) and better-resolved axonal fibers
+(Fig. \ref{fig2-2}l) after the MAP process. These results together indicate that
+MAP preserved multiscale structural information of biological samples and
+enabled super-resolution imaging with diffraction-limited microscopes, achieving
+~60-nm lateral resolution.
 
 ### Labeling proteome with conventional antibodies
 
@@ -237,20 +206,20 @@ enables super-resolution imaging of fine subcellular architectures using
 commercially available antibodies. Antibody targets were selected from a wide
 range of antigens including membrane proteins, cytoplasmic proteins, nuclear
 proteins, neurofilament proteins, and synaptic proteins to survey the overall
-proteomic landscape (Fig. 3 and Supplementary Table 1). To validate the
-antibodies, we tested whether antibody staining of MAP-processed tissues shows
-comparable structures to PFA-fixed tissues, and antibodies from different host
-species targeting the same protein, if available, provide concordant images
+proteomic landscape (Fig. \ref{fig2-3} and Supplementary Table 1). To validate
+the antibodies, we tested whether antibody staining of MAP-processed tissues
+shows comparable structures to PFA-fixed tissues, and antibodies from different
+host species targeting the same protein, if available, provide concordant images
 (Supplementary Figs. 2 and 3). We found that 100 of 122 antibodies were
 compatible with MAP-processed samples, and 43 of 51 target molecules were
-successfully visualized (Fig. 3, Supplementary Table 1, and Supplementary Figs.
-2 and 3). This high success rate indicates that loss of epitopes by protein
-denaturation was minimal. Moreover, some antibodies (e.g., calbindin and
-calretinin) showed negative staining when different antibodies targeting the
-same endogenous protein showed strong signal (Fig. 3b and Supplementary Table
-1). This result demonstrates that MAP preserves the tissue proteome with minimal
-loss of specific epitopes and that the library can be effectively probed using
-off-the-shelf antibodies without any modification.
+successfully visualized (Fig. \ref{fig2-3}, Supplementary Table 1, and
+Supplementary Figs. 2 and 3). This high success rate indicates that loss of
+epitopes by protein denaturation was minimal. Moreover, some antibodies (e.g.,
+calbindin and calretinin) showed negative staining when different antibodies
+targeting the same endogenous protein showed strong signal (Fig. \ref{fig2-3}b
+and Supplementary Table 1). This result demonstrates that MAP preserves the
+tissue proteome with minimal loss of specific epitopes and that the library can
+be effectively probed using off-the-shelf antibodies without any modification.
 
 ![Super-resolution imaging showing the 3D proteome library and subcellular details of MAP-processed intact tissue. \label{fig2-3}](source/figures/MAP/figure3.jpg){ width=100% }
 
@@ -299,22 +268,24 @@ l, and m), and 1 μm (yellow; insets in f, h, j, l, and m).
 Preservation of both nanoscopic structures and the proteome in MAP enables
 super-resolution imaging of a broad range of fine subcellular architectures.
 Antibodies targeting filament proteins successfully visualized details of the
-cytoskeletal networks of various cell types (Fig. 3c–e and Supplementary Videos
-1–4). No apparent filament fragmentations were observed in the magnified
-tissues. Labeling of glial fibrillary acidic protein (GFAP) enabled
-visualization the fine foot-process structures surrounding blood vessels (Fig.
-3e and Supplementary Video 3) [@Kosaka1986; @Khakh2015]. Neurofilament medium
-subunit (NF-M) enabled visualization of both processes and synapses [@Yuan2015],
-a subset of which co-localized with the postsynaptic marker, GABA B R1 (the
-C-terminal domain of the GABA B receptor subunit-1) (Fig. 3f and Supplementary
-Video 4). Labeling of calcium-binding proteins (parvalbumin, calbindin, and
-calbindin) robustly enabled visualization of morphological details of positive
-cells (Fig. 3b). A small subset of calbindin-positive fibers showed expression
-of calbindin in their dendritic spines (Fig. 3g). Many synaptic protein markers
-were compatible with MAP (Fig. 3f,h,j,l,m and Supplementary Table 1). Staining
-of synaptic proteins clearly visualized distinct and well-separated elliptical
-disk-shaped clusters of pre- and post-synaptic proteins (Fig. 3h,l,m and
-Supplementary Video 5), enabling their quantitative analysis (Fig. 3k).
+cytoskeletal networks of various cell types (Fig. \ref{fig2-3}c–e and
+Supplementary Videos 1–4). No apparent filament fragmentations were observed in
+the magnified tissues. Labeling of glial fibrillary acidic protein (GFAP)
+enabled visualization the fine foot-process structures surrounding blood vessels
+(Fig. \ref{fig2-3}e and Supplementary Video 3) [@Kosaka1986; @Khakh2015].
+Neurofilament medium subunit (NF-M) enabled visualization of both processes and
+synapses [@Yuan2015], a subset of which co-localized with the postsynaptic
+marker, GABA B R1 (the C-terminal domain of the GABA B receptor subunit-1) (Fig.
+\ref{fig2-3}f and Supplementary Video 4). Labeling of calcium-binding proteins
+(parvalbumin, calbindin, and calbindin) robustly enabled visualization of
+morphological details of positive cells (Fig. \ref{fig2-3}b). A small subset of
+calbindin-positive fibers showed expression of calbindin in their dendritic
+spines (Fig. \ref{fig2-3}g). Many synaptic protein markers were compatible with
+MAP (Fig. \ref{fig2-3}f,h,j,l,m and Supplementary Table 1). Staining of synaptic
+proteins clearly visualized distinct and well-separated elliptical disk-shaped
+clusters of pre- and post-synaptic proteins (Fig. \ref{fig2-3}h,l,m and
+Supplementary Video 5), enabling their quantitative analysis (Fig.
+\ref{fig2-3}k).
 
 ![Multiplexed staining of MAP-processed tissue. \label{fig2-4}](source/figures/MAP/figure4.jpg){ width=80% }
 
@@ -341,7 +312,7 @@ Another potential advantage of the MAP technology is that it enables highly
 multiplexed labeling and imaging of the magnified 3D proteome within a single
 tissue. We successfully performed seven rounds of immunostaining of a
 MAP-processed 100-μm-thick mouse brain tissue with no obvious signs of tissue
-damage (Fig. 4). Outstanding mechanical stability of the MAP-processed sample
+damage (Fig. \ref{fig2-4}). Outstanding mechanical stability of the MAP-processed sample
 enabled repeated manual handling of the tissue with tools that are widely used
 in biology laboratories. The images after destaining of the imaged anti-GFP
 antibody (first round) and after solely adding secondary antibodies targeting
@@ -413,26 +384,27 @@ g, l, o, and p, r, and s).
 To explore this possibility, we first asked if the continuity of neural
 processes is preserved within a magnified sample. We expanded a 0.5-mm-thick
 Thy1-eGFP mouse brain coronal block and then imaged GFP-labeled neurons and
-their projections [@Feng2000]. MAP preserved the continuity of the GFP-expressing
-projections spanning a large tissue volume (Fig. 5a–f) as well as their fine
-morphological details (e.g., dendritic spines) (Fig. 5g). Immunolabeling of
-various cytoplasmic proteins including neurofilament proteins (e.g., NF-H and
-SMI-32), calcium-binding proteins, and metabolic enzymes (e.g., tyrosine
-hydroxylase) confirmed that MAP preserved the continuity of neural fibers of
-various cell types (Fig. 5h–n and Supplementary Videos 6–8). The preserved
-continuity enabled detection of single fibers selected in the immunostained
-tissue volumes (Fig. 5m–q and Supplementary Videos 7 and 8).
+their projections [@Feng2000]. MAP preserved the continuity of the
+GFP-expressing projections spanning a large tissue volume (Fig. \ref{fig2-5}a–f)
+as well as their fine morphological details (e.g., dendritic spines) (Fig.
+\ref{fig2-5}g). Immunolabeling of various cytoplasmic proteins including
+neurofilament proteins (e.g., NF-H and SMI-32), calcium-binding proteins, and
+metabolic enzymes (e.g., tyrosine hydroxylase) confirmed that MAP preserved the
+continuity of neural fibers of various cell types (Fig. \ref{fig2-5}h–n and
+Supplementary Videos 6–8). The preserved continuity enabled detection of single
+fibers selected in the immunostained tissue volumes (Fig. \ref{fig2-5}m–q and
+Supplementary Videos 7 and 8).
 
 To test if MAP enables more accurate tracing of densely packed fibers, we imaged
 neurofilament-stained samples before and after MAP processing using a high
 numerical aperture (NA; 0.95) water-immersion objective. Two individuals not
 involved in image acquisition traced fibers within the sample volume (Fig.
-5r,s). When we compared the concordance between the two tracing results, the
-discordant rate was significantly lower after MAP (Fig. 5t,u; SMI-312, n = 4, P
-= 0.020; NF-H, n = 4, P = 0.010), even though MAP enabled the tracers to detect
-more fibers (total numbers of traced fibers were 160 before MAP and 214 after
-MAP). This result demonstrates that MAP indeed enabled more accurate
-reconstruction of immunolabeled neural fibers.
+\ref{fig2-5}r,s). When we compared the concordance between the two tracing
+results, the discordant rate was significantly lower after MAP (Fig.
+\ref{fig2-5}t,u; SMI-312, n = 4, P = 0.020; NF-H, n = 4, P = 0.010), even though
+MAP enabled the tracers to detect more fibers (total numbers of traced fibers
+were 160 before MAP and 214 after MAP). This result demonstrates that MAP indeed
+enabled more accurate reconstruction of immunolabeled neural fibers.
 
 ![Immunolabeling and imaging of thick MAP-processed tissues. \label{fig2-6}](source/figures/MAP/figure6.jpg){ width=100% }
 
@@ -464,19 +436,20 @@ j), and 10 μm (blue; insets in e).
 Reconstruction of individual neurons requires labeling and imaging of thick
 brain tissues because nerve fibers can extend across a large volume. To test
 whether MAP is applicable to large-scale brain tissues, we expanded a 1-mm-thick
-mouse brain block (5-mm thick after expansion, Fig. 6b) and passively stained it
-with anti-GFP antibody (Fig. 6a). We then imaged the sample using both a high NA
-(0.95), short working distance (WD) (2 mm) water-immersion objective and a low
-NA (0.6), long WD (8 mm) CLARITY objective. Both objectives showed fine
-dendritic spines of GFP-expressing neurons throughout the entire volume (Fig.
-6e). Imaging of the sample did not require depth-dependent modulation of the
-laser power, indicating that staining was uniform and that signal attenuation by
-light scattering was negligible (Fig. 6c,d). MAP is also compatible with
-stochastic electrotransport [@Kim2015], a method that enables rapid tissue
-labeling. Using stochastic electrotransport, we were able to label an 8-mm-thick
-expanded tissue uniformly within only 2 d (Fig. 6f–j). The sample was highly
-transparent. We were able to image the 8-mm-thick sample successfully with the
-same laser power up to the working distance of the objective (Fig. 6h).
+mouse brain block (5-mm thick after expansion, Fig. \ref{fig2-6}b) and passively
+stained it with anti-GFP antibody (Fig. \ref{fig2-6}a). We then imaged the
+sample using both a high NA (0.95), short working distance (WD) (2 mm)
+water-immersion objective and a low NA (0.6), long WD (8 mm) CLARITY objective.
+Both objectives showed fine dendritic spines of GFP-expressing neurons
+throughout the entire volume (Fig. \ref{fig2-6}e). Imaging of the sample did not
+require depth-dependent modulation of the laser power, indicating that staining
+was uniform and that signal attenuation by light scattering was negligible (Fig.
+\ref{fig2-6}c,d). MAP is also compatible with stochastic electrotransport
+[@Kim2015], a method that enables rapid tissue labeling. Using stochastic
+electrotransport, we were able to label an 8-mm-thick expanded tissue uniformly
+within only 2 d (Fig. \ref{fig2-6}f–j). The sample was highly transparent. We
+were able to image the 8-mm-thick sample successfully with the same laser power
+up to the working distance of the objective (Fig. \ref{fig2-6}h).
 
 ## Discussion
 
@@ -819,14 +792,14 @@ selecting the portion of the fiber exiting the imaged volume. The fiber
 representation was changed to a cone representation to visualize the filament
 diameter as well as the tracing path. The tracing fidelity was confirmed by
 inspection. To trace multiple fibers in a dense region, the full data set was
-cropped to the region indicated in Figure 5o using the ‘3D crop’ tool, and
-similar autopath calculations were performed for each fiber. For traceability
-comparison between before and after MAP, we imaged the same tissues before and
-after MAP processing at the same resolution near the optical sampling limit with
-the Leica system and a 25×, 0.95 NA water-immersion objective. Two individuals
-not involved in imaging acquisition performed manual tracing using autodepth
-assistance in Imaris, and discordance ratios between manual tracing results
-before and after MAP processing were calculated.
+cropped to the region indicated in Figure \ref{fig2-5}o using the ‘3D crop’
+tool, and similar autopath calculations were performed for each fiber. For
+traceability comparison between before and after MAP, we imaged the same tissues
+before and after MAP processing at the same resolution near the optical sampling
+limit with the Leica system and a 25×, 0.95 NA water-immersion objective. Two
+individuals not involved in imaging acquisition performed manual tracing using
+autodepth assistance in Imaris, and discordance ratios between manual tracing
+results before and after MAP processing were calculated.
 
 ### Synaptic and fiber intensity profiles
 

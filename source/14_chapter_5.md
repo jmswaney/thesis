@@ -1,4 +1,4 @@
-# 3D organoid phenotyping paper
+# 3D Imaging and High-Content Morphological Analysis of Intact Human Cerebral Organoids
 
 \slshape
 

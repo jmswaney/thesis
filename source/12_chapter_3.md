@@ -92,76 +92,63 @@ level, cell body size, and dendritic morphology in a fully integrated manner.
 Our organ-wide molecular phenotyping framework consists of four major
 components: (1) intact tissue preservation via SHIELD, (2) volumetric labeling
 with eFLASH, (3) light-sheet imaging, and (4) automated 3D image analysis (Fig.
-1a). The pipeline begins with robust preservation of biological tissue with
-SHIELD, which is a polyepoxide-based tissue fixation method that protects
-biomolecules and tissue architecture [@Park2019]. After rapid delipidation of
-the SHIELD-preserved tissues using stochastic electrotransport (SE) [@Kim2015],
-we immunolabel the intact tissues using eFLASH within just one day. The labeled
-samples are rapidly imaged at high-resolution using an axially swept light-sheet
-microscope. Finally, we analyze the resulting volumetric datasets via a suite of
-automated 3D image analysis algorithms to map various cell types within the
-tissue volume. Altogether, the pipeline enables extraction of organ-scale,
-single-cell-resolution data from a fresh sample within just 12 days (Fig. 1a).
+\ref{fig3-1}a). The pipeline begins with robust preservation of biological
+tissue with SHIELD, which is a polyepoxide-based tissue fixation method that
+protects biomolecules and tissue architecture [@Park2019]. After rapid
+delipidation of the SHIELD-preserved tissues using stochastic electrotransport
+(SE) [@Kim2015], we immunolabel the intact tissues using eFLASH within just one
+day. The labeled samples are rapidly imaged at high-resolution using an axially
+swept light-sheet microscope. Finally, we analyze the resulting volumetric
+datasets via a suite of automated 3D image analysis algorithms to map various
+cell types within the tissue volume. Altogether, the pipeline enables extraction
+of organ-scale, single-cell-resolution data from a fresh sample within just 12
+days (Fig. \ref{fig3-1}a).
 
-![eFLASH enables rapid, uniform, and cost-efficient labeling of organ-scale tissues. \label{fig3-1}](source/figures/eFLASH/figure1.jpg){ width=100% }
+![eFLASH enables rapid, uniform, and cost-efficient labeling of organ-scale tissues. (a) High-throughput pipeline for organ-wide molecular mapping at single cell resolution. The pipeline can generate high-resolution and multidimensional data from mouse brains within 12 days. SE, stochastic electrotransport; Prep, preparation; LSFM, light-sheet fluorescence microscopy. (b) eFLASH. The pH and sodium deoxycholate (NaDC) concentration of the labeling solution are gradually reduced to sweep the molecular probes’ binding affinity from unfavorable to favorable in the context of SE. Electrocatalytic oxidation of d-sorbitol on the anode surface generates acidic components that lower pH. NaDC concentration of the labeling solution is reduced by the concentration gradient through the nanoporous membrane. N = 3 independent experiments. Individual data points and mean. (c) Comparison of immunostaining signal among PBST control, initial (unfavorable binding condition) and terminal (favorable binding condition) eFLASH buffers. N = 4 tissue samples. Mean ± s.e.m.. Unpaired T-test, \*\*P < 0.01. Scale bar = 50 µm. (d) Representative images used in (c). \label{fig3-1}](source/figures/eFLASH/figure1.jpg){ width=100% }
 
 \begin{figure*}
 \caption*{
-(a) High-throughput pipeline for organ-wide molecular mapping at single cell
-resolution. The pipeline can generate high-resolution and multidimensional data
-from mouse brains within 12 days. SE, stochastic electrotransport; Prep,
-preparation; LSFM, light-sheet fluorescence microscopy. (b) eFLASH. The pH and
-sodium deoxycholate (NaDC) concentration of the labeling solution are gradually
-reduced to sweep the molecular probes’ binding affinity from unfavorable to
-favorable in the context of SE. Electrocatalytic oxidation of d-sorbitol on the
-anode surface generates acidic components that lower pH. NaDC concentration of
-the labeling solution is reduced by the concentration gradient through the
-nanoporous membrane. N = 3 independent experiments. Individual data points and
-mean. (c) Comparison of immunostaining signal among PBST control, initial
-(unfavorable binding condition) and terminal (favorable binding condition)
-eFLASH buffers. N = 4 tissue samples. Mean ± s.e.m.. Unpaired T-test, \*\*P <
-0.01. Scale bar = 50 µm. (d) Representative images used in (c). (e-f) Comparison
-of antibody penetration and uniformity of staining between eFLASH and SE only.
-Optical sections of mouse hemispheres at different depths are shown. The same
-amounts of antibodies were used for both experiments. Z-depth indicates the
-distance of optical sections from the mid-sagittal planes. Display ranges of
-images are 200-5,000 (cyan) and 100-500 (magenta) except e-i: 200-3,000 (cyan);
-e-iii: 200/10,000 (cyan) and 100/1,000 (magenta); f-i: 200/10,000 (cyan); f-iii:
-200/20,000 (cyan) and 100/1,000 (magenta). Scale bars = 1 mm (cyan) or 100 µm
-(white).
+(e-f) Comparison of antibody penetration and uniformity of staining between
+eFLASH and SE only. Optical sections of mouse hemispheres at different depths
+are shown. The same amounts of antibodies were used for both experiments.
+Z-depth indicates the distance of optical sections from the mid-sagittal planes.
+Display ranges of images are 200-5,000 (cyan) and 100-500 (magenta) except e-i:
+200-3,000 (cyan); e-iii: 200/10,000 (cyan) and 100/1,000 (magenta); f-i:
+200/10,000 (cyan); f-iii: 200/20,000 (cyan) and 100/1,000 (magenta). Scale bars
+= 1 mm (cyan) or 100 µm (white).
 }
 \end{figure*}
 
 eFLASH allows uniform immunolabeling of organ-scale tissues within a day by
 gradually shifting probe-target binding conditions from unfavorable to favorable
 while accelerating probe penetration using stochastic electrotransport (Fig.
-1b). We discovered that bile salts, such as sodium deoxycholate (NaDC), can be
-used to control the labeling affinity for various antibodies in a concentration
-and pH dependent manner (Fig. 1c-d; Supplementary Fig. 1). A wide range of
-probes showed weak binding at high concentrations of NaDC and basic pH, but
-strong binding at low concentration of NaDC and neutral pH. These results
-indicate that labeling conditions can be gradually shifted from unfavorable to
-favorable by simultaneously sweeping pH (basic to neutral) and NaDC
-concentration (high to low).
+\ref{fig3-1}b). We discovered that bile salts, such as sodium deoxycholate
+(NaDC), can be used to control the labeling affinity for various antibodies in a
+concentration and pH dependent manner (Fig. \ref{fig3-1}c-d; Supplementary Fig.
+1). A wide range of probes showed weak binding at high concentrations of NaDC
+and basic pH, but strong binding at low concentration of NaDC and neutral pH.
+These results indicate that labeling conditions can be gradually shifted from
+unfavorable to favorable by simultaneously sweeping pH (basic to neutral) and
+NaDC concentration (high to low).
 
 To achieve a gradual pH sweep in an automated manner, we took advantage of
 electrochemical reactions that naturally occur under SE. Electrocatalytic
 oxidation of D-sorbitol produces acidic byproducts such as formic acid
 [@Proenca1997]. By adding D-sorbitol to a pH 9.5 buffer and letting it decompose
 by electro-oxidation under SE, we were able to gradually sweep pH from 9.5 to
-7.5 over the course of one day (Fig. 1b, Supplementary Fig. 2).
+7.5 over the course of one day (Fig. \ref{fig3-1}b, Supplementary Fig. 2).
 
 Concentration of NaDC within the labeling solution was also swept in an
 automated manner using the concentration gradient established across a
-nanoporous membrane (Fig. 1b). The membrane, which separates the labeling
-solution and the outer solution, ensures that both molecular probes and large
-NaDC micelles remain within the labeling solution; however, it is permeable to
-NaDC monomers, small NaDC aggregates, and the rest of the buffer components. The
-initial concentration of 1% (w/v) NaDC within the labeling solution slowly
-decreases as the monomers travel down the concentration gradient to the outer
-solution, which contains 0.2% (w/v) of NaDC (Fig. 1b). We confirmed that the
-terminal buffer after pH and NaDC concentration shift allows strong antibody
-staining (Fig. 1c-d).
+nanoporous membrane (Fig. \ref{fig3-1}b). The membrane, which separates the
+labeling solution and the outer solution, ensures that both molecular probes and
+large NaDC micelles remain within the labeling solution; however, it is
+permeable to NaDC monomers, small NaDC aggregates, and the rest of the buffer
+components. The initial concentration of 1% (w/v) NaDC within the labeling
+solution slowly decreases as the monomers travel down the concentration gradient
+to the outer solution, which contains 0.2% (w/v) of NaDC (Fig. \ref{fig3-1}b).
+We confirmed that the terminal buffer after pH and NaDC concentration shift
+allows strong antibody staining (Fig. \ref{fig3-1}c-d).
 
 This progressive change in binding condition enables the probes to first
 penetrate deep into the tissue without being depleted and then increasingly bind
@@ -171,13 +158,13 @@ distribution pattern of the targets, specific binding kinetics of various
 antibodies, and the amount of antibody used. With eFLASH, even when using a
 minute amount of antibody for labeling highly dense targets (3 µg of antibody
 for calbindin and 5 µg of antibody for pan-axonal marker SMI312), high-quality
-uniform labeling could be achieved in a mouse brain hemisphere (Fig. 1e);
-however, without affinity-sweep, the small amount of antibody was quickly
-depleted on the surface before the core of the tissue could be labeled despite
-the increased transport speed provided by SE (Fig. 1f, Supplementary Video 1).
-These results indicate that eFLASH enables rapid, complete, and uniform
-immunolabeling of organ-scale tissues without the use of excessive amounts of
-molecular probes.
+uniform labeling could be achieved in a mouse brain hemisphere (Fig.
+\ref{fig3-1}e); however, without affinity-sweep, the small amount of antibody
+was quickly depleted on the surface before the core of the tissue could be
+labeled despite the increased transport speed provided by SE (Fig.
+\ref{fig3-1}f, Supplementary Video 1). These results indicate that eFLASH
+enables rapid, complete, and uniform immunolabeling of organ-scale tissues
+without the use of excessive amounts of molecular probes.
 
 ### Universal applicability of eFLASH
 
@@ -191,7 +178,7 @@ parameters (e.g. voltage, pH, running time, chemical concentrations) is capable
 of uniformly labeling cerebral organoid, mouse intestine, mouse brain
 hemisphere, as well as marmoset brain block with various combinations of
 antibodies, allowing visualization of multiple proteins within a single sample
-(Fig 2a-d, Supplementary video 2-3).
+(Fig. \ref{fig3-2}a-d, Supplementary video 2-3).
 
 ![Single eFLASH protocol enables complete and uniform staining of various tissue types with a wide range of molecular probes. \label{fig3-2}](source/figures/eFLASH/figure2.jpg){ width=100% }
 
@@ -215,14 +202,14 @@ binding adaptor molecule 1. Scale bars = 1 mm (black) and 50 µm (white).
 \end{figure*}
 
 The same 1-day protocol was compatible with a wide range of antibodies harboring
-different binding affinities and target densities (Fig. 2e). eFLASH successfully
-labeled targets for various cell types (PV, CB, CR, NPY, SST, TH, TPH2, ChAT,
-NeuN, GFAP, Iba1), neuronal structure (SMI-312), and a neuronal activity marker
-(cFos) in intact mouse hemispheres (Fig. 2e, Supplementary video 4-5). The same
-eFLASH protocol was also compatible with lectin and Syto16, which are chemical
-probes that label blood vessels and nuclei, respectively. Together, these
-results suggest that eFLASH is a universal platform compatible with a wide range
-of tissue-types and molecular probes.
+different binding affinities and target densities (Fig. \ref{fig3-2}e). eFLASH
+successfully labeled targets for various cell types (PV, CB, CR, NPY, SST, TH,
+TPH2, ChAT, NeuN, GFAP, Iba1), neuronal structure (SMI-312), and a neuronal
+activity marker (cFos) in intact mouse hemispheres (Fig. \ref{fig3-2}e,
+Supplementary video 4-5). The same eFLASH protocol was also compatible with
+lectin and Syto16, which are chemical probes that label blood vessels and
+nuclei, respectively. Together, these results suggest that eFLASH is a universal
+platform compatible with a wide range of tissue-types and molecular probes.
 
 ### A quantitative, brain-wide cell type mapping with eFLASH
 
@@ -276,7 +263,8 @@ each cell type. Our cell detection pipeline achieved an f-score of higher than
 90% for cortical regions and over 80% for subcortical brain regions for all
 tested cell-type markers. Using this pipeline, we were able to construct
 quantitative mouse brain atlases for multiple cell type defining makers,
-including CR, NPY, SST, TH, TPH2, and PV (Fig. 3a-c, Supplementary video 6).
+including CR, NPY, SST, TH, TPH2, and PV (Fig. \ref{fig3-3}a-c, Supplementary
+video 6).
 
 The probe-insensitive nature of eFLASH enables co-labeling of multiple
 cell-types with any combinations. We performed simultaneous labeling of
@@ -285,26 +273,27 @@ of GABAergic interneurons [@Fu2007; @Figueredo-Cardenas1996; @Hendry1984] and of
 Tyrosine Hydroxylase and Tryptophan Hydroxylase 2 which are cell-type-specific
 markers for dopaminergic and serotonergic neurons, respectively, that are not
 generally known to overlap. In the case of NPY and SST, we mapped NPY+/SST-,
-NPY-/SST+, and NPY+/SST+ cells (Fig. 3 d-f). We found the highest density of
-NPY+ cells at layer 2 or 3 of the cerebral cortices (Fig. 3c), whereas SST+
-cells showed the highest density at layer 4 or 5 in majority of the cortices
-[@Rudy2011] (Fig. 3c) Interestingly, the highest density of cells that were
-co-positive for NPY and SST was seen in layer 5 or 6 (Fig. 3f). In a brain-wide
-average, 16 ± 4% of NPY and 7 ± 5% of SST-expressing cortical cells were
-identified NPY+ / SST+ co-positive. In the case of TH and TPH2, we checked every
-TH+ and TPH2+ cells detected throughout the brain hemisphere and found that no
-cells were positive for both markers.
+NPY-/SST+, and NPY+/SST+ cells (Fig. \ref{fig3-3}d-f). We found the highest
+density of NPY+ cells at layer 2 or 3 of the cerebral cortices (Fig.
+\ref{fig3-3}c), whereas SST+ cells showed the highest density at layer 4 or 5 in
+majority of the cortices [@Rudy2011] (Fig. \ref{fig3-3}c) Interestingly, the
+highest density of cells that were co-positive for NPY and SST was seen in layer
+5 or 6 (Fig. \ref{fig3-3}f). In a brain-wide average, 16 ± 4% of NPY and 7 ± 5%
+of SST-expressing cortical cells were identified NPY+ / SST+ co-positive. In the
+case of TH and TPH2, we checked every TH+ and TPH2+ cells detected throughout
+the brain hemisphere and found that no cells were positive for both markers.
 
 Finally, in addition to labeling cell-type defining proteins, brain-wide
 labeling of Immediate Early Genes (IEGs) such as c-Fos has been demonstrated as
 a powerful proxy for measuring neuronal activation [@Renier2016; @Kim2015a]. We
 stained the brain of a mouse that experienced contextual fear conditioning 90
 minutes before sacrifice with anti-cFos antibody and mapped its distribution
-(Fig. 3g-i). Examination of the dataset showed robust anti-c-Fos signal in
-hippocampus and amygdala areas, which are known to show increased activity upon
-contextual fear conditioning [@Cho2017]. Combined, these results suggest that
-eFLASH-mediated immunolabeling can facilitate brain-wide quantification of
-protein expression at a cellular level in a high throughput and flexible manner.
+(Fig. \ref{fig3-3}g-i). Examination of the dataset showed robust anti-c-Fos
+signal in hippocampus and amygdala areas, which are known to show increased
+activity upon contextual fear conditioning [@Cho2017]. Combined, these results
+suggest that eFLASH-mediated immunolabeling can facilitate brain-wide
+quantification of protein expression at a cellular level in a high throughput
+and flexible manner.
 
 ### Brain-wide comparison of genetic and protein-based cell type labeling
 
@@ -319,32 +308,7 @@ of post-transcriptional processes that can often cause the quantities of mRNA
 and proteins to correlate poorly [@Vogel2012], emphasizing the need for protein
 expression analysis.
 
-![Brain-wide comparison of genetic cell-type labeling and eFLASH-driven protein-based cell type labeling. \label{fig3-4}](source/figures/eFLASH/figure4.jpg){ width=100% }
-
-\begin{figure*}
-\caption*{
-(a) An optical section of a 3D dataset from a PV-Cre and DIO-tdTomato dual
-transgenic mouse hemisphere stained with anti-PV antibody. (b) Zoom-in images of
-a. (c) A percentage plot for tdTomato-only (red), anti-PV-only (green), and
-tdTomato and anti-PV copositive cells (yellow) among all the labeled cells in
-individual representative brain regions. (d) A 3D rendering of a ChATBAC-eGFP
-mouse brain stained with anti-ChAT antibody. (e) Zoom-in views of d. (f) A
-percentage plot for eGFP-only (green), anti-ChAT-only (red), and eGFP and anti-
-ChAT co-positive cells (yellow) among all the labeled cells in individual
-representative brain regions. (g) Zoom-in view of d. (h) Zoom-in view of g. M1,
-primary motor cortex; S1, primary somatosensory cortex; A1, primary auditory
-cortex; V1, primary visual cortex; RSA, retrosplenial cortex; PPA, posterior
-parietal association cortex; AC, anterior cingulate cortex; Piri, piriform
-cortex; Ecto, ectorhinal cortex; lEnto, lateral entorhinal cortex; CPu,
-caudoputamen; NAc, nucleus accumbens; CeA, central amygdala; BLAa, basolateral
-amygdala, anterior part; BLAp, basolateral amygdala, posterior part; LA, lateral
-amygdala; DG, dentate gyrus; mo, dentate gyrus, molecular layer; sg, dentate
-gyrus, granule cell layer; po, dentate gyrus, polymorph layer; CA1, hippocampal
-CA1; CA3, hippocampal CA3; 5N, motor nucleus of trigeminal; dNAmb, nucleus
-ambiguus, dorsal part; vNAmb, nucleus ambiguus, ventral part. Scale bars = 1 mm
-(blue), 200 µm (white).
-}
-\end{figure*}
+![Brain-wide comparison of genetic cell-type labeling and eFLASH-driven protein-based cell type labeling. (a) An optical section of a 3D dataset from a PV-Cre and DIO-tdTomato dual transgenic mouse hemisphere stained with anti-PV antibody. (b) Zoom-in images of a. (c) A percentage plot for tdTomato-only (red), anti-PV-only (green), and tdTomato and anti-PV copositive cells (yellow) among all the labeled cells in individual representative brain regions. (d) A 3D rendering of a ChATBAC-eGFP mouse brain stained with anti-ChAT antibody. (e) Zoom-in views of d. (f) A percentage plot for eGFP-only (green), anti-ChAT-only (red), and eGFP and anti- ChAT co-positive cells (yellow) among all the labeled cells in individual representative brain regions. (g) Zoom-in view of d. (h) Zoom-in view of g. M1, primary motor cortex; S1, primary somatosensory cortex; A1, primary auditory cortex; V1, primary visual cortex; RSA, retrosplenial cortex; PPA, posterior parietal association cortex; AC, anterior cingulate cortex; Piri, piriform cortex; Ecto, ectorhinal cortex; lEnto, lateral entorhinal cortex; CPu, caudoputamen; NAc, nucleus accumbens; CeA, central amygdala; BLAa, basolateral amygdala, anterior part; BLAp, basolateral amygdala, posterior part; LA, lateral amygdala; DG, dentate gyrus; mo, dentate gyrus, molecular layer; sg, dentate gyrus, granule cell layer; po, dentate gyrus, polymorph layer; CA1, hippocampal CA1; CA3, hippocampal CA3; 5N, motor nucleus of trigeminal; dNAmb, nucleus ambiguus, dorsal part; vNAmb, nucleus ambiguus, ventral part. Scale bars = 1 mm (blue), 200 µm (white). \label{fig3-4}](source/figures/eFLASH/figure4.jpg){ width=100% }
 
 Discrepancy between transgenic labeling and immunohistochemical labeling is
 widely recognized, and there is a constant concerted effort to improve upon
@@ -353,36 +317,38 @@ existing transgenic mouse lines for common targets [@Tallini2006; @Li2017;
 phenotyping approaches, we utilized transgenic mouse lines with two widely used
 transgene approaches: Cre-LoxP and BAC transgene [@Muzumdar2006]; @Livet2007;
 @Valjent2009]. First, we eFLASH-stained a hemisphere of a PV-Cre::DIO-tdTomato
-double transgenic mouse with anti-PV antibody (Fig. 4a). We performed the
-brain-wide quantitative analysis on tdTomato and anti-PV signals, and revealed
-substantial discrepancies between two labeling approaches, where the level of
-mismatch was highly heterogeneous among brain regions (Fig. 4b-c, Supplementary
-video 7). For example, in contrast to faithful tdTomato labeling of PV+ neurons
-in primary motor and primary somatosensory cortices (88% and 85% of tdTomato+
-cells were also PV+), a substantial portion of tdTomato cells showed
-undetectable amounts of PV protein in some of cortical (e.g., 56% and 75% in the
-case of piriform and lateral entorhinal cortex) and subcortical (45% in caudate
-putamen; 62% in nucleus accumbens) areas. Furthermore, we found PV+ populations
-were not covered by the genetic labeling. For example, 66% and 77% of PV+ cells
-do not express tdTomato in CPu and NAc, respectively (Fig. 4b-c).
+double transgenic mouse with anti-PV antibody (Fig. \ref{fig3-4}a). We performed
+the brain-wide quantitative analysis on tdTomato and anti-PV signals, and
+revealed substantial discrepancies between two labeling approaches, where the
+level of mismatch was highly heterogeneous among brain regions (Fig.
+\ref{fig3-4}b-c, Supplementary video 7). For example, in contrast to faithful
+tdTomato labeling of PV+ neurons in primary motor and primary somatosensory
+cortices (88% and 85% of tdTomato+ cells were also PV+), a substantial portion
+of tdTomato cells showed undetectable amounts of PV protein in some of cortical
+(e.g., 56% and 75% in the case of piriform and lateral entorhinal cortex) and
+subcortical (45% in caudate putamen; 62% in nucleus accumbens) areas.
+Furthermore, we found PV+ populations were not covered by the genetic labeling.
+For example, 66% and 77% of PV+ cells do not express tdTomato in CPu and NAc,
+respectively (Fig. \ref{fig3-4}b-c).
 
 Next, we compared genetic and protein-based labeling of choline
 acetyltransferase (ChAT). eGFP expression via BAC transgene was highly divergent
-from the ChAT+ immunoreactivity pattern (Fig. 4d-h, Supplementary video 8). For
-example, only 9% and 14% of eGFP+ cells were also ChAT+ in M1 and S1 cortex. In
-the hippocampal CA1 and CA3, only 0.2% and 0.3% of eGFP+ cells showed detectable
-levels of ChAT immunoreactivity. Further, large populations of ChAT+ cells
-without eGFP expression were evident, especially in primary auditory and visual
-cortices (93%, 89%) (Fig. 4f). These discrepancies were heterogeneous even
-within the same brain region. Most ChAT+ cells were also eGFP+ in Nucleus
-ambiguus ventral part (80%), however, in its dorsal counterpart, only 26% of
-ChAT+ cells were colocalized with eGFP+ (Fig. 4e-iii). 3D visualization of the
-hemisphere also revealed labeling mismatch between fiber bundles. In the brain
-stem, we found a fiber bundle composed of ChAT+ axons without eGFP signals (Fig.
-4g,h). These results suggest that eFLASH enables brain-wide analysis of
-transgenic labeling patterns and their validation by allowing simultaneous
-visualization of genetically expressed fluorescent proteins and immunolabeling
-signal within the same sample.
+from the ChAT+ immunoreactivity pattern (Fig. \ref{fig3-4}d-h, Supplementary
+video 8). For example, only 9% and 14% of eGFP+ cells were also ChAT+ in M1 and
+S1 cortex. In the hippocampal CA1 and CA3, only 0.2% and 0.3% of eGFP+ cells
+showed detectable levels of ChAT immunoreactivity. Further, large populations of
+ChAT+ cells without eGFP expression were evident, especially in primary auditory
+and visual cortices (93%, 89%) (Fig. \ref{fig3-4}f). These discrepancies were
+heterogeneous even within the same brain region. Most ChAT+ cells were also
+eGFP+ in Nucleus ambiguus ventral part (80%), however, in its dorsal
+counterpart, only 26% of ChAT+ cells were colocalized with eGFP+ (Fig.
+\ref{fig3-4}e-iii). 3D visualization of the hemisphere also revealed labeling
+mismatch between fiber bundles. In the brain stem, we found a fiber bundle
+composed of ChAT+ axons without eGFP signals (Fig. \ref{fig3-4}g,h). These
+results suggest that eFLASH enables brain-wide analysis of transgenic labeling
+patterns and their validation by allowing simultaneous visualization of
+genetically expressed fluorescent proteins and immunolabeling signal within the
+same sample.
 
 ### Multidimensional single-cell analysis of marmoset visual cortex
 
@@ -440,20 +406,21 @@ of animals required for a study and consequently the cost.
 To test this idea, we applied eFLASH and SHIELD to characterize cells in an
 intact marmoset brain block of visual cortex (5 mm x 5 mm x 8 mm). First, we
 eFLASH-stained the SHIELD-preserved sample with anti-PV antibody. From the
-holistic visualization and detection of PV+ cells in the sample (Fig. 5a), we
-found that the inter-layer distribution of PV+ cell is heterogeneous among parts
-of the visual cortex. The density of PV+ cells was higher in the area facing the
-calcarine sulcus compared to the other area of the visual cortical block (1770.3
-± 56.4 vs 979.0 ± 33.4 cells per $mm^3$ , unpaired T-test, $P<0.0005$, $N = 4$
-of 120 µm-thick optical sections) (Fig. 5b-c, Supplementary video 9). We also
-observed that several cortical areas were devoid of PV+ neurons (Fig. 5a-c).
-Furthermore, we observed that inter-layer distribution patterns of PV+ cells
-differed between mouse and marmoset visual cortex (Fig. 5c). After mapping PV+
-cells, we destained the same marmoset brain block and re-stained it with
-anti-NPY antibody using eFLASH. We found that NPY+ cells are mostly localized in
-layer 6 and white matter of the marmoset visual cortex, which was in contrast
-with mouse visual cortex that showed a more uniform NPY+ cell distribution
-across the cortical layers (Fig. 5d-f).
+holistic visualization and detection of PV+ cells in the sample (Fig.
+\ref{fig3-5}a), we found that the inter-layer distribution of PV+ cell is
+heterogeneous among parts of the visual cortex. The density of PV+ cells was
+higher in the area facing the calcarine sulcus compared to the other area of the
+visual cortical block (1770.3 ± 56.4 vs 979.0 ± 33.4 cells per $mm^3$ , unpaired
+T-test, $P<0.0005$, $N = 4$ of 120 µm-thick optical sections) (Fig.
+\ref{fig3-5}b-c, Supplementary video 9). We also observed that several cortical
+areas were devoid of PV+ neurons (Fig. \ref{fig3-5}a-c). Furthermore, we
+observed that inter-layer distribution patterns of PV+ cells differed between
+mouse and marmoset visual cortex (Fig. \ref{fig3-5}c). After mapping PV+ cells,
+we destained the same marmoset brain block and re-stained it with anti-NPY
+antibody using eFLASH. We found that NPY+ cells are mostly localized in layer 6
+and white matter of the marmoset visual cortex, which was in contrast with mouse
+visual cortex that showed a more uniform NPY+ cell distribution across the
+cortical layers (Fig. \ref{fig3-5}d-f).
 
 Immunostaining can provide access to cellular morphology without genetic
 labeling or dye injections because many proteins are distributed or transported
@@ -463,19 +430,19 @@ details of individual cells throughout intact tissue volumes. To demonstrate
 this possibility, we performed deep analysis of individual NPY+ cells in a
 cortical fold sub-volume. From the automatically detected 6796 NPY+ cells in the
 volume, we quantified the soma volume and mean immunointensity of 494 cells, and
-dendrite polarity of 119 cells (Fig. 5g-i). Analysis of dendritic morphology of
-individual NPY+ cells led us to classify the cells into separate categories
-based on previously established descriptions of GABAergic interneurons:
-bitufted, bipolar or multipolar [@Ascoli2008] (Fig 5h, Supplementary Fig 4.)
-Compared to NPY+ cells in white matter, NPY+ cells in gray matter have soma with
-larger volume and higher mean fluorescent signal intensity (Fig. 5k-l),
-suggesting higher intracellular concentration of NPY protein [@Chung2011;
-@Watanabe1996]. We also found that most gray matter NPY+ cells are
-multipolar cells, whereas most NPY+ cells in white matter were bitufted or
-bipolar cells (Fig. 5h,j,m; Supplementary video 10). Together, these results
-demonstrate that complete and uniform immunolabeling of large-scale intact
-tissues with eFLASH enables high-dimensional phenotyping of individual cells
-even on model animals with limited access to genetic tools.
+dendrite polarity of 119 cells (Fig. \ref{fig3-5}g-i). Analysis of dendritic
+morphology of individual NPY+ cells led us to classify the cells into separate
+categories based on previously established descriptions of GABAergic
+interneurons: bitufted, bipolar or multipolar [@Ascoli2008] (Fig \ref{fig3-5}h,
+Supplementary Fig 4.) Compared to NPY+ cells in white matter, NPY+ cells in gray
+matter have soma with larger volume and higher mean fluorescent signal intensity
+(Fig. \ref{fig3-5}k-l), suggesting higher intracellular concentration of NPY
+protein [@Chung2011; @Watanabe1996]. We also found that most gray matter NPY+
+cells are multipolar cells, whereas most NPY+ cells in white matter were
+bitufted or bipolar cells (Fig. \ref{fig3-5}h,j,m; Supplementary video 10).
+Together, these results demonstrate that complete and uniform immunolabeling of
+large-scale intact tissues with eFLASH enables high-dimensional phenotyping of
+individual cells even on model animals with limited access to genetic tools.
 
 ## Discussion
 
@@ -519,13 +486,13 @@ throughout the day-long labeling period.
 eFLASH is a robust process that offers considerable experimental flexibility.
 Repeated staining of the same tissue is possible with eFLASH, allowing multiple
 interrogations of precious samples as demonstrated with the marmoset brain block
-(Fig. 5). eFLASH can also be used to immunolabel the organs of transgenic mice
-expressing fluorescent proteins, allowing simultaneous visualization of both
-genetic labeling and immunolabeling signals (Fig. 2c, Fig. 4). This suggests
-that eFLASH can be utilized for comprehensive immunohistological validation of
-genetic labeling, amplification of genetically labeled signal using
-anti-fluorescent protein antibodies, and multiplexed proteomic analysis of
-genetically labeled cells in intact tissues.
+(Fig. \ref{fig3-5}). eFLASH can also be used to immunolabel the organs of
+transgenic mice expressing fluorescent proteins, allowing simultaneous
+visualization of both genetic labeling and immunolabeling signals (Fig.
+\ref{fig3-2}c, Fig. \ref{fig3-4}). This suggests that eFLASH can be utilized for
+comprehensive immunohistological validation of genetic labeling, amplification
+of genetically labeled signal using anti-fluorescent protein antibodies, and
+multiplexed proteomic analysis of genetically labeled cells in intact tissues.
 
 Recently, tissue-clearing techniques and volume imaging methods have been
 applied to whole organ samples to demonstrate the potential of 3D phenotyping
@@ -543,16 +510,16 @@ transgene-independent CRE expression, CRE-independent recombination) and
 false-negative labeling (e.g., CRE mosaicism) [@Heffner2012]. We observed that
 there was a discrepancy between fluorescent protein signal and antibody labeling
 signal in PV-Cre:DIO-tdTomato double-transgenic mouse brain labeled with anti-PV
-antibody (Fig. 4), Reversible tissue and temporal specific control systems,
-(such as a tetracycline response system), and BAC transgenesis resolved some of
-these issues, but not all. For example, discrepancies between genetic and
-protein-based labeling in BAC transgenic mouse lines were observed in both
-previous [@VonEngelhardt2007] and present studies (Fig. 4), and it has been
-suggested that expression of BAC transgene can be affected by the presence of
-other transcription factors, microRNAs, or control regions of gene fragments
-[@Matthaei2007]. We anticipate that protein-based mapping enabled by eFLASH can
-complement the cutting-edge genetic labeling approaches (e.g., viral labeling)
-for anatomical, molecular, and functional mapping of neural circuits.
+antibody (Fig. \ref{fig3-4}), Reversible tissue and temporal specific control
+systems, (such as a tetracycline response system), and BAC transgenesis resolved
+some of these issues, but not all. For example, discrepancies between genetic
+and protein-based labeling in BAC transgenic mouse lines were observed in both
+previous [@VonEngelhardt2007] and present studies (Fig. \ref{fig3-4}), and it
+has been suggested that expression of BAC transgene can be affected by the
+presence of other transcription factors, microRNAs, or control regions of gene
+fragments [@Matthaei2007]. We anticipate that protein-based mapping enabled by
+eFLASH can complement the cutting-edge genetic labeling approaches (e.g., viral
+labeling) for anatomical, molecular, and functional mapping of neural circuits.
 
 Furthermore, eFLASH can facilitate studies of animal models with limited access
 to genetic labeling methodologies. The Common Marmoset is an emerging primate
@@ -606,13 +573,14 @@ marmoset. L.K. and J.S. developed the computational pipeline with Y.-G.P.,
 D.H.Y., W.G., and K.C.’s input. N.B.E. and Y.-G.P. performed light-sheet imaging
 with H.C.’s help. D.H.Y. performed active delipidation of mouse and marmoset
 samples with N.D.’s help. D.H.Y. performed the buffer characterization in Figure
-1. A.A. provided and imaged the SHIELD processed cerebral organoid for Figure 2.
-Y.-G.P. and L.K. performed brain-wide cell-type mapping in Figure 3 with D.H.Y.
-and K.X.’s help. Y.-G.P. performed co- positivity analysis for Figure 4 and the
-multi-dimensional analysis of marmoset datasets in Figure 5. C.H.S. aided in
-antibody and fluorescent dye screening for the project. G.D. and Y.X. helped
-with initial manuscript preparation. Y.X., H.-Y.J., and L.R. aided in detergent
-and buffer screening and characterization.
+\ref{fig3-1}. A.A. provided and imaged the SHIELD processed cerebral organoid
+for Figure 2. Y.-G.P. and L.K. performed brain-wide cell-type mapping in Figure
+\ref{fig3-3} with D.H.Y. and K.X.’s help. Y.-G.P. performed co- positivity
+analysis for Figure \ref{fig3-4} and the multi-dimensional analysis of marmoset
+datasets in Figure \ref{fig3-5}. C.H.S. aided in antibody and fluorescent dye
+screening for the project. G.D. and Y.X. helped with initial manuscript
+preparation. Y.X., H.-Y.J., and L.R. aided in detergent and buffer screening and
+characterization.
 
 ## Competing Interests
 
@@ -867,8 +835,9 @@ using the Nuggt python package (Swaney et al. 2019).
 ### Manual Image Analysis
 
 Imaris (Bitplane, Switzerland) was used for soma segmentation, analysis, and
-neurite tracing in Figure 5g-m. Dendrite polarity of NPY+ cells were assessed
-manually [@Puskas2005]. Fluorescence quantification was done using ImageJ.
+neurite tracing in Figure \ref{fig3-5}g-m. Dendrite polarity of NPY+ cells were
+assessed manually [@Puskas2005]. Fluorescence quantification was done using
+ImageJ.
 
 ### Code Availability
 
