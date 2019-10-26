@@ -47,7 +47,7 @@ pdf:
 	--verbose
 
 docker:
-	docker run -it -v "C:/Users/Justin/thesis:/data" pandoc \
+	docker run -it -v "$(BASEDIR):/data" pandoc \
 	sh -c 'pandoc source/*.md \
 	-o "output/thesis.pdf" \
 	-H "style/preamble.tex" \
