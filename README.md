@@ -1,12 +1,10 @@
-# PhD Thesis for Justin Swaney
+# Scaling Up 3D Imaging, Analysis, and Culture of Complex Brain Models
 
 > *"Pascal meditated upon outer space, but we need only turn our thoughts inward
 > to feel his dread. Inside every one of our skulls lies an organ so vast in its
 > complexity that it might as well be infinite."*  
 
 ― Sebastian Seung, Connectome: How the Brain's Wiring Makes Us Who We Are 
-
-## Scaling Up 3D Imaging, Analysis, and Culture of Complex Brain Models
 
 This thesis summarizes a body of work in scaling up experimental techniques used
 in neuroscience research. Specifically, this thesis describes technological
@@ -18,7 +16,7 @@ Department of Chemical Engineering
 Massachusetts Institute of Technology  
 jswaney@mit.edu
 
-### Publications
+## Publications
 
 > E. Murray*, J. H. Cho*, D. Goodwin*, T. Ku*, **J. Swaney\***, S. Y. Kim,H. Choi, Y. G. Park, J. Y. Park, A. Hubbert, M. McCue, S. Vassallo, N. Bakh, M. P. Frosch, V. J. Wedeeng, H. S. Seung, K. Chung†. "Simple, scalable proteomic imaging for high-dimensional profiling of intact systems", *Cell*, 2015, 163, 6, 1500–1514 
 
@@ -30,7 +28,7 @@ jswaney@mit.edu
 
 > A. Albanese*, **J. Swaney\***, D. H. Yun, N. Evans, J. Antonucci-Johnson, V. Pham, C. Delepine, M. Sur, L. Gehrke, K. Chung†2. “3D imaging and high content morphological analysis of intact human cerebral organoids”, *Cell (in preparation)*, 2019. 
 
-### Compiling source
+## Compiling source
 
 To make html or PDF output files:
 
@@ -52,7 +50,7 @@ To live edit in browser:
 npm run livereload
 ```
 
-### References
+## References
 
 This thesis was based on the following template:
 
