@@ -121,7 +121,7 @@ GB with no loss in image fidelity within the tissue.
 
 Given that the tissue sample may be oriented arbitrarily in each round of
 imaging, matching any given nucleus to itself between rounds would require
-searching through all nuclei in the hemisphere (approximately 25 million
+searching through all nuclei in the hemisphere (approximately 30 million
 nuclei). This "needle-in-a-haystack" problem may be sub-modularized if the
 approximate locations of the matching nuclei are known *a priori*. If the tissue
 sample can be roughly aligned between rounds, then the search for a matching

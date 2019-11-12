@@ -68,14 +68,14 @@ lined with radial glia progenitors that differentiate into cortical neurons.
 [@Renner2017; @Qian2016] Cerebral organoids recapitulate genetic and epigenetic
 features of prenatal human brain development [@Camp2015; @Luo2016;
 @Quadrato2017] and have been used to identify cytoarchitectural changes brought
-on by microcephaly, lissencephaly [@Bershteyn2017; @Li2016], Rett syndrome
-[@Mellios2018], Autism [@Mariani2015], and Zika virus infection [@Watanabe2017].
-These studies are important for characterizing the impact of disease on early
-cortical development. However, most published work has relied on the manual
-analysis of histological tissue sections to characterize cytoarchitecture and
-cell populations. The loss of spatial information is problematic considering the
-unique features of individual organoids and can lead to biased data
-interpretation. 
+on by microcephaly (Lancaster et al. 2013), lissencephaly [@Bershteyn2017], Rett
+syndrome [@Mellios2018], Autism [@Mariani2015], and Zika virus infection
+[@Watanabe2017]. These studies are important for characterizing the impact of
+disease on early cortical development. However, most published work has relied
+on the manual analysis of histological tissue sections to characterize
+cytoarchitecture and cell populations. The loss of spatial information is
+problematic considering the unique features of individual organoids and can lead
+to biased data interpretation. 
 
 Cerebral organoid heterogeneity produces a quantifiable variability at both
 inter- and intra-batch levels (Quadrato et al. 2017). Many groups have sought to

@@ -1,18 +1,22 @@
 # PhD Thesis for Justin Swaney
 
-> *"Pascal meditated upon outer space, but we need only turn our thoughts inward to feel his dread. Inside every one of our skulls lies an organ so vast in its complexity that it might as well be infinite."*  
+> *"Pascal meditated upon outer space, but we need only turn our thoughts inward
+> to feel his dread. Inside every one of our skulls lies an organ so vast in its
+> complexity that it might as well be infinite."*  
 
 ― Sebastian Seung, Connectome: How the Brain's Wiring Makes Us Who We Are 
 
 ## Scaling Up 3D Imaging, Analysis, and Culture of Complex Brain Models
 
+This thesis summarizes a body of work in scaling up experimental techniques used
+in neuroscience research. Specifically, this thesis describes technological
+advances that facilitiate large-scale 3D imaging, analysis, and culture of
+complex brain models.
+
 Justin Swaney, PhD Candidate  
 Department of Chemical Engineering  
 Massachusetts Institute of Technology  
 jswaney@mit.edu
-
-This thesis summarizes a body of work in scaling up experimental techniques used in neuroscience research. 
-Specifically, this thesis describes technological advances that facilitiate large-scale 3D imaging, analysis, and culture of complex brain models.
 
 ### Publications
 

@@ -4,11 +4,14 @@
 
 The human brain is a complex biological system with components spanning multiple
 length scales, including synapses, neurons, and various brain regions. Synapses
-transfer signals via neurotransmitters and form local connections between
+can transfer signals via neurotransmitters and form local connections between
 neurons. Neurons can project over long distances, allowing these local synaptic
-connections to be used within a large-scale cellular network. Glia support
-neuronal function and influence synaptic remodeling, and microglia patrol the
-parenchyma to clear debris and respond to inflammatory signals. 
+connections to be used to construct a large-scale intercellular network.
+Although the human brain consists of approximately 100 billion neurons, this
+number pales in comparison to over 100 trillion synaptic connections within the
+same brain. This combinatorial explosion of intercellular interactions in the
+brain is simultaneously what gives rise its emergent properties and what makes
+it so difficult for neuroscientists to understand.
 
 The pioneering work of Ramon y Cajal depicted neural structures with
 unprecidented detail and revealed the existence of different types of neurons.
@@ -26,6 +29,8 @@ bottom-up approach, which emphasizes cellular electrophysiology and subcellular
 structures. Another is a top-down approach, which emphasizes the functional
 associations of each brain region and large-scale anatomical variations.
 
+Glia support neuronal function and influence synaptic remodeling, and microglia
+patrol the parenchyma to clear debris and respond to inflammatory signals.
 
 
 Brain = Complex system with components over multiple length scales.
