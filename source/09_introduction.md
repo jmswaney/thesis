@@ -10,70 +10,143 @@ connections to be used to construct a large-scale intercellular network. Glia
 support neuronal function and influence synaptic remodeling, and microglia
 patrol the parenchyma to clear debris and respond to inflammatory signals.
 Although the human brain consists of approximately 100 billion neurons, this
-number pales in comparison to over 100 trillion synaptic connections within the
-same brain. This combinatorial explosion of intercellular interactions in the
-brain is simultaneously what gives rise its emergent properties and what makes
-it so difficult for neuroscientists to understand.
+number pales in comparison to over 100 trillion synapses within the same brain.
+This combinatorial explosion of intercellular interactions in the brain is
+simultaneously what gives rise its emergent properties and what makes it so
+difficult for neuroscientists to understand.
 
-The pioneering work of *Ramon y Cajal* depicted neural structures with
-unprecidented detail and revealed the existence of different types of neurons.
-Since then, it has become clear that the brain is no exception to the intimate
-link between structure and function seen throughout biology. Above the
-single-cell scale, patterns in cellular organization, or cytoarchitecture, begin
-to emerge. Different cytoarchitectural appearances seen within Nissl-stained
-brain sections serve as the basis for defining more macroscopic brain regions.
-These regions are often defined hierarchically, with the coarsest partitioning
-being the lobes of the brain. 
+The pioneering work of Ramon y Cajal depicted neural structures with
+unprecidented detail and revealed the existence of different types of neurons
+based morphology. Since then, it has become clear that the brain is no exception
+to the intimate link between structure and function seen throughout biology.
+Above the single-cell scale, interesting patterns in cellular organization, or
+cytoarchitecture, begin to emerge. Different cytoarchitectural appearances seen
+within Nissl-stained brain sections serve as the basis for defining more
+macroscopic brain regions. These regions are often defined hierarchically, with
+the coarsest partitioning being the lobes of the brain. 
 
-In this depiction of various length scales in the brain, two broad approaches to
-understanding overall brain function begin to emerge. One is a bottom-up
-approach, in which emphasizes cellular details such as electrophysiological
-properties, RNA transcript expression levels, and subcellular structures. These
-details are often used to sub-categorize cells in the hopes that given the
-functional role of these subtypes, we may be able to understand how they are
-wired together. Another is a top-down approach, which emphasizes the functional
-associations of each brain region and large-scale anatomical variations.
+In this description of the brain at various length scales, two broad strategies
+for studying overall brain function begin to emerge naturally. One is a
+bottom-up approach, in which cellular details such as electrophysiological
+properties, RNA transcript expression levels, and subcellular structures are
+emphasized. These details are often used to sub-categorize cells in the hopes
+that given the functional role of these subtypes, we may be able to understand
+how they are wired together. Using an analogy to a electrical circuit board,
+bottom-up approaches based on cellular sub-typing are analogous to trying to
+understand how a circuit board works by first identifying its electrical
+components. Another strategy is a top-down approach, in which the functional
+associations of each brain region, anatomical variations, and large-scale
+patterns in electrical activity (also known as "brain waves") are emphasized. By
+taking a more holistic view of the brain, top-down approaches hope to address
+how the brain works as a complete system through the interaction of different
+brain regions. However, studying the brain as a complete system has proven to be
+experimentally challenging due to its scale and multiscale intrinsic complexity.
 
-Recent advances in brain atlas projects allow neuroscience research to use
-bottom-up and top-down strategies in tandem, which has been very successful. By
-defining a common coordinate system for a typical brain, information from
-multiple brain samples can be effectively pooled into an aggregate dataset of
-protein expression, gene expression, and electrophysiological properties via
-alignment to the anatomical reference brain. The Allen Brain Atlas contains such
-aggregate datasets and has acted as a catalyst allowing neuroscientists to ask
-exciting new questions.
+Recent advances in brain atlases allow neuroscience researchers to use bottom-up
+and top-down strategies in tandem, which has been very useful. By defining a
+common coordinate system for a typical brain, information from multiple brain
+samples can be effectively pooled into an aggregate dataset of protein
+expression, gene expression, and electrophysiological properties via alignment
+to the anatomical reference brain. The Allen Brain Atlas contains such aggregate
+datasets and has acted as a catalyst allowing neuroscientists to ask exciting
+new questions. Although the atlas approach can provide aggregate phenotypic
+information in the form of population averages, it is still limited in its
+ability to describe a single brain sample.
 
+The complete network of neural connections in the central nervous system is
+often referred to as the *connectome*. In order to observe the connectome, new
+technological advances are needed to fully capture the multiscale intrinsic
+complexity of a single brain. Although atlas approaches may be able to elucidate
+consistent region-to-region projections using sparse labeling techniques such as
+viral labeling, a complete picture of the connectome remains elusive. Such a
+detailed depiction of the entire biological system would bridge the gap between
+bottom-up and top-down approaches for a single brain and be arguably as
+profound as the original drawings from Ramon y Cajal.
 
-
-Brain = Complex system with components over multiple length scales.
-This complexity is intrinsic as opposed to incidental...
-
-## Trends in biological models used in neuroscience
+## Trends toward more complex brain models in neuroscience
 
 In neuroscience, researchers often use model systems as a proxy for the human
 brain, and each brain model has its own set of advantages and disadvantages in a
 given biological context. Researchers typically use brain models that have been
 previously demonstrated to be useful to study the neurological phenomena or
-complex phenotypes of interest.
+complex phenotypes of interest. This is because validating new biological models
+of the brain is quite difficult, and it is often unclear how well new models
+approximate what occurs in humans.
 
+By far the most commonly used brain model used in experimental neuroscience
+research is the mouse brain. Due to its low cost, amenability to genetic
+manipulation, and relatively small size, mouse models are a convenient model of
+the human brain. Neuroscientists have used mouse models to study a wide range of
+topics, including human disease pathologies, mechanisms of learning and memory,
+and the behavioral underpinnings of social interaction.
 
+Another widely used model for the human brain are 2D cell cultures of human
+neurons. These models are simpler than mouse models and allow easy access for
+monitoring the entire culture system throughout experimentation. Such 2D cell
+cultures have been widely adopted for drug screening purposes due to their
+high-throughput and scalability. However, lead compounds identified in primary
+cell drug screens often do not succeed in clinical trials, suggesting that there
+is more to the biological story than what 2D cell cultures are telling us.
 
-Trend towards more larger, more complex brain models in neuroscience--presumably
-to model more complex phenotypes
+Recently, cerebral orgnaoids have emerged as a more complex in vitro brain
+model. Cerebral organoids are derived from human pluripotent stem cells and,
+therefore, may be more relevant to human neurodevelopment than mouse models.
+Cerebral organoids are just a single manifestation of a larger trend of in vitro
+biological modeling with organoids, and similar models have been developed for
+the kidney, liver, and intestine. While cerebral organoids and 2D neuronal
+cultures both contain human cells, cerebral organoids are 3D tissue cultures,
+with extracellular matrix material and a more diverse set of cell types,
+including neural progenitors, neurons, and astrocytes. This complexity is added
+intentionally, presumably in the hopes that cerebral organoids will be able to
+model more complex phenotypes accurately. If this proves to be true, then the
+experimental possibilities of such an in vitro model are vast.
 
-## Evolution of experimental techniques
+Another model that has become more commonplace in neuroscience research is the
+*Callithrix jacchus*--also known as the common marmoset--brain. Marmosets are a
+relatively small non-human primate that is phylogenetically more closely related
+to humans. Therefore, there has been recent interest in using marmoset models
+for studying more human-like behaviors rather than mouse models.
 
-Techniques optimized for simpler systems, hard to apply to directly to these new
-models
+These recent trends towards more complex and larger brain models are undeniable,
+and they originate from some of the inherent limitations of the brain models
+that are currently available to neuroscientists. However, as this trend
+continues towards the larger scale, neuroscientists will be hard-pressed to
+adapt the technologies and experimental techniques that used to work for mouse
+and 2D cell culture models. Scaling up the techniques used in experimental
+neuroscience to larger, more complex brain models is the focus of this thesis.
 
-Technological breakthroughs in neuroscience are often those advances that allow
-researchers to attack long-standing biological questions in new ways.
-
-CLARITY, optogenetics, organoid culture - all examples of this for different
-reasons
 
 ## Thesis aims
 
-This work is aimed at addressing technical challenges associated with scaling up
-the staining and imaging or large brain models, the computational analysis of
-whole-brain scale datasets, and the culture of organoid brain models.
+### Aim 1 - Create methods for staining and imaging whole-brain scale models {.unnumbered}
+
+Building upon tissue clearing technologies such as CLARITY, new methods for
+preserving, clearing, magnifying, and staining whole-brain scale tissues are
+presented. First, the SWITCH technique is introduced to decouple the transport
+and reaction kinetics of fixative molecules and probes. Then an expansion-based
+technique called MAP is introduced to improve the imaging resolution of
+conventional fluorescence microscopy down to synaptic resolution. Finally, a
+method called eFLASH for rapid whole-brain staining is presented that utilizes a
+rotating electric field to accelerate probe transport.
+
+### Aim 2 - Develop computational tools for analyzing whole-brain imaging data {.unnumbered}
+
+Drawing from open-source tools in the Python community, a scalable image
+processing pipeline is presented with a detailed protocol for single-cell
+analysis of whole-brain scale volumetric images. Then, a multiscale phenotyping
+pipeline is presented for understanding the complexity in cerebral organoids as
+a new brain model. This pipeline is used to measure multiscale pehnotypic
+changes in response to maturation, Zika virus infection, and different culture
+protocols.
+
+### Aim 3 - Scale up cerebral organoid culture by addressing nutrient transport limitations {.unnumbered}
+
+To increase the scale to which 3D in vitro brain models such as cerebral
+organoids can be cultured, an organoid vascularization strategy using two-photon
+stereolithography is presented. A detailed design for a high-resolution
+two-photon 3D printer is provided that can achieve 4 um fabrication reoslution
+and directly print engineered pore structures. Vasculature printed from
+biocompatible resins were shown to integrate with cerebral orgnaoids cultured
+with and without perfusion with limited cytotoxicity. Future work may build on
+this vascularization to create new models of the blood-brain barrier or to
+perturb cerebral organoids using the integrated micro-vessels.

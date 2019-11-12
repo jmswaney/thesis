@@ -865,12 +865,12 @@ Supplemental videos are available online at <https://www.biorxiv.org/content/10.
 
 \newpage
 
-## Chapter 6 Supplemental Information {.unnumbered}
+## Chapter 7 Supplemental Information {.unnumbered}
 
 Add supplemental figures here for organoid phenotyping
 
 \newpage
 
-## Chapter 7 Supplemental Information {.unnumbered}
+<!-- ## Chapter 8 Supplemental Information {.unnumbered}
 
-Add supplemental figures here for vascularization
+Add supplemental figures here for vascularization -->
