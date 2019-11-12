@@ -9,6 +9,10 @@ H. Sebastian Seung, and Kwanghun Chung [^1]
 
 [^1]: \* indicates co-first authorship.
 
+\footnotesize
+*Reproduced from DOI: https://doi.org/10.1016/j.cell.2015.11.025*
+\normalsize
+
 \upshape
 
 ## Summary

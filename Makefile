@@ -56,6 +56,9 @@ docker:
 	--bibliography="source/references_chapter_2.bib" \
 	--bibliography="source/references_chapter_3.bib" \
 	--bibliography="source/references_chapter_4.bib" \
+	--bibliography="source/references_chapter_6.bib" \
+	--bibliography="source/references_chapter_7.bib" \
+	--bibliography="source/references_chapter_8.bib" \
 	--csl="style/ref_format.csl" \
 	--highlight-style pygments \
 	-V fontsize=12pt \

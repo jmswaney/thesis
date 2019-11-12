@@ -8,67 +8,85 @@
 
 ## Abstract
 
-
+Fluorescence imaging is a workhorse technology for several experimental studies
+in biology. However, confocal and light-sheet microscopy are limited in the
+number of channels that can be imaged simultaneously due to spectral and optical
+constraints from conventional fluorophores. To address this issue, we propose a
+multiround imaging strategy in which a single tissue sample is stained for
+multiple targets in each round. In order to align these multiple rounds of
+imaging into single coordinate system, we present an efficient 3D coregistration
+algorithm that identifies corresponding nuclei between imaging rounds to achieve
+a nonrigid alignment that is accurate at the single-cell level. We demonstrate
+our coregristation algorithm on a mouse brain hemisphere and a large block of
+marmoset visual cortex. The resulting image alignment contains an average
+displacement of 4 µm between corresponding nuclei. Using GPU-accelerated
+computation, we demonstrate that warping the entire volumetric images from a
+mouse brain hemisphere and marmoset visual cortex is possible within 6 hours on
+an NVIDIA P100 GPU. Future work may use this nuclei-based 3D coregistration
+algorithm to achieve multiplexed fluorescence microscopy and perform more
+exploratory image analysis at the single-cell level.
 
 ## Introduction
 
 Fluorescence imaging techniques such as confocal microscopy and light-sheet
-fluorescence microscopy (LSFM) are commonly used in neuroscience and biology. In
-combination with immunohistochemistry (IHC), fluorescence microscopy can provide
-spatial protein expression information using antibodies that specifically bind
-to proteins of interest. In combination with in situ hybridization, fluorescence
-microscopy can provide spatial transcription information using complimentary
-oligonucleotide probes that bind to RNA sequences of interest. Recent advances
-in clearing and staining such as SWITCH, MAP, and eFLASH have extended these
-valuable applications of fluorescence microscopy to large intact tissues such as
-the mouse, marmoset, and human brain [@Murray2015; @Ku2016; @Yun2019].
+fluorescence microscopy (LSFM) are commonly used in neuroscience and biology
+[@Power2017]. In combination with immunohistochemistry (IHC), fluorescence
+microscopy can provide spatial protein expression information using antibodies
+that specifically bind to proteins of interest. In combination with in situ
+hybridization, fluorescence microscopy can provide spatial transcription
+information using complimentary oligonucleotide probes that bind to RNA
+sequences of interest [@Edsgard2018]. Recent advances in clearing and staining
+such as SWITCH, MAP, and eFLASH have extended these valuable applications of
+fluorescence microscopy to large intact tissues such as the mouse, marmoset, and
+human brain [@Murray2015; @Ku2016; @Yun2019].
 
 Although these breakthrough technological advances have scaled up the effective
 tissue size that can be studied using conventional antibodies and fluorescence
-imaging, they are still inherently limited by the number of target
-proteins that can be imaged simultaneously. In contrast, single-cell RNA
-sequencing techniques allow for highly multiplexed quantification of
-transcripts, which is useful in exploratory analyses and for hypothesis
-generation. This difference in the number of target molecules that can be
-quantified in fluorescence microscopy and RNA sequencing is not due to a lack of
-antibodies for protein targets; many more antibodies are available than can be
-imaged simultaneously. Instead, the limiting factor is the number of imaging
-channels for the microscope, which is typically limited to between 3 and 6.
+imaging, they are still inherently limited by the number of target proteins that
+can be imaged simultaneously. In contrast, single-cell RNA sequencing techniques
+allow for highly multiplexed quantification of transcripts, which is useful in
+exploratory analyses and for hypothesis generation [@Hwang2018]. This difference
+in the number of target molecules that can be quantified in fluorescence
+microscopy and RNA sequencing is not due to a lack of antibodies for protein
+targets; many more antibodies are available than can be imaged simultaneously.
+Instead, the limiting factor is the number of imaging channels available in the
+microscope, which is typically limited to between 3 and 6.
 
 The channel limitation of fluorescence microscopy is intimately linked to the
 fluorophores used in IHC. The mostly commonly used fluorophores are Alexa Fluor
 dyes, which all have spectral widths of approximately 70 nm as measured by the
-full-width at half maximum (FWHM) of the emission spectra. Given that the
-typical range of detectors used in confocal microscopy is between 400 and 800
-nm, only 3 to 6 Alexa Fluor dyes would be resolvable without specialized
-spectral overlap compensation. Without similar breakthroughs in optics or
-fluorophore chemistry, this limitation is inevitable for simultaneous multicolor
-fluorescence imaging.
+full-width at half maximum (FWHM) of the emission spectra
+[@Panchuk-Voloshina1999]. Given that the typical range of detectors used in
+confocal microscopy is between 400 and 800 nm, only 3 to 6 Alexa Fluor dyes
+would be resolvable without specialized spectral overlap compensation. Without
+similar breakthroughs in optics or fluorophore chemistry, this limitation is
+inevitable for simultaneous multicolor fluorescence imaging.
 
 Another approach to multiplexed fluorescence imaging is to image different
 proteins in multiple rounds of staining. Staining different proteins in separate
 mouse brains is a common strategy to study population averages given a reference
-atlas such as the Allen Brain Atlas. In the Allen Brain Atlas, multiple brains
-are aligned to a common coordinate system to allow aggregation of protein
-expression information across many brain samples for each brain region. Although
-powerful for enabling neuroscience research, these atlas-based approaches do not
-provide multiplexed protein expression information for a single brain sample.
-Extracting expression patterns for more proteins in a single sample becomes more
-important when dealing with precious samples from non-human primates or human
-clinical samples.
+atlas such as the Allen Brain Atlas [@Lein2007]. In the Allen Brain Atlas,
+multiple brains are aligned to a common coordinate system to allow aggregation
+of protein expression information across many brain samples for each brain
+region. Although powerful for enabling neuroscience research, these atlas-based
+approaches do not provide multiplexed protein expression information for a
+single brain sample. Extracting expression patterns for more proteins in a
+single sample becomes more important when dealing with precious samples from
+non-human primates or human clinical samples.
 
 Multiround staining and imaging of a single brain sample has been demonstrated
 using tissue clearing techniques for over 20 rounds (Murray et al. 2015).
 Multiple staining rounds of a thin-section of human visual cortex was
 coregistered using a nonrigid 3D SIFT keypoint matching procedure based on
-vasculature staining in each round. However, the 3D SIFT feature extraction and
-thin-plate spline (TPS) calculations are not scalable to the whole-brain scale.
-Here, we present an efficient algorithm for 3D nonrigid coregistration of
-multiround staining at single-cell resolution that can be applied to whole mouse
-brains and large marmoset brain samples. Our algorithm matches nuclei centroids
-across rounds so that the alignment quality can be quantified in terms of
-single-cell correspondences. As a proof of concept, we apply our algorithm to an
-intact mouse brain hemisphere as well as a large section of a marmoset brain.
+vasculature staining in each round [@Lowe2004]. However, the 3D SIFT feature
+extraction and thin-plate spline (TPS) calculations are not scalable to the
+whole-brain scale [@Bookstein1989]. Here, we present an efficient algorithm for
+3D nonrigid coregistration of multiround staining at single-cell resolution that
+can be applied to whole mouse brains and large marmoset brain samples. Our
+algorithm matches nuclei centroids across rounds so that the alignment quality
+can be quantified in terms of single-cell correspondences. As a proof of
+concept, we apply our algorithm to an intact mouse brain hemisphere as well as a
+large section of a marmoset brain.
 
 
 ## Results
@@ -133,7 +151,7 @@ original image resolution and then be applied to nuclei centroids in the fixed
 image. The result is an approximate alignment between nuclei detections in the
 fixed and moving images.
 
-![Coarse registration based on morphological alignment. Coarse registration using a rigid transformation to align the euclidean distance transform (EDT) of brain masks. Performing coarse registration prior to nuclei matching allows for more robust nuclei matching and faster execution times. The EDT provides a gradient signal for intensity-based alignment by minimizing the squared error between the fixed and moving images. \label{coregistration-2}](source/figures/Coregistration/figure2.jpg){ width=60% }
+![Coarse registration based on morphological alignment. Coarse registration using a rigid transformation to align the euclidean distance transform (EDT) of brain masks. Performing coarse registration prior to nuclei matching allows for more robust nuclei matching and faster execution times. The EDT provides a gradient signal for intensity-based alignment by minimizing the squared error between the fixed and moving images. \label{coregistration-2}](source/figures/Coregistration/figure2.jpg){ width=50% }
 
 
 ### Matching nuclei based on geometric features
@@ -150,17 +168,16 @@ the nuclei can be brought into approximate alignment.
 
 In order to match approximately aligned nuclei, each nucleus is described by a
 translation and rotation invariant feature vector that is constructed using
-geometrical hashing of the nuclei point cloud (Preibisch, S. et al. 2010).
-Briefly, each point cloud is represented as a KD-tree and stored in shared
-memory for access by multiple CPU workers. Each worker queries the KD-tree for
-the three nearest nuclei in the same image and computes the vectors between the
-query point and its neighbors (Figure \ref{coregistration-3}a). These vectors
-are used in a Gram-Schmidt process to construct an orthonormal basis that is
-defined based on the local arrangement of nuclei and is, therefore, invariant to
-sample rotations and translations. The coordinates of the three nearest nuclei
-in this new basis are computed using QR decomposition. The nonzero entries of
-the upper triangular matrix $R$ are flattened into a final feature vector
-describing each nucleus.
+geometrical hashing of the nuclei point cloud [@Preibisch2010]. Briefly, each
+point cloud is represented as a KD-tree and stored in shared memory for access
+by multiple CPU workers. Each worker queries the KD-tree for the three nearest
+nuclei in the same image and computes the vectors between the query point and
+its neighbors (Figure \ref{coregistration-3}a). These vectors are used in a
+Gram-Schmidt process to construct an orthonormal basis that is defined based on
+the local arrangement of nuclei and is, therefore, invariant to sample rotations
+and translations. The coordinates of the three nearest nuclei in this new basis
+are computed using QR decomposition. The nonzero entries of the upper triangular
+matrix $R$ are flattened into a final feature vector describing each nucleus.
 
 Given these geometrical features, each nucleus is then putatively matched to the
 nearest neighbor in feature-space within a small search radius in the
@@ -169,17 +186,16 @@ if the second nearest-neighbor is clearly not a match as judged by the distance
 in feature-space (Lowe, D. 2004). After matching nuclei, an affine alignment is
 estimated using RANSAC that serves as the baseline transformation for the
 non-rigid coregistration (Figure \ref{coregistration-3}b). That is, the overall
-deformation model is the sum of an affine transformation and a non-linear
-thin-plate spline (TPS) transformation (Bookstein, F. 1989). The TPS
-transformation is estimated using the remaining correspondences that are not
-rejected by RANSAC. Specifically, three separate TPS interpolators are fit to
-the x, y, and z displacements of the affine-transformed correspondences. The
-average displacement between correspondences drops dramatically from the affine
-transformation to the TPS transformation (Figure \ref{coregistration-3}c). This
-shows that there is significant non-linear deformations present between imaging
-rounds.
+deformation model is the sum of an affine transformation and a non-linear TPS
+transformation. The TPS transformation is estimated using the remaining
+correspondences that are not rejected by RANSAC. Specifically, three separate
+TPS interpolators are fit to the x, y, and z displacements of the
+affine-transformed correspondences. The average displacement between
+correspondences drops dramatically from the affine transformation to the TPS
+transformation (Figure \ref{coregistration-3}c). This shows that there is
+significant non-linear deformations present between imaging rounds.
 
-![Nuclei matching and thin-plane spline warping. (A) Illustration of the nuclei-based 3D nonrigid registration procedure. Neighboring nuclei centroids are used to construct local nucleus features that are invariant to translation and rotation. Nuclei are matched to their nearest neighbor if the second nearest neighbor is sufficiently far away in feature space. Nuclei coordinates are warped using a thin-plate spline (TPS) interpolator fit to matching nuclei coordinates. (B, C) Distribution of distances and average distances between matching nuclei after coarse, affine, and nonrigid registration. \label{coregistration-3}](source/figures/Coregistration/figure3.jpg){ width=100% }
+![Nuclei matching and thin-plane spline warping. (A) Illustration of the nuclei-based 3D nonrigid registration procedure. Neighboring nuclei centroids are used to construct local nucleus features that are invariant to translation and rotation. Nuclei are matched to their nearest neighbor if the second nearest neighbor is sufficiently far away in feature space. Nuclei coordinates are warped using a thin-plate spline (TPS) interpolator fit to matching nuclei coordinates. (B, C) Distribution of distances and average distances between matching nuclei before and after affine and nonrigid registration. \label{coregistration-3}](source/figures/Coregistration/figure3.jpg){ width=100% }
 
 
 ### Single-cell 3D coregistration of intact mouse brain hemisphere
@@ -188,7 +204,7 @@ Since the full TPS transformation is computationally intractable when applied to
 the full resolution image data, we instead approximate the TPS transformation by
 linear interpolation of a warped grid of control points. The main motivation for
 this is that there are readily available linear interpolation functions available
-with GPU-acceleration in packages such as Pytorch (Paszke, A. 2017). By warping
+with GPU-acceleration in packages such as Pytorch [@Paszke2017]. By warping
 a regular grid of 100 x 100 x 100 control points evenly spaced throughout the
 fixed image domain using the full TPS transformation, the TPS transformation can
 be approximated by linear interpolation of the result. By transforming the fixed
@@ -252,7 +268,13 @@ suggests that this assumption is acceptable for slight tissue deformations
 incurred during de-staining, re-staining, and manual handling. However, it is
 unclear if reducing the search radius after a first-pass of nuclei matching and
 TPS warping could increase the number of correspondences and the overall quality
-of alignment by an appreciable amount.
+of alignment by an appreciable amount. Another potential improvement would be to
+allow for semi-automatic coarse alignment with the option for manual correction.
+For example, the Nuggt tool, which draws on Neuroglancer, would be suitable for
+manual refinement of the morpholohical coarse alignment described here (Swaney
+et al. 2019). Integrating commonly used intensity-based alignment tools such as
+Elastix into this workflow could make the overall coregistration pipeline more
+robust [@Klein2010].
 
 Once obtained, a high-dimensional volumetric image of multiple proteins within
 a single brain sample could be used for more unbiased and exploratory analyses

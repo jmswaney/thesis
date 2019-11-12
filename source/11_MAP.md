@@ -8,6 +8,10 @@ Chung [^1]
 
 [^1]: \* indicates co-first authorship.
 
+\footnotesize
+*Reproduced from DOI: https://doi.org/10.1038/nbt.3641*
+\normalsize
+
 \upshape
 
 ## Summary
@@ -514,14 +518,6 @@ rich molecular details, minute subcellular architectures, and cellular
 connectivity from diverse cell types within a single tissue. Together with its
 simplicity and broad applicability, MAP may complement existing methods and
 enable new approaches in the study of complex biological systems.
-
-## Methods
-
-Methods and any associated references are available in the online version of the
-paper.
-
-Note: Any Supplementary Information and Source Data files are available in the
-online version of the paper.
 
 ## Acknowledgements
 

@@ -9,6 +9,10 @@ Park, Gabrielle Drummond, Dae Hee Yun, Kwanghun Chung [^1]
 
 \upshape
 
+\footnotesize
+*Reproduced from DOI: https://doi.org/10.1101/576595*
+\normalsize
+
 ## Abstract
 
 Here we describe an image processing pipeline for quantitative analysis of
@@ -424,7 +428,7 @@ meet the minimum system requirements.
 
 #### Example Data
 
-All Example data is available from our laboratory servers
+All Example data is available from our laboratory servers[^2]
 (<http://leviathan-chunglab.mit.edu/nature-protocols-2019>), including:
 
 - Raw data, comprising the raw LSFM images and a flat reference image from the
@@ -438,6 +442,7 @@ All Example data is available from our laboratory servers
 - Downsampled data, comprising our whole brain raw data downsampled and zipped
   for testing our pipeline on more modest computer hardware.
 
+[^2]: Visit www.chunglab.org and contact the Chung Lab directly in case of a 404 error
 
 #### Computer Equipment
 

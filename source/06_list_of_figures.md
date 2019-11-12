@@ -89,6 +89,50 @@
 
 > Atlas alignment and region-based fluorescence quantification using nuggt
 
+**Figure 6.1** \Dotfill pp
+
+> Volumetric image preprocessing and compression
+
+**Figure 6.2** \Dotfill pp
+
+> Coarse registration based on morphological alignment
+
+**Figure 6.3** \Dotfill pp
+
+> Nuclei matching and thin-plate spline warping
+
+**Figure 6.4** \Dotfill pp
+
+> Demonstration of 3D coregistration of a whole mouse hemisphere at single-cell resolution
+
+**Figure 6.5** \Dotfill pp
+
+> Demonstration of 3D coregistration of a large block of marmoset visual cortex at single-cell resolution
+
+**Figure 8.1** \Dotfill pp
+
+> Construction of a high-resolution two-photon SLA printer
+
+**Figure 8.2** \Dotfill pp
+
+> Two-photon SLA of micro-vessels from biocompatible materials
+
+**Figure 8.3** \Dotfill pp
+
+> Tiling strategy for printing large-scale vascular systems
+
+**Figure 8.4** \Dotfill pp
+
+> Direct printing of microporous structures improves mass transport from printed reservoirs
+
+**Figure 8.5** \Dotfill pp
+
+> Modulation of microfluidic transport properties by direct fabrication of engineered pore structures
+
+**Figure 8.6** \Dotfill pp
+
+> Integration of vasculature into cerebral organoids shows mature neurons micro-vessel integration
+
 **Figure 9.1** \Dotfill pp
 
 > SWITCH Antibody Compatibility

@@ -9,6 +9,10 @@ Choi, Hae-Yoon Jung, Luzdary Ruelas, Guoping Feng, Kwanghun Chung [^1]
 
 [^1]: \* indicates co-first authorship.
 
+\footnotesize
+*Reproduced from DOI: https://doi.org/10.1101/660373*
+\normalsize
+
 \upshape
 
 ## Abstract
