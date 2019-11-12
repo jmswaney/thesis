@@ -1,7 +1,7 @@
 \begin{titlepage}
     \begin{center}
 
-        \LARGE
+        \Large
         Scaling Up 3D Imaging, Analysis, and Culture\\ 
         of Complex Brain Models
 

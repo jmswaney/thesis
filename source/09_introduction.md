@@ -6,14 +6,16 @@ The human brain is a complex biological system with components spanning multiple
 length scales, including synapses, neurons, and various brain regions. Synapses
 can transfer signals via neurotransmitters and form local connections between
 neurons. Neurons can project over long distances, allowing these local synaptic
-connections to be used to construct a large-scale intercellular network.
+connections to be used to construct a large-scale intercellular network. Glia
+support neuronal function and influence synaptic remodeling, and microglia
+patrol the parenchyma to clear debris and respond to inflammatory signals.
 Although the human brain consists of approximately 100 billion neurons, this
 number pales in comparison to over 100 trillion synaptic connections within the
 same brain. This combinatorial explosion of intercellular interactions in the
 brain is simultaneously what gives rise its emergent properties and what makes
 it so difficult for neuroscientists to understand.
 
-The pioneering work of Ramon y Cajal depicted neural structures with
+The pioneering work of *Ramon y Cajal* depicted neural structures with
 unprecidented detail and revealed the existence of different types of neurons.
 Since then, it has become clear that the brain is no exception to the intimate
 link between structure and function seen throughout biology. Above the
@@ -23,14 +25,24 @@ brain sections serve as the basis for defining more macroscopic brain regions.
 These regions are often defined hierarchically, with the coarsest partitioning
 being the lobes of the brain. 
 
-In this depiction of various length scales in the brain, two high-level
-approaches to understanding overall brain function begin to emerge. One is a
-bottom-up approach, which emphasizes cellular electrophysiology and subcellular
-structures. Another is a top-down approach, which emphasizes the functional
+In this depiction of various length scales in the brain, two broad approaches to
+understanding overall brain function begin to emerge. One is a bottom-up
+approach, in which emphasizes cellular details such as electrophysiological
+properties, RNA transcript expression levels, and subcellular structures. These
+details are often used to sub-categorize cells in the hopes that given the
+functional role of these subtypes, we may be able to understand how they are
+wired together. Another is a top-down approach, which emphasizes the functional
 associations of each brain region and large-scale anatomical variations.
 
-Glia support neuronal function and influence synaptic remodeling, and microglia
-patrol the parenchyma to clear debris and respond to inflammatory signals.
+Recent advances in brain atlas projects allow neuroscience research to use
+bottom-up and top-down strategies in tandem, which has been very successful. By
+defining a common coordinate system for a typical brain, information from
+multiple brain samples can be effectively pooled into an aggregate dataset of
+protein expression, gene expression, and electrophysiological properties via
+alignment to the anatomical reference brain. The Allen Brain Atlas contains such
+aggregate datasets and has acted as a catalyst allowing neuroscientists to ask
+exciting new questions.
+
 
 
 Brain = Complex system with components over multiple length scales.
