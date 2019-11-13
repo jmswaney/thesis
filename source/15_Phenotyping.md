@@ -445,6 +445,171 @@ dysfunction of human brain development.
 
 ## Methods
 
+### Preprocessing LSFM images of cerebral organoids
+
+Cerebral organoid images from the LSFM system (LifeCanvas, SmartSPIM) originally
+stored in an uncompressed binary format were first destriped and stitched
+according to a previously reported image processing pipeline [@Swaney2019]. This
+pipeline generates z-slice images with lossless compression that are used to
+compute image histograms for each channel. After normalizing each channel to the
+99th percentile of the histogram, each channel is then partitioned into (64, 64,
+64) voxel chunks using the Zarr Python package. This chunk-compressed
+representation allows for parallel processing of each image data chunk.
+
+### 3D nuclei detection using curvature-based seeded watershed
+
+To detect all nuclei in volumetric nuclear stain images, a curvature-based
+nuclei filtering strategy was developed. An image filter based on the
+eigenvalues of the Shape Operator (also known as the Weingarten matrix) was
+created by defining a probility distribution over the image curvature and
+intenisty as evidence for a nucleus centorid. This nucleus probability map
+highlights nuclei even in densely-packed regions such as the ventricular zone in
+cerebral organoids. The probability map was computed for each image chunk after
+gaussian smoothing to remove noise. Nuclei centroids were extracted from these
+probability maps through local maxima detection.
+
+To segment each nucleus, the detected nuclei centroids were used as seed points
+for performing a watershed segmentation of a nucleus foreground mask. This
+nucleus foreground mask is obtain through binarization of the nucleus
+probability map. Binarization of the nuclei probability map was accomplished
+through graph cuts segmentation with a Poisson image intensity prior and
+constant pairwise interaction penalty.
+
+### Nuclei detection accuracy measurement
+
+To assess the accuracy of our nuclei detection strategy, nuclei centroids were
+hand-annotated using a previously reported image alignment tool called Nuggt.
+Over 1,000 nuclei centroids were hand-annotated in organoid subregions inlcuding
+the ventricular zone and subventricular zone. Detected nuclei were consisdered
+true positives (TP) if they fell within 5 voxels of a ground-truth centroid and
+false positives (FP) if not. Since multiple detections may lie within 5 voxels
+of a given ground-truth centroid, double-counting TPs was avoided by matching
+ground truth and detected centroids using the Hungarian method for solving the
+linear sum assignment problem. The result of this matching procedure are lists
+of all TPs, FP, false negatives (FN), and true negatives (TN). These accuracy
+statistics were used to compute the overall accuracy and F1-score of the nuclei
+detection strategy. Our curvature-based seeded watershed algorithm was
+benchmarked against the difference of gaussian (DoG) and Laplacian of guassian
+(LoG) blob detection algorithms implemented in the scikit-image Python package.
+
+### Cellular subcategorization using in situ cytometry and spatial proximity analysis
+
+Protein expression of transcription factors was measured by sampling the SOX2
+and TBR1 antibody staining in a 3-voxel diameter spherical ball centered around
+the nuceli centroids. The mean fluorescence intensity within each sphere was
+computed for each channel and gated to define SOX2-/+ and TBR1-/+ cell
+populations. The result of this gating strategy is a labeled point cloud of
+nuclei centorids.
+
+Spatial proximity analysis of the labeled nuclei point cloud was accomplished by
+first constructing a KD-tree representation of the point cloud for efficient
+querying of nearest nuclei. The spatial proximity to the nearest $k$ cells of type
+$t$ was calcualted using the following formula for each detected nucleus $i$:
+
+$$ P^{(t)}_i = \prod_{n=1}^{k} \frac{1}{1 + d_{i,n}/\sigma^{(t)}} $$
+
+where $ d_{i,n} $ is the distance between the $i$-th nucleus and the $n$-th
+nearest nucleus and $ sigma_{(t)} $ is a reference distance that controls the
+proximity bandwidth (how close a neighboring nucleus must be to be considered in
+close proximity).
+
+### Automatic 3D ventricle segmentation using U-Net
+
+To train a U-Net model for ventricle segmentation, downsampled volumetric images
+of SOX2 staining were semi-automatically segmented using ITK-Snap. In total, 9
+whole organoids were segmented, including 7600 binary 2D images. These images
+were combined with the corresponding syto16 images at the same resolution and
+split with a 20% hold-out test set before moving on to model training and
+validation. The remaining training set was used with ten-fold cross-validation
+to tune model hyperparameters and the overall model architecture. 
+
+The U-Net model was implemented in Keras and slightly modifed from the original
+architecture. Since our images were higher resolution than what was used in the
+original U-Net paper, we added two layers before and after the U-Net bottleneck
+to increase the receptive field of the model. This modifed U-Net model was
+trained using a hybrid loss containing a weighted binary crossentropy (WBCE)
+term and a Dice coefficient loss term. The WBCE term was weighted at 90% to the
+Dice coefficient loss term's 10%. In our experience, the WBCE term helps the
+model converge to sensible ventricle segmentations due to a simpler gradient
+signal during training. However, the Dice coefficient loss is required to
+compensate for the high degree of class imbalance in any given training image.
+
+The test accuracy was assessed after all training and validation steps were
+complete by computing the Dice coefficient for all test images. The reciever
+operating characteristic curve was constructed using a random sample of 100
+images from the test set to speed up computations. These test images were
+segmented and thresholded at linearly spaced probability values between 0 and 1.
+For each threshold, the TP, FP, and FN rates were computed from corresponding
+pixels in the predictions and ground truth iamges. These rates were used to
+compute the final precision and recall values as well as the maximum F1-score
+and area under curve (AUC).
+
+### 3D cytoarchitectural analysis of cerebral organoids
+
+Binary ventricle segmentations were converted into a 3D mesh using the marching
+cubes algorithm from the scikit-image Python package. The resulting mesh
+contained vertices, faces, and normal vectors uniformly distrubuted over the
+ventricle surfaces. The normal vectors and vertices were used to query which
+nuclei centroids were within a 50 µm diameter and 300 µm tall cylinderical
+volume around the surface normal. These cells were bin counted for each cell
+type over size 50 µm intervals to construct the final radial cell profiles.
+
+To determine cytoarchitectural types, 5000 radial cell profiles were sampled
+from each organoid in a given dataset (i.e. from both d35 and d60 organoids in
+the maturation analysis). These radial cell profiles were flattened into vectors
+and concatenated into a matrix of cytoarchitecture observations and features.
+This matrix was provided to UMAP to visualize the distribution of
+cytoarchitectures in 2D and perform dimensionality reduction before clustering.
+After performing UMAP embedding, the UMAP model was saved for future analysis.
+The UMAP embedded cytoarchitectures were then grouped using hierarchical
+clustering with a euclidean distance metric and average linkage method. The
+cluster labels were saved and used as training data in a nearest neighbor
+cytoarchitecture classifier. Using the saved UMAP model and the pretrained
+nearest neighbor cytoarchitecutre classifier, all profiles in each organoid were
+classified efficiently.
+
+The resulting cytoarchitectural labels were used to compute average profiles for
+each clusters as well as for coloring the faces of the ventricles in a 3D
+render. This 3D render of ventricles pseudocolored by cytoarchitecture was
+generated in Blender.
+
+### Hyperdimensional statistical testing for comparative organoid studies
+
+To perform statistical testing on all multiscale features, we used independent
+two-tailed t-tests to obtain significance values for each feature. To reduce the
+amount of false positives due to multiple comparisons, we also thresholded the
+significant phenotypic changes at a two-fold change in mean. This thresholding
+restricted the detected hits to those with large changes in mean so that those
+significant differences that are due to small sample standard deviations are
+removed.
+
+### Pairwise correlation analysis of multiscale organoid features
+
+For 12 d35 organoids, the Pearson correlation coefficient and associated P-value
+was computed for all pairs of organoid features. These correlation coefficients
+were stored in a matrix and biclustered using hierachical clustering. 
+
+To construct a network from these pairwise correlations, the absolute value of
+the correlation coefficients were thresholded at 0.75 to remove edges in the
+network with smaller weights. This thresholded matrix of pairwise correlation
+coefficients was used as an adjancency map in the NetworkX Python package. The
+resulting network was then visualized in an interactive plot using the pyvis
+Python package.
+
+### Estimation of intra-organoid section variability using psuedosections
+
+To compare the intra-organoid variability of sections to the inter-organoid
+variablity in 3D analysis, the nuclei centroids and cell-type labels from 10 d35
+organoids were used in both 2D and 3D analyses. Pseudosections were 100 µm
+virtual sections of the same underlying 3D dataset of nuclei centroids and
+cell-type labels that align with the XY plane and fall within the Z limited of
+the organoid. 10,000 pseudosections were sampled from each organoid and used to
+compute the overall (normalized) cell frquency for SOX2, TBR1, and DN cells.
+Distributions of these psuedosection cell-type frequencies were comapred to the
+distributions of cell-type frequencies obtained by comparing the 3D orgnaoid
+datasets directly. The central limit theorem was used to compute the sample size
+of psueodsections needed to match the variance of the inter-organoid
+distribution.
 
 
 \newpage

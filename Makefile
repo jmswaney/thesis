@@ -67,7 +67,7 @@ docker:
 	--bibliography="source/references_MAP.bib" \
 	--bibliography="source/references_Protocol.bib" \
 	--bibliography="source/references_Coregistration.bib" \
-	--bibliography="source/references_Phenotpying.bib" \
+	--bibliography="source/references_Phenotyping.bib" \
 	--bibliography="source/references_Vascularization.bib" \
 	--csl="style/ref_format.csl" \
 	--highlight-style pygments \
