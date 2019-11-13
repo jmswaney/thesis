@@ -122,19 +122,19 @@ heat-based de-lipidation. Multiple epoxide groups in the polyglycerol
 to form stabilizing inter-and intra-molecular covalent bonds. We adapted the
 original SHIELD protocol to prevent over-fixation in our samples and maintained
 a near-neutral pH during de-lipidation to ensure bright antibody staining of
-transcription factors (Figures S1, S2 & STAR methods). After immersion in
-dPROTOS optical clearing solution, cerebral organoids were optically transparent
-(Figure \ref{phenotyping-1}b). Microscopy of SHIELD-cleared organoid tissue
-sections confirm the preservation of eGFP endogenous fluorescence, epitopes, and
-mRNA (Figure \ref{phenotyping-1}c). For whole-organoid staining, we employed
-eFLASH technology where a rotating electric field accelerates transport of
-fluorescent probes into the tissue for homogenous antibody staining. The eFLASH
-protocol was adapted for cerebral organoids to achieve simultaneous staining of
-8-10 organoids in 35h using 3-15 µg of primary antibody (see STAR methods). We
-achieved whole-organoid staining of nuclear and cytoplasmic proteins (Figure
-\ref{phenotyping-1}d-f). Radial glia in whole d35 organoids were stained with
-vimentin, lipid binding protein, nestin, and SOX2. Neurons were stained with
-β3-tubulin, MAP2, and TBR1. 
+transcription factors (Figures \ref{phenotyping-Sup1}, \ref{phenotyping-Sup2}).
+After immersion in dPROTOS optical clearing solution, cerebral organoids were
+optically transparent (Figure \ref{phenotyping-1}b). Microscopy of
+SHIELD-cleared organoid tissue sections confirm the preservation of eGFP
+endogenous fluorescence, epitopes, and mRNA (Figure \ref{phenotyping-1}c). For
+whole-organoid staining, we employed eFLASH technology where a rotating electric
+field accelerates transport of fluorescent probes into the tissue for homogenous
+antibody staining. The eFLASH protocol was adapted for cerebral organoids to
+achieve simultaneous staining of 8-10 organoids in 35h using 3-15 µg of primary
+antibody (see Methods). We achieved whole-organoid staining of nuclear and
+cytoplasmic proteins (Figure \ref{phenotyping-1}d-f). Radial glia in whole d35
+organoids were stained with vimentin, lipid binding protein, nestin, and SOX2.
+Neurons were stained with β3-tubulin, MAP2, and TBR1. 
 
 ![Pipeline for intact organoid analysis (A) Cerebral organoids are grown from stem cells, fixed in 4% PFA, then post-fixed with SHIELD poly-epoxide crosslinker. Organoids are then cleared in SDS solution at 55°C, rinsed, then labelled with antibodies using eFLASH4 for rapid uniform staining. Samples are imaged by light-sheet microscopy for high-throughput (15 min per organoid) quantitative microscopy. (B) Quantitative analysis applies automated algorithms and deep learning to measure multiscale features. We applied this pipeline for unbiased high-dimensional phenotyping of different experimental models. (C) After de-lipidation and immersion in refractive index matching solution (dPROTOS), organoids are optically transparent and can be imaged with standard confocal microscopy. Grid = 1 mm (D) SHIELD preserves endogenous fluorescence, mRNA and protein epitopes. \label{phenotyping-1}](source/figures/Phenotyping/figure1.jpg){ width=100% }
 
@@ -164,19 +164,19 @@ TBR1+ neurons (Qian et al. 2016; Watanabe et al. 2017).
 
 ### SCOUT analysis of single cells
 
-Using LSFM with a 10X objective (see STAR Methods), three-channel data
+Using LSFM with a 10X objective (see Methods), three-channel data
 acquisition at 0.6 x 0.6 x 2.0µm voxel size took on average ~15 min per
 organoid. The 3D datasets enabled single-cell nucleus identification and
 segmentation throughout the organoid (Figure \ref{phenotyping-2}a). We applied
 curvature-based seeded watershed on nuclear dye images [@Atta-Fosu2016] and
-achieved an accuracy of 90% (Figure S3). Next, we co-localized segmented nuclei
-with SOX2 and TBR1 channels for molecular phenotyping of individual cells
-(Figure \ref{phenotyping-2}b). Since expression of these two markers is mutually
-exclusive, we identified three populations in individual organoids: SOX2+
-progenitors, TBR1+ neurons, and double negative (DN) cells. Morphological
-analysis of individual nuclei shows a ~10µm average diameter for all three cell
-types, although we detect instances of different volumes for each population
-(Figure \ref{phenotyping-2}c,d).
+achieved an accuracy of 90% (Figure \ref{phenotyping-Sup3}). Next, we
+co-localized segmented nuclei with SOX2 and TBR1 channels for molecular
+phenotyping of individual cells (Figure \ref{phenotyping-2}b). Since expression
+of these two markers is mutually exclusive, we identified three populations in
+individual organoids: SOX2+ progenitors, TBR1+ neurons, and double negative (DN)
+cells. Morphological analysis of individual nuclei shows a ~10µm average
+diameter for all three cell types, although we detect instances of different
+volumes for each population (Figure \ref{phenotyping-2}c,d).
 
 Our datasets include the position and marker expression for every cell inside
 these highly patterned cerebral organoids (Lancaster et al. 2013; Qian et al.
@@ -210,12 +210,13 @@ produced (Figure \ref{phenotyping-3}). First, we identified the total number and
 general morphology of ventricles inside our organoids. We adapted U-Net
 [@Ronneberger2015], a convolutional neural network, to detect SOX2-lined
 ventricles based on 9 manually segmented [@Yushkevich2006] datasets containing
-7596 nuclear dye images (Figure S4). We performed manual segmentation using the
-SOX2 antibody channel, but trained the convolutional neural network on nuclear
-dye images to potentially eliminate the necessity of Sox2-antibody in future
-studies. Automated ventricle segmentation by U-Net achieved a Dice coefficient
-of 97.2% on a 20% hold-out test set and provided morphological analysis of the
-three dimensional ventricles (Figure \ref{phenotyping-3}b, Figure S5). 
+7596 nuclear dye images (Figure \ref{phenotyping-Sup4}). We performed manual
+segmentation using the SOX2 antibody channel, but trained the convolutional
+neural network on nuclear dye images to potentially eliminate the necessity of
+Sox2-antibody in future studies. Automated ventricle segmentation by U-Net
+achieved a Dice coefficient of 97.2% on a 20% hold-out test set and provided
+morphological analysis of the three dimensional ventricles (Figure
+\ref{phenotyping-3}b, Figure \ref{phenotyping-Sup4}). 
 
 ![Ventricle segmentation and cytoarchitecture phenotyping. (A) Scheme of automated cytoarchitecture analysis. We quantified radial organization of cell populations around ventricles using “virtual biopsies” 50 µm in diameter and 300 µm high perpendicular to the ventricle surface. (B) Demonstration of automated ventricle segmentation using U-Net convolutional neural network. Representative optical section of a volumetric dataset with detected ventricles in magenta. (C) 3D render of ventricle highlighted in panel B with normal used to orient virtual biopsies shown in yellow. (D) Graph showing that the total number of normal per ventricle depends on the ventricle’s surface area. (E) UMAP embedding of detected cytoarchitectures in a single organoid color-coded according to each cluster. (F) Representative image and average profile plot of individual cytoarchitecture clusters showing the radial distribution of SOX2 (red), double negatives (blue) and TBR1 (green) cells. (G) 3D render of segmented cells and ventricles from a day 35 organoid. On the left side ventricles are white and six cell populations are colored according to the index in Figure 2G: SOX2 in red, SOX2-adjacent in magenta, co-adjacent in yellow, TBR1-adjacent in cyan, TBR1 in green and core DN in blue. On the right, we mapped the detected cytoarchitectures on the surface of rendered ventricles using the colors in panel F. (H) Three-channel heat map from 100 random cytoarchitectures. Each row shows the number of cells detected in all six 50 µm increments moving away from the ventricle surface. Intensity of red, blue and green represent SOX2, DN and TBR1, respectively. (I) The frequency of SOX2, DN and TBR1 cells detected in a ventricle’s virtual biopsies correlates with the ventricle equivalent diameter. Strongest correlation occurs for increased DN and increased TBR1 in larger ventricles. \label{phenotyping-3}](source/figures/Phenotyping/figure3.jpg){ width=100% }
 
@@ -499,7 +500,7 @@ according to a previously reported image processing pipeline [@Swaney2019]. This
 pipeline generates z-slice images with lossless compression that are used to
 compute image histograms for each channel. After normalizing each channel to the
 99th percentile of the histogram, each channel is then partitioned into (64, 64,
-64) voxel chunks using the Zarr Python package. This chunk-compressed
+1)  voxel chunks using the Zarr Python package. This chunk-compressed
 representation allows for parallel processing of each image data chunk.
 
 ### 3D nuclei detection using curvature-based seeded watershed
