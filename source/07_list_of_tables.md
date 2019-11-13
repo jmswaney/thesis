@@ -25,5 +25,9 @@
 
 > Sample preparation, imaging, and image processing conditions for all microscopy data presented in the eFLASH paper
 
+**Table 9.6** \Dotfill pp
+
+> Multiscale organoid features used in the SCOUT hyperdimensional statistical analyses
+
 \setlength{\parskip}{9pt}
 \newpage

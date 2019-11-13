@@ -17,7 +17,7 @@ cytoarchitectures that mimic the developing human cortex. These 3D culture
 models offer an unprecedented chance to study human cortical brain development
 as neural progenitors surrounding ventricles mature into cortical neurons and
 glial cells. Analysis of cells and cytoarchitecture currently requires
-dissociation or sectioning and  the loss of spatial information  can bias data
+dissociation or sectioning and the loss of spatial information can bias data
 interpretation. Here, we present a pipeline for volumetric fluorescence imaging
 and multiscale analysis of intact cerebral organoids. Our integrated technology
 platform can rapidly clear, label, and image a large number of intact organoids.
@@ -114,26 +114,40 @@ phenotypic changes.
 
 ### Whole-organoid staining
 
-To achieve whole organoid antibody staining and imaging (Figure 1A), we adapted
-the SHIELD (Park et al. 2018) poly-epoxide tissue reinforcement protocol to
-preserve biomolecules during detergent and heat-based de-lipidation. Multiple
-epoxide groups in the polyglycerol 3-polyglycidyl ether molecule (P3PE) react
-with available amines in the tissue to form stabilizing inter-and
-intra-molecular covalent bonds. We adapted the original SHIELD protocol to
-prevent over-fixation in our samples and maintained a near-neutral pH during
-de-lipidation to ensure bright antibody staining of transcription factors
-(Figures S1, S2 & STAR methods). After immersion in dPROTOS optical clearing
-solution, cerebral organoids were optically transparent (Figure 1B). Microscopy
-of SHIELD-cleared organoid tissue sections confirm the preservation of eGFP
-endogenous fluorescence, epitopes, and mRNA (Figure 1C). For whole-organoid
-staining, we employed eFLASH technology where a rotating electric field
-accelerates transport of fluorescent probes into the tissue for homogenous
-antibody staining. The eFLASH protocol was adapted for cerebral organoids to
-achieve simultaneous staining of 8-10 organoids in 35h using 3-15 µg of primary
-antibody (see STAR methods). We achieved whole-organoid staining of nuclear and
-cytoplasmic proteins (Figure 1D-F). Radial glia in whole d35 organoids were
-stained with vimentin, lipid binding protein, nestin, and SOX2. Neurons were
-stained with β3-tubulin, MAP2, and TBR1. 
+To achieve whole organoid antibody staining and imaging (Figure
+\ref{phenotyping-1}a), we adapted the SHIELD (Park et al. 2018) poly-epoxide
+tissue reinforcement protocol to preserve biomolecules during detergent and
+heat-based de-lipidation. Multiple epoxide groups in the polyglycerol
+3-polyglycidyl ether molecule (P3PE) react with available amines in the tissue
+to form stabilizing inter-and intra-molecular covalent bonds. We adapted the
+original SHIELD protocol to prevent over-fixation in our samples and maintained
+a near-neutral pH during de-lipidation to ensure bright antibody staining of
+transcription factors (Figures S1, S2 & STAR methods). After immersion in
+dPROTOS optical clearing solution, cerebral organoids were optically transparent
+(Figure \ref{phenotyping-1}b). Microscopy of SHIELD-cleared organoid tissue
+sections confirm the preservation of eGFP endogenous fluorescence, epitopes, and
+mRNA (Figure \ref{phenotyping-1}c). For whole-organoid staining, we employed
+eFLASH technology where a rotating electric field accelerates transport of
+fluorescent probes into the tissue for homogenous antibody staining. The eFLASH
+protocol was adapted for cerebral organoids to achieve simultaneous staining of
+8-10 organoids in 35h using 3-15 µg of primary antibody (see STAR methods). We
+achieved whole-organoid staining of nuclear and cytoplasmic proteins (Figure
+\ref{phenotyping-1}d-f). Radial glia in whole d35 organoids were stained with
+vimentin, lipid binding protein, nestin, and SOX2. Neurons were stained with
+β3-tubulin, MAP2, and TBR1. 
+
+![Pipeline for intact organoid analysis (A) Cerebral organoids are grown from stem cells, fixed in 4% PFA, then post-fixed with SHIELD poly-epoxide crosslinker. Organoids are then cleared in SDS solution at 55°C, rinsed, then labelled with antibodies using eFLASH4 for rapid uniform staining. Samples are imaged by light-sheet microscopy for high-throughput (15 min per organoid) quantitative microscopy. (B) Quantitative analysis applies automated algorithms and deep learning to measure multiscale features. We applied this pipeline for unbiased high-dimensional phenotyping of different experimental models. (C) After de-lipidation and immersion in refractive index matching solution (dPROTOS), organoids are optically transparent and can be imaged with standard confocal microscopy. Grid = 1 mm (D) SHIELD preserves endogenous fluorescence, mRNA and protein epitopes. \label{phenotyping-1}](source/figures/Phenotyping/figure1.jpg){ width=100% }
+
+\begin{figure*}
+\caption*{
+(E) 3D renders of day 35 cerebral organoid stained using cytoplasmic or nuclear
+epitopes. Left: blue is Syto16 nuclear dye, green is β3-tubulin (neuronal
+marker) and red is vimentin (glial marker). Right: blue is Syto16, green is Tbr1
+(deep layer neurons) and red is Sox2 (progenitor cells /radial glia) (F) Day 35
+whole-organoid staining of different antibodies. Scale bars (yellow: 100 µm,
+white: 200 µm)
+}
+\end{figure*}
 
 As an initial proof-of-concept, we developed our SCOUT pipeline using a nuclear
 dye and two antibodies imaged with light-sheet fluorescent microscopy (LSFM) for
@@ -153,15 +167,16 @@ TBR1+ neurons (Qian et al. 2016; Watanabe et al. 2017).
 Using LSFM with a 10X objective (see STAR Methods), three-channel data
 acquisition at 0.6 x 0.6 x 2.0µm voxel size took on average ~15 min per
 organoid. The 3D datasets enabled single-cell nucleus identification and
-segmentation throughout the organoid (Figure 2A). We applied curvature-based
-seeded watershed on nuclear dye images [@Atta-Fosu2016] and achieved an accuracy
-of 90% (Figure S3). Next, we co-localized segmented nuclei with SOX2 and TBR1
-channels for molecular phenotyping of individual cells (Figure 2B). Since
-expression of these two markers is mutually exclusive, we identified three
-populations in individual organoids: SOX2+ progenitors, TBR1+ neurons, and
-double negative (DN) cells. Morphological analysis of individual nuclei shows a
-~10µm average diameter for all three cell types, although we detect instances of
-different volumes for each population (Figure 2C, D).
+segmentation throughout the organoid (Figure \ref{phenotyping-2}a). We applied
+curvature-based seeded watershed on nuclear dye images [@Atta-Fosu2016] and
+achieved an accuracy of 90% (Figure S3). Next, we co-localized segmented nuclei
+with SOX2 and TBR1 channels for molecular phenotyping of individual cells
+(Figure \ref{phenotyping-2}b). Since expression of these two markers is mutually
+exclusive, we identified three populations in individual organoids: SOX2+
+progenitors, TBR1+ neurons, and double negative (DN) cells. Morphological
+analysis of individual nuclei shows a ~10µm average diameter for all three cell
+types, although we detect instances of different volumes for each population
+(Figure \ref{phenotyping-2}c,d).
 
 Our datasets include the position and marker expression for every cell inside
 these highly patterned cerebral organoids (Lancaster et al. 2013; Qian et al.
@@ -170,26 +185,29 @@ individual cells. To explore the value of a cell’s spatial context, we combine
 antibody-based molecular phenotyping data with a “positional proximity score”
 based on each cell’s distance to its nearest SOX2+ and TBR1+ cells. We designed
 this score to reflect each cell’s proximity to the SOX2-rich ventricular zones
-and neuron-rich TBR1+ preplate-like regions (Figure 2E-G). Spatial context
-quantification reveals that SOX2+ and TBR1+ cells had the highest proximity
-scores (>0.65) to themselves. In other words, SOX2-adjacent cells are >99.6%
-SOX2+ and TBR1-adjacent cells are >98.6% TBR1+ cells. The lowest proximity
-scores (<0.15) occurred for DN-adjacent DN cells at the core of the organoid
-away from the ventricles. Proximity analysis detected three intermediate
-populations (0.15-0.65): SOX2-adjacent DN cells in the ventricular zone,
-TBR1-adjacent DN in neuron-rich regions and SOX2/TBR1 co-adjacent DN cells. We
-hypothesized that the location of these DN subpopulations likely correlates with
-their identity given that a TBR1-adjacent DN cell is most likely a post-mitotic
-TBR1- neurons and the infrequent SOX2-adjacent DN cells may represent an early
-population of intermediate progenitors migrating to form a sub-ventricular zone.
-This analysis demonstrates the combination of molecular phenotyping and spatial
-context enables cellular subcategorization in highly patterned tissues. 
+and neuron-rich TBR1+ preplate-like regions (Figure \ref{phenotyping-2}f,g).
+Spatial context quantification reveals that SOX2+ and TBR1+ cells had the
+highest proximity scores (>0.65) to themselves. In other words, SOX2-adjacent
+cells are >99.6% SOX2+ and TBR1-adjacent cells are >98.6% TBR1+ cells. The
+lowest proximity scores (<0.15) occurred for DN-adjacent DN cells at the core of
+the organoid away from the ventricles. Proximity analysis detected three
+intermediate populations (0.15-0.65): SOX2-adjacent DN cells in the ventricular
+zone, TBR1-adjacent DN in neuron-rich regions and SOX2/TBR1 co-adjacent DN
+cells. We hypothesized that the location of these DN subpopulations likely
+correlates with their identity given that a TBR1-adjacent DN cell is most likely
+a post-mitotic TBR1- neurons and the infrequent SOX2-adjacent DN cells may
+represent an early population of intermediate progenitors migrating to form a
+sub-ventricular zone. This analysis demonstrates the combination of molecular
+phenotyping and spatial context enables cellular subcategorization in highly
+patterned tissues. 
+
+![Single cell detection and analysis (A) Scheme of single cell morphological characterization. (B) Demonstration of automated nuclei detection in 3D datasets. Syto16 in blue, Sox2 in red, Tbr1 in green. Scale bar = 100 µm. (C) Expression of Tbr1 and Sox2 in individual nuclei. Dot plot shows gating parameters and population frequency. (D)  Representative images of segmented nuclei for each cell type showing a range of morphological features sorted by sorted by principal component analysis. (E) Morphological analysis of individual cells shows a consistent equivalent diameter ~10 µm for all cell types. (F) Scheme of contextual analysis showing the proximity of each cell to the nearest SOX2 and TBR1 cells. Bar graph shows the results of contextual analysis shown below with “context gates” to define six distinct populations. Gates captured >99% of all cells. (G) Middle optical section of a day 35 organoid dataset showing detected cells colored according their spatial context-based subcategorization. Inset shows zoomed view of dotted rectangle region. Right subpanels show instances of six different subpopulations identified by SCOUT. \label{phenotyping-2}](source/figures/Phenotyping/figure2.jpg){ width=100% }
 
 ### SCOUT analysis of ventricles and radial organization
 
 Next, we sought to characterize ventricles and the radial cell patterning they
-produced (Figure 3). First, we identified the total number and general
-morphology of ventricles inside our organoids. We adapted U-Net
+produced (Figure \ref{phenotyping-3}). First, we identified the total number and
+general morphology of ventricles inside our organoids. We adapted U-Net
 [@Ronneberger2015], a convolutional neural network, to detect SOX2-lined
 ventricles based on 9 manually segmented [@Yushkevich2006] datasets containing
 7596 nuclear dye images (Figure S4). We performed manual segmentation using the
@@ -197,30 +215,33 @@ SOX2 antibody channel, but trained the convolutional neural network on nuclear
 dye images to potentially eliminate the necessity of Sox2-antibody in future
 studies. Automated ventricle segmentation by U-Net achieved a Dice coefficient
 of 97.2% on a 20% hold-out test set and provided morphological analysis of the
-three dimensional ventricles (Figure 3B, Figure S5). 
+three dimensional ventricles (Figure \ref{phenotyping-3}b, Figure S5). 
+
+![Ventricle segmentation and cytoarchitecture phenotyping. (A) Scheme of automated cytoarchitecture analysis. We quantified radial organization of cell populations around ventricles using “virtual biopsies” 50 µm in diameter and 300 µm high perpendicular to the ventricle surface. (B) Demonstration of automated ventricle segmentation using U-Net convolutional neural network. Representative optical section of a volumetric dataset with detected ventricles in magenta. (C) 3D render of ventricle highlighted in panel B with normal used to orient virtual biopsies shown in yellow. (D) Graph showing that the total number of normal per ventricle depends on the ventricle’s surface area. (E) UMAP embedding of detected cytoarchitectures in a single organoid color-coded according to each cluster. (F) Representative image and average profile plot of individual cytoarchitecture clusters showing the radial distribution of SOX2 (red), double negatives (blue) and TBR1 (green) cells. (G) 3D render of segmented cells and ventricles from a day 35 organoid. On the left side ventricles are white and six cell populations are colored according to the index in Figure 2G: SOX2 in red, SOX2-adjacent in magenta, co-adjacent in yellow, TBR1-adjacent in cyan, TBR1 in green and core DN in blue. On the right, we mapped the detected cytoarchitectures on the surface of rendered ventricles using the colors in panel F. (H) Three-channel heat map from 100 random cytoarchitectures. Each row shows the number of cells detected in all six 50 µm increments moving away from the ventricle surface. Intensity of red, blue and green represent SOX2, DN and TBR1, respectively. (I) The frequency of SOX2, DN and TBR1 cells detected in a ventricle’s virtual biopsies correlates with the ventricle equivalent diameter. Strongest correlation occurs for increased DN and increased TBR1 in larger ventricles. \label{phenotyping-3}](source/figures/Phenotyping/figure3.jpg){ width=100% }
 
 Ventricles are an important anatomical landmark in the heterogeneous landscape
 of a cerebral organoid. They provide the origin of radial cytoarchitecture
 orientation that occurs when progenitor glia cells produce post-mitotic neurons.
 We quantified radial organization of cell populations around ventricles by
 generating “virtual biopsies” 50µm in diameter and 300µm long perpendicular to
-the ventricle’s surface (Figure 3A-D). Each biopsy captures SOX2, TBR1, and DN
-cell counts within 50 µm-tall stacked cylindrical regions. We generated
-thousands of virtual biopsies uniformly distributed across the surface of all
-ventricles for unbiased quantification of radial cytoarchitectures in the
+the ventricle’s surface (Figure \ref{phenotyping-3}a-c). Each biopsy captures
+SOX2, TBR1, and DN cell counts within 50 µm-tall stacked cylindrical regions. We
+generated thousands of virtual biopsies uniformly distributed across the surface
+of all ventricles for unbiased quantification of radial cytoarchitectures in the
 organoid. As expected, the number of biopsies generated per ventricle was
-proportional to its surface area (Figure 3D). Performing unsupervised
-hierarchical clustering after UMAP embedding to reduce hyper-dimensionality
-[@McInnes2018] revealed five distinct cytoarchitectures: TBR1+DNlow,
-TBR1+DNhigh, surface, “DN only”, and “adjacent ventricles” (Figure 3E, F). When
-we mapped cytoarchitecture clusters onto the surface of the ventricles, we
-observed a strong positional correlation within the organoid (Figure 3G). As
-expected, surface cytoarchitecture appears at the surface organoid due to the
-abrupt disappearance of cells beyond the organoid’s border. We also detected
-“adjacent ventricles”cytoarchitecture on ventricle surfaces facing towards
-nearby ventricles. A survey of a hundred random biopsies shows a spectrum of
-different cell profiles and we explored whether ventricle size may affect cell
-frequency (Figure 3H, I). Quantification of cell type frequency in each
+proportional to its surface area (Figure \ref{phenotyping-3}d). Performing
+unsupervised hierarchical clustering after UMAP embedding to reduce
+hyper-dimensionality [@McInnes2018] revealed five distinct cytoarchitectures:
+TBR1+DN-low, TBR1+DN-high, surface, “DN only”, and “adjacent ventricles” (Figure
+\ref{phenotyping-3}e,f). When we mapped cytoarchitecture clusters onto the
+surface of the ventricles, we observed a strong positional correlation within
+the organoid (Figure \ref{phenotyping-3}g). As expected, surface
+cytoarchitecture appears at the surface organoid due to the abrupt disappearance
+of cells beyond the organoid’s border. We also detected“adjacent ventricles”
+cytoarchitecture on ventricle surfaces facing towards nearby ventricles. A
+survey of a hundred random biopsies shows a spectrum of different cell profiles
+and we explored whether ventricle size may affect cell frequency (Figure
+\ref{phenotyping-3}h, i). Quantification of cell type frequency in each
 ventricle’s virtual biopsies reveals a strong correlation between ventricle size
 and cell type frequency. Correlation analysis revealed that ventricle size was
 positively correlated with TBR1 cell frequency and negatively correlated with DN
@@ -235,168 +256,193 @@ analysis of cell patterning.
 
 ### SCOUT whole-organoid analysis and correlation
 
-With the ability to measure absolute frequency of cell populations in individual
-organoids, we could quantify the accuracy of conventional histological analysis
-based on two-dimensional tissue sections. First, we compared how three different
-100µm thick “pseudo-sections” generated from our 3D datasets of day 35 organoids
-predicted whole-tissue cell type frequencies (Figure 4A). These results show
-that individual slices consistently miss the SOX2, TBR1 and DN whole-organoid
-frequency and reveal an intra organoid heterogeneity caused by the
-pseudo-section’s position within the organoid. To address the possibility of
-positional bias within individual organoids, we quantified the correlation
-between cell type frequencies for each ventricle and their distance from the
-surface (Figure 4B). This analysis reveals a significant positional bias for
+SCOUT provides the ability to measure absolute frequency of cell populations in
+individual organoids. We could therefore quantify the accuracy of conventional
+histological analysis based on two-dimensional tissue sections. First, we
+compared how three different 100µm thick “pseudo-sections” generated from our 3D
+datasets of day 35 organoids predicted whole-tissue cell type frequencies
+(Figure \ref{phenotyping-4}a). These results show that individual slices
+consistently miss the SOX2, TBR1 and DN whole-organoid “true frequency” and
+reveal an intra-organoid heterogeneity biased by the pseudo-section’s position
+within the organoid. To address the possibility of positional bias within
+individual organoids, we quantified the correlation between cell type
+frequencies for each ventricle and their distance from the surface (Figure
+\ref{phenotyping-4}b). This analysis reveals a significant positional bias for
 each cell type. TBR1 cells are predominantly at the surface of the organoid and
-decrease with depth. Inversely, DN cell frequency increases as a ventricle’s
-distance from the surface increases and reaches ~80% for ventricles near the
-organoid’s core. Thus, an organoid’s histological section will possess cell
-frequency bias dependent on its position within the tissue. 
+decrease with depth. Inversely, DN cell frequency increases as a ventricle moves
+away from the surface increases and reaches ~80% for ventricles near the
+organoid’s core. This mirrors our findings correlating ventricle size with TBR1
+frequency (Figure \ref{phenotyping-3}i) since larger ventricles tend to be at
+the organoid’s surface in our organoids. These trends highlight that an
+organoid’s histological section will possess cell frequency biases dependent on
+its overall position in the tissue. 
 
-To compare how this sampling heterogeneity compares with inter-organoid
-variability, we compared the statistical distribution of cell type frequencies
-in 10 organoids (biological heterogeneity) and the statistical distribution of
-possible estimates using 100µm thick “pseudo-sections” in these same organoids
-(Figure 4C, D). Pseudo-section sampling variability was greater than
-inter-organoid biological variability. To reduce the heterogeneity of
-histological sampling to match the inter-organoid variability in cell type
-frequency, more than five to seven histological sections would be necessary per
-organoid.
+![Whole organoid analysis for unbiased quantitative studies. (A) Scheme (top) and analysis of three different 100 µm pseudo-sections from a 3D dataset. Pie charts (right) show the variable depth-dependent cell frequency for individual slices. Bottom shows the estimated cell frequency for each cell type with the actual whole-organoid frequency (dotted line). (B) Analysis of cell frequencies for 1187 independent ventricles pooled from 12 day 35 organoids. Cell frequency for each organoid was determined by combining the counts of cells detected in all “virtual biopsies” used for cytoarchitecture analysis. (C) Comparison of pseudo-slice heterogeneity with biological inter-organoid variability. Each histogram shows the distribution of 10,000 pseudo-sections 100µm thick for 12 organoids (black) versus the distribution of whole-organoid frequency (colored histogram, ticks show independent organoid values). (D) Comparison of cell frequency standard deviation for the pseudo-sections sampling variability (2D) versus whole-organoid biological variability (3D). The number of pseudo-sections required to match biological variability is shown for each cell population. (E) Comparison of the relative standard error for 276 multiscale features in 12 d35 organoid replicates where each dot is colored based on to the scale of its analysis. (F) Heat map of Pearson’s correlation coefficient investigating the relationship between the 276 multiscale features and their variation in 12 d35 organoids. Right shows the cropped region where we see a combination of single-cell (red) and whole-organoid (blue) features where r >0.88. (G) Network of feature correlation when the absolute Pearson’s correlation coefficient is >0.75. Cropped region shows the same multiscale correlation as the heat map in panel F. The SOX2 cell count and organoid volume were the most central nodes in this cluster, both having a degree of 30.  \label{phenotyping-4}](source/figures/Phenotyping/figure4.jpg){ width=100% }
 
-To quantify inter-organoid differences, we combined our holistic analysis into a
-set of 276 organoid descriptors capturing single cell, cytoarchitecture and
-whole-organoid features (Table S1). When looking at the relative standard error
-of these features, we see a wide range of heterogeneity (Figure 4E). Some of the
-most variable features include average ventricle volume, total count of DN, and
-organoid volume. Interestingly, the frequency of SOX2 and TBR1 cells was much
-more consistent than their absolute number. Given the large variability of
-certain features, we computed pairwise correlations between multiscale features
-to see if certain features at the single-cell scale could predict whole-tissue
-features (Figure 4F). The most interesting correlation occurs around Sox2 and
-Tbr1 total counts. A network analysis of pairwise correlations (r > 0.75)
-reveals a significant link between the total number of these cells with organoid
-size, ventricle size, and SOX2 position close to the surface. These studies show
-that SCOUT can quantify heterogeneity in biological replicates and can start to
-elucidate the correlation of phenomena at multiple scales.
+To compare how this sampling-biased heterogeneity compares with biological
+inter-organoid variability, we compared the statistical distribution of cell
+type frequencies in 10 organoids with the statistical distribution of possible
+estimates using 100µm thick “pseudo-sections” in these same organoids (Figure
+\ref{phenotyping-4}c,d). Variability caused by uniform pseudo-section sampling
+was greater than the biological inter-organoid variability. Theoretically, to
+reduce the heterogeneity of histological sampling to match the inter-organoid
+variability in cell type frequency, more than five to seven histological
+sections would be necessary per organoid. This represents the number of 100µm
+sections that would be required to equate the standard deviation of the sample
+mean with that of the inter-organoid distribution over each cell type frequency.
+
+To understand inter-organoid differences, we combined all of our multiscale
+analyses into a set of 276 descriptors capturing single cell, cytoarchitecture
+and whole-tissue features in a single organoid (Table \ref{feature-table}).
+Comparative analysis among day 35 organoid replicates reveals unequal variance
+in specific features. When looking at the relative standard error of these
+features, we see a wide range of heterogeneity (Figure \ref{phenotyping-4}e).
+Some of the most variable features include average ventricle volume, total count
+of DN cells, and organoid volume. Most consistent features are the single cell
+morphology descriptors, which are virtually identical in all replicates.
+Interestingly, the frequency of SOX2 and TBR1 cells was more consistent than
+their absolute number. Given the large variability of certain features, we
+computed pairwise correlations between multiscale features to see if certain
+features in single-cell features could predict whole-tissue topography (Figure
+\ref{phenotyping-4}f). The most interesting multiscale correlation occurs around
+SOX2 and TBR cell counts. A network analysis of pairwise correlations (r > 0.75)
+reveals a network of correlated multiscale features where SOX2 count and
+organoid volume were the most central nodes (degree of 30) impacting ventricle
+size, TBR1 count, co-adjacent DN counts and average SOX2 distance from the
+surface (Figure 4G). The analyses show that SCOUT can reduce positional
+bias-related variance, quantify biological heterogeneity in replicates, and can
+provide the correlation of multiscale features.
 
 ### SCOUT analysis of organoid maturation
 
 Next, we used SCOUT for comparative analysis between day 35 and day 60 cerebral
-organoids to detect maturation-related changes in cell populations and
-cytoarchitectures (Figure 5). We compared individual features of each time point
-using independent two-tailed t-tests and detected interesting interpretable
-changes at multiple scales (Figure 5C, volcano plot). We detected 89 parameters
-where p <0.01% that we then rank-ordered according to largest differences using
-the absolute value of their fold-change (Figure 5D; heat-map). The d60 organoids
-look dramatically different with a four-fold increase in their volume and a
-two-fold increase in average ventricle volume. As expected, growth produced a
-large increase in all cell populations (19X DN, 4X TBR, 2X SOX2; Figure 5E).
-Non-uniform cell expansion caused a 56% reduction in SOX2 cell frequency and
-two-fold increase in the Tbr1/Sox2 ratio. We suspect the low expansion of
-progenitor cells is caused by our addition of BDNF at day 40 of organoid
-culture, which drives neurogenesis and suppresses progenitor expansion
-[@Fukumitsu2006].
+organoids to detect maturation-related multiscale changes (Figure
+\ref{phenotyping-5}). We compared individual features of each time point using
+independent two-tailed t-tests and detected 28 significant (p<0.01%) changes we
+rank-ordered according to largest fold-change (Figure \ref{phenotyping-5}b,c).
+Day 60 organoids showed a four-fold increase in total volume and a two-fold
+increase in ventricle size. As expected, growth produced a large increase in
+cell numbers (19X DN, 4X TBR, 2X SOX2; Figure \ref{phenotyping-5}d). Non-uniform
+cell expansion caused a 56% reduction in SOX2 cell frequency and two-fold
+increase in the Tbr1/Sox2 ratio. We suspect the low expansion of progenitor
+cells is caused by our addition of BDNF at day 40 of organoid culture, which
+drives neurogenesis and suppresses progenitor expansion [@Fukumitsu2006].
 
-Cell frequencies were relatively consistent in each group, suggesting once again
-that inter-organoid variability is significantly reduced by whole-organoid
-analysis (Figure 5G). In cerebral organoids, as progenitor cells divide and
-produce radially-organized cell populations, a layer of DN cells appears between
-SOX2 and TBR1 cells (Figure 5A), which reduced the proximity of SOX2 cell
-proximity to TBR1 (43% decrease for SOX2, 34% decrease for TBR1). Maturation
-also produced a 7X increase in “TBR1-adjacent DN cells” frequency and the
-emergence of a “Tbr1+DNhi” cytoarchitecture (31.2%) characterized by abundant DN
-cells after the SOX2 ventricular zone and into the population of TBR1 cells
-(Figure 5H: cyto profiles). In these cytoarchitectures, DN cells likely
-represent a combination of intermediate progenitors and non-TBR1 neurons that
-develop with organoid maturation. These new cell populations increased
-inter-ventricle and ventricle-to-surface distances and produced a 70% reduction
-in “Adjacent” and “Surface” cytoarchitectures, respectively. As organoids
-mature, they replace these cytoarchitectures with “$TBR1+DN^{hi}$” (31.2%) and
-“$TBR1+DN^{low}$” (28%), highlighting a general increase in TBR1+ neurons around
-the ventricles. Another important change in cytoarchitecture is the doubling of
-“DN only” cytoarchitectures from 14% to 28% as a consequence of the 14-fold
-increase in “core DN” cells. The “DN only” cytoarchitectures are usually
+![Hyper-dimensional analysis of multiscale changes during cerebral organoid maturation. (A) Representative image of day 35 and 60 organoids taken from volumetric datasets. (B) Volcano plot highlighting unbiased detection of multiscale differences with dots colored according to scale of analysis. (C) Heat map outlining major differences between twelve d35 vs. eight d60 organoids. (D) Dot plots showing organoid volume, total cells, average ventricle volume, and total counts of antibody-labelled subsets. (E) Cell subpopulation frequencies for independent replicates (top) and average values (bottom). (F) Quantitative analysis of cytoarchitecture frequencies for independent replicates (top) and average values (bottom). (*** p<0.001, ** p<0.01) (G) UMAP embedding of the cytoarchitectures detected in d35 and d60 organoids. Left shows the distribution of cytoarchitectures in d35 organoids where each color represents a different organoid. Middle UMAP shows cytoarchitectures according to age of organoids (d35 blue and d60 red). Right UMAP shows the distribution of cytoarchitectures in the d60 organoids where each color represents a different organoid. (H) Analysis of cell proximity to SOX2 and TBR1 in “adjacent” (left) and “TBR1, DN-high” (right) as a function of the distance from the ventricle surface. \label{phenotyping-5}](source/figures/Phenotyping/figure5.jpg){
+width=100% }
+
+Cell type frequency was relatively consistent in replicate organoids, supporting
+the importance of whole-organoid analysis to reduce histology-related
+variability (Figure \ref{phenotyping-5}e). In d60 cerebral organoids, as
+progenitor cells generated radially organized cell populations, a visible layer
+of DN cells appears between SOX2 and TBR1 regions (Figure \ref{phenotyping-5}a).
+This new cell layer reduced the proximity of SOX2 and TBR1 cells to one another
+(43% decrease for SOX2, 34% decrease for TBR1). Maturation also produced a 7X
+increase in“TBR1-adjacent DN cells” frequency and the emergence of a “Tbr1+DNhi”
+cytoarchitecture (31.2%) characterized by abundant DN cells appearing after the
+SOX2 ventricular zone and continuing into the TBR1 region (Figure
+\ref{phenotyping-5}f,g). In these cytoarchitectures, DN cells likely represent a
+combination of intermediate progenitors and non-TBR1 neurons that emerge over
+the course of organoid maturation. These new cell populations increased the
+inter-ventricle and ventricle-to-surface distances causing a 70% reduction in
+“Adjacent” and“Surface” cytoarchitectures, respectively. As organoids mature,
+they replaced these early cytoarchitectures with “TBR1+DNhi” (31.2%) and
+“TBR1+DN-low” (28%), highlighting a general increase in TBR1+ cells around the
+maturing ventricles. Another important change in cytoarchitecture is the
+doubling of “DN only”cytoarchitectures from 14% to 28% as a consequence of the
+14-fold increase in“core DN” cells. The “DN only”cytoarchitectures are usually
 oriented towards the organoid core where no ventricles or cell markers are
 detected. This region grows in d60 organoids since the reduced surface-to-volume
-ratio in these large organoids likely interferes with the transport of nutrients
-and growth factors.
+ratio in these large organoids likely interferes with the transport of oxygen,
+nutrients and growth factors.
 
-Although organoids appear heterogeneous when comparing random optical sections,
+Although organoids appear heterogeneous when comparing random cross sections,
 full-spectrum cytoarchitecture reveals a relatively consistent distribution of
-radial organization in our biological replicates. To confirm cytoarchitecture
-consistency and to demonstrate the flexibility of SCOUT analysis, we “gated” on
-specific cytoarchitectures to determine consistency of patterning. We gated on
-the “Adjacent” and “TBR1+DNhi” cytoarchitectures to compare SOX2- and TBR1-
-proximity of individual cells as a function of their distance from the ventricle
-surface. Analysis confirms that cells found within the “Adjacent”
-cytoarchitectures consistently show a slight increase in TBR1 proximity at ~75
-µm then return to high SOX2 proximity. In contrast, the more mature TBR1+DNhi
-regions show a single transition from SOX2-proximity to TBR1-proximity ~150µm
-away from the ventricle surface.
+radial organization in our biological replicates. To assess the consistency of
+specific cytoarchitecture clusters, we “gated” on the “Adjacent” and “TBR1+DNhi”
+to compare SOX2 and TBR1 proximity of individual cells relative to their
+distance from the ventricle surface (Figure \ref{phenotyping-5}h). This analysis
+confirms that cells found within the “Adjacent” cytoarchitectures consistently
+show a slight increase in TBR1 proximity at ~75 µm then return to high SOX2
+proximity. In contrast, the more mature TBR1+DNhi regions show a one-time
+transition from SOX2-proximity to TBR1-proximity ~150µm away from the ventricle
+surface.
 
 ### Comparative analysis of Zika infection
 
-After quantification of maturation-induced changes, we quantified multiscale
-changes caused by Zika virus infection (Figure 6). Previous studies used
-cerebral organoids to monitor tropism and lethality of Zika virus causing
-microcephaly in newborns [@Cugola2016]. Initial studies suggest that infection
-of neural progenitors causes a reduced output of mature neurons and decreased
-size of brain tissue. Using a clinical isolate from Puerto Rico, we infected
-organoids at day 21 with 0.1 MOI and waited for 14 days post-infection to assess
-the multiscale impact of viral infection. SCOUT-analysis detected 49 features
-whose p<0.01. Notably, we detected a ~50% reduction in organoid size, ventricle
-volume and total ventricle counts (Figure 6B). At the cellular level, we
-detected a 75% decrease in total number and 50% decrease in frequency of both
-SOX2+ progenitors and TBR1+ neurons. The dramatic loss of ventricles and SOX2
-cells lead to a 67% decrease (31% to 10%) in the “Adjacent” cytoarchitecture,
-while TBR1 loss caused the 24 to 40% increase in “DN only” cytoarchitectures.
-Zika-infection produced an aggressive phenotype where smaller organoids which
-lack ventricles, SOX2 cells and TBR1 cells. Our quantification of the Zika
-infection phenotype is consistent with previous reports and may mirror the
-mechanisms underlying viral microcephaly in newborns. Unfortunately, it remains
-unclear whether the loss of TBR1+ neurons is due to disrupted progenitor
-differentiation or neuron-specific cell death caused by viral infection.
-However, SCOUT can help discern between these two possibilities in future
-experiments. 
+After investigating maturation-induced changes, we quantified how cerebral
+organoids were altered by Zika virus infection (Figure \ref{phenotyping-6}).
+Previous studies have used cerebral organoids to monitor the tropism of Zika
+virus infection and how it produces microcephaly in newborns [@Cugola2016].
+Initial studies suggest that infection of neural progenitors causes a reduced
+output of mature neurons and decreased size of brain tissue. Using a clinical
+isolate from Puerto Rico, we infected organoids at day 21 with 0.1 MOI and
+waited 14 days post-infection to assess the multiscale impact of viral
+infection. SCOUT-analysis detected 18 significant differences (p<0.01; Figure
+\ref{phenotyping-6}b,c). Notably, we detected a ~50% reduction in organoid size,
+ventricle volume and total ventricle counts (Figure \ref{phenotyping-6}d). At
+the cellular level, we detected a 75% total decrease and 50% frequency decrease
+of both SOX2+ and TBR1+ cells (Figure \ref{phenotyping-6}e). The combined loss
+of ventricles and SOX2 cells lead to a 67% decrease (31% to 10%) in the
+“Adjacent”cytoarchitecture, while TBR1 loss caused the 24 to 40% increase in “DN
+only”cytoarchitectures. Zika-infection produced an aggressive phenotype that
+limited organoid size, ventricle growth, and the expansion of SOX2 and TBR1
+cells (Figure \ref{phenotyping-6}f). Given the importance of SOX2 cell number in
+the emergence of higher order features (Figure \ref{phenotyping-4}f) it is
+unsurprising that the significant loss of neural progenitors produced an
+important decrease in the complexity of tissue topography and cell patterning.
+Quantification of the Zika infection phenotype is consistent with previous
+reports and may mirror the mechanisms underlying viral microcephaly in newborns.
+Unfortunately, it remains unclear whether the loss of TBR1+ neurons is due to
+disrupted progenitor differentiation or neuron-specific cell death. However,
+SCOUT can help discern between these two possibilities in future experiments. 
+
+![Hyper-dimensional analysis of multiscale changes caused by Zika virus infection. (A) Top: representative image of age-matched day 34 mock and Zika virus-infected organoid (14 days post-infection) taken from volumetric datasets (scale bar 1 mm). Bottom: rendering of segmented ventricles from each group with their surfaces colored according to detected cytoarchitecture. (B) Volcano plot highlighting unbiased detection of multiscale differences with dots colored according to scale of analysis. (C) Heat map outlining major differences between ten mock vs. six Zika-infected organoids. (D) Dot plots showing organoid volume, ventricle count, ventricle volume, and total counts SOX2 and TBR1 cells. (E) Comparison of cell subpopulation frequencies (top) and cytoarchitecture frequency (bottom). (*** p<0.001, ** p<0.01) (F) UMAP embedding of the cytoarchitectures detected in mock (blue) and Zika-infected organoids (red) showing a shift in cytoarchitecture. \label{phenotyping-6}](source/figures/Phenotyping/figure6.jpg){ width=100% }
 
 ### Comparative analysis of different cerebral organoid protocols
 
-Our analysis provides high-dimensional phenotyping for multiple whole organoids
-as a strategy to overcome the problematic organoid heterogeneity (Renner et al.
-2017; Quadrato et al. 2017). A recent study10 by Velasco et al. addressed
-heterogeneity by screening different organoid culture protocols. Their patterned
-dorsal forebrain organoids showed impressive organoid-to-organoid consistency in
-morphology and in their cellular composition, as assessed by single-cell RNA
-sequencing. We compared these organoids with our day 60 organoids, which were
-grown with a modified version of the Lancaster protocol where we applied dual
-SMAD inhibition for the first half of neuroepithelium induction, added BDNF
-after day 40 and used Petri dishes on a shaker instead of a bioreactor
-[@Lancaster2014]. Comparative analysis detects 112 features whose p <0.01. Most
-noticeably, the Velasco organoids and their ventricles were smaller, showing an
-average 60% and 84% decrease, respectively (Figure 7A-C). At the cellular level,
-Velasco organoids show a 2X higher frequency of SOX2 cells and 3X increase in
-TBR1 frequency. The proximity between the SOX2 and TBR1 cells also increased 2X
-due to the absence DN cells between the progenitor zone and TBR1 cells (Figure
-5A, Figure 7A). DN cells were less frequent overall and we detected a 70%
-reduction in the organoid core and an 80% reduction in TBR1-adjacent regions. 
+High-dimensional phenotyping of multiple whole organoids provides one a strategy
+to overcome the inter-organoid heterogeneity (Quadrato et al. 2017).However, a
+recent study (Velasco et al. 2019) by Velasco et al. addressed biological
+heterogeneity by comparing different brain organoid culture protocols. Their
+patterned dorsal forebrain organoids showed an impressive organoid-to-organoid
+consistency in morphology and cellular composition, assessed by single-cell RNA
+sequencing. We compared day 56 “Velasco organoids” with our day 60 organoids,
+cultured according to a modified version of the Lancaster protocol (Figure
+\ref{phenotyping-7}). We applied dual SMAD inhibition for the first half of
+neuroepithelium induction, added BDNF after day 40 and used Petri dishes on a
+shaker instead of a spinning bioreactor [@Lancaster2014]. Comparative analysis
+detects 29 different features whose p <0.01 (Figure \ref{phenotyping-7}b,e).
+Most noticeably, the Velasco organoids and their ventricles were smaller,
+showing an average 60% and 84% decrease, respectively (Figure
+\ref{phenotyping-7}c). At the cellular level, Velasco organoids show a 2X higher
+frequency of SOX2 cells and 3X increase in TBR1 frequency (Figure
+\ref{phenotyping-7}f). The proximity between the SOX2 and TBR1 cells also
+increased twofold due to the absence DN cells between the progenitor zone and
+TBR1 cells (Figure \ref{phenotyping-7}a,g). DN cells were less frequent overall,
+which produced a 70% reduction in core DN cells and an 80% reduction in
+TBR1-adjacent DN cells. 
 
-Cytoarchitectures were vastly different in these two organoid protocols. The
-Velasco organoid’s abundant TBR1 cells produced the appearance of a new
-“TBR1-rich cluster” (~21% of total biopsies), where TBR1 counts are ~35% higher
-and DN counts are 70% lower compared to the “TBR1+DNhigh” cytoarchitecture
-favored in our day 60 organoids. Velasco organoids also show more “Adjacent”
-cytoarchitectures, consistent with smaller organoids. The 66% reduction in “DN
-only” cytoarchitecture may also reflect smaller organoids, or the improved
-tissue transport when culturing organoids in a bioreactor. Interestingly,
-Velasco organoids were much more consistent across their multiscale features. We
-quantified the variance of all 276 features and compared the fold-change in both
-organoid groups. The Velasco organoids show decreased variance in 70% of all
-features. The dramatic differences in these two organoid groups is expected
-given their drastically different culture protocols. However, this
-proof-of-concept study demonstrates the potential of SCOUT to evaluate the
-multiscale features and to quantify inter-organoid variance produced by
-different culture protocols. These finding suggest that a combination of
-holistic analysis and protocol optimization can address the widely reported
-problem of organoid heterogeneity.
+![Hyper-dimensional analysis of multiscale changes in different culture protocols. (A) Representative image of day 56 Velasco and our day 60 organoids taken from volumetric datasets.(yellow bar = 1 mm; white bar = 100 µm) (B) Heat map outlining major differences between different organoid culture protocols. (C) Dot plots showing organoid volume, average ventricle volume, and total counts of cell types. (D) Comparative analysis of the fold-change in the relative standard error of quantified features. Dotted line shows zero, bars reflect better homogeneity in Velasco (blue) organoids and our organoids (red). Graph shows 72% of features (141/195) were more consistent in Velasco organoids (E) Volcano plot highlighting unbiased detection of multiscale differences with dots colored according to scale of analysis. (F) Comparison of cell subpopulation frequencies (top) and cytoarchitecture frequency (bottom). (*** p<0.001, ** p<0.01, *<0.05). (G) Representative image and average profile plot of individual cytoarchitecture clusters showing the radial distribution of SOX2 (red), double negatives (blue) and TBR1 (green) cells in the Velasco-specific TBR1-rich cytoarchitecture and the day 60-specific Tbr1+DN-high cytoarchitecture. Arrows show the higher TBR1 frequency (green) and DN band between SOX2 and TBR1 (blue). (H) Frequency of SOX2 (red), TBR1 (green) and DN (blue) for 250 random ventricles pooled from all organoids. Cell frequency was determined by considering the detected cells all of a ventricle’s virtual biopsies. \label{phenotyping-7}](source/figures/Phenotyping/figure7.jpg){ width=100% }
+
+Cytoarchitectures were vastly different in these two protocols. The Velasco
+organoid’s abundant TBR1 cells produced the appearance of a new “TBR1-rich
+cluster” (~21% of total biopsies), where TBR1 counts are ~35% higher and DN
+counts are 70% lower compared to the “TBR1+DN-high” cytoarchitecture favored in
+our day 60 organoids (Figure \ref{phenotyping-7}g,h). Velasco organoids also
+show more “Adjacent”cytoarchitectures, consistent with smaller organoids. The
+66% reduction in “DN only” cytoarchitecture reflects less “core cells” which can
+be attributed to smaller organoid size or the improved tissue transport when
+using a spinning bioreactor. Interestingly, Velasco organoids possessed better
+feature consistency across multiscale features. We quantified the variance of
+all 276 features and compared the fold-change in both organoid groups. The
+Velasco organoids show decreased variance in ~70% of features (Figure
+\ref{phenotyping-7}d). The dramatic differences in these two groups was expected
+given their different culture protocols. However, this proof-of-concept provides
+the foundation for establishing quantitative unbiased assessment of different
+culture protocols. These finding suggest that a combination of holistic analysis
+and protocol optimization can address the widely reported problem of organoid
+heterogeneity.
 
 
 ## Discussion
@@ -508,8 +554,8 @@ $t$ was calcualted using the following formula for each detected nucleus $i$:
 
 $$ P^{(t)}_i = \prod_{n=1}^{k} \frac{1}{1 + d_{i,n}/\sigma^{(t)}} $$
 
-where $ d_{i,n} $ is the distance between the $i$-th nucleus and the $n$-th
-nearest nucleus and $ sigma_{(t)} $ is a reference distance that controls the
+where $d_{i,n}$ is the distance between the $i$-th nucleus and the $n$-th
+nearest nucleus and $\sigma^{(t)}$ is a reference distance that controls the
 proximity bandwidth (how close a neighboring nucleus must be to be considered in
 close proximity).
 
@@ -615,3 +661,5 @@ distribution.
 \newpage
 
 ## References
+
+
