@@ -109,6 +109,34 @@
 
 > Demonstration of 3D coregistration of a large block of marmoset visual cortex at single-cell resolution
 
+**Figure 7.1** \Dotfill pp
+
+> Pipeline for intact organoid analysis
+
+**Figure 7.2** \Dotfill pp
+
+> Single cell detection and analysis
+
+**Figure 7.3** \Dotfill pp
+
+> Ventricle segmentation and cytoarchitecture phenotyping
+
+**Figure 7.4** \Dotfill pp
+
+> Whole organoid analysis for unbiased quantitative studies
+
+**Figure 7.5** \Dotfill pp
+
+> Hyper-dimensional analysis of multiscale changes during cerebral organoid maturation
+
+**Figure 7.6** \Dotfill pp
+
+> Hyper-dimensional analysis of multiscale changes caused by Zika virus infection
+
+**Figure 7.7** \Dotfill pp
+
+> Hyper-dimensional analysis of multiscale changes in different culture protocols
+
 **Figure 8.1** \Dotfill pp
 
 > Construction of a high-resolution two-photon SLA printer
@@ -184,6 +212,22 @@
 **Figure 9.13** \Dotfill pp
 
 > Representative NPY+ neurons with different dendrite polarities
+
+**Figure 9.14** \Dotfill pp
+
+> Optimization of aldehyde fixation for organoids
+
+**Figure 9.15** \Dotfill pp
+
+> Optimization of SHIELD protocol for organoids
+
+**Figure 9.16** \Dotfill pp
+
+> Nuclei detection and segmentation accuracy
+
+**Figure 9.17** \Dotfill pp
+
+> Ventricle segmentation
 
 \setlength{\parskip}{9pt}
 \newpage
