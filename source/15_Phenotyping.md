@@ -164,19 +164,19 @@ TBR1+ neurons (Qian et al. 2016; Watanabe et al. 2017).
 
 ### SCOUT analysis of single cells
 
-Using LSFM with a 10X objective (see Methods), three-channel data
-acquisition at 0.6 x 0.6 x 2.0µm voxel size took on average ~15 min per
-organoid. The 3D datasets enabled single-cell nucleus identification and
-segmentation throughout the organoid (Figure \ref{phenotyping-2}a). We applied
-curvature-based seeded watershed on nuclear dye images [@Atta-Fosu2016] and
-achieved an accuracy of 90% (Figure \ref{phenotyping-Sup3}). Next, we
-co-localized segmented nuclei with SOX2 and TBR1 channels for molecular
-phenotyping of individual cells (Figure \ref{phenotyping-2}b). Since expression
-of these two markers is mutually exclusive, we identified three populations in
-individual organoids: SOX2+ progenitors, TBR1+ neurons, and double negative (DN)
-cells. Morphological analysis of individual nuclei shows a ~10µm average
-diameter for all three cell types, although we detect instances of different
-volumes for each population (Figure \ref{phenotyping-2}c,d).
+Using LSFM with a 10X objective (see Methods), three-channel data acquisition at
+0.6 x 0.6 x 2.0µm voxel size took on average ~15 min per organoid. The 3D
+datasets enabled single-cell nucleus identification and segmentation throughout
+the organoid (Figure \ref{phenotyping-2}a). We applied curvature-based seeded
+watershed on nuclear dye images [@Atta-Fosu2016] and achieved an accuracy of 90%
+(Figure \ref{phenotyping-Sup3}). Next, we co-localized segmented nuclei with
+SOX2 and TBR1 channels for molecular phenotyping of individual cells (Figure
+\ref{phenotyping-2}b). Since expression of these two markers is mutually
+exclusive, we identified three populations in individual organoids: SOX2+
+progenitors, TBR1+ neurons, and double negative (DN) cells. Morphological
+analysis of individual nuclei shows a ~10µm average diameter for all three cell
+types, although we detect instances of different volumes for each population
+(Figure \ref{phenotyping-2}c,d).
 
 Our datasets include the position and marker expression for every cell inside
 these highly patterned cerebral organoids (Lancaster et al. 2013; Qian et al.
