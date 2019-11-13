@@ -492,6 +492,81 @@ dysfunction of human brain development.
 
 ## Methods
 
+### Cerebral Organoid Culture
+
+Organoids were cultured according to the protocol by Lancaster et al. (2014)
+using the SC101A iPS cell line (Systems Biosciences). The iPSC cells were
+cultured on Matrigel-coated (Corning) plates using mTeSR medium (Stemcell
+Technologies), passaged using ReLeSR at 80% confluency, and organoids were made
+before the 15th passage of initial cells. For organoids, single cells were
+detached with Accutase (Stemcell Technologies) when iPS cells were at 60-80%
+confluency. We seeded 9,000 cells in ultra-low attachment round bottom 96-well
+plates in hESC medium32 with 4 ng/mL bFGF (Peprotech) 50 µM Y-27632
+Rock-inhibitor (Tocris) for the first 4 days then without for an additional two
+days. At day 6, organoids were transferred to ultra-low attachment 24-well
+plates in neural induction medium (Lancaster et al. 2014) with addition of SMAD
+inhibitors (Mellios et al. 2018) 10µM SB-431542 and 1µM dorsomorphin (Tocris).
+At day 9, neural induction medium was replaced with fresh medium without the
+SMAD inhibitors. At day 12, organoids were embedded in 15µL growth-factor
+reduced Matrigel droplets (Corning). We cultured 12 organoids per 60mm Petri
+dish for suspension culture in 5mL cerebral organoid differentiation medium
+(Lancaster et al. 2014) without vitamin A for 4 days. At day 16, medium was
+replaced with cerebral organoid differentiation medium with vitamin A (Lancaster
+et al. 2014) and placed on shaker at 85 rpm. Medium was replaced twice per week
+and at day 40, we added 14 ng/mL BDNF to organoid medium (Quandrato et al.
+2017).
+
+### SHIELD Sample Preparation
+
+Organoids were rinsed once with PBS, then fixed with freshly prepared 4% PFA in
+PBS (EM grade, Electron Microscopy Sciences) at room temperature for 30 minutes
+on a shaker. Organoids were rinsed three times in PBS, transferred into ice cold
+2% polyglycerol 3-polyglycidylether (wt./v) in 0.1M phosphate buffer pH 7.2 and
+incubated for two days at 4°C. Organoids were subsequently transferred into
+pre-warmed 0.1M sodium carbonate buffer (pH 10) and incubated at 37°C for 24h.
+Organoids were washed extensively with PBS for 8h, cleared in 0.2M SDS + 50 mM
+phosphate buffer pH 7.3 for 48h at 55°C while shaking in EasyClear system
+(LifeCanvas), and washed extensively in PBST (PBS, 0.1% Triton X-100, 0.02%
+sodium azide) for 24h. 
+
+### eFLASH Sample Preparation
+
+SHIELD-processed and cleared organoids were stained using an adapted version of
+the eFLASH protocol (Yun et al. 2019). We incubated organoids in eFLASH sample
+buffer (0.3M Tris, 0.2M CAPS, 20% D-sorbitol, 1 mM SDS, 2% bovine serum albumin,
+0.02% sodium azide) overnight at room temperature. Organoids were then placed in
+the SmartLabel system (Lifecanvas) with 1.4 mL sample buffer in the sample cup.
+For SCOUT pipeline, we added 6µL Syto16 (1 mM solution, ThermoFischer #S7578),
+15µg goat anti-SOX2 antibody (R&D Systems #AF2018), 10µg Fab fragment anti-goat
+IgG Alexa Fluor 594 (Jackson ImmunoResearch #805-587-008), 30µg rabbit anti-TBR1
+Alexa Fluor 647 (Cell Signaling Technology #45664S). System was filled with OFF
+main buffer (0.3M Trizma base, 0.2M CAPS, 20% D-sorbitol, 1 mM SDS) and we
+applied 90V at 0.01 rpm for 16h. The following day, we added 0.2mL 20% Triton
+X-100 solution to the sample chamber, drained the system, rinsed the system with
+deionized water, and filled it with ON main buffer (10mM phosphoric acid, 60mM
+Trizma base, 20% D-sorbitol). We applied 90V at 0.01 rpm for 21h, removed
+samples and rinsed them in PBST overnight. To increase antibody signal and
+minimize signal loss in the immersion medium, we fixed antibody-stained samples
+in freshly prepared PBS + 4% PFA for 12h at room temperature. 
+
+### Whole-Organoid Imaging
+
+Prior to imaging, organoids were equilibrated in Protos-based immersion medium
+(Murray et al. 2015; Yun et al. 2019) in two steps. First, we incubated
+organoids in a 1:1 mix of Protos and PBS for 4h. Then, we replaced the solution
+with Protos immersion medium for at leash 6h. Images in Figure 1 were acquired
+using the Leica TCS SP8 laser-scanning confocal microscope with a white light
+laser source for excitations at 488, 594 and 647 nm using a 20X 0.5-NA
+water-immersion objective (Leica #15506147, HCX APO L 20x/0.50 W U-V-I). For
+rapid volumetric imaging in subsequent figures, Protos-immersed samples, were
+mounted in a 1.5% agarose block prepared in Protos. We were able to mount 6-8
+organoids per block at a time. After agarose polymerization, the block was
+equilibrated in 25 mL Protos medium overnight. Samples were mounted and imaged
+with a SmartSPIM  axially swept light-sheet microscope (LifeCanvas Technologies)
+equipped with three lasers (488nm, 561nm, 642nm) and a 10x objective (Olympus
+XLPLN10XSVMP, 0.6NA, 8mm WD, lateral resolution 0.66um in XY). We imaged samples
+at a 0.6 x 0.6 x 2 µm voxel size.
+
 ### Preprocessing LSFM images of cerebral organoids
 
 Cerebral organoid images from the LSFM system (LifeCanvas, SmartSPIM) originally
