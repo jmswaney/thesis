@@ -24,5 +24,6 @@ My dad, Rich, has supported me throughout my entire life and academic career.
 Lastly, I'd like to dedicate this thesis to my mother, Margaret Swaney, to whom
 I owe everything. She has been and will always be my guiding light.
 
+\thispagestyle{empty}
 \newpage
 

@@ -1,7 +1,7 @@
 \begin{titlepage}
     \begin{center}
 
-        \Large
+        \large
         Scaling Up 3D Imaging, Analysis, and Culture\\ 
         of Complex Brain Models
 
@@ -62,10 +62,5 @@
     \hspace*{\fill} Chairman, Committee for Graduate Students
 
     \vspace{0.4cm}
-    
-    % \normalsize
-    % Massachusetts Institute of Technology\\
-    % Cambridge, MA\\
-    % December, 2019
     
 \end{titlepage}

@@ -31,20 +31,19 @@ partitioning being the lobes of the brain.
 In this description of the brain at various length scales, two broad strategies
 for studying overall brain function begin to emerge naturally. One is a
 bottom-up approach, in which cellular details such as electrophysiological
-properties, RNA transcript expression levels, and subcellular structures are
-emphasized. These details are often used to sub-categorize cells in the hopes
-that given the functional role of these subtypes, we may be able to understand
-how they are wired together [@Lake2016]. Using an analogy to a electrical
-circuit board, bottom-up approaches based on cellular sub-typing are analogous
-to trying to understand how a circuit board works by first identifying its
-electrical components. Another strategy is a top-down approach, in which the
-functional associations of each brain region, anatomical variations, and
-large-scale patterns in electrical activity (also known as "brain waves") are
-emphasized [@LopesdaSilva1991]. By taking a more holistic view of the brain,
-top-down approaches hope to address how the brain works as a complete system
-through the interaction of different brain regions. However, studying the brain
-as a complete system has proven to be experimentally challenging due to its
-scale and multiscale intrinsic complexity.
+properties, gene expression levels, and subcellular structures are emphasized.
+These details are often used to sub-categorize cells in the hopes that given the
+functional roles of these subtypes, we may be able to understand how they are
+wired together [@Lake2016]. That is, bottom-up approaches based on cellular
+sub-typing are analogous to trying to understand how a circuit board works by
+first identifying its electrical components. Another strategy is a top-down
+approach, in which the functional associations of each brain region, anatomical
+variations, and large-scale patterns in electrical activity (also known as
+"brain waves") are emphasized [@LopesdaSilva1991]. By taking a more holistic
+view of the brain, top-down approaches hope to address how the brain works as a
+complete system through the interaction of different brain regions. However,
+studying the brain as a complete system has proven to be experimentally
+challenging due to its scale and multiscale intrinsic complexity.
 
 Recent advances in brain atlases allow neuroscience researchers to use bottom-up
 and top-down strategies in tandem, which has been very useful [@Nowinski2017].
@@ -68,15 +67,23 @@ system would bridge the gap between bottom-up and top-down approaches for a
 single brain and be arguably as profound as the original drawings from Ramón y
 Cajal.
 
-## Trends toward more complex brain models in neuroscience
+## Trends toward more complex brain models
 
-In neuroscience, researchers often use model systems as a proxy for the human
+In neuroscience, researchers often use model systems as proxies for the human
 brain, and each brain model has its own set of advantages and disadvantages in a
 given biological context. Researchers typically use brain models that have been
 previously demonstrated to be useful to study the neurological phenomena or
 complex phenotypes of interest. This is because validating new biological models
-of the brain is quite difficult, and it is often unclear how well new models
-approximate what occurs in humans.
+of the brain is quite difficult, and it is even often unclear how well
+established models approximate what occurs in humans.
+
+Some of the simplest models of the brain are 2D cell cultures of human neurons
+[@Gordon2013]. These models allow easy access for monitoring the entire culture
+system throughout experimentation. Such 2D cell cultures have been widely
+adopted for drug screening purposes due to their high-throughput and scalability
+[@Sharma2012]. However, lead compounds identified in primary cell drug screens
+often do not succeed in clinical trials, suggesting that there is more to the
+biological story than what 2D cell cultures are telling us [@Hefti2008].
 
 By far the most commonly used brain model used in experimental neuroscience
 research is the mouse brain [@Ellenbroek2016]. Due to its low cost, amenability
@@ -84,16 +91,8 @@ to genetic manipulation, and relatively small size, mouse models are a
 convenient model of the human brain. Neuroscientists have used mouse models to
 study a wide range of topics, including human disease pathologies [@Leung2016],
 mechanisms of learning and memory [@Han2013], and the behavioral underpinnings
-of social interaction [@Ko2017].
-
-Another widely used model for the human brain are 2D cell cultures of human
-neurons [@Gordon2013]. These models are simpler than mouse models and allow easy
-access for monitoring the entire culture system throughout experimentation. Such
-2D cell cultures have been widely adopted for drug screening purposes due to
-their high-throughput and scalability [@Sharma2012]. However, lead compounds
-identified in primary cell drug screens often do not succeed in clinical trials,
-suggesting that there is more to the biological story than what 2D cell cultures
-are telling us [@Hefti2008].
+of social interaction [@Ko2017]. However, a complete view of the mouse brain
+model is more difficult to obtain than with 2D cell cultures.
 
 Recently, cerebral orgnaoids have emerged as a more complex in vitro brain model
 [@DiLullo2017]. Cerebral organoids are derived from human pluripotent stem cells
@@ -116,12 +115,12 @@ closely related to humans. Therefore, there has been recent interest in using
 marmoset models for studying more human-like behaviors rather than mouse models
 [@Miller2016].
 
-These recent trends towards more complex and larger brain models are undeniable,
+These recent trends toward more complex and larger brain models are undeniable,
 and they originate from some of the inherent limitations of the brain models
-that are currently available to neuroscientists. However, as this trend
-continues towards the larger scale, neuroscientists will be hard-pressed to
-adapt the technologies and experimental techniques that used to work for mouse
-and 2D cell culture models. Scaling up the techniques used in experimental
+that are currently available to neuroscientists. However, as these trends
+continue toward the larger scale, neuroscientists will be hard-pressed to adapt
+the technologies and experimental techniques that were developed for 2D cell
+culture and mouse models. Scaling up the techniques used in experimental
 neuroscience to larger, more complex brain models is the focus of this thesis.
 
 
