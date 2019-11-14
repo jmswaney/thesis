@@ -628,7 +628,7 @@ first constructing a KD-tree representation of the point cloud for efficient
 querying of nearest nuclei. The spatial proximity to the nearest $k$ cells of type
 $t$ was calcualted using the following formula for each detected nucleus $i$:
 
-$$ P^{(t)}_i = \prod_{n=1}^{k} \frac{1}{1 + d_{i,n}/\sigma^{(t)}} $$
+$$P^{(t)}_i=\prod_{n=1}^{k}\frac{1}{1+d_{i,n}/\sigma^{(t)}}$$
 
 where $d_{i,n}$ is the distance between the $i$-th nucleus and the $n$-th
 nearest nucleus and $\sigma^{(t)}$ is a reference distance that controls the

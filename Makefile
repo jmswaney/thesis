@@ -87,6 +87,11 @@ tex:
 	--bibliography="$(BIBFILE1)" \
 	--bibliography="$(BIBFILE2)" \
 	--bibliography="$(BIBFILE3)" \
+	--bibliography="$(BIBFILE4)" \
+	--bibliography="$(BIBFILE5)" \
+	--bibliography="$(BIBFILE6)" \
+	--bibliography="$(BIBFILE7)" \
+	--bibliography="$(BIBFILE8)" \
 	-V fontsize=12pt \
 	-V papersize=a4paper \
 	-V documentclass=report \
@@ -111,10 +116,20 @@ html:
 	--bibliography="$(BIBFILE1)" \
 	--bibliography="$(BIBFILE2)" \
 	--bibliography="$(BIBFILE3)" \
+	--bibliography="$(BIBFILE4)" \
+	--bibliography="$(BIBFILE5)" \
+	--bibliography="$(BIBFILE6)" \
+	--bibliography="$(BIBFILE7)" \
+	--bibliography="$(BIBFILE8)" \
 	--csl="$(STYLEDIR)/ref_format.csl" \
 	--include-in-header="$(STYLEDIR)/style.css" \
 	--toc \
-	--number-sections
+	--number-sections \
+	-F pandoc-citeproc \
+	--lua-filter section-refs.lua \
+	-N \
+	--pdf-engine=xelatex \
+	--verbose
 	rm -rf "$(OUTPUTDIR)/source"
 	mkdir "$(OUTPUTDIR)/source"
 	cp -r "$(INPUTDIR)/figures" "$(OUTPUTDIR)/source/figures"
