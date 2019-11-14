@@ -22,14 +22,14 @@ imaging thick tissue samples.
 
 In order to rapidly stain large tissue samples, we developed eFLASH, which uses
 a rotating electric field and a gradually swept buffer composition to achieve
-whole-brain antibodies staining with conventional antibodies. We also present a
-scalable image processing pipeline for extracting meaningful biological
-information from such whole-brain volumetric images and use this pipeline to
-study eFLASH-stained mouse and marmoset tissue at single-cell resolution. An
-efficient algorithm for nonrigid coregistration of whole-brain scale volumetric
-images based on nuclei matching is also presented. The nuclei-based 3D
-coregistration algorithm is shown to be compatible with mouse and marmoset
-models and allows warping of an entire mouse brain hemisphere with 6 hours.
+whole-brain staining with conventional antibodies. We also present a scalable
+image processing pipeline for extracting meaningful biological information from
+such whole-brain volumetric images and use this pipeline to study eFLASH-stained
+mouse and marmoset tissue at single-cell resolution. An efficient algorithm for
+nonrigid coregistration of whole-brain scale volumetric images based on nuclei
+matching is also presented. The nuclei-based 3D coregistration algorithm is
+shown to be compatible with mouse and marmoset models and allows warping of an
+entire mouse brain hemisphere within 6 hours.
 
 Building on these computational analysis tools, a multiscale phenotyping
 pipeline called SCOUT is presented for understanding single-cell,
@@ -42,10 +42,10 @@ surface was repeatedly identified as an important factor in predicting orgnaoid
 cytoarchitecture. This supports the hypothesis that cerebral organoids are
 affected by nutrient transport limitations.
 
-To address these nutrient transport limitations, a orgnaoid vascularization
+To address these nutrient transport limitations, an orgnaoid vascularization
 strategy is presented using two-photon stereolithography to directly print
 biocompatible and porous vascular systems. The two-photon SLA printer achieved 4
-um lateral fabrication resolution and was able to directly print engineered pore
+µm lateral fabrication resolution and was able to directly print engineered pore
 structures. The porous vascular systems showed improved effective nutrient
 transport with and without perfusion. Printed vascular systems were successfully
 integrated into cerebral organoids with limited cytotoxicty and undisrupted
@@ -63,7 +63,8 @@ may adopt the eFLASH technique. If quantification of these volumetric images is
 required for comparative studies, then eFLASH may be used in combination with
 the scalable image processing pipeline. By combining eFLASH and our scalable
 image processing pipeline, neuroscientists will be able to study their brain
-models without dissecting predetermined brain regions.
+models quantitatively without dissecting predetermined brain regions, which may
+help to understand the brain as a complete biological system.
 
 Using MAP, neuroscientists will be able to more easily quantify synaptic details
 using confocal microsopy. Several labs are currently using MAP for such analyses
@@ -105,6 +106,6 @@ structures may allow new models of the blood-brain barrier to be developed with
 separate media for the lumen and extracellular space. A natural next step for
 the printed vasculature is to combine vascularization with orgnaoid "assembloid"
 approaches, potentially giving rise to larger functional tissue cultures in
-vitro. By delivering nutrients, drugs, or biological material into future 3D in
-vitro tissue cultures, the printed vasculature may provide researchers new ways
-to monitor and perturb their cultures.
+vitro. By delivering nutrients, drugs, or biological material into 3D tissue
+cultures, the printed vasculature may provide researchers new ways to support,
+monitor, and perturb future in vitro brain models.

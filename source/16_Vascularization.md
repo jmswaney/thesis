@@ -64,19 +64,19 @@ within the organoid. This nutrient reaction-diffusion is non-physiological, and
 it may hinder the ability for neural organoids to model healthy brain
 development [@Raja2016]. In vivo, nutrient delivery is solved by the vascular
 system, an incredibly sophisticated and dynamic transport system. Capillaries
-can be as small as 10 um in diameter, and the average vessel-to-neuron distance
-is only 20 um in the human brain [@Murray2015]. These characteristics make
+can be as small as 10 µm in diameter, and the average vessel-to-neuron distance
+is only 20 µm in the human brain [@Murray2015]. These characteristics make
 recreating the vascular system an extremely difficult engineering problem.
 
 Vascularization of in vitro cultures has been studied extensively in tissue
 engineering, and both cell-based and synthetic approaches have been proposed
 [@Lovett2009]. Cell-based approaches such as extravasation rely on the ability
 of endothelial cells to form capillary networks when subjected to shear forces
-due to flow [@Jeon2015]. The resulting capillaries are approximately 10 um in
+due to flow [@Jeon2015]. The resulting capillaries are approximately 10 µm in
 diameter, but the overall network geometry is not controlled. Synthetic methods
 such as 3D bio-printing extrude cell-laden inks into 3D vascular structures
 [@Kolesky2016]. In this case, the printed vascular network geometry is
-controlled, but the resulting capillaries are typically 500 um in diameter due
+controlled, but the resulting capillaries are typically 500 µm in diameter due
 to the fabrication resolution of the printer. In both types of vascularization,
 however, there is usually no characterization of the changes in transport
 phenomena involved with incorporating the vascular system. Instead, biological
@@ -462,8 +462,8 @@ physical hardware was not connected to the controlling computer.
 
 ### Measuring the fabrication resolution with ESEM
 
-A 6 x 4 array of 300 um tall micro-vessels were printed together on a printed
-400 um thick substrate. The micro-vessels were printed with 0.01% FITC acrylate
+A 6 x 4 array of 300 µm tall micro-vessels were printed together on a printed
+400 µm thick substrate. The micro-vessels were printed with 0.01% FITC acrylate
 in order to visualize the formed polymer with confocal microscopy. The printed
 micro-vessels were placed in the chamber of an ESEM and imaged under 50%
 humidity to prevent drying. The resulting images were analyzed in ImageJ to

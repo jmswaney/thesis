@@ -156,7 +156,7 @@ maturation, Zika virus infection, and different culture protocols.
 To increase the scale to which 3D in vitro brain models such as cerebral
 organoids can be cultured, an organoid vascularization strategy using two-photon
 stereolithography is presented. A detailed design for a high-resolution
-two-photon 3D printer is provided that can achieve 4 um fabrication reoslution
+two-photon 3D printer is provided that can achieve 4 µm fabrication reoslution
 and directly print engineered pore structures. Vasculature printed from
 biocompatible resins were shown to integrate with cerebral orgnaoids cultured
 with and without perfusion with limited cytotoxicity. Future work may build on
