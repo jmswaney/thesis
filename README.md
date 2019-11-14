@@ -8,8 +8,10 @@
 
 This thesis summarizes a body of work in scaling up experimental techniques used
 in neuroscience research. Specifically, this thesis describes technological
-advances that facilitiate large-scale 3D imaging, analysis, and culture of
+advances that facilitate large-scale 3D imaging, analysis, and culture of
 complex brain models.
+
+A PDF version of the thesis is available [here](output/thesis.pdf)
 
 Justin Swaney, PhD Candidate  
 Department of Chemical Engineering  
