@@ -134,9 +134,7 @@ tissues are presented. First, the SWITCH technique is introduced to decouple the
 transport and reaction kinetics of fixative molecules and probes [@Murray2015].
 Then an expansion-based technique called MAP is introduced to improve the
 imaging resolution of conventional fluorescence microscopy down to synaptic
-resolution [@Ku2016]. Finally, a method called eFLASH for rapid whole-brain
-staining is presented that utilizes a rotating electric field to accelerate
-probe transport [@Yun2019].
+resolution [@Ku2016].
 
 ### Aim 2 - Develop computational tools for analyzing whole-brain imaging data {.unnumbered}
 

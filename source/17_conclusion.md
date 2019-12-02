@@ -20,16 +20,14 @@ whole-brain scale tissue samples. MAP allows synaptic resolution imaging with
 confocal microscopy and is compatible with long working distance objectives for
 imaging thick tissue samples.
 
-In order to rapidly stain large tissue samples, we developed eFLASH, which uses
-a rotating electric field and a gradually swept buffer composition to achieve
-whole-brain staining with conventional antibodies. We also present a scalable
-image processing pipeline for extracting meaningful biological information from
-such whole-brain volumetric images and use this pipeline to study eFLASH-stained
-mouse and marmoset tissue at single-cell resolution. An efficient algorithm for
-nonrigid coregistration of whole-brain scale volumetric images based on nuclei
-matching is also presented. The nuclei-based 3D coregistration algorithm is
-shown to be compatible with mouse and marmoset models and allows warping of an
-entire mouse brain hemisphere within 6 hours.
+To address the computational challenges associated with whole-brain imaging, we
+present a scalable image processing pipeline for extracting meaningful
+biological information from such whole-brain volumetric images and use this
+pipeline to study mouse and marmoset tissue at single-cell resolution. An
+efficient algorithm for nonrigid coregistration of whole-brain scale volumetric
+images based on nuclei matching is also presented. The nuclei-based 3D
+coregistration algorithm is shown to be compatible with mouse and marmoset
+models and allows warping of an entire mouse brain hemisphere within 6 hours.
 
 Building on these computational analysis tools, a multiscale phenotyping
 pipeline called SCOUT is presented for understanding single-cell,
@@ -58,10 +56,10 @@ biocompatible and suitable for organoid culture.
 The technological contributions of this thesis may enable many future biological
 applications. These future applications may draw from individual aims of the
 thesis or collectively depending on the context. For example, neuroscientists
-interested in visualizing brain-wide protein epxression with antibody staining
-may adopt the eFLASH technique. If quantification of these volumetric images is
-required for comparative studies, then eFLASH may be used in combination with
-the scalable image processing pipeline. By combining eFLASH and our scalable
+interested in visualizing brain-wide protein expression with antibody staining
+may adopt the SWITCH technique. If quantification of these volumetric images is
+required for comparative studies, then SWITCH may be used in combination with
+the scalable image processing pipeline. By combining SWITCH and our scalable
 image processing pipeline, neuroscientists will be able to study their brain
 models quantitatively without dissecting predetermined brain regions, which may
 help to understand the brain as a complete biological system.
@@ -78,7 +76,7 @@ intractable.
 The single-cell 3D coregistration algorithm presented in this thesis may enable
 multiplexed fluorescence imaging of a single whole-brain sample. Such a detailed
 description of a single brain would be invaluable to understanding the
-multiscale intrinsic complexity of the brain. By combining eFLASH, our scalable
+multiscale intrinsic complexity of the brain. By combining SWITCH, our scalable
 image processing pipeline, and the nuclei-based 3D coregistration algorithm, a
 multiround staining and imaging approach may provide the most complete image of
 protein expression within a single tissue to date. In the same way that

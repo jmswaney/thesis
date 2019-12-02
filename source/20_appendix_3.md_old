@@ -1,0 +1,197 @@
+## Chapter 4 Supplemental Information {.unnumbered}
+
+Supplemental videos are available online at <https://www.biorxiv.org/content/10.1101/660373v1.supplementary-material>
+
+![Antibody signals in the presence of sodium deoxycholate (NaDC). Diverse antibody signals were acquired under the control buffer (PBS with 0.1% Triton-X100) and 0.1% or 1% NaDC in PBS. All images of each antibody were acquired under the same condition. \label{eFLASH-Sup1}](source/figures/eFLASH/supfigure1.jpg){ width=100% }
+
+![Measurement of NaDC concentration and pH of eFLASH buffers. (a) A standard curve for determining the concentration of NaDC in eFLASH bufferscollected at various time points during the experiment. Details can be found in the methods section. N = 3 replicate measurements. (b-c) NaDC concentrations (b) and pH (c) measurement for the two buffers used for eFLASH experiments (main and sample buffers) at 3 hour intervals. N = 3 independent experiments. Mean ± s.e.m. \label{eFLASH-Sup2}](source/figures/eFLASH/supfigure2.jpg){ width=85% }
+
+![Cell detection algorithm. (a) Schematic of the algorithm. (b) Image of mouse brain stained with PV. (c) The difference of Gaussians is computed and local maxima are detected in 3 dimensions (red dots). (d) 31x31 patches in the X/Y, X/Z and Y/Z planes, centered at each local maxima are collected and PCA is performed to reduce the image to 48 components. The first and second components measure brightness at two different diameter scales and the third and fourth components measure intensity anisotropy in the X and Y directions. (e) A random-forest classifier is trained using the components as features and each maximum position is classified as a true (green dot) or false (red dot) detection. \label{eFLASH-Sup3}](source/figures/eFLASH/supfigure3.jpg){ width=100% }
+
+![Representative NPY+ neurons with different dendrite polarities. Projection images of NPY+ neurons (left) and their reconstruction (right) were presented. BT, bitufted cell; BD, bidirectional cell; MP3, multipolar cell with three principal dendrites; MP (>4), multipolar cell with four or more numbers of principal dendrites. Scale bar = 20 μm. \label{eFLASH-Sup4}](source/figures/eFLASH/supfigure4.jpg){ width=85% }
+
+
+
+\footnotesize
+
+------------------------------------------------------------------------------------------------------------------------------------
+Target              Catalog Number  Company         Host / Isotype  Mono / Poly Clone       Conc. (g/L) Qty     1°:2°
+-------             --------------  ------------    --------------- ----------  ----------  ----------- ------- -----------
+*Adult mouse                         
+brain hemisphere*
+
+PV                  PA1-933         Thermo          Rb IgG          P           -           1           8µg     1:2
+
+PV                  ab11427         abcam           Rb IgG          P           -           1           5µg     1:2
+
+NPY                 11976S          CST             Rb IgG          M           D7Y5A       0.17        3.4µg   1:2.5
+
+NPY                 75-456          Neuromab        Ms IgG2a        M           L115/13     1           3µg     1:2
+
+CB                  13176BF         CST             Rb IgG          M           D1I4Q       2           3µg     1:2
+
+CB                  13176S          CST             Rb IgG          M           D1I4Q       0.052       3µg     1:2
+
+CB                  ab108404        abcam           Rb IgG          M           EP3478      0.22        4.4µg   1:2
+
+CR                  ab702           abcam           Rb IgG          P           -           -           40µl    -
+
+SST                 MAB354          Millipore       Rt IgG          M           YC7         -           30µl    -
+
+SST                 sc-47706        Santa Cruz      Rt IgG          M           YC7         0.2         2.5µg   1:2
+
+SST                 14-9751-82      eBioscience     Ms IgG1         M           ICDCLS      0.5         5µg     1:2
+
+TH                  818001          Biolegend       Ms IgG2a        M           2/40/15     1           3µg     1:2
+
+TH                  TYH             Aves            Ch IgY          P           -           0.2         3µg     1:2
+
+ChAT                AB144P          Millipore       Go              P           -           -           40µl    -
+
+TPH2                PA1-778         Thermo          Rb IgG          P           -           -           15µl    -   
+
+NeuN                2430S           CST             Rb IgG          M           D4G4O       -           25µl    -
+
+NeuN                MAB377          Milli           Ms              M           A60         1           10µg    1:1.5
+
+NeuN                MCA-1B7         Encor           Ms IgG2b,κ      M           1B7         1           10µg    1:1.5
+
+GFAP-A647           3657S           CST             Ms IgG1         M           GA5         -           25µl    N/A
+
+GFAP-A594           644708          Biolegend       Ms IgG2b        M           2E1.E9      0.5         20µg    N/A
+
+cFos                ab214672        abcam           Rb IgG          M           EPR 20769   0.623       3µg     1:2
+
+SMI-312             837904          Biolegend       Ms IgG1/IgM     P           SMI 312     0.5         10µg    1:2
+
+Iba1                ab178847        Abcam           Rb IgG          M           EPR 16589   0.632       12µg    1:2
+
+lectin-Dy594        DL-1177         Vector          N/A             N/A         N/A         1           40µl    -
+
+syto16              S7578           Thermo          N/A             N/A         N/A         1mM         12µl    -
+
+*Marmoset brain 
+block*
+
+PV                  PA1-933         Thermo          Rb IgG          P           -           1           25µg    1:2
+
+NPY                 11976S          CST             Rb IgG          M           D7Y5A       0.17        3.4µg   1:2.5
+
+*Human iPSC derived 
+cerbral organoid*								
+
+Vimentin-A647       9856            CST             Rb IgG          M           D12H3       -           25µl    N/A
+
+Tubulin β3-A594     657408          Biolegend       Ms IgG2a        M           AA10        0.5         25µl    N/A
+
+syto16              S7578           Thermo          N/A             N/A         N/A         1mM         7.5µl   N/A
+
+*Adult mouse small 
+intestine*									
+
+Tubulin β3          801201          Biolegend       Ms IgG2a        M           TUJ1        1           3µg     1:2
+
+TH                  TYH             Aves            Ch IgY          P           -           0.2         3µg     1:2
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+Table: Molecular probes used for eFLASH experiments. Optimized primary antibody amounts and molar ratios between primary antibody and secondary antibodies for each target are listed. Fc-specific Fab fragments from Jackson Immunoresearch was used for all eFLASH experiments. For antibodies with unknown concentrations, appropriate amount of secondary antibody was calculated based on empirically obtained data.
+
+\normalsize
+
+\newpage
+\blandscape
+\footnotesize
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Sample                                                                              Obj.        Sample  Z       Bit     De-             Illum   Down     Gamma
+Type            Labeling        Figure      Video   Microscope      Objective       media	    media	step    depth   stripe  Stitch  corr	sample  corr
+--------------- -----------     -------     ------- --------------- --------------- ----------- ------- ------- ------- ------- ------  ------- ------  --------
+Adult mouse     Anti-NPY        Fig 1d      -       Olympus         20X 1.0 NA      DI          PBST    5µm     12      no      no      no      no      no
+brain           Anti-NeuN                           Confocal        water XLUM 
+sections	    Anti-Iba1	                        FV1000          PlanFLN
+                Anti-SMI312
+
+Adult mouse     anti-CB         Fig 1e      S1      SmartSPIM       3.6x 0.2 NA     Protos      Protos  2µm     16      yes	    yes	    yes	    no	    yes
+brain           anti-SMI312     Fig 2e              LifeCanvas      LifeCanvas 
+hemisphere		                                                    1.8µm
+
+Adult mouse     anti-CB         Fig 1f      S1      SmartSPIM       3.6x 0.2 NA     Protos      Protos  2µm     16      yes	    yes	    yes	    no	    yes
+brain           anti-SMI312                         LifeCanvas      LifeCanvas 
+hemisphere                                                          1.8µm
+
+Adult mouse     anti-PV         Fig 2a      S2      SmartSPIM       3.6x 0.2 NA     Protos      Protos  2µm     16      yes	    yes	    yes	    no	    yes
+brain           anti-SMI312     Fig 2e              LifeCanvas      LifeCanvas 
+hemisphere	    syto16	    	                                    1.8µm
+
+Marmoset        anti-NPY        Fig 2b      S3      SmartSPIM       3.6x 0.2 NA     Protos      Protos  2µm     16      yes	    yes	    yes	    no	    yes
+brain block                                         LifeCanvas      LifeCanvas 
+                                                                    1.8µm
+
+Marmoset        anti-NPY        Fig 2d-m    S10     SmartSPIM       10X 0.6 NA      Protos      Protos  1µm	    16	    yes	    yes	    yes	    yes	    yes
+brain block			                                LifeCanvas	    CLARITY XLP 	    	
+                                                                    LN10XSVMP
+                                                                    0.65µm
+
+Adult mouse     ChAT            Fig 2c      -       SmartSPIM       3.6x 0.2 NA     Protos      Protos  2µm     16      yes	    yes	    yes	    no	    yes
+intestine	    (BAC)-eGFP                          LifeCanvas      LifeCanvas 
+                Anti-TubulinB3                                      1.8µm
+
+Cerebral        Anti-Vimentin   Fig 2d      -       Leica TCS       20X 0.5 NA      Protos	    Protos	<1µm	16	    no	    yes	    no	    no	    yes
+Organoid	    Anti-TubulinB3 	                    SP8	            water, HCX 	
+                syto16                                              APO L UVI
+
+Adult mouse     Anti-PV         Fig 2e      -       SmartSPIM       3.6x 0.2 NA     Protos      Protos  2µm     16      yes	    yes	    yes	    no	    yes
+brain                                               LifeCanvas      LifeCanvas 
+hemisphere                                                          1.8µm
+
+Adult mouse     Anti-CR         Fig 2e      -       SmartSPIM       3.6x 0.2 NA     Protos      Protos  2µm     16      yes	    yes	    yes	    no      yes
+brain                           Fig 3a-c            LifeCanvas      LifeCanvas 
+hemisphere		                                                    1.8µm
+
+Adult mouse     Anti-TH         Fig 2e      -	    SmartSPIM       3.6x 0.2 NA     Protos      Protos  2µm     16      yes	    yes	    yes	    no      yes
+brain           Anti-TPH2       Fig 3a-c            LifeCanvas      LifeCanvas 
+hemisphere	                                                        1.8µm
+
+Adult mouse     Anti-ChAT       Fig 2e      -       SmartSPIM       3.6x 0.2 NA     Protos      Protos  2µm     16      yes	    yes	    yes	    no      yes
+brain                                               LifeCanvas      LifeCanvas 
+hemisphere                                                          1.8µm
+
+Adult mouse     Anti-NeuN       Fig 2e      S4      SmartSPIM       3.6x 0.2 NA     Protos      Protos  2µm     16      yes	    yes	    yes	    no      yes
+brain           Anti-ChAT                           LifeCanvas      LifeCanvas 
+hemisphere	    Anti-TH                                             1.8µm
+
+Adult mouse     Anti-NPY        Fig 2e      -       SmartSPIM       3.6x 0.2 NA     Protos      Protos  2µm     16      yes	    yes	    yes	    no      yes
+brain           Anti-SST        Fig 3a-c            LifeCanvas      LifeCanvas 
+hemisphere	                    Fig 3d-f                            1.8µm
+
+Adult mouse     Anti-cFos       Fig 2e      S5      SmartSPIM       3.6x 0.2 NA     Protos      Protos  2µm     16      yes	    yes	    yes	    no      yes
+brain                           Fig 3g-i            LifeCanvas      LifeCanvas 
+hemisphere	                                                        1.8µm
+
+Adult mouse     Anti-Iba1       Fig 2e      -       SmartSPIM       3.6x 0.2 NA     Protos      Protos  2µm     16      yes	    yes	    yes	    no      yes
+brain                                               LifeCanvas      LifeCanvas 
+hemisphere                                                          1.8µm
+
+Adult mouse     Anti-GFAP       Fig 2e      -       SmartSPIM       3.6x 0.2 NA     Protos      Protos  2µm     16      yes	    yes     yes	    no      yes
+brain           lectin                              LifeCanvas      LifeCanvas 
+hemisphere                                                          1.8µm
+
+Adult mouse     PV-Cre::        Fig 3a-c    S6,S7   SmartSPIM       3.6x 0.2 NA     Protos      Protos  2µm     16      yes	    yes	    yes	    no      yes
+brain           DIO-tdTomato    Fig 4a-c            LifeCanvas      LifeCanvas 
+hemisphere	    anti-PV	                                            1.8µm
+
+Adult mouse     ChAT            Fig 4d-h    S8      SmartSPIM       3.6x 0.2 NA     Protos      Protos  2µm     16      yes	    yes	    yes	    no      yes
+brain           (BAC)-eGFP                          LifeCanvas      LifeCanvas
+hemisphere      Anti-ChAT                                           1.8µm
+
+Marmoset        anti-PV         Fig 5a-c    S9      SmartSPIM       3.6x 0.2 NA     Protos      Protos  2µm     16      yes	    yes     yes	    yes     yes
+brain block	                                        LifeCanvas      LifeCanvas
+                                                                    1.8µm
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Table: Sample preparation, imaging, and image processing conditions for all microscopy data presented in the eFLASH paper.
+
+\normalsize
+\elandscape
+
+\newpage
