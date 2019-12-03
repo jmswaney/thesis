@@ -10,8 +10,7 @@ I would also like to thank my students, whether through my role as a teaching
 assistant or as a undergraduate research supervisor, for teaching me. You may
 not have realized that I was also learning from the experience, but it was a
 constant reminder of how important it is to give back to the next generation of
-problem-solvers. If we can provide them with the tools, then there is no
-problem too large for the curiosity of a young scientist.
+problem-solvers through mentorship. 
 
 This work never would have been possible without my family. I am grateful for my
 fiancé, Kassi, who has been with me side-by-side as an MIT PhD student since

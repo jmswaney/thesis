@@ -76,7 +76,7 @@ non-human primates or human clinical samples.
 
 Multiround staining and imaging of a single brain sample has been demonstrated
 using tissue clearing techniques for over 20 rounds (Murray et al. 2015).
-Multiple staining rounds of a thin-section of human visual cortex was
+Multiple staining rounds of a thin-section of human visual cortex were
 coregistered using a nonrigid 3D SIFT keypoint matching procedure based on
 vasculature staining in each round [@Lowe2004]. However, the 3D SIFT feature
 extraction and thin-plate spline (TPS) calculations are not scalable to the
@@ -86,7 +86,7 @@ can be applied to whole mouse brains and large marmoset brain samples. Our
 algorithm matches nuclei centroids across rounds so that the alignment quality
 can be quantified in terms of single-cell correspondences. As a proof of
 concept, we apply our algorithm to an intact mouse brain hemisphere as well as a
-large section of a marmoset brain.
+large block of a marmoset brain.
 
 
 ## Results
@@ -225,14 +225,21 @@ apparent, we emphasize that this coregistation is performed 3D space.
 
 ### Single-cell 3D coregistration of large marmoset brain block
 
-In order to test how robust our coregistration algorithm was against the de-staining and re-staining process as well as in other tissue types, we performed multiround staining and imaging of a large tissue block from the visual cortex of a marmoset. A large block of marmoset brain tissue was SHIELD-processed and stained with Syto16 nuclear dye using eFLASH. After LSFM imaging, the marmoset tissue sample was de-stained using SDS detergent and heat treatment at 56C. The same tissue sample was then re-stained with Syto16 using eFLASH and imaged using LSFM in a second round. 
+In order to test how robust our coregistration algorithm was against the
+de-staining and re-staining process as well as in other tissue types, we
+performed multiround staining and imaging of a large tissue block from the
+visual cortex of a marmoset. A large block of marmoset brain tissue was
+SHIELD-processed and stained with Syto16 nuclear dye using eFLASH. After LSFM
+imaging, the marmoset tissue sample was de-stained using SDS detergent and heat
+treatment at 56°C. The same tissue sample was then re-stained with Syto16 using
+eFLASH and imaged using LSFM in a second round. 
 
 ![Demonstration of 3D coregistration of a large block of marmoset visual cortex at single-cell resolution. After coarse registration based on morphological alignment, nuclei were successfully matched in marmoset visual cortex. \label{coregistration-5}](source/figures/Coregistration/figure5.jpg){ width=100% }
 
 Using a similar strategy to the mouse brain hemisphere for coarse alignment,
 nuclei detection and matching, and GPU-accelerated warping, we were able to
 coregister the two rounds of staining and imaging of the marmoset brain sample
-(Figure \ref{coregistration-5}). Before alignment, the tissue is not aligned
+(Figure \ref{coregistration-5}). Before registration, the tissue is not aligned
 between imaging rounds. However, the Syto16 staining quality appeared similar
 between rounds with the exception of some differences in illumination as
 mentioned previously. The morpholoical coarse alignment was able to
@@ -339,12 +346,12 @@ detect nuclei centroids.
 After generating nuclei point clouds, a KD-tree was built for efficient querying
 of nearest neighbors using the NearestNeighbor object in the scikit-learn
 package. Geometric features for each nucleus were computed in parallel by
-querying the 3 nearest nuclei in the point cloud. These neighbors were used to
-construct and orthonormal basis through using the Gram-Schmidt process
-considering the 3rd nearest neighbor as the z axis. QR decomposition was used to
-compute the coordinates of the nearest nuclei in this new basis, and the upper
-triangular portion of the matrix $R$ was flattened into a feature vector
-containing 6 values describing the relative arrangement of nuclei around each
+querying the three nearest nuclei in the point cloud. These neighbors were used
+to construct and orthonormal basis through using the Gram-Schmidt process
+considering the third nearest neighbor as the z axis. QR decomposition was used
+to compute the coordinates of the nearest nuclei in this new basis, and the
+upper triangular portion of the matrix $R$ was flattened into a feature vector
+containing six values describing the relative arrangement of nuclei around each
 nucleus.
 
 ### Nuclei matching and RANSAC affine estimation

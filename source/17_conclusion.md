@@ -2,12 +2,12 @@
 
 ## Thesis summary
 
-This thesis addresses several major challenges associated with scaling up
-experimental techniques used in neuroscience research. These advances enable
-neuroscientists to answer long-standing biological questions in new ways by
-lowering the barrier for staining and imaging, providing scalable image
-processing tools for analysis, and engineering new culture systems for the study
-of large-scale brain models.
+This thesis addresses several challenges associated with scaling up experimental
+techniques used in neuroscience research. These advances enable neuroscientists
+to answer long-standing biological questions in new ways by lowering the barrier
+for staining and imaging, providing scalable image processing tools for
+analysis, and engineering new culture systems for the study of large-scale brain
+models.
 
 By building from tissue clearing technologies such as CLARITY, we developed the
 SWITCH method for controlling reaction kinetics of fixative molecules and
@@ -37,8 +37,7 @@ deep learning is presented. Using SCOUT, the multiscale phenotypic changes
 associated with maturation, Zika virus infection, and culture protocol
 variations were quantified. In this analysis, the distance from the organoid
 surface was repeatedly identified as an important factor in predicting orgnaoid
-cytoarchitecture. This supports the hypothesis that cerebral organoids are
-affected by nutrient transport limitations.
+cytoarchitecture. This supports the hypothesis that neurodevelopment is affected by nutrient transport limitations in current cerebral organoid models.
 
 To address these nutrient transport limitations, an orgnaoid vascularization
 strategy is presented using two-photon stereolithography to directly print

@@ -45,15 +45,15 @@ cytoarchitectural, and morphological analyses to be combined into a
 hyperdimensional statistical analysis of cerebral organoids. We use this
 pipeline to show phenotypic changes due to neurodevelopment, Zika virus
 infection, and changes in organoid culture protocols. Current cerebral organoid
-cultures are limited by nutrient transport since they lack a vascular system. To
+cultures lack a vascular system and are limited by nutrient transport. To
 address this issue in vitro, we fabricated synthetic vasculature by two-photon
 photopolymerization of polyethylene glycol-based resins. Printed micro-vessels
-were less than 100 µm in outer diameter, permeable to biomolecules through
-engineered pore structures, and biocompatible. Perfusion of vascularized
-cerebral organoids cultured for 30 days resulted in the expected neuronal
-differentiation as well as integration of the vascular network. Future studies
-can use and build on these technical advances to further our understanding of
-the brain through the use of large-scale brain models.
+were biocompatible, less than 100 µm in outer diameter, and permeable to
+biomolecules through engineered pore structures. Perfusion of vascularized
+cerebral organoids cultured for 30 days resulted neuronal differentiation as
+well as integration of the vascular network. Future studies can use and build on
+these technical advances to further our understanding of the brain through the
+use of large-scale brain models.
 
 Thesis Supervisor: Kwanghun Chung  
 Title: Professor of Chemical Engineering

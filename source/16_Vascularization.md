@@ -22,7 +22,7 @@ transport in large tissues by the integration of blood vessels in the first
 trimester in utero. To address this issue in vitro, we fabricated synthetic
 vasculature by high-resolution photopolymerization of polyethylene glycol (PEG)
 based monomers using two-photon stereolithography (SLA). Micro-vessels were 100
-um in outer diameter, durable yet flexible, and permeable to bio-molecules in a
+µm in outer diameter, durable yet flexible, and permeable to bio-molecules in a
 tunable manner. Cerebral organoid culture for 30 days with perfusion was
 accomplished with a polydimethylsiloxane-based fluidic culture system and
 resulted in vascular network integration with no indication of material
@@ -52,16 +52,16 @@ therapeutic potential in disease modeling and drug development [@Lancaster2014].
 Since organoids offer more realistic disease modeling, they could bridge the gap
 between primary drug screens and animal trials [@Pampaloni2007]. For this
 reason, pharmaceutical companies are investigating the use of organoid models
-for lead optimization. Despite these recent successes, neural organoid are still
-an incomplete model of the human brain.
+for lead optimization. Despite these recent successes, cerebral organoids are
+still an incomplete model of the human brain.
 
 One major shortcoming is the omission of a vascular system, which is needed to
-provide nutrients uniformly throughout large tissues. As a result, neural
+provide nutrients uniformly throughout large tissues. As a result, cerebral
 organoids are limited to approximately 4 mm in diameter as all nutrients must
 diffuse in from the organoid surface [@McMurtrey2014]. As the nutrients diffuse
 into the organoid, they are simultaneously consumed via metabolic processes
 within the organoid. This nutrient reaction-diffusion is non-physiological, and
-it may hinder the ability for neural organoids to model healthy brain
+it may hinder the ability for cerebral organoids to model healthy brain
 development [@Raja2016]. In vivo, nutrient delivery is solved by the vascular
 system, an incredibly sophisticated and dynamic transport system. Capillaries
 can be as small as 10 µm in diameter, and the average vessel-to-neuron distance
@@ -148,11 +148,11 @@ motorized stage with a 25 mm travel range. The laser is finally focused at the
 working distance of the objective, which is approximately 8 mm away from the
 final lens. 
 
-Since to two-photon absorption process can excite only a small point in the
-resin in the focal plane of the objective, the resin within the 8 mm distance
-between the lens and the focal plane is unaffected by the NIR laser. This
-simplifies any surface effects encountered in UV-based photo-polymerization due
-to laser bleed-through and oxygen inhibition.
+Since the two-photon absorption process can excite only a small point in the
+focal plane of the objective, the resin within the 8 mm distance between the
+lens and the focal plane is unaffected by the NIR laser. This simplifies any
+surface effects encountered in UV-based photo-polymerization due to laser
+bleed-through and oxygen inhibition.
 
 In order to control the hardware in the two-photon SLA system, a custom LabVIEW
 program was developed (Figure \ref{Vascularization-1}b). The control software
@@ -169,7 +169,7 @@ using trivial methods.
 
 ### Two-photon SLA enables microfabrication of biocompatible materials
 
- Since a pulsed near-infrared (NIR) laser is required for two-photon absorption,
+Since a pulsed near-infrared (NIR) laser is required for two-photon absorption,
 a series of commercially available photoinitaitors were screened for
 compatibility with this light source. We found that isopropylthioxanthone (ITX)
 and Irgacure 369 were both excitable under NIR irradiation and triggered
@@ -199,13 +199,13 @@ containing 10% PETA and 90% PEGDA575 was used in the following experiments.
 
 To show micron-resolution printing of unclogged tube structures, we printed a
 series of fluorescent tubes with a variety of diameters and wall thicknesses
-using a 10x/0.6 objective. The smallest tubes that we printed were 50 µm in
+using a 10x/0.6 NA objective. The smallest tubes that we printed were 50 µm in
 outer diameter (Figure \ref{Vascularization-2}b). A line scanning pattern from
 the print process was observable in the walls of the printed tubes, suggesting
-that some microstructure existed due to the fabrication process. To observe this
-microstructure in more detail, these printed tubes were imaged using
-environmental scanning electron microscopy (ESEM). The ESEM images revealed a
-similar line scanning pattern stacked into layers (Figure
+that a specific microstructure existed due to the fabrication process. To
+observe this microstructure in more detail, these printed tubes were imaged
+using environmental scanning electron microscopy (ESEM). The ESEM images
+revealed a similar line scanning pattern stacked into layers (Figure
 \ref{Vascularization-2}c). Each line of polymer was approximately 4 µm thick and
 20 µm tall, corresponding to the fabrication resolution of the printer and
 resin. This fabrication resolution is approximately two orders of magnitude
@@ -302,20 +302,16 @@ transport properties measured in the micro-vessel wall.
 
 After showing that our printed vasculature could deliver biomolecules with
 tunable transport properties, we wanted to test the compatibility of our printed
-vasculature with neural organoid culture even without media perfusion. In order
-to minimize deviations from standard neural organoid culture protocols, we chose
-to embed the organoid with the printed vasculature at the time the EB is usually
-embedded into matrigel. Instead of embedding into a matrigel droplet, the EB was
-first loaded onto the device in a designated opening, and then matrigel was
-added around the EB and vasculature. The design of the designated opening for EB
-embedding is nontrivial since capillary forces dominate how the liquid
-containing the EB will behave at the millimeter scale. Another complication is
-that by embedding at the EB stage, we preclude our ability to integrate any
-micro-vessels into the core of the organoid. This problem could be addressed by
-embedding the vasculature into the organoid at an earlier stage, but this
-further deviates the culturing protocol from avascular control organoids. After
-embedding, the vascularized organoids were cultured in a petri dish without
-perfusion and compared to a vascular controls with and without shaking. 
+vasculature with cerebral organoid culture even without media perfusion. In
+order to minimize deviations from standard cerebral organoid culture protocols,
+we chose to embed the organoid with the printed vasculature at the time the EB
+is usually embedded into matrigel. Instead of embedding into a matrigel droplet,
+the EB was first loaded onto the device in a designated opening, and then
+matrigel was added around the EB and vasculature. The design of the designated
+opening for EB embedding is nontrivial since capillary forces dominate how the
+liquid containing the EB will behave at the millimeter scale. After embedding,
+the vascularized organoids were cultured in a petri dish without perfusion and
+compared to a vascular controls with and without shaking. 
 
 ![Integration of vasculature into cerebral organoids shows mature neurons and micro-vessel integration. A) Schematic of vascularized organoid culture with perfusion. B) Render of softwell culture devices and vasculature equipped with barb fittings. C) Vascularized and avascular organoids grown with and without shaking. D) Quantification of organoid size with and without shaking. (E) Immunostaining of PARP, TubB3, AcTub, and Ki-67 in vascularized organoids. \label{Vascularization-6}](source/figures/Vascularization/figure6.jpg){ width=100% }
 
@@ -356,18 +352,19 @@ cultured without shaking in a petri dish. However, the perfused organoids were
 not significantly smaller than the avascular organoids cultured within the same
 softwell. Upon inspection of the perfused organoids, one large outlier exists,
 suggesting that the perfused organoids may have not received equal media
-perfusion. Together, these results suggest that the PDMS softwell restricts
-organoid growth and that there may be some issue with the softwell devices in
-delivering equal media to all organoids. We are currently working to remove PDMS
-from the culture system and instead use a single 3D printed vascular device to
-perfuse multiple organoids. If unequal perfusion is not an issue in the softwell
-devices, then material passivation is an option to help rescue organoid growth.
+perfusion. Together, these results suggest that the PDMS softwell may not be
+suitable for long-term perfusion culture and that there may be some issue with
+the softwell devices in delivering equal media to all organoids. We are
+currently working to remove PDMS from the culture system and instead use a
+single 3D printed vascular device to perfuse multiple organoids. If unequal
+perfusion is not an issue in the softwell devices, then material passivation is
+an option to help rescue organoid growth.
 
 We then stained the vascularized organoids for markers of apoptosis (PARP),
 proliferation (Ki-67), and mature neurons (TubB3) to verify that the neural
 organoid differentiated properly (Figure \ref{Vascularization-6}f). Vascularized
 organoids showed characteristic ventricular zones and positive expression of
-mature neural markers, such as tubulin-beta3. The micro-vessels were surrounded
+mature neural markers, such as tubulin-β3. The micro-vessels were surrounded
 by cells and neuronal projections, and no increase in apoptosis was observed
 near the micro-vessels as measured by PARP expression. Instead, most apoptotic
 cells were near the core of the organoids and away from the micro-vessels,

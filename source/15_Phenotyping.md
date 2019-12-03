@@ -136,7 +136,7 @@ cytoplasmic proteins (Figure \ref{phenotyping-1}d-f). Radial glia in whole d35
 organoids were stained with vimentin, lipid binding protein, nestin, and SOX2.
 Neurons were stained with β3-tubulin, MAP2, and TBR1. 
 
-![Pipeline for intact organoid analysis (A) Cerebral organoids are grown from stem cells, fixed in 4% PFA, then post-fixed with SHIELD poly-epoxide crosslinker. Organoids are then cleared in SDS solution at 55°C, rinsed, then labelled with antibodies using eFLASH4 for rapid uniform staining. Samples are imaged by light-sheet microscopy for high-throughput (15 min per organoid) quantitative microscopy. (B) Quantitative analysis applies automated algorithms and deep learning to measure multiscale features. We applied this pipeline for unbiased high-dimensional phenotyping of different experimental models. (C) After de-lipidation and immersion in refractive index matching solution (dPROTOS), organoids are optically transparent and can be imaged with standard confocal microscopy. Grid = 1 mm (D) SHIELD preserves endogenous fluorescence, mRNA and protein epitopes. \label{phenotyping-1}](source/figures/Phenotyping/figure1.jpg){ width=100% }
+![Pipeline for intact organoid analysis (A) Cerebral organoids are grown from stem cells, fixed in 4% PFA, then post-fixed with SHIELD poly-epoxide crosslinker. Organoids are then cleared in SDS solution at 55°C, rinsed, then labelled with antibodies using eFLASH for rapid uniform staining. Samples are imaged by light-sheet microscopy for high-throughput (15 min per organoid) quantitative microscopy. (B) Quantitative analysis applies automated algorithms and deep learning to measure multiscale features. We applied this pipeline for unbiased high-dimensional phenotyping of different experimental models. (C) After de-lipidation and immersion in refractive index matching solution (dPROTOS), organoids are optically transparent and can be imaged with standard confocal microscopy. Grid = 1 mm (D) SHIELD preserves endogenous fluorescence, mRNA and protein epitopes. \label{phenotyping-1}](source/figures/Phenotyping/figure1.jpg){ width=100% }
 
 \begin{figure*}
 \caption*{
@@ -238,7 +238,7 @@ TBR1+DN-low, TBR1+DN-high, surface, “DN only”, and “adjacent ventricles”
 surface of the ventricles, we observed a strong positional correlation within
 the organoid (Figure \ref{phenotyping-3}g). As expected, surface
 cytoarchitecture appears at the surface organoid due to the abrupt disappearance
-of cells beyond the organoid’s border. We also detected“adjacent ventricles”
+of cells beyond the organoid’s border. We also detected “adjacent ventricles”
 cytoarchitecture on ventricle surfaces facing towards nearby ventricles. A
 survey of a hundred random biopsies shows a spectrum of different cell profiles
 and we explored whether ventricle size may affect cell frequency (Figure
@@ -307,7 +307,7 @@ computed pairwise correlations between multiscale features to see if certain
 features in single-cell features could predict whole-tissue topography (Figure
 \ref{phenotyping-4}f). The most interesting multiscale correlation occurs around
 SOX2 and TBR cell counts. A network analysis of pairwise correlations (r > 0.75)
-reveals a network of correlated multiscale features where SOX2 count and
+reveals a cluster of correlated multiscale features where SOX2 count and
 organoid volume were the most central nodes (degree of 30) impacting ventricle
 size, TBR1 count, co-adjacent DN counts and average SOX2 distance from the
 surface (Figure 4G). The analyses show that SCOUT can reduce positional
@@ -403,13 +403,13 @@ SCOUT can help discern between these two possibilities in future experiments.
 ### Comparative analysis of different cerebral organoid protocols
 
 High-dimensional phenotyping of multiple whole organoids provides one a strategy
-to overcome the inter-organoid heterogeneity (Quadrato et al. 2017).However, a
-recent study (Velasco et al. 2019) by Velasco et al. addressed biological
-heterogeneity by comparing different brain organoid culture protocols. Their
-patterned dorsal forebrain organoids showed an impressive organoid-to-organoid
-consistency in morphology and cellular composition, assessed by single-cell RNA
-sequencing. We compared day 56 “Velasco organoids” with our day 60 organoids,
-cultured according to a modified version of the Lancaster protocol (Figure
+to overcome the inter-organoid heterogeneity (Quadrato et al. 2017). However, a
+recent study by Velasco et al. addressed biological heterogeneity by comparing
+different brain organoid culture protocols (2019). Their patterned dorsal
+forebrain organoids showed an impressive organoid-to-organoid consistency in
+morphology and cellular composition, assessed by single-cell RNA sequencing. We
+compared day 56 “Velasco organoids” with our day 60 organoids, cultured
+according to a modified version of the Lancaster protocol (Figure
 \ref{phenotyping-7}). We applied dual SMAD inhibition for the first half of
 neuroepithelium induction, added BDNF after day 40 and used Petri dishes on a
 shaker instead of a spinning bioreactor [@Lancaster2014]. Comparative analysis
@@ -625,21 +625,22 @@ nuclei centorids.
 
 Spatial proximity analysis of the labeled nuclei point cloud was accomplished by
 first constructing a KD-tree representation of the point cloud for efficient
-querying of nearest nuclei. The spatial proximity to the nearest $k$ cells of type
+querying of nearest nuclei. The spatial proximity to the nearest $n$ cells of type
 $t$ was calcualted using the following formula for each detected nucleus $i$:
 
-$$P^{(t)}_i=\prod_{n=1}^{k}\frac{1}{1+d_{i,n}/\sigma^{(t)}}$$
+$$P^{(t)}_i=\prod_{j=1}^{n}\frac{1}{1+d_{i,j}/\sigma^{(t)}}$$
 
-where $d_{i,n}$ is the distance between the $i$-th nucleus and the $n$-th
+where $d_{i,j}$ is the distance between the $i$-th nucleus and the $j$-th
 nearest nucleus and $\sigma^{(t)}$ is a reference distance that controls the
 proximity bandwidth (how close a neighboring nucleus must be to be considered in
-close proximity).
+close proximity). In our analyses, we chose $\sigma^{(t)}=25$ µm and $n=2$,
+which provided the best separation of DN subpopulations.
 
 ### Automatic 3D ventricle segmentation using U-Net
 
 To train a U-Net model for ventricle segmentation, downsampled volumetric images
 of SOX2 staining were semi-automatically segmented using ITK-Snap. In total, 9
-whole organoids were segmented, including 7600 binary 2D images. These images
+whole organoids were segmented, including 7596 binary 2D images. These images
 were combined with the corresponding syto16 images at the same resolution and
 split with a 20% hold-out test set before moving on to model training and
 validation. The remaining training set was used with ten-fold cross-validation
@@ -693,7 +694,7 @@ classified efficiently.
 The resulting cytoarchitectural labels were used to compute average profiles for
 each clusters as well as for coloring the faces of the ventricles in a 3D
 render. This 3D render of ventricles pseudocolored by cytoarchitecture was
-generated in Blender.
+generated using Blender.
 
 ### Hyperdimensional statistical testing for comparative organoid studies
 

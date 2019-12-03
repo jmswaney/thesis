@@ -197,10 +197,11 @@ We next asked whether antigenicity of the retained biomolecules is well
 preserved. We tested 90 antibodies, targeting biomolecules of different sizes
 (single amino acid to proteins) and subcellular localizations (membrane bound,
 cytoplasm, nucleus, synapses). Surprisingly, 86 of 90 antibodies were compatible
-with GA-tissue-gel (Figures \ref{SWITCH-1}H, and \ref{SWITCH-1}I, and S1; Table S1).
-Note that even small molecules, such as dopamine, which are not typically
-compatible with PFA-fixation, were observable in GA-tissue-gel after the
-complete removal of lipid bilayers (Figure S1). These biomolecules were stable
+with GA-tissue-gel (Figures \ref{SWITCH-1}H, and \ref{SWITCH-1}I, and
+\ref{SWITCH-Sup1}; See online version for details). Note that even small
+molecules, such as dopamine, which are not typically compatible with
+PFA-fixation, were observable in GA-tissue-gel after the complete removal of
+lipid bilayers (Figure \ref{SWITCH-Sup1}). These biomolecules were stable
 against heat and chemical treatment, and their antigenicity was well preserved
 after exposure to elution conditions.
 
@@ -286,15 +287,16 @@ As a stringent test of the algorithm, we used the same SWITCH-processed human
 sample with the high aspect ratio (Figure \ref{SWITCH-2}A). For each round, the
 sample was stained with DAPI, lectin, and one antibody to label a target
 protein. Although at least three antibodies can be used for each round in
-addition to lectin and DAPI (Figure S2), we chose to use one antibody for each
-round to eliminate any possible cross-talk between channels. After acquiring
-images, we destained the sample and began the next round of labeling. We
-repeated the above procedure 22 times using markers for various cell types
-(Figure \ref{SWITCH-2}H; Table 1). Staining was not successful in every round due
-to the use of non-validated antibodies, sub-optimal staining conditions, or
-human error, all of which often occur in general laboratory settings and can
-result in the loss of important samples. However, a SWITCH-processed sample is
-free from this issue as the tissue can be washed and reused repeatedly.
+addition to lectin and DAPI (Figure \ref{SWTICH-Sup2}), we chose to use one
+antibody for each round to eliminate any possible cross-talk between channels.
+After acquiring images, we destained the sample and began the next round of
+labeling. We repeated the above procedure 22 times using markers for various
+cell types (Figure \ref{SWITCH-2}H; See online version for multiround details).
+Staining was not successful in every round due to the use of non-validated
+antibodies, sub-optimal staining conditions, or human error, all of which often
+occur in general laboratory settings and can result in the loss of important
+samples. However, a SWITCH-processed sample is free from this issue as the
+tissue can be washed and reused repeatedly.
 
 We were able to successfully co-register all nine datasets with successful
 staining (Figures \ref{SWITCH-2}E and \ref{SWITCH-2}H; Movie S1). We asked whether
@@ -364,24 +366,24 @@ SEM. Scale bars, 200 µm (A), 50 µm (F, G, and K).
 
 We  next  performed  unbiased  combinatorial  expression profiling with the six
 cell-type specific proteins (GFAP, NeuN, SMI-32, CB, CR, PV). Among 63 possible
-combinations, 16 were found (Table S2). We identified sub-populations of CB+/CR+
-and CB+/PV+ cells, but no CR+/PV+ or CB+/CR+/PV+, cells (Figures \ref{SWITCH-3}F,
-\ref{SWITCH-3}H, and \ref{SWITCH-3}I), in agreement with a previous report regarding
-mouse visual cortex [@Gonchar2008]. Interestingly, we observed that a
-significant portion of the CB, CR, and PV-positive neurons do not express
-detectable levels of NeuN, a widely used pan-neuronal marker (Figures
-\ref{SWITCH-3}J and \ref{SWITCH-3}K). In particular, a majority of CR+ cells showed
-very weak (Figure \ref{SWITCH-3}K, arrowhead) or no NeuN immunoreactivity (29.1%),
-whereas all SMI-32+ cells (Figures \ref{SWITCH-3}J and \ref{SWITCH-3}K) were NeuN
-positive. These results suggest that NeuN expression may be
-neuronal-type-specific in adult human visual association cortex. We also found a
-small number of CB+ cells and PV+ cells co-expressing SMI-32, a widely used
-pyramidal neuronal marker (Table S2) [@Campbell1989]. Five CB+/PV+ cells were
-identified as quadruple-positive (NeuN+/SMI-32+/CB+/PV+) cells (Figure
-\ref{SWITCH-3}G). All of the CB+ cells and PV+ cells co-expressing SMI-32 were
-localized in cortical layers III and IV. These results demonstrate the power of
-SWITCH as a tool for 3D proteomic profiling of intact biological samples at
-single-cell resolution.
+combinations, 16 were found (Table \ref{SWITCH-SupTable1}). We identified
+sub-populations of CB+/CR+ and CB+/PV+ cells, but no CR+/PV+ or CB+/CR+/PV+,
+cells (Figures \ref{SWITCH-3}F, \ref{SWITCH-3}H, and \ref{SWITCH-3}I), in
+agreement with a previous report regarding mouse visual cortex [@Gonchar2008].
+Interestingly, we observed that a significant portion of the CB, CR, and
+PV-positive neurons do not express detectable levels of NeuN, a widely used
+pan-neuronal marker (Figures \ref{SWITCH-3}J and \ref{SWITCH-3}K). In
+particular, a majority of CR+ cells showed very weak (Figure \ref{SWITCH-3}K,
+arrowhead) or no NeuN immunoreactivity (29.1%), whereas all SMI-32+ cells
+(Figures \ref{SWITCH-3}J and \ref{SWITCH-3}K) were NeuN positive. These results
+suggest that NeuN expression may be neuronal-type-specific in adult human visual
+association cortex. We also found a small number of CB+ cells and PV+ cells
+co-expressing SMI-32, a widely used pyramidal neuronal marker (Table
+\ref{SWITCH-SupTable1}) [@Campbell1989]. Five CB+/PV+ cells were identified as
+quadruple-positive (NeuN+/SMI-32+/CB+/PV+) cells (Figure \ref{SWITCH-3}G). All
+of the CB+ cells and PV+ cells co-expressing SMI-32 were localized in cortical
+layers III and IV. These results demonstrate the power of SWITCH as a tool for
+3D proteomic profiling of intact biological samples at single-cell resolution.
 
 Structural relationships between vasculature and brain cells have been a topic
 of interest in a broad range of basic and clinical research. Many previous
@@ -429,20 +431,20 @@ speed of SWITCH-processed samples without noticeable tissue damage (Figure
 \ref{SWITCH-4}A). We achieved passive clearing of a whole adult mouse brain within
 4 days at 80C (versus 4 weeks at 37C) (Figure \ref{SWITCH-4}C).
 
-![SWITCH Enables Simple, Rapid, and Scalable Tissue Clearing. (A) Images of 1-mm coronal blocks of an adult mouse brain hemisphere before and after clearing at 37C for 24 hr or 80C for 12 hr. The lipid-extracted tissues were refractive index (RI)-matched (see SI for details). Scale bars, 3 mm. (B) Images of mouse brain hemispheres lipid-extracted at 80C for 10 days with 200 mM SDS containing 0–50 mM sodium sulfite (SS) as an anti-browning agent. Note that the tissues were not RI-matched. Scale bars, 6 mm. (C) Images of intact adult mouse brains cleared at 37C (top) and 60C (middle) and 80C (bottom) with and without 1-thioglycerol (TG). Browning in hightemperature clearing was effectively prevented by TG. Scale bars, 3 mm. (D) High-temperature (80C) clearing of whole rat brain with and without TG. Scale bars, 6 mm. (E) Clearing of human and marmoset samples at 80C. Scale bars, 6 mm. (F) Rapid clearing of various organs at 80C with and without 50 mM SS. Cleared rat spinal cord is not RI-matched. Scale bars, 3 mm.\label{SWITCH-4}](source/figures/SWITCH/figure4.jpg){ width=100% }
+![SWITCH Enables Simple, Rapid, and Scalable Tissue Clearing. (A) Images of 1-mm coronal blocks of an adult mouse brain hemisphere before and after clearing at 37°C for 24 hr or 80°C for 12 hr. The lipid-extracted tissues were refractive index (RI)-matched (see SI for details). Scale bars, 3 mm. (B) Images of mouse brain hemispheres lipid-extracted at 80°C for 10 days with 200 mM SDS containing 0–50 mM sodium sulfite (SS) as an anti-browning agent. Note that the tissues were not RI-matched. Scale bars, 6 mm. (C) Images of intact adult mouse brains cleared at 37°C (top) and 60°C (middle) and 80°C (bottom) with and without 1-thioglycerol (TG). Browning in hightemperature clearing was effectively prevented by TG. Scale bars, 3 mm. (D) High-temperature (80°C) clearing of whole rat brain with and without TG. Scale bars, 6 mm. (E) Clearing of human and marmoset samples at 80°C. Scale bars, 6 mm. (F) Rapid clearing of various organs at 80°C with and without 50 mM SS. Cleared rat spinal cord is not RI-matched. Scale bars, 3 mm.\label{SWITCH-4}](source/figures/SWITCH/figure4.jpg){ width=100% }
 
 Upon prolonged exposure to high temperatures, however, samples developed a
 brownish hue [@Friedman1996], which may interfere with imaging at certain
-wavelengths (Figures \ref{SWITCH-4}B–\ref{SWITCH-4}D and \ref{SWITCH-4}F). We found
-that reducing agents, such as sodium sulfite and 1-thioglycerol, effectively
-mitigate tissue browning during thermal clearing (Figures
-\ref{SWITCH-4}B–\ref{SWITCH-4}D). Using thermal clearing with the reducing agents,
-we successfully cleared intact adult rat brains (2 weeks) as well as human (1
-week) and marmoset samples (1 week), demonstrating the versatility and
-scalability of the method (Figures \ref{SWITCH-4}D and \ref{SWITCH-4}E). Clearing of
-various rodent organs was also demonstrated with lung, kidney, heart, liver, and
-spinal cord (Figure \ref{SWITCH-4}F). The efficacy of sodium sulfite as an
-anti-browning agent was seen across all tissues.
+wavelengths (Figures \ref{SWITCH-4}B–\ref{SWITCH-4}D and \ref{SWITCH-4}F). We
+found that reducing agents, such as sodium sulfite and 1-thioglycerol,
+effectively mitigate tissue browning during thermal clearing (Figures
+\ref{SWITCH-4}B–\ref{SWITCH-4}D). Using thermal clearing with the reducing
+agents, we successfully cleared intact adult rat brains (2 weeks) as well as
+human (1 week) and marmoset samples (1 week), demonstrating the versatility and
+scalability of the method (Figures \ref{SWITCH-4}D and \ref{SWITCH-4}E).
+Clearing of various rodent organs was also demonstrated with lung, kidney,
+heart, liver, and spinal cord (Figure \ref{SWITCH-4}F). The efficacy of sodium
+sulfite as an anti-browning agent was seen across all tissues.
 
 ### SWITCH Enables Visualization and Quantitative Analysis of Entire Myelinated Fiber Tracts
 
@@ -479,7 +481,7 @@ PBST or with PBS + 10 mM SDS buffer. DiD staining is completely inhibited in PBS
 1.5 days at 37C. Only tissue surface is labeled. Scale bar, 200 µm. (D) DiD
 staining of a 1-mm-thick mouse coronal block using SWITCH. The sample was first
 incubated in DiD, 10 mM SDS containing PBS buffer for 24 hr, then moved to PBST
-and incubated for 0.5 day at 37C. The whole sample is uniformly labeled. Scale
+and incubated for 0.5 day at 37°C. The whole sample is uniformly labeled. Scale
 bar, 200 µm. (E) Volume image of a 1-mm-thick mouse brain coronal slice stained
 with DiD to visualize myelinated tracts acquired using a confocal microscope.
 The volume contains both the striatum and the cortex. Scale bar, 200 µm. (F)
@@ -512,8 +514,8 @@ buffer and then activate global probe-target binding with the SWITCH-On buffer
 (Figure \ref{SWITCH-5}D).
 
 To test this approach, we first incubated a 1-mm-thick mouse brain block in PBST
-containing 10 mM SDS and lipophilic dyes for 24 hr at 37C (SWITCH-Off step).
-Then, we moved the tissue to PBST and incubated it for 3 hr at 37C (SWITCH-On
+containing 10 mM SDS and lipophilic dyes for 24 hr at 37°C (SWITCH-Off step).
+Then, we moved the tissue to PBST and incubated it for 3 hr at 37°C (SWITCH-On
 step). The result was strikingly uniform labeling of all the myelinated axons
 within the sample (Figure \ref{SWITCH-5}D). Myelinated fibers were clearly visible
 throughout the depth while the control tissue showed signal only from the
@@ -526,24 +528,25 @@ of the individual fibers has not yet been studied at the microscopic resolutions
 and macroscopic scales necessary to visualize their 3D organization. To that
 end, we obtained a volume image of labeled myelinated fibers in a
 SWITCH-processed mouse brain coronal slice spanning from the cortex to the
-striatum (Figure \ref{SWITCH-5}E; Movies S2 and S3). This volume shows three main
-orientations of the fibers organized in a cubic grid: one radially projecting
-from the corpus callosum and two parallel to the corpus callosum. These three
-orientations are all orthogonal to one another (Figure \ref{SWITCH-5}F; Movie S3).
-The volume also shows fascicles that radiate from the striatum and diverge,
-almost at right angles, at the corpus callosum (Figure \ref{SWITCH-5}E; Movie S3).
-To quantify this finding in an unbiased manner, we determined the orientation of
-each of the fibers present in the volume and calculated the angles at which
-these fibers would intersect (Figure \ref{SWITCH-5}G). In all three dimensions,
-the fibers indeed oriented themselves approximately orthogonally to each other
-(Figure \ref{SWITCH-5}H). We used a similar approach to examine the fascicle
-orientations and found that they diverge almost orthogonally with respect to the
-corpus callosum in one of the axes (Figure \ref{SWITCH-5}I). These results are
-corroborated by the autocorrelation results (Figure S3 and S4). This finding was
-made possible by the high-resolution and large-volume visualization capability
-of our method. A low-resolution approach would overlook the individual fibers
-while a low-volume approach would be unable to capture the entire connectional
-anatomy.
+striatum (Figure \ref{SWITCH-5}E; Movies S2 and S3). This volume shows three
+main orientations of the fibers organized in a cubic grid: one radially
+projecting from the corpus callosum and two parallel to the corpus callosum.
+These three orientations are all orthogonal to one another (Figure
+\ref{SWITCH-5}F; Movie S3). The volume also shows fascicles that radiate from
+the striatum and diverge, almost at right angles, at the corpus callosum (Figure
+\ref{SWITCH-5}E; Movie S3). To quantify this finding in an unbiased manner, we
+determined the orientation of each of the fibers present in the volume and
+calculated the angles at which these fibers would intersect (Figure
+\ref{SWITCH-5}G). In all three dimensions, the fibers indeed oriented themselves
+approximately orthogonally to each other (Figure \ref{SWITCH-5}H). We used a
+similar approach to examine the fascicle orientations and found that they
+diverge almost orthogonally with respect to the corpus callosum in one of the
+axes (Figure \ref{SWITCH-5}I). These results are corroborated by the
+autocorrelation results (Figure \ref{SWITCH-Sup3} and \ref{SWTICH-Sup4}). This
+finding was made possible by the high-resolution and large-volume visualization
+capability of our method. A low-resolution approach would overlook the
+individual fibers while a low-volume approach would be unable to capture the
+entire connectional anatomy.
 
 We then tested whether this application of SWITCH could be scaled to larger
 tissues. We applied the SWITCH approach for labeling an intact mouse hemisphere,
@@ -670,7 +673,7 @@ quantitative analysis, it could be problematic in visualizing targets with low
 copy number. We investigated the use of sodium borohydride as a method of
 reducing autofluorescence, but found that the tissue damage resulting from this
 incubation procedure offset any benefits obtained from the modest decrease in
-autofluorescence that we were able to observe (Figure S5).
+autofluorescence that we were able to observe (Figure \ref{SWITCH-Sup5}).
 
 The use of reducing agents has allowed us to eliminate the issue of tissue
 browning during high-temperature clearing, but we also observed that excessive
@@ -681,7 +684,7 @@ denaturation may lead to reduced sample antigenicity, but we have not found this
 to be an issue when using conservative amounts of reducing agents. Additionally,
 due to the instability of mRNA at elevated temperatures, this method of rapid
 clearing is not compatible with methods that require the preservation of mRNA
-(Figure S6).
+(Figure \ref{SWITCH-Sup6}).
 
 Multiplexed imaging requires software to warp each experiment into a common
 coordinate system despite the subtle physical differences between each staining
@@ -777,12 +780,12 @@ PFA-fixed human samples were washed in a solution consisting of 50% PBS titrated
 to pH 3 using HCl, 25% 0.1 M HCl, and 25% 0.1 M potassium hydrogenphthalate
 (KHP). This wash solution was then replaced with fresh solution with the
 addition of 4%–10% GA. The samples were then incubated in this pH 3 solution at
-4C for 2 days with gentle shaking. The solution was then replaced with PBS with
+4°C for 2 days with gentle shaking. The solution was then replaced with PBS with
 the addition of 1%–4% GA and the sample was again allowed to incubate for 2 days
-at 4C and 2–7 hr at 37C with gentle shaking. The sample was then washed in PBS
+at 4°C and 2–7 hr at 37C with gentle shaking. The sample was then washed in PBS
 at room temperature (RT) for 1 day with gentle shaking. After washing, reactive
 GA within the sample was inactivated by incubation in a solution consisting of
-4% glycine and 4% acetamide for 1 day at 37C with gentle shaking. Finally, the
+4% glycine and 4% acetamide for 1 day at 37°C with gentle shaking. Finally, the
 sample was washed for 1 day in PBS at RT with gentle shaking.
 
 ### Passive Clearing with Thermal Energy
@@ -790,28 +793,28 @@ sample was washed for 1 day in PBS at RT with gentle shaking.
 Aqueous clearing solution containing 200 mM SDS, 10 mM lithium hydroxide, 40 mM
 boric acid, and a variable amount of anti-browning agent (i.e., 0–50 mM sodium
 sulfite or 0%–0.5% w/v 1-thioglycerol) was titrated to pH 9 using sodium
-hydroxide before use. Samples were incubated at 60–80C until clearusing
+hydroxide before use. Samples were incubated at 60–80°C until clearusing
 Easy-Passive (EP-1001; Live Cell Instrument) or a water bath.
 
 ### Sample Delabeling
 
-Imaged samples were delabeled in clearing solution at 60–80C (elution condition)
+Imaged samples were delabeled in clearing solution at 60–80°C (elution condition)
 for 1–2 days for large samples and O/N for thin samples.
 
 ### SWITCH-Mediated Fluorescent Labeling
 
 Samples were incubated in SWITCH-Off solution (0.5 or 10 mM SDS in PBS) O/N with
-gentle shaking at 37C and transferred to a fresh volume of SWITCH-Off solution
+gentle shaking at 37°C and transferred to a fresh volume of SWITCH-Off solution
 (containing molecular probes) just enough to cover the sample. Samples were
-incubated at 37C with gentle shaking and times were scaled with sample size.
+incubated at 37°C with gentle shaking and times were scaled with sample size.
 Samples were then transferred to a large volume of PBST (SWITCH-On) and
-incubated at 37C with gentle shaking.
+incubated at 37°C with gentle shaking.
 
 ## Supplemental Information
 
 Supplemental Information includes Supplemental Experimental Procedures, six
 figures, two tables, and six movies and can be found with this article online at
-<http://dx.doi.org/10.1016/j.cell.2015.11.025> as well as in the appendix.
+<http://dx.doi.org/10.1016/j.cell.2015.11.025> as well as in Appendix 3.
 
 ## Author Contributions
 

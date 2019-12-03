@@ -223,10 +223,10 @@ The overall image processing pipeline described in this protocol is designed to
 calculate fluorescence summary statistics from whole-mouse brain images acquired
 with LSFM on a per-region basis. Our pipeline has been used to quantify mRuby2
 and EGFP fluorescence of virally labeled neurons and presynaptic terminals in
-SHIELD-processed mouse brain hemispheres 6. Thus, the overall pipeline may be
-applied in systems neuroscience to quantify fluorescent reporters in cleared
-samples from mouse models. However, the individual modules that comprise the
-overall pipeline can also be used independently.
+SHIELD-processed mouse brain hemispheres (Park et al. 2018). Thus, the overall
+pipeline may be applied in systems neuroscience to quantify fluorescent
+reporters in cleared samples from mouse models. However, the individual modules
+that comprise the overall pipeline can also be used independently.
 
 Pystripe can be applied to any images corrupted with horizontal or vertical
 stripe artifacts. We restricted pystripe to filtering horizontal or vertical
@@ -360,7 +360,7 @@ mouse brain sample was cut along the mid-sagittal plane and includes the
 olfactory bulb and the cerebellum. The stained hemisphere was then incubated in
 a RI-matching solution and imaged using a custom axially-swept LSFM system
 equipped with a 3.6x/0.2 objective (Special Optics). The resulting voxel width
-and depth are 1.8 μm and 2.0 μm, respectively. Although only one animal was
+and depth are 1.8 µm and 2.0 µm, respectively. Although only one animal was
 involved in preparing the example dataset, our image processing protocol has
 been tested on over 15 intact mouse brain hemispheres from separate animals. All
 experimental protocols were approved by the MIT Institutional Animal Care and
@@ -375,7 +375,7 @@ tissues sectioned along the midsagittal plane with or without the olfactory bulb
 and cerebellum excised. The images must be acquired in a geometry that allows a
 transformation of axes (flipping, transposition) and cropping that bring the
 images into rough alignment with the atlas. In our experience, acquisition of
-either autofluorescence or a nuclear stain such as syto 16 provides enough
+either autofluorescence or a nuclear stain such as Syto16 provides enough
 mutual information for alignment with the reference volume for the ABA. Images
 were processed using only the techniques described in the protocol, and figures
 were prepared using linear lookup tables with adjustment of the minimum and

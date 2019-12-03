@@ -4,18 +4,17 @@
 
 The human brain is a complex biological system with components spanning multiple
 length scales, including synapses, neurons, and various brain regions. Synapses
-can transfer signals via neurotransmitters and form local connections between
-neurons [@Sudhof2008]. Neurons can project over long distances, allowing these
-local synaptic connections to be used to construct a large-scale intercellular
-network [@Knosche2011]. Glia support neuronal function and influence synaptic
-remodeling [@Araque2010; @Stogsdill2017], and microglia patrol the parenchyma to
-clear debris and respond to inflammatory signals [@Lenz2018]. Although the human
-brain consists of approximately 100 billion neurons, this number pales in
-comparison to over 100 trillion synapses within the same brain
-[@Herculano-Houzel2009]. This combinatorial explosion of intercellular
-interactions in the brain is simultaneously what gives rise its emergent
-properties and what makes it so difficult for neuroscientists to understand
-[@Bassett2011; @Postle2006].
+transfer signals via neurotransmitters and form local connections between
+neurons [@Sudhof2008]. Neurons project over long distances, allowing these local
+synaptic connections to be used to construct a large-scale intercellular network
+[@Knosche2011]. Glia support neuronal function and influence synaptic remodeling
+[@Araque2010; @Stogsdill2017], and microglia patrol the parenchyma to clear
+debris and respond to inflammatory signals [@Lenz2018]. Although the human brain
+consists of approximately 100 billion neurons, this number pales in comparison
+to over 100 trillion synapses within the same brain [@Herculano-Houzel2009].
+This combinatorial explosion of intercellular interactions in the brain is
+simultaneously what gives rise its emergent properties and what makes it so
+difficult for neuroscientists to understand [@Bassett2011; @Postle2006].
 
 The pioneering work of Ramón y Cajal depicted neural structures with
 unprecidented detail and revealed the existence of different types of neurons
@@ -38,23 +37,23 @@ wired together [@Lake2016]. That is, bottom-up approaches based on cellular
 sub-typing are analogous to trying to understand how a circuit board works by
 first identifying its electrical components. Another strategy is a top-down
 approach, in which the functional associations of each brain region, anatomical
-variations, and large-scale patterns in electrical activity (also known as
+features, and large-scale patterns in electrical activity (also known as
 "brain waves") are emphasized [@LopesdaSilva1991]. By taking a more holistic
 view of the brain, top-down approaches hope to address how the brain works as a
 complete system through the interaction of different brain regions. However,
 studying the brain as a complete system has proven to be experimentally
-challenging due to its scale and multiscale intrinsic complexity.
+challenging due to its scale and intrinsic complexity.
 
 Recent advances in brain atlases allow neuroscience researchers to use bottom-up
 and top-down strategies in tandem, which has been very useful [@Nowinski2017].
 By defining a common coordinate system for a typical brain, information from
 multiple brain samples can be effectively pooled into an aggregate dataset of
 protein expression, gene expression, and electrophysiological properties via
-alignment to the anatomical reference brain. The Allen Brain Atlas contains such
-aggregate datasets and has acted as a catalyst allowing neuroscientists to ask
-exciting new questions [@Jones2009]. Although the atlas approach can provide
-aggregate phenotypic information in the form of population averages, it is still
-limited in its ability to describe a single brain sample.
+alignment to the anatomical reference brain. Taking this approach, the Allen
+Brain Atlas has acted as a catalyst allowing neuroscientists to ask exciting new
+questions [@Jones2009]. Although the atlas approach can provide aggregate
+phenotypic information in terms of population averages, it is still limited in
+its ability to describe a single brain.
 
 The complete network of neural connections in the central nervous system is
 often referred to as the *connectome* [@Toga2012]. In order to observe the
@@ -74,8 +73,8 @@ brain, and each brain model has its own set of advantages and disadvantages in a
 given biological context. Researchers typically use brain models that have been
 previously demonstrated to be useful to study the neurological phenomena or
 complex phenotypes of interest. This is because validating new biological models
-of the brain is quite difficult, and it is even often unclear how well
-established models approximate what occurs in humans.
+of the brain is quite difficult, and it is often unclear how well-established
+models approximate what occurs in humans.
 
 Some of the simplest models of the brain are 2D cell cultures of human neurons
 [@Gordon2013]. These models allow easy access for monitoring the entire culture
@@ -109,19 +108,19 @@ able to model more complex phenotypes accurately. If this proves to be true,
 then the experimental possibilities of such an in vitro model are vast.
 
 Another model that has become more commonplace in neuroscience research is the
-*Callithrix jacchus*--also known as the common marmoset--brain [@Kishi2014].
-Marmosets are a relatively small non-human primate that is phylogenetically more
-closely related to humans. Therefore, there has been recent interest in using
-marmoset models for studying more human-like behaviors rather than mouse models
+*Callithrix jacchus*--also known as the common marmoset [@Kishi2014]. Marmosets
+are a relatively small non-human primate that is phylogenetically more closely
+related to humans. Therefore, there has been recent interest in using marmoset
+models for studying more human-like behaviors rather than mouse models
 [@Miller2016].
 
-These recent trends toward more complex and larger brain models are undeniable,
-and they originate from some of the inherent limitations of the brain models
-that are currently available to neuroscientists. However, as these trends
-continue toward the larger scale, neuroscientists will be hard-pressed to adapt
-the technologies and experimental techniques that were developed for 2D cell
-culture and mouse models. Scaling up the techniques used in experimental
-neuroscience to larger, more complex brain models is the focus of this thesis.
+These recent trends toward more complex and larger brain models are evident, and
+they originate from some of the inherent limitations of the brain models that
+are currently available to neuroscientists. However, as these trends continue
+toward the larger scale, neuroscientists will be hard-pressed to adapt the
+technologies and experimental techniques that were developed for 2D cell culture
+and mouse models. Scaling up the techniques used in experimental neuroscience to
+larger, more complex brain models is the focus of this thesis.
 
 
 ## Thesis aims
@@ -154,7 +153,7 @@ maturation, Zika virus infection, and different culture protocols.
 To increase the scale to which 3D in vitro brain models such as cerebral
 organoids can be cultured, an organoid vascularization strategy using two-photon
 stereolithography is presented. A detailed design for a high-resolution
-two-photon 3D printer is provided that can achieve 4 µm fabrication reoslution
+two-photon 3D printer is provided that can achieve 4 µm fabrication resolution
 and directly print engineered pore structures. Vasculature printed from
 biocompatible resins were shown to integrate with cerebral orgnaoids cultured
 with and without perfusion with limited cytotoxicity. Future work may build on

@@ -16,7 +16,7 @@ Supplemental videos are available online at <https://www.cell.com/cell/fulltext/
 
 ![GA-Induced Fluorescence, Related to Figure \ref{SWITCH-1}. Aldehyde fixatives can react with tissue components to generate fluorescent products. (A and B) Background fluorescence is worse in GA than PFA and is especially pronounced in the green (488) to yellow (561) regions. Sodium borohydride (SB) treatment can reduce these fluorescent products. N = 3. Scale bar, 100 µm. (C) SB treatment results in tissue damage and bubble formation within the sample. Grid spacing, 1 mm. \label{SWITCH-Sup5}](source/figures/SWITCH/supfigure5.jpg){ width=90% }
 
-![mRNA FISH on Thermally Cleared Samples, Related to Figure \ref{SWITCH-4}. SWITCH-processed samples were cleared at 37C and 70C before being subjected to an mRNA FISH protocol to label c-fos (red). Nuclei are stained with Hoechst (gray). Samples cleared at 37C showed successful mRNA labeling, but samples cleared at 70C contained no detectable mRNA. Scale bar, 100 µm. \label{SWITCH-Sup6}](source/figures/SWITCH/supfigure6.jpg){ width=100% }
+![mRNA FISH on Thermally Cleared Samples, Related to Figure \ref{SWITCH-4}. SWITCH-processed samples were cleared at 37°C and 70°C before being subjected to an mRNA FISH protocol to label c-fos (red). Nuclei are stained with Hoechst (gray). Samples cleared at 37°C showed successful mRNA labeling, but samples cleared at 70°C contained no detectable mRNA. Scale bar, 100 µm. \label{SWITCH-Sup6}](source/figures/SWITCH/supfigure6.jpg){ width=100% }
 
 | GFAP  | NeuN  | SMI-32 |  CB   |  CR   |  PV   |   I   |  II   |  III  |  IV   |   V   |  VI   |
 | :---: | :---: | :----: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -84,7 +84,7 @@ Supplemental videos are available online at <https://www.cell.com/cell/fulltext/
 |   +   |   +   |   +    |   +   |   +   |   −   |   0   |   0   |   0   |   0   |   0   |   0   |
 |   +   |   +   |   +    |   +   |   +   |   +   |   0   |   0   |   0   |   0   |   0   |   0   |
 
-Table: Statistics of All Combinations of Six Cell Markers, Related to Figure \ref{SWITCH-3}.
+Table: Statistics of All Combinations of Six Cell Markers, Related to Figure \ref{SWITCH-3}. \label{SWITCH-SupTable1}
 
 ### Supplemental Experimental Procedures {.unnumbered}
 
@@ -265,7 +265,7 @@ visualized using IMARIS.
 
 Samples of fixed autopsy tissue were obtained from the Neuropathology Core of
 the Massachusetts Alzheimer Disease Research Center. Tissue was collected and
-banked in accordance with approval from the local Institutional Review Board.
+banked in accordance with appr\label{SWITCH-SupTable1}oval from the local Institutional Review Board.
 All samples studied came from subjects without evidence of neurologic disease on
 clinical grounds at the time of death and without evidence of significant
 disease processes upon full neuropathologic examination.
@@ -400,7 +400,7 @@ DiD solution was added. The sample was incubated in this solution at 37°C for 4
 days with gentle shaking and then moved to a large volume of SWITCH-On solution
 for 1 day at 37°C with gentle shaking. RI-matching solution was used to
 facilitate imaging of the sample.
-
+µ
 #### Orientation Analysis of Myelinated Fibers {.unnumbered}
 
 Analysis was performed on planar images in the xy, yz, and xz planes using
@@ -516,7 +516,7 @@ Supplemental videos are avilable online at <https://www.nature.com/articles/nbt.
 |         MAP2         | BioLegend |   822501   |   Ch   |     P     |   Protein   |   O   |   X   |
 |         MAP2         | BioLegend |   801801   |   Ms   |     M     |   Protein   |   O   |   O   |
 |         MAP2         | BioLegend |   840601   |   Rb   |     P     |   Protein   |   O   |   O   |
-|         MAP2         |    CST    |    8707    |   Rb   |     M     |   Protein   |   O   |   O   |
+|         MAP2         |    CST    |    8707    |   Rb   |     M     |   Protein   |   O   |   O   |µ
 |         MBP          |   Abcam   |  ab134018  |   Ch   |     P     |   Protein   |   O   |   O   |
 |         MBP          |   Abcam   |   ab7349   |   Rt   |     M     |   Protein   |   O   |   O   |
 |         MBP          |   Aves    |    MBP     |   Ch   |     P     |   Protein   |   O   |   O   |
@@ -598,7 +598,7 @@ Supplemental videos are avilable online at <https://www.nature.com/articles/nbt.
 |         DAPI         |    LT     |   D1306    |  N/A   |    N/A    |     DNA     |   O   |   O   |
 |        TOTO-1        |    LT     |   T3600    |  N/A   |    N/A    |     DNA     |   O   |   O   |
 
-Table: Antibody summary.
+Table: Antibody summary. \label{MAP-SupTable1}
 
 [^a]: CST, Cell Signaling Technology; SYSY, Synaptic Systems; LT, Life Technologies.
 [^b]: Rb, rabbit; Ms, mouse; Gt, goat; Ch, chicken; Rt, rat; GP, guinea pig.
@@ -655,7 +655,7 @@ labeling
 
 ------------------------------------------------------------------------------------------------
 
-Table: Comparison of technologies for intact tissue processing and imaging.
+Table: Comparison of technologies for intact tissue processing and imaging. \label{MAP-SupTable2}
 
 \normalsize
 

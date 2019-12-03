@@ -114,7 +114,7 @@ denaturation of protein complexes with heat and anionic surfactant then
 facilitates natural expansion of the hydrogel-tissue hybrid while preserving
 overall spatial organization of the proteome.
 
-![Magnified and accessible 3D proteome library of whole intact organs. (a) Comparison of hydrogel-tissue hybridization chemistry, subsequent protein denaturation, and hybrid expansion between low (left column) and high (right column) concentrations of acrylamide (AA; blue) infusion. High-concentration AA prevents intra- and interprotein crosslinking during the hydrogel-tissue hybridization step by quenching reactive methylols formed from amine residues (green) reacting with formaldehyde (red). Dissociation and denaturation of non-crosslinked protein complexes allows natural expansion of the hybrid. In low-concentration AA (left column), the reactive methylols react with available amine or amide groups within the same protein or adjacent proteins and form methylene bridges (red line). Such intra- and interprotein crosslinking prevents complete denaturation and dissociation of the proteins, and thereby limits subsequent tissue expansion. (b) Expansion after denaturation of BSA tissue phantom post-fixed in several AA concentrations. Representative images of tissue phantoms before and after expansion are shown. One-way ANOVA was performed (***P < 0.001). Error bars show s.d. (n = 3). Scale bars, 5 mm. (c) Expansion of 1-mm-thick coronal mouse brain slices perfused with several AA concentrations. One-way ANOVA was performed (P < 0.001). V0, volume before expansion; V, volume after expansion. Error bars show mean ± s.d. (n = 6). (d) Average diameter of 1-mm-thick slices relative to the initial diameter after expansion and subsequent shrinkage. Slices were allowed 24 h for both expansion and shrinkage (n = 6). L0, mean length of original brain; L, mean length after expansion and shrinkage. (e) Representative photos showing expansion and shrinkage of a 1-mm-thick coronal block. Starting from the top left, the original brain section, the expanded state, and the shrunken state are shown. (f,g) MAP applied to a whole mouse brain and other organs. The entire process from perfusion to full expansion took 7 d. Compared with the original organ size (pictures at right bottom corner), the final expansion of the brain showed a more than fourfold increase in length. (h) MAP applied to cerebral organoid. Top, darkfield images; bottom, brightfield image. Scale bars (e–h), 10 mm. \label{MAP-1}](source/figures/MAP/figure1.jpg){ width=100% }
+![Magnified and accessible 3D proteome library of whole intact organs. (a) Comparison of hydrogel-tissue hybridization chemistry, subsequent protein denaturation, and hybrid expansion between low (left column) and high (right column) concentrations of acrylamide (AA; blue) infusion. High-concentration AA prevents intra- and interprotein crosslinking during the hydrogel-tissue hybridization step by quenching reactive methylols formed from amine residues (green) reacting with formaldehyde (red). Dissociation and denaturation of non-crosslinked protein complexes allows natural expansion of the hybrid. In low-concentration AA (left column), the reactive methylols react with available amine or amide groups within the same protein or adjacent proteins and form methylene bridges (red line). Such intra- and interprotein crosslinking prevents complete denaturation and dissociation of the proteins, and thereby limits subsequent tissue expansion. (b) Expansion after denaturation of BSA tissue phantom post-fixed in several AA concentrations. Representative images of tissue phantoms before and after expansion are shown. One-way ANOVA was performed (***P < 0.001). Error bars show s.d. (n = 3). Scale bars, 5 mm. (c) Expansion of 1-mm-thick coronal mouse brain slices perfused with several AA concentrations. One-way ANOVA was performed (P < 0.001). V0, volume before expansion; V, volume after expansion. Error bars show mean ± s.d. (n = 6). (d) Average diameter of 1-mm-thick slices relative to the initial diameter after expansion and subsequent shrinkage. Slices were allowed 24 h for both expansion and shrinkage (n = 6). $L_0$, mean length of original brain; $L$, mean length after expansion and shrinkage. (e) Representative photos showing expansion and shrinkage of a 1-mm-thick coronal block. Starting from the top left, the original brain section, the expanded state, and the shrunken state are shown. (f,g) MAP applied to a whole mouse brain and other organs. The entire process from perfusion to full expansion took 7 d. Compared with the original organ size (pictures at right bottom corner), the final expansion of the brain showed a more than fourfold increase in length. (h) MAP applied to cerebral organoid. Top, darkfield images; bottom, brightfield image. Scale bars: (e,h), 1 mm; (f, g) 10 mm. \label{MAP-1}](source/figures/MAP/figure1.jpg){ width=100% }
 
 To test our hypothesis, we first measured the effect of acrylamide concentration
 on tissue expansion. We prepared albumin-containing tissue phantoms and
@@ -131,10 +131,9 @@ subsequent experiments.
 Using this approach, we achieved a fourfold linear expansion of a whole mouse
 brain within 7 d without protease treatment (Fig. \ref{MAP-1}f). Tissue
 expansion was reversible and tunable using buffers with different salt
-concentrations and osmolarities (Fig. \ref{MAP-1}d,e). This method is
-applicable to other organs including heart, lung, spinal cord, liver, intestine,
-and kidney, and also cerebral organoids (Fig. \ref{MAP-1}g,h and Supplementary
-Fig. 1).
+concentrations and osmolarities (Fig. \ref{MAP-1}d,e). This method is applicable
+to other organs including heart, lung, spinal cord, liver, intestine, and
+kidney, and also cerebral organoids (Fig. \ref{MAP-1}g,h and \ref{MAP-Sup1}).
 
 ### Preservation of multiscale architectures
 
@@ -166,7 +165,7 @@ Local pairwise expansion ratios versus the fraction of the connecting line
 segment inside of nuclei (black line, overall expansion ratio (3.82); red dashed
 line, standard linear regression; m = 0.04 ± 0.02, b = 3.83 ± 0.01). (g) RMSE of
 TOTO-1 images before and after MAP, same as in d (n = 4 samples). (h)
-100-μm-thick mouse brain slice showing blood vessels stained with lectin before
+100-µm-thick mouse brain slice showing blood vessels stained with lectin before
 and after MAP processing. (i) RMSE of lectin images same as in d. Errors
 measured after MAP processing (n = 6 samples) are compared with errors measured
 between two rounds of embedding and imaging of the sample before MAP (n = 5
@@ -182,8 +181,8 @@ NA dry objective (e) and a 63×, 1.30 NA glycerol-immersion objective (a and b)
 with single-photon (1p) excitation by 488, 568, and 594 nm, and a 20×, 0.95 NA
 water-immersion objective (h and j–m) at the same resolution below optical
 sampling limit with either 1p excitation by 488 and 594 nm or 2p excitation by
-780 nm. Scale bars, 1 mm (white; e and h), 100 μm (gray; inset in e, and j–l),
-10 μm (yellow; a, and insets in j–l), and 1 μm (magenta; b and m).
+780 nm. Scale bars, 1 mm (white; e and h), 100 µm (gray; inset in e, and j–l),
+10 µm (yellow; a, and insets in j–l), and 1 µm (magenta; b and m).
 }
 \end{figure*}
 
@@ -210,20 +209,21 @@ enables super-resolution imaging of fine subcellular architectures using
 commercially available antibodies. Antibody targets were selected from a wide
 range of antigens including membrane proteins, cytoplasmic proteins, nuclear
 proteins, neurofilament proteins, and synaptic proteins to survey the overall
-proteomic landscape (Fig. \ref{MAP-3} and Supplementary Table 1). To validate
-the antibodies, we tested whether antibody staining of MAP-processed tissues
-shows comparable structures to PFA-fixed tissues, and antibodies from different
-host species targeting the same protein, if available, provide concordant images
-(Supplementary Figs. 2 and 3). We found that 100 of 122 antibodies were
+proteomic landscape (Fig. \ref{MAP-3} and \ref{MAP-SupTable1}). To validate the
+antibodies, we tested whether antibody staining of MAP-processed tissues shows
+comparable structures to PFA-fixed tissues, and antibodies from different host
+species targeting the same protein, if available, provide concordant images
+(\ref{MAP-Sup2} and \ref{MAP-Sup3}). We found that 100 of 122 antibodies were
 compatible with MAP-processed samples, and 43 of 51 target molecules were
-successfully visualized (Fig. \ref{MAP-3}, Supplementary Table 1, and
-Supplementary Figs. 2 and 3). This high success rate indicates that loss of
-epitopes by protein denaturation was minimal. Moreover, some antibodies (e.g.,
-calbindin and calretinin) showed negative staining when different antibodies
-targeting the same endogenous protein showed strong signal (Fig. \ref{MAP-3}b
-and Supplementary Table 1). This result demonstrates that MAP preserves the
-tissue proteome with minimal loss of specific epitopes and that the library can
-be effectively probed using off-the-shelf antibodies without any modification.
+successfully visualized (Fig. \ref{MAP-3}, \ref{MAP-SupTable1}, and
+\ref{MAP-Sup2} and \ref{MAP-Sup3}). This high success rate indicates that loss
+of epitopes by protein denaturation was minimal. Moreover, some antibodies
+(e.g., calbindin and calretinin) showed negative staining when different
+antibodies targeting the same endogenous protein showed strong signal (Fig.
+\ref{MAP-3}b and \ref{MAP-SupTable1}). This result demonstrates that MAP
+preserves the tissue proteome with minimal loss of specific epitopes and that
+the library can be effectively probed using off-the-shelf antibodies without any
+modification.
 
 ![Super-resolution imaging showing the 3D proteome library and subcellular details of MAP-processed intact tissue. \label{MAP-3}](source/figures/MAP/figure3.jpg){ width=100% }
 
@@ -261,9 +261,9 @@ distribution of homer1 clusters in a subcortical region. The images in f, j, and
 m were obtained from samples stained in a second round. The images were obtained
 with a 25×, 0.95 NA water-immersion objective (b), a 40×, 1.25 NA oil-immersion
 objective (e), and a 63×, 1.30 NA glycerol-immersion objective (c, d, f–h, j, l,
-and m) with 1p excitation (488, 568, 594, and 647 nm). Scale bars, 50 μm (white;
-b–f and low magnification images in h and l), 10 μm (gray; inset in e, and h, j,
-l, and m), and 1 μm (yellow; insets in f, h, j, l, and m).
+and m) with 1p excitation (488, 568, 594, and 647 nm). Scale bars, 50 µm (white;
+b–f and low magnification images in h and l), 10 µm (gray; inset in e, and h, j,
+l, and m), and 1 µm (yellow; insets in f, h, j, l, and m).
 }
 \end{figure*}
 
@@ -285,7 +285,7 @@ marker, GABA B R1 (the C-terminal domain of the GABA B receptor subunit-1) (Fig.
 morphological details of positive cells (Fig. \ref{MAP-3}b). A small subset of
 calbindin-positive fibers showed expression of calbindin in their dendritic
 spines (Fig. \ref{MAP-3}g). Many synaptic protein markers were compatible with
-MAP (Fig. \ref{MAP-3}f,h,j,l,m and Supplementary Table 1). Staining of synaptic
+MAP (Fig. \ref{MAP-3}f,h,j,l,m and \ref{MAP-SupTable1}). Staining of synaptic
 proteins clearly visualized distinct and well-separated elliptical disk-shaped
 clusters of pre- and post-synaptic proteins (Fig. \ref{MAP-3}h,l,m and
 Supplementary Video 5), enabling their quantitative analysis (Fig.
@@ -295,10 +295,10 @@ Supplementary Video 5), enabling their quantitative analysis (Fig.
 
 \begin{figure*}
 \caption*{
-Repeated staining and destaining of a MAP-processed tissue. A 100-μm-thick mouse
+Repeated staining and destaining of a MAP-processed tissue. A 100-µm-thick mouse
 brain slice including an anterior hippocampal region was used. The tissue in a
 PBS solution with 0.1% Triton X-100 was imaged. Images are displayed as maximum
-intensity projection of a 64-μm thickness. Maximum intensity projection images
+intensity projection of a 64-µm thickness. Maximum intensity projection images
 are displayed. Host species of primary antibodies are shown in the parentheses.
 Break lines indicate destaining. GFP was stained and imaged at 635-nm excitation
 channel to show consistent labeling of the same antigen. 488- and 559-nm
@@ -306,7 +306,7 @@ channels were used to show multiplexed labeling of diverse antigens and complete
 elution of imaged antibodies used in previous rounds. The same imaging and
 post-processing conditions were used for 635-nm channel images throughout the
 first and second rounds. MBP, myelin basic protein; TUJ1, neuron-specific class
-III beta-tubulin. Scale bars, 200 μm.
+III beta-tubulin. Scale bars, 200 µm.
 }
 \end{figure*}
 
@@ -315,10 +315,10 @@ III beta-tubulin. Scale bars, 200 μm.
 Another potential advantage of the MAP technology is that it enables highly
 multiplexed labeling and imaging of the magnified 3D proteome within a single
 tissue. We successfully performed seven rounds of immunostaining of a
-MAP-processed 100-μm-thick mouse brain tissue with no obvious signs of tissue
-damage (Fig. \ref{MAP-4}). Outstanding mechanical stability of the MAP-processed sample
-enabled repeated manual handling of the tissue with tools that are widely used
-in biology laboratories. The images after destaining of the imaged anti-GFP
+MAP-processed 100-µm-thick mouse brain tissue with no obvious signs of tissue
+damage (Fig. \ref{MAP-4}). Outstanding mechanical stability of the MAP-processed
+sample enabled repeated manual handling of the tissue with tools that are widely
+used in biology laboratories. The images after destaining of the imaged anti-GFP
 antibody (first round) and after solely adding secondary antibodies targeting
 the eluted anti-GFP antibody (second round) showed little signal, suggesting
 that the destaining process effectively eliminates antibodies. For the following
@@ -367,7 +367,7 @@ right inset in n showing closely crossing fibers. Depth-color coding of the
 fibers clearly shows good separation along the z-axis. (q) The intensities of
 the two fibers closely located in a similar plane in p are plotted and fitted to
 Gaussian curves to show their clear separation. (r,s) Comparison of manual
-tracing results of a 100-μm-thick hippocampal sample stained with SMI-312 before
+tracing results of a 100-µm-thick hippocampal sample stained with SMI-312 before
 (r) and after (s) MAP processing. Apparently detectable fibers were traced by
 two individuals. Discordant traces are selectively displayed for before MAP
 image (r), and the same traces, which resulted in concordant tracing after
@@ -380,7 +380,7 @@ CLARITY-optimized objective (a–c, e), a 10×, 0.3 NA water-immersion objective
 (d), a 20×, 0.95 NA water-immersion objective (m), a 63×, 1.30 NA
 glycerol-immersion objective (l and n–p), and a 25×, 0.95 NA water-immersion
 objective (f, g, i–k, r, and s) with 1p excitation by 488, 568, and 594 nm.
-Scale bars, 1 mm (gray; a), 200 μm (white; b–f, i–k, m, n), and 10 μm (yellow;
+Scale bars, 1 mm (gray; a), 200 µm (white; b–f, i–k, m, n), and 10 µm (yellow;
 g, l, o, and p, r, and s).
 }
 \end{figure*}
@@ -430,8 +430,8 @@ a middle section. (c,h) Laser power used along depth to obtain a z-stack image.
 with a 10×, 0.6 NA, 8-mm WD (magenta) or a 20×, 0.95 NA, 2-mm WD (blue)
 objectives. The same image acquisition parameters were used for sectional images
 with each objective. Insets in e are zoom-in images showing dendritic spines.
-Scale bars, 5 mm (gray; b and g), 500 μm (white; d and i), 100 μm (yellow; e and
-j), and 10 μm (blue; insets in e).
+Scale bars, 5 mm (gray; b and g), 500 µm (white; d and i), 100 µm (yellow; e and
+j), and 10 µm (blue; insets in e).
 }
 \end{figure*}
 
@@ -513,7 +513,7 @@ used for whole-mount imaging to avoid loss of connectivity information
 drastically reduce the imaging time and costs associated with data storage and
 handling of expanded samples.
 
-The advantages of MAP (Supplementary Table 2) may allow combined extraction of
+The advantages of MAP (\ref{MAP-SupTable2}) may allow combined extraction of
 rich molecular details, minute subcellular architectures, and cellular
 connectivity from diverse cell types within a single tissue. Together with its
 simplicity and broad applicability, MAP may complement existing methods and
@@ -644,7 +644,7 @@ anti-tubulin (Abcam, ab6160), Alexa Fluor 594-conjugated secondary (Abcam,
 ab150152) antibodies and TOTO-1 (Thermo Fisher Scientific). Cells were mounted
 in 2,2′-thiodiethanol (Sigma) and imaged with a 63×, 1.3 NA glycerol-immersion
 objective with the Leica microscope system. Cells were washed extensively and
-embedded into a MAP hybrid polymer by addition of 20 μL of Cell-MAP solution
+embedded into a MAP hybrid polymer by addition of 20 µL of Cell-MAP solution
 (20% AA, 7% SA, 0.1% BA, 0.5% TEMED, 0.5% ammonium persulfate in PBS). Ammonium
 persulfate was added last from a freshly prepared 5% stock solution. Cell-MAP
 solution was quickly added to the coverslip and left to polymerize for 4–5 min.
@@ -654,7 +654,7 @@ extensively, restained with anti-tubulin antibody and TOTO-1 and reimaged.
 
 ### Immunostaining of brain tissue
 
-For typical staining, MAP-processed 100- to 500-μm-thick mouse brain coronal
+For typical staining, MAP-processed 100- to 500-µm-thick mouse brain coronal
 slices were incubated with primary antib0odies (typical dilution, 1:100) in PBS
 with 1% (wt/vol) Triton X-100 (PBST) at 37 °C for 8–16 h, followed by washing at
 37 °C for 1–2 h in PBST three times. The tissue was then incubated with
@@ -662,9 +662,9 @@ secondary antibodies (typical dilution, 1:100) in PBST at 37 °C for 6–16 h,
 followed by washing at 37 °C for 1–2 h in PBST three times. For antibody
 validation of a given antibody, 100-μm-thick PFA-fixed control and MAP-processed
 samples were stained with the same titer of primary and, if necessary, secondary
-antibodies overnight in PBST. See Supplementary Table 1 for the list of
-antibodies used. To destain for multiplexed labeling, samples were incubated in
-a denaturation solution 6–16 h at 70 °C, and washed with PBST at 37 °C for 1–2 h
+antibodies overnight in PBST. See \ref{MAP-SupTable1} for the list of antibodies
+used. To destain for multiplexed labeling, samples were incubated in a
+denaturation solution 6–16 h at 70 °C, and washed with PBST at 37 °C for 1–2 h
 three times.
 
 ### Mounting and imaging
@@ -697,12 +697,12 @@ protocol,” and expanded. A 1-mm-thick slice was chopped to about 3 mm × 3 mm 
 mm (dimensions before MAP). The sample was stained passively with Alexa Fluor
 594-conjugated rabbit anti-GFP antibody (Life Technologies, A21312) for 3 d and
 Alexa Fluor 594-conjugated donkey anti-rabbit IgG antibody (Abcam, ab150072) for
-3 d. 20 μL of antibody was used in 500 μL PBST, and was washed with 40 mL PBST
+3 d. 20 µL of antibody was used in 500 µL PBST, and was washed with 40 mL PBST
 for 1.5 d (three times in total) for each antibody. We used stochastic
 electrotransport 28 to stain a 2-mm-thick slice with Alexa Fluor 647-conjugated
 rabbit anti-GFP antibody (Life Technologies, A31852) and Alexa Fluor
 647-conjugated donkey anti-rabbit IgG antibody (Abcam, ab181347). For each
-antibody, we first electrotransported stochastically a solution containing 20 μL
+antibody, we first electrotransported stochastically a solution containing 20 µL
 of antibody in 4 mL of 0.6 M N-cyclohexyl-3-aminopropanesulfonic acid (CAPS),
 0.2 M Tris, 100 mM NaCl, 20 mM SDS, 1% BSA with an electrophoresis buffer
 containing 0.3 M CAPS, 0.2 M Tris, 20 mM SDS, 30% sorbitol for 21 h. It was then
@@ -737,7 +737,7 @@ after binary masks.
 After anesthesia, mice were first washed transcardially with 2% AA in PBS
 followed by perfusion with 4% PFA and 30% AA in PBS. Thy1-eGFP-M mouse brains
 were harvested and incubated in 20 mL of the same fixative solution at 4 °C
-overnight and at 37 °C for 3 h. Brains were sectioned to 100-μm-thick coronal
+overnight and at 37 °C for 3 h. Brains were sectioned to 100-µm-thick coronal
 slices with a vibrating microtome. Slices were stained and imaged to obtain
 “before MAP” images, and then incubated in a solution containing 4% PFA, 30% AA,
 0.1% BA, 10% SA, and 0.1% V-50 in PBS at RT for 8 h. Hydrogel-tissue
@@ -748,8 +748,8 @@ the same markers and imaged to obtain “after MAP” images.
 
 To quantify distortion errors, regions of ~3 mm × 2.5 mm in size that included
 cortex and hippocampus were stained with DyLight 594-conjugated lectin (Vector
-Laboratories, DL-1177) before (8 μL in 200 μL PBST for up to 8 samples) and
-after (2 μL in 200 μL PBST for each sample) MAP processing. Samples were
+Laboratories, DL-1177) before (8 µL in 200 µL PBST for up to 8 samples) and
+after (2 µL in 200 µL PBST for each sample) MAP processing. Samples were
 incubated in RI matching solution after staining and mounted and imaged before
 MAP processing. Five samples were repeated for incubation, mounting and imaging
 to measure mounting errors. After MAP processing, six samples were stained,
@@ -780,7 +780,7 @@ stage and adjusting the z-level. During the tracing, ambiguous crossovers were
 resolved by obtaining high-magnification subvolume images. After tile-scanning,
 the target fiber was re-identified from the image volume using Fiji and marked
 to be displayed in a two-dimensional plane. For the semi-automatic tracing of
-SMI-312 fibers in a dense region, the entire 800 μm × 800 μm × 150 μm (expanded)
+SMI-312 fibers in a dense region, the entire 800 µm × 800 µm × 150 µm (expanded)
 data set was loaded along with a filament tool into a ‘Surpass’ instance using
 Imaris. An autopath calculation was performed using a single starting point as
 indicated in Supplementary Video 8. The fiber endpoint was designated by
@@ -804,7 +804,7 @@ to the synaptic junction or near the fibers of interest and intensity profiles
 were obtained with adjusting the line width. For synaptic intensity profiles,
 two Gaussian distributions were fit to the distinct peaks by simultaneous
 minimization of the sum of squared residuals. Synaptic densities for bassoon and
-VGluT2 were calculated from three non-overlapping xy-images (235 μm × 235 μm) of
+VGluT2 were calculated from three non-overlapping xy-images (235 µm × 235 µm) of
 expanded samples. The images were segmented by thresholding, and individual
 synaptic structures for each channel were counted using the “Analyze Particles”
 function in Fiji. The synaptic densities were calculated based on the frame
