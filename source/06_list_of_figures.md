@@ -5,6 +5,10 @@
 \setcounter{page}{7}
 \renewcommand{\thepage}{\arabic{page}}
 
+**Figure 1.1** \Dotfill 16
+
+> Illustration of the multiscale intrinsic complexity of the human brain
+
 **Figure 2.1** \Dotfill 26
 
 > Synchronizing Dialdehyde-Tissue-Gel Formation Enables Scalable Tissue Preservation
@@ -105,93 +109,105 @@
 
 > Whole organoid analysis for unbiased quantitative studies
 
-**Figure 6.5** \Dotfill 125
+**Figure 6.5** \Dotfill 126
 
 > Hyper-dimensional analysis of multiscale changes during cerebral organoid maturation
 
-**Figure 6.6** \Dotfill 127
+**Figure 6.6** \Dotfill 128
 
 > Hyper-dimensional analysis of multiscale changes caused by Zika virus infection
 
-**Figure 6.7** \Dotfill 129
+**Figure 6.7** \Dotfill 130
 
 > Hyper-dimensional analysis of multiscale changes in different culture protocols
 
-**Figure 7.1** \Dotfill 145
+**Figure 7.1** \Dotfill 147
 
 > Construction of a high-resolution two-photon SLA printer
 
-**Figure 7.2** \Dotfill 146
+**Figure 7.2** \Dotfill 148
 
 > Two-photon SLA of micro-vessels from biocompatible materials
 
-**Figure 7.3** \Dotfill 148
+**Figure 7.3** \Dotfill 150
 
 > Tiling strategy for printing large-scale vascular systems
 
-**Figure 7.4** \Dotfill 149
+**Figure 7.4** \Dotfill 151
 
 > Direct printing of microporous structures improves mass transport from printed reservoirs
 
-**Figure 7.5** \Dotfill 150
+**Figure 7.5** \Dotfill 152
 
 > Modulation of microfluidic transport properties by direct fabrication of engineered pore structures
 
-**Figure 7.6** \Dotfill 151
+**Figure 7.6** \Dotfill 153
 
 > Integration of vasculature into cerebral organoids shows mature neurons micro-vessel integration
 
-**Figure 8.1** \Dotfill 186
+**Figure 8.1** \Dotfill 187
 
 > SWITCH Antibody Compatibility
 
-**Figure 8.2** \Dotfill 187
+**Figure 8.2** \Dotfill 188
 
 > Multi-color Imaging of SWITCH-Processed Samples
 
-**Figure 8.3** \Dotfill 188
+**Figure 8.3** \Dotfill 189
 
 > Autocorrelation Analysis of Myelinated Fibers
 
-**Figure 8.4** \Dotfill 189
+**Figure 8.4** \Dotfill 190
 
 > Autocorrelation Analysis of Bulk Myelinated Fibers
 
-**Figure 8.5** \Dotfill 190
+**Figure 8.5** \Dotfill 191
 
 > GA-Induced Fluorescence
 
-**Figure 8.6** \Dotfill 191
+**Figure 8.6** \Dotfill 192
 
 > mRNA FISH on Thermally Cleared Samples
 
-**Figure 8.7** \Dotfill 205
+**Figure 8.7** \Dotfill 206
 
 > Expansion of various organs with MAP
 
-**Figure 8.8** \Dotfill 206
+**Figure 8.8** \Dotfill 207
 
 > Validation of commercial antibodies targeting cell-type markers in MAP-processed tissues
 
-**Figure 8.9** \Dotfill 207
+**Figure 8.9** \Dotfill 208
 
 > Validation of commercial antibodies targeting neurofilament markers in MAP-processed tissues
 
-**Figure 8.10** \Dotfill 218
-
-> Optimization of aldehyde fixation for organoids
-
-**Figure 8.11** \Dotfill 219
-
-> Optimization of SHIELD protocol for organoids
-
-**Figure 8.12** \Dotfill 220
+**Figure 8.10** \Dotfill 219
 
 > Nuclei detection and segmentation accuracy
 
-**Figure 8.13** \Dotfill 221
+**Figure 8.11** \Dotfill 220
 
 > Ventricle segmentation and U-Net model validation
+
+**Figure 8.12** \Dotfill 221
+
+> Organoid maturation experiment
+
+**Figure 8.13** \Dotfill 222
+
+> Zika infection experiment
+
+**Figure 8.14** \Dotfill 223
+
+> Zika virus effect on ventricular zones
+
+**Figure 8.15** \Dotfill 224
+
+> Zika TBR1 microenvironment analysis
+
+**Figure 8.16** \Dotfill 224
+
+> Protocol comparison experiment
 
 \setlength{\parskip}{9pt}
 \newpage

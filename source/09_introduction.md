@@ -27,6 +27,8 @@ sections serve as the basis for defining more macroscopic brain regions
 [@Ero2018]. These regions are often defined hierarchically, with the coarsest
 partitioning being the lobes of the brain. 
 
+![Illustration of the multiscale intrinsic complexity of the human brain. \label{introduction-1}](source/figures/Introduction/figure1.jpg){ width=100% }
+
 In this description of the brain at various length scales, two broad strategies
 for studying overall brain function begin to emerge naturally. One is a
 bottom-up approach, in which cellular details such as electrophysiological
